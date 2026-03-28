@@ -1,0 +1,33 @@
+{
+  "date": "2026-03-28",
+  "timestamp": "2026-03-28T21:44:23.824Z",
+  "total_lots": 14034,
+  "removed": 34,
+  "deduped": 0,
+  "outliers_flagged": 216,
+  "stale_14d": 0,
+  "stale_30d": 0,
+  "sold_detected": 0,
+  "errors": 0,
+  "duration_seconds": 1,
+  "by_state": [
+    {
+      "state": "VIC",
+      "lots": 11394,
+      "suburbs": 634,
+      "avg_price": 384631
+    },
+    {
+      "state": "NSW",
+      "lots": 1902,
+      "suburbs": 528,
+      "avg_price": 632542
+    },
+    {
+      "state": "SA",
+      "lots": 522,
+      "suburbs": 1,
+      "avg_price": 129543
+    }
+  ]
+}

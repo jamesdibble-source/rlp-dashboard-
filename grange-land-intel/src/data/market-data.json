@@ -1,0 +1,2254 @@
+{
+  "marketStats": [
+    {
+      "market": "Ballarat",
+      "total": 3495,
+      "listings": 646,
+      "sold": 2849,
+      "medPrice": 240000,
+      "medSize": 512,
+      "medPsm": 470,
+      "avgPrice": 244362,
+      "minPrice": 82500,
+      "maxPrice": 750000
+    },
+    {
+      "market": "Wangaratta",
+      "total": 718,
+      "listings": 47,
+      "sold": 671,
+      "medPrice": 162000,
+      "medSize": 661,
+      "medPsm": 258,
+      "avgPrice": 185725,
+      "minPrice": 45000,
+      "maxPrice": 715000
+    },
+    {
+      "market": "Murray Bridge",
+      "total": 839,
+      "listings": 65,
+      "sold": 774,
+      "medPrice": 139000,
+      "medSize": 638,
+      "medPsm": 220,
+      "avgPrice": 135416,
+      "minPrice": 26500,
+      "maxPrice": 455000
+    }
+  ],
+  "suburbStats": [
+    {
+      "suburb": "Murray Bridge",
+      "market": "Murray Bridge",
+      "total": 839,
+      "listings": 65,
+      "sold": 774,
+      "medPrice": 139000,
+      "medSize": 638,
+      "medPsm": 220
+    },
+    {
+      "suburb": "Winter Valley",
+      "market": "Ballarat",
+      "total": 828,
+      "listings": 209,
+      "sold": 619,
+      "medPrice": 265000,
+      "medSize": 448,
+      "medPsm": 611
+    },
+    {
+      "suburb": "Wangaratta",
+      "market": "Wangaratta",
+      "total": 676,
+      "listings": 43,
+      "sold": 633,
+      "medPrice": 160000,
+      "medSize": 660,
+      "medPsm": 255
+    },
+    {
+      "suburb": "Alfredton",
+      "market": "Ballarat",
+      "total": 586,
+      "listings": 30,
+      "sold": 556,
+      "medPrice": 195000,
+      "medSize": 512,
+      "medPsm": 387
+    },
+    {
+      "suburb": "Smythes Creek",
+      "market": "Ballarat",
+      "total": 353,
+      "listings": 57,
+      "sold": 296,
+      "medPrice": 230000,
+      "medSize": 512,
+      "medPsm": 451
+    },
+    {
+      "suburb": "Lucas",
+      "market": "Ballarat",
+      "total": 301,
+      "listings": 85,
+      "sold": 216,
+      "medPrice": 310000,
+      "medSize": 544,
+      "medPsm": 567
+    },
+    {
+      "suburb": "Bonshaw",
+      "market": "Ballarat",
+      "total": 238,
+      "listings": 42,
+      "sold": 196,
+      "medPrice": 247000,
+      "medSize": 451,
+      "medPsm": 545
+    },
+    {
+      "suburb": "Delacombe",
+      "market": "Ballarat",
+      "total": 194,
+      "listings": 19,
+      "sold": 175,
+      "medPrice": 157000,
+      "medSize": 555,
+      "medPsm": 263
+    },
+    {
+      "suburb": "Brown Hill",
+      "market": "Ballarat",
+      "total": 190,
+      "listings": 68,
+      "sold": 122,
+      "medPrice": 349500,
+      "medSize": 802,
+      "medPsm": 479
+    },
+    {
+      "suburb": "Sebastopol",
+      "market": "Ballarat",
+      "total": 110,
+      "listings": 36,
+      "sold": 74,
+      "medPrice": 240000,
+      "medSize": 485,
+      "medPsm": 498
+    },
+    {
+      "suburb": "Invermay Park",
+      "market": "Ballarat",
+      "total": 109,
+      "listings": 9,
+      "sold": 100,
+      "medPrice": 310000,
+      "medSize": 600,
+      "medPsm": 535
+    },
+    {
+      "suburb": "Miners Rest",
+      "market": "Ballarat",
+      "total": 104,
+      "listings": 3,
+      "sold": 101,
+      "medPrice": 160000,
+      "medSize": 646,
+      "medPsm": 261
+    },
+    {
+      "suburb": "Ballarat East",
+      "market": "Ballarat",
+      "total": 99,
+      "listings": 25,
+      "sold": 74,
+      "medPrice": 299000,
+      "medSize": 741,
+      "medPsm": 422
+    },
+    {
+      "suburb": "Canadian",
+      "market": "Ballarat",
+      "total": 83,
+      "listings": 18,
+      "sold": 65,
+      "medPrice": 191900,
+      "medSize": 524,
+      "medPsm": 405
+    },
+    {
+      "suburb": "Mount Clear",
+      "market": "Ballarat",
+      "total": 47,
+      "listings": 4,
+      "sold": 43,
+      "medPrice": 172000,
+      "medSize": 612,
+      "medPsm": 394
+    },
+    {
+      "suburb": "Buninyong",
+      "market": "Ballarat",
+      "total": 40,
+      "listings": 7,
+      "sold": 33,
+      "medPrice": 260000,
+      "medSize": 831,
+      "medPsm": 384
+    },
+    {
+      "suburb": "Ballarat North",
+      "market": "Ballarat",
+      "total": 34,
+      "listings": 6,
+      "sold": 28,
+      "medPrice": 205000,
+      "medSize": 631,
+      "medPsm": 304
+    },
+    {
+      "suburb": "Waldara",
+      "market": "Wangaratta",
+      "total": 32,
+      "listings": 4,
+      "sold": 28,
+      "medPrice": 300000,
+      "medSize": 820,
+      "medPsm": 425
+    },
+    {
+      "suburb": "Wendouree",
+      "market": "Ballarat",
+      "total": 23,
+      "listings": 2,
+      "sold": 21,
+      "medPrice": 163000,
+      "medSize": 660,
+      "medPsm": 280
+    },
+    {
+      "suburb": "Mount Helen",
+      "market": "Ballarat",
+      "total": 22,
+      "listings": 7,
+      "sold": 15,
+      "medPrice": 235000,
+      "medSize": 817,
+      "medPsm": 284
+    },
+    {
+      "suburb": "Mount Pleasant",
+      "market": "Ballarat",
+      "total": 22,
+      "listings": 6,
+      "sold": 16,
+      "medPrice": 190000,
+      "medSize": 460,
+      "medPsm": 448
+    },
+    {
+      "suburb": "Creswick",
+      "market": "Ballarat",
+      "total": 22,
+      "listings": 0,
+      "sold": 22,
+      "medPrice": 200000,
+      "medSize": 534,
+      "medPsm": 375
+    },
+    {
+      "suburb": "Nerrina",
+      "market": "Ballarat",
+      "total": 20,
+      "listings": 2,
+      "sold": 18,
+      "medPrice": 265000,
+      "medSize": 706,
+      "medPsm": 395
+    },
+    {
+      "suburb": "Smythesdale",
+      "market": "Ballarat",
+      "total": 17,
+      "listings": 4,
+      "sold": 13,
+      "medPrice": 192500,
+      "medSize": 654,
+      "medPsm": 304
+    },
+    {
+      "suburb": "Golden Point",
+      "market": "Ballarat",
+      "total": 11,
+      "listings": 4,
+      "sold": 7,
+      "medPrice": 240000,
+      "medSize": 585,
+      "medPsm": 392
+    },
+    {
+      "suburb": "Ballarat Central",
+      "market": "Ballarat",
+      "total": 11,
+      "listings": 0,
+      "sold": 11,
+      "medPrice": 200000,
+      "medSize": 532,
+      "medPsm": 417
+    },
+    {
+      "suburb": "Black Hill",
+      "market": "Ballarat",
+      "total": 10,
+      "listings": 1,
+      "sold": 9,
+      "medPrice": 240000,
+      "medSize": 634,
+      "medPsm": 413
+    },
+    {
+      "suburb": "Lake Gardens",
+      "market": "Ballarat",
+      "total": 6,
+      "listings": 0,
+      "sold": 6,
+      "medPrice": 240000,
+      "medSize": 506,
+      "medPsm": 647
+    },
+    {
+      "suburb": "Redan",
+      "market": "Ballarat",
+      "total": 5,
+      "listings": 0,
+      "sold": 5,
+      "medPrice": 170000,
+      "medSize": 459,
+      "medPsm": 349
+    },
+    {
+      "suburb": "Glenrowan",
+      "market": "Wangaratta",
+      "total": 4,
+      "listings": 0,
+      "sold": 4,
+      "medPrice": 210000,
+      "medSize": 916,
+      "medPsm": 229
+    },
+    {
+      "suburb": "Linton",
+      "market": "Ballarat",
+      "total": 3,
+      "listings": 2,
+      "sold": 1,
+      "medPrice": 150000,
+      "medSize": 952,
+      "medPsm": 161
+    },
+    {
+      "suburb": "Soldiers Hill",
+      "market": "Ballarat",
+      "total": 3,
+      "listings": 0,
+      "sold": 3,
+      "medPrice": 240000,
+      "medSize": 677,
+      "medPsm": 427
+    },
+    {
+      "suburb": "Oxley",
+      "market": "Wangaratta",
+      "total": 3,
+      "listings": 0,
+      "sold": 3,
+      "medPrice": 332000,
+      "medSize": 1000,
+      "medPsm": 332
+    },
+    {
+      "suburb": "Eureka",
+      "market": "Ballarat",
+      "total": 1,
+      "listings": 0,
+      "sold": 1,
+      "medPrice": 210000,
+      "medSize": 604,
+      "medPsm": 348
+    },
+    {
+      "suburb": "Newington",
+      "market": "Ballarat",
+      "total": 1,
+      "listings": 0,
+      "sold": 1,
+      "medPrice": 265000,
+      "medSize": 667,
+      "medPsm": 397
+    },
+    {
+      "suburb": "Lexton",
+      "market": "Ballarat",
+      "total": 1,
+      "listings": 0,
+      "sold": 1,
+      "medPrice": 120000,
+      "medSize": 963,
+      "medPsm": 125
+    },
+    {
+      "suburb": "Mount Egerton",
+      "market": "Ballarat",
+      "total": 1,
+      "listings": 0,
+      "sold": 1,
+      "medPrice": 229000,
+      "medSize": 1000,
+      "medPsm": 229
+    },
+    {
+      "suburb": "Whitfield",
+      "market": "Wangaratta",
+      "total": 1,
+      "listings": 0,
+      "sold": 1,
+      "medPrice": 149000,
+      "medSize": 772,
+      "medPsm": 193
+    },
+    {
+      "suburb": "Eldorado",
+      "market": "Wangaratta",
+      "total": 1,
+      "listings": 0,
+      "sold": 1,
+      "medPrice": 67000,
+      "medSize": 900,
+      "medPsm": 74
+    },
+    {
+      "suburb": "Moyhu",
+      "market": "Wangaratta",
+      "total": 1,
+      "listings": 0,
+      "sold": 1,
+      "medPrice": 170000,
+      "medSize": 785,
+      "medPsm": 217
+    }
+  ],
+  "timeSeries": [
+    {
+      "month": "2007-11",
+      "label": "Nov 07",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 85000,
+      "medPsm": 104,
+      "medSize": 816
+    },
+    {
+      "month": "2008-09",
+      "label": "Sept 08",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 103500,
+      "medPsm": 122,
+      "medSize": 850
+    },
+    {
+      "month": "2008-11",
+      "label": "Nov 08",
+      "listings": 0,
+      "sold": 2,
+      "volume": 2,
+      "medPrice": 82000,
+      "medPsm": 131,
+      "medSize": 680
+    },
+    {
+      "month": "2009-03",
+      "label": "Mar 09",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 75000,
+      "medPsm": 120,
+      "medSize": 626
+    },
+    {
+      "month": "2009-04",
+      "label": "Apr 09",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 135000,
+      "medPsm": 165,
+      "medSize": 819
+    },
+    {
+      "month": "2010-05",
+      "label": "May 10",
+      "listings": 0,
+      "sold": 2,
+      "volume": 2,
+      "medPrice": 99000,
+      "medPsm": 176,
+      "medSize": 854
+    },
+    {
+      "month": "2010-09",
+      "label": "Sept 10",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 92000,
+      "medPsm": 139,
+      "medSize": 662
+    },
+    {
+      "month": "2011-04",
+      "label": "Apr 11",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 65000,
+      "medPsm": 68,
+      "medSize": 960
+    },
+    {
+      "month": "2011-05",
+      "label": "May 11",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 253000,
+      "medPsm": 259,
+      "medSize": 977
+    },
+    {
+      "month": "2011-07",
+      "label": "July 11",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 50000,
+      "medPsm": 77,
+      "medSize": 650
+    },
+    {
+      "month": "2011-10",
+      "label": "Oct 11",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 167000,
+      "medPsm": 174,
+      "medSize": 961
+    },
+    {
+      "month": "2012-02",
+      "label": "Feb 12",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 149900,
+      "medPsm": 192,
+      "medSize": 780
+    },
+    {
+      "month": "2012-06",
+      "label": "June 12",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 55500,
+      "medPsm": 75,
+      "medSize": 744
+    },
+    {
+      "month": "2012-10",
+      "label": "Oct 12",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 75000,
+      "medPsm": 108,
+      "medSize": 692
+    },
+    {
+      "month": "2012-11",
+      "label": "Nov 12",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 72000,
+      "medPsm": 140,
+      "medSize": 514
+    },
+    {
+      "month": "2013-04",
+      "label": "Apr 13",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 86000,
+      "medPsm": 176,
+      "medSize": 489
+    },
+    {
+      "month": "2013-05",
+      "label": "May 13",
+      "listings": 0,
+      "sold": 3,
+      "volume": 3,
+      "medPrice": 115000,
+      "medPsm": 155,
+      "medSize": 740
+    },
+    {
+      "month": "2013-07",
+      "label": "July 13",
+      "listings": 0,
+      "sold": 3,
+      "volume": 3,
+      "medPrice": 61000,
+      "medPsm": 170,
+      "medSize": 356
+    },
+    {
+      "month": "2013-10",
+      "label": "Oct 13",
+      "listings": 0,
+      "sold": 2,
+      "volume": 2,
+      "medPrice": 131000,
+      "medPsm": 177,
+      "medSize": 742
+    },
+    {
+      "month": "2013-12",
+      "label": "Dec 13",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 70000,
+      "medPsm": 100,
+      "medSize": 702
+    },
+    {
+      "month": "2014-01",
+      "label": "Jan 14",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 75000,
+      "medPsm": 120,
+      "medSize": 624
+    },
+    {
+      "month": "2014-02",
+      "label": "Feb 14",
+      "listings": 0,
+      "sold": 4,
+      "volume": 4,
+      "medPrice": 85000,
+      "medPsm": 180,
+      "medSize": 639
+    },
+    {
+      "month": "2014-03",
+      "label": "Mar 14",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 95000,
+      "medPsm": 197,
+      "medSize": 483
+    },
+    {
+      "month": "2014-04",
+      "label": "Apr 14",
+      "listings": 0,
+      "sold": 2,
+      "volume": 2,
+      "medPrice": 155000,
+      "medPsm": 183,
+      "medSize": 845
+    },
+    {
+      "month": "2014-06",
+      "label": "June 14",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 70000,
+      "medPsm": 143,
+      "medSize": 490
+    },
+    {
+      "month": "2014-07",
+      "label": "July 14",
+      "listings": 0,
+      "sold": 2,
+      "volume": 2,
+      "medPrice": 145000,
+      "medPsm": 196,
+      "medSize": 741
+    },
+    {
+      "month": "2014-08",
+      "label": "Aug 14",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 117000,
+      "medPsm": 209,
+      "medSize": 560
+    },
+    {
+      "month": "2014-09",
+      "label": "Sept 14",
+      "listings": 0,
+      "sold": 2,
+      "volume": 2,
+      "medPrice": 105000,
+      "medPsm": 158,
+      "medSize": 785
+    },
+    {
+      "month": "2014-11",
+      "label": "Nov 14",
+      "listings": 0,
+      "sold": 1,
+      "volume": 1,
+      "medPrice": 84500,
+      "medPsm": 178,
+      "medSize": 476
+    },
+    {
+      "month": "2015-01",
+      "label": "Jan 15",
+      "listings": 0,
+      "sold": 11,
+      "volume": 11,
+      "medPrice": 102000,
+      "medPsm": 160,
+      "medSize": 680
+    },
+    {
+      "month": "2015-02",
+      "label": "Feb 15",
+      "listings": 0,
+      "sold": 8,
+      "volume": 8,
+      "medPrice": 113000,
+      "medPsm": 172,
+      "medSize": 761
+    },
+    {
+      "month": "2015-03",
+      "label": "Mar 15",
+      "listings": 0,
+      "sold": 8,
+      "volume": 8,
+      "medPrice": 136000,
+      "medPsm": 187,
+      "medSize": 707
+    },
+    {
+      "month": "2015-04",
+      "label": "Apr 15",
+      "listings": 0,
+      "sold": 6,
+      "volume": 6,
+      "medPrice": 90000,
+      "medPsm": 149,
+      "medSize": 530
+    },
+    {
+      "month": "2015-05",
+      "label": "May 15",
+      "listings": 0,
+      "sold": 4,
+      "volume": 4,
+      "medPrice": 177000,
+      "medPsm": 215,
+      "medSize": 836
+    },
+    {
+      "month": "2015-06",
+      "label": "June 15",
+      "listings": 0,
+      "sold": 12,
+      "volume": 12,
+      "medPrice": 128000,
+      "medPsm": 199,
+      "medSize": 648
+    },
+    {
+      "month": "2015-07",
+      "label": "July 15",
+      "listings": 0,
+      "sold": 3,
+      "volume": 3,
+      "medPrice": 83000,
+      "medPsm": 166,
+      "medSize": 500
+    },
+    {
+      "month": "2015-08",
+      "label": "Aug 15",
+      "listings": 0,
+      "sold": 7,
+      "volume": 7,
+      "medPrice": 126000,
+      "medPsm": 185,
+      "medSize": 710
+    },
+    {
+      "month": "2015-09",
+      "label": "Sept 15",
+      "listings": 0,
+      "sold": 9,
+      "volume": 9,
+      "medPrice": 119000,
+      "medPsm": 165,
+      "medSize": 708
+    },
+    {
+      "month": "2015-10",
+      "label": "Oct 15",
+      "listings": 0,
+      "sold": 11,
+      "volume": 11,
+      "medPrice": 125000,
+      "medPsm": 211,
+      "medSize": 691
+    },
+    {
+      "month": "2015-11",
+      "label": "Nov 15",
+      "listings": 0,
+      "sold": 7,
+      "volume": 7,
+      "medPrice": 145600,
+      "medPsm": 207,
+      "medSize": 667
+    },
+    {
+      "month": "2015-12",
+      "label": "Dec 15",
+      "listings": 0,
+      "sold": 11,
+      "volume": 11,
+      "medPrice": 120000,
+      "medPsm": 187,
+      "medSize": 641
+    },
+    {
+      "month": "2016-01",
+      "label": "Jan 16",
+      "listings": 0,
+      "sold": 9,
+      "volume": 9,
+      "medPrice": 117500,
+      "medPsm": 184,
+      "medSize": 667
+    },
+    {
+      "month": "2016-02",
+      "label": "Feb 16",
+      "listings": 0,
+      "sold": 8,
+      "volume": 8,
+      "medPrice": 133000,
+      "medPsm": 188,
+      "medSize": 872
+    },
+    {
+      "month": "2016-03",
+      "label": "Mar 16",
+      "listings": 0,
+      "sold": 14,
+      "volume": 14,
+      "medPrice": 132000,
+      "medPsm": 187,
+      "medSize": 637
+    },
+    {
+      "month": "2016-04",
+      "label": "Apr 16",
+      "listings": 0,
+      "sold": 6,
+      "volume": 6,
+      "medPrice": 124000,
+      "medPsm": 186,
+      "medSize": 561
+    },
+    {
+      "month": "2016-05",
+      "label": "May 16",
+      "listings": 0,
+      "sold": 10,
+      "volume": 10,
+      "medPrice": 133000,
+      "medPsm": 191,
+      "medSize": 730
+    },
+    {
+      "month": "2016-06",
+      "label": "June 16",
+      "listings": 0,
+      "sold": 12,
+      "volume": 12,
+      "medPrice": 134000,
+      "medPsm": 207,
+      "medSize": 637
+    },
+    {
+      "month": "2016-07",
+      "label": "July 16",
+      "listings": 0,
+      "sold": 7,
+      "volume": 7,
+      "medPrice": 120000,
+      "medPsm": 200,
+      "medSize": 655
+    },
+    {
+      "month": "2016-08",
+      "label": "Aug 16",
+      "listings": 0,
+      "sold": 13,
+      "volume": 13,
+      "medPrice": 124000,
+      "medPsm": 208,
+      "medSize": 625
+    },
+    {
+      "month": "2016-09",
+      "label": "Sept 16",
+      "listings": 0,
+      "sold": 21,
+      "volume": 21,
+      "medPrice": 121000,
+      "medPsm": 193,
+      "medSize": 563
+    },
+    {
+      "month": "2016-10",
+      "label": "Oct 16",
+      "listings": 0,
+      "sold": 5,
+      "volume": 5,
+      "medPrice": 122000,
+      "medPsm": 253,
+      "medSize": 532
+    },
+    {
+      "month": "2016-11",
+      "label": "Nov 16",
+      "listings": 0,
+      "sold": 8,
+      "volume": 8,
+      "medPrice": 119000,
+      "medPsm": 226,
+      "medSize": 601
+    },
+    {
+      "month": "2016-12",
+      "label": "Dec 16",
+      "listings": 0,
+      "sold": 8,
+      "volume": 8,
+      "medPrice": 131000,
+      "medPsm": 229,
+      "medSize": 606
+    },
+    {
+      "month": "2017-01",
+      "label": "Jan 17",
+      "listings": 0,
+      "sold": 9,
+      "volume": 9,
+      "medPrice": 115000,
+      "medPsm": 197,
+      "medSize": 673
+    },
+    {
+      "month": "2017-02",
+      "label": "Feb 17",
+      "listings": 0,
+      "sold": 18,
+      "volume": 18,
+      "medPrice": 132000,
+      "medPsm": 233,
+      "medSize": 576
+    },
+    {
+      "month": "2017-03",
+      "label": "Mar 17",
+      "listings": 0,
+      "sold": 13,
+      "volume": 13,
+      "medPrice": 138000,
+      "medPsm": 215,
+      "medSize": 657
+    },
+    {
+      "month": "2017-04",
+      "label": "Apr 17",
+      "listings": 0,
+      "sold": 9,
+      "volume": 9,
+      "medPrice": 155000,
+      "medPsm": 236,
+      "medSize": 552
+    },
+    {
+      "month": "2017-05",
+      "label": "May 17",
+      "listings": 0,
+      "sold": 23,
+      "volume": 23,
+      "medPrice": 145000,
+      "medPsm": 212,
+      "medSize": 692
+    },
+    {
+      "month": "2017-06",
+      "label": "June 17",
+      "listings": 0,
+      "sold": 18,
+      "volume": 18,
+      "medPrice": 128000,
+      "medPsm": 263,
+      "medSize": 544
+    },
+    {
+      "month": "2017-07",
+      "label": "July 17",
+      "listings": 0,
+      "sold": 53,
+      "volume": 53,
+      "medPrice": 138000,
+      "medPsm": 247,
+      "medSize": 600
+    },
+    {
+      "month": "2017-08",
+      "label": "Aug 17",
+      "listings": 0,
+      "sold": 20,
+      "volume": 20,
+      "medPrice": 148000,
+      "medPsm": 252,
+      "medSize": 600
+    },
+    {
+      "month": "2017-09",
+      "label": "Sept 17",
+      "listings": 0,
+      "sold": 21,
+      "volume": 21,
+      "medPrice": 148000,
+      "medPsm": 248,
+      "medSize": 600
+    },
+    {
+      "month": "2017-10",
+      "label": "Oct 17",
+      "listings": 0,
+      "sold": 23,
+      "volume": 23,
+      "medPrice": 149000,
+      "medPsm": 259,
+      "medSize": 640
+    },
+    {
+      "month": "2017-11",
+      "label": "Nov 17",
+      "listings": 0,
+      "sold": 19,
+      "volume": 19,
+      "medPrice": 145000,
+      "medPsm": 235,
+      "medSize": 658
+    },
+    {
+      "month": "2017-12",
+      "label": "Dec 17",
+      "listings": 0,
+      "sold": 27,
+      "volume": 27,
+      "medPrice": 147500,
+      "medPsm": 247,
+      "medSize": 608
+    },
+    {
+      "month": "2018-01",
+      "label": "Jan 18",
+      "listings": 0,
+      "sold": 37,
+      "volume": 37,
+      "medPrice": 160200,
+      "medPsm": 253,
+      "medSize": 651
+    },
+    {
+      "month": "2018-02",
+      "label": "Feb 18",
+      "listings": 0,
+      "sold": 21,
+      "volume": 21,
+      "medPrice": 145000,
+      "medPsm": 230,
+      "medSize": 643
+    },
+    {
+      "month": "2018-03",
+      "label": "Mar 18",
+      "listings": 0,
+      "sold": 20,
+      "volume": 20,
+      "medPrice": 147000,
+      "medPsm": 260,
+      "medSize": 601
+    },
+    {
+      "month": "2018-04",
+      "label": "Apr 18",
+      "listings": 0,
+      "sold": 44,
+      "volume": 44,
+      "medPrice": 149250,
+      "medPsm": 288,
+      "medSize": 508
+    },
+    {
+      "month": "2018-05",
+      "label": "May 18",
+      "listings": 0,
+      "sold": 18,
+      "volume": 18,
+      "medPrice": 153850,
+      "medPsm": 260,
+      "medSize": 555
+    },
+    {
+      "month": "2018-06",
+      "label": "June 18",
+      "listings": 0,
+      "sold": 20,
+      "volume": 20,
+      "medPrice": 161500,
+      "medPsm": 238,
+      "medSize": 672
+    },
+    {
+      "month": "2018-07",
+      "label": "July 18",
+      "listings": 0,
+      "sold": 43,
+      "volume": 43,
+      "medPrice": 169900,
+      "medPsm": 309,
+      "medSize": 491
+    },
+    {
+      "month": "2018-08",
+      "label": "Aug 18",
+      "listings": 0,
+      "sold": 28,
+      "volume": 28,
+      "medPrice": 145000,
+      "medPsm": 245,
+      "medSize": 622
+    },
+    {
+      "month": "2018-09",
+      "label": "Sept 18",
+      "listings": 0,
+      "sold": 15,
+      "volume": 15,
+      "medPrice": 151000,
+      "medPsm": 224,
+      "medSize": 609
+    },
+    {
+      "month": "2018-10",
+      "label": "Oct 18",
+      "listings": 0,
+      "sold": 30,
+      "volume": 30,
+      "medPrice": 160000,
+      "medPsm": 282,
+      "medSize": 560
+    },
+    {
+      "month": "2018-11",
+      "label": "Nov 18",
+      "listings": 0,
+      "sold": 23,
+      "volume": 23,
+      "medPrice": 163000,
+      "medPsm": 285,
+      "medSize": 594
+    },
+    {
+      "month": "2018-12",
+      "label": "Dec 18",
+      "listings": 0,
+      "sold": 16,
+      "volume": 16,
+      "medPrice": 144000,
+      "medPsm": 280,
+      "medSize": 528
+    },
+    {
+      "month": "2019-01",
+      "label": "Jan 19",
+      "listings": 0,
+      "sold": 22,
+      "volume": 22,
+      "medPrice": 160000,
+      "medPsm": 264,
+      "medSize": 642
+    },
+    {
+      "month": "2019-02",
+      "label": "Feb 19",
+      "listings": 0,
+      "sold": 17,
+      "volume": 17,
+      "medPrice": 165000,
+      "medPsm": 281,
+      "medSize": 596
+    },
+    {
+      "month": "2019-03",
+      "label": "Mar 19",
+      "listings": 0,
+      "sold": 17,
+      "volume": 17,
+      "medPrice": 154900,
+      "medPsm": 278,
+      "medSize": 630
+    },
+    {
+      "month": "2019-04",
+      "label": "Apr 19",
+      "listings": 0,
+      "sold": 30,
+      "volume": 30,
+      "medPrice": 156000,
+      "medPsm": 295,
+      "medSize": 544
+    },
+    {
+      "month": "2019-05",
+      "label": "May 19",
+      "listings": 0,
+      "sold": 21,
+      "volume": 21,
+      "medPrice": 140000,
+      "medPsm": 273,
+      "medSize": 506
+    },
+    {
+      "month": "2019-06",
+      "label": "June 19",
+      "listings": 0,
+      "sold": 9,
+      "volume": 9,
+      "medPrice": 160000,
+      "medPsm": 265,
+      "medSize": 682
+    },
+    {
+      "month": "2019-07",
+      "label": "July 19",
+      "listings": 0,
+      "sold": 51,
+      "volume": 51,
+      "medPrice": 158000,
+      "medPsm": 299,
+      "medSize": 549
+    },
+    {
+      "month": "2019-08",
+      "label": "Aug 19",
+      "listings": 0,
+      "sold": 36,
+      "volume": 36,
+      "medPrice": 160000,
+      "medPsm": 312,
+      "medSize": 513
+    },
+    {
+      "month": "2019-09",
+      "label": "Sept 19",
+      "listings": 0,
+      "sold": 41,
+      "volume": 41,
+      "medPrice": 155000,
+      "medPsm": 280,
+      "medSize": 579
+    },
+    {
+      "month": "2019-10",
+      "label": "Oct 19",
+      "listings": 0,
+      "sold": 31,
+      "volume": 31,
+      "medPrice": 165000,
+      "medPsm": 329,
+      "medSize": 571
+    },
+    {
+      "month": "2019-11",
+      "label": "Nov 19",
+      "listings": 0,
+      "sold": 43,
+      "volume": 43,
+      "medPrice": 160000,
+      "medPsm": 332,
+      "medSize": 528
+    },
+    {
+      "month": "2019-12",
+      "label": "Dec 19",
+      "listings": 0,
+      "sold": 25,
+      "volume": 25,
+      "medPrice": 165000,
+      "medPsm": 246,
+      "medSize": 665
+    },
+    {
+      "month": "2020-01",
+      "label": "Jan 20",
+      "listings": 0,
+      "sold": 22,
+      "volume": 22,
+      "medPrice": 177000,
+      "medPsm": 283,
+      "medSize": 650
+    },
+    {
+      "month": "2020-02",
+      "label": "Feb 20",
+      "listings": 0,
+      "sold": 94,
+      "volume": 94,
+      "medPrice": 169000,
+      "medPsm": 332,
+      "medSize": 539
+    },
+    {
+      "month": "2020-03",
+      "label": "Mar 20",
+      "listings": 0,
+      "sold": 82,
+      "volume": 82,
+      "medPrice": 170000,
+      "medPsm": 346,
+      "medSize": 512
+    },
+    {
+      "month": "2020-04",
+      "label": "Apr 20",
+      "listings": 0,
+      "sold": 14,
+      "volume": 14,
+      "medPrice": 165000,
+      "medPsm": 313,
+      "medSize": 560
+    },
+    {
+      "month": "2020-05",
+      "label": "May 20",
+      "listings": 1,
+      "sold": 37,
+      "volume": 38,
+      "medPrice": 182000,
+      "medPsm": 323,
+      "medSize": 556
+    },
+    {
+      "month": "2020-06",
+      "label": "June 20",
+      "listings": 0,
+      "sold": 51,
+      "volume": 51,
+      "medPrice": 182000,
+      "medPsm": 369,
+      "medSize": 539
+    },
+    {
+      "month": "2020-07",
+      "label": "July 20",
+      "listings": 0,
+      "sold": 95,
+      "volume": 95,
+      "medPrice": 185000,
+      "medPsm": 345,
+      "medSize": 544
+    },
+    {
+      "month": "2020-08",
+      "label": "Aug 20",
+      "listings": 1,
+      "sold": 74,
+      "volume": 75,
+      "medPrice": 180000,
+      "medPsm": 363,
+      "medSize": 525
+    },
+    {
+      "month": "2020-09",
+      "label": "Sept 20",
+      "listings": 0,
+      "sold": 90,
+      "volume": 90,
+      "medPrice": 189900,
+      "medPsm": 371,
+      "medSize": 518
+    },
+    {
+      "month": "2020-10",
+      "label": "Oct 20",
+      "listings": 0,
+      "sold": 100,
+      "volume": 100,
+      "medPrice": 194000,
+      "medPsm": 399,
+      "medSize": 525
+    },
+    {
+      "month": "2020-11",
+      "label": "Nov 20",
+      "listings": 0,
+      "sold": 92,
+      "volume": 92,
+      "medPrice": 189000,
+      "medPsm": 389,
+      "medSize": 541
+    },
+    {
+      "month": "2020-12",
+      "label": "Dec 20",
+      "listings": 0,
+      "sold": 98,
+      "volume": 98,
+      "medPrice": 191900,
+      "medPsm": 411,
+      "medSize": 512
+    },
+    {
+      "month": "2021-01",
+      "label": "Jan 21",
+      "listings": 0,
+      "sold": 74,
+      "volume": 74,
+      "medPrice": 198000,
+      "medPsm": 392,
+      "medSize": 582
+    },
+    {
+      "month": "2021-02",
+      "label": "Feb 21",
+      "listings": 0,
+      "sold": 81,
+      "volume": 81,
+      "medPrice": 195000,
+      "medPsm": 458,
+      "medSize": 480
+    },
+    {
+      "month": "2021-03",
+      "label": "Mar 21",
+      "listings": 0,
+      "sold": 108,
+      "volume": 108,
+      "medPrice": 215000,
+      "medPsm": 460,
+      "medSize": 512
+    },
+    {
+      "month": "2021-04",
+      "label": "Apr 21",
+      "listings": 0,
+      "sold": 61,
+      "volume": 61,
+      "medPrice": 255000,
+      "medPsm": 527,
+      "medSize": 491
+    },
+    {
+      "month": "2021-05",
+      "label": "May 21",
+      "listings": 0,
+      "sold": 88,
+      "volume": 88,
+      "medPrice": 240000,
+      "medPsm": 541,
+      "medSize": 452
+    },
+    {
+      "month": "2021-06",
+      "label": "June 21",
+      "listings": 0,
+      "sold": 88,
+      "volume": 88,
+      "medPrice": 222000,
+      "medPsm": 509,
+      "medSize": 511
+    },
+    {
+      "month": "2021-07",
+      "label": "July 21",
+      "listings": 0,
+      "sold": 40,
+      "volume": 40,
+      "medPrice": 245000,
+      "medPsm": 502,
+      "medSize": 508
+    },
+    {
+      "month": "2021-08",
+      "label": "Aug 21",
+      "listings": 0,
+      "sold": 55,
+      "volume": 55,
+      "medPrice": 225000,
+      "medPsm": 516,
+      "medSize": 510
+    },
+    {
+      "month": "2021-09",
+      "label": "Sept 21",
+      "listings": 0,
+      "sold": 56,
+      "volume": 56,
+      "medPrice": 255000,
+      "medPsm": 608,
+      "medSize": 476
+    },
+    {
+      "month": "2021-10",
+      "label": "Oct 21",
+      "listings": 0,
+      "sold": 63,
+      "volume": 63,
+      "medPrice": 275000,
+      "medPsm": 619,
+      "medSize": 477
+    },
+    {
+      "month": "2021-11",
+      "label": "Nov 21",
+      "listings": 3,
+      "sold": 68,
+      "volume": 71,
+      "medPrice": 274000,
+      "medPsm": 611,
+      "medSize": 493
+    },
+    {
+      "month": "2021-12",
+      "label": "Dec 21",
+      "listings": 2,
+      "sold": 50,
+      "volume": 52,
+      "medPrice": 290000,
+      "medPsm": 645,
+      "medSize": 512
+    },
+    {
+      "month": "2022-01",
+      "label": "Jan 22",
+      "listings": 0,
+      "sold": 34,
+      "volume": 34,
+      "medPrice": 294000,
+      "medPsm": 585,
+      "medSize": 544
+    },
+    {
+      "month": "2022-02",
+      "label": "Feb 22",
+      "listings": 2,
+      "sold": 48,
+      "volume": 50,
+      "medPrice": 299500,
+      "medPsm": 625,
+      "medSize": 515
+    },
+    {
+      "month": "2022-03",
+      "label": "Mar 22",
+      "listings": 1,
+      "sold": 84,
+      "volume": 85,
+      "medPrice": 283000,
+      "medPsm": 646,
+      "medSize": 450
+    },
+    {
+      "month": "2022-04",
+      "label": "Apr 22",
+      "listings": 0,
+      "sold": 70,
+      "volume": 70,
+      "medPrice": 280000,
+      "medPsm": 648,
+      "medSize": 512
+    },
+    {
+      "month": "2022-05",
+      "label": "May 22",
+      "listings": 0,
+      "sold": 40,
+      "volume": 40,
+      "medPrice": 302000,
+      "medPsm": 674,
+      "medSize": 476
+    },
+    {
+      "month": "2022-06",
+      "label": "June 22",
+      "listings": 0,
+      "sold": 28,
+      "volume": 28,
+      "medPrice": 305000,
+      "medPsm": 613,
+      "medSize": 557
+    },
+    {
+      "month": "2022-07",
+      "label": "July 22",
+      "listings": 0,
+      "sold": 15,
+      "volume": 15,
+      "medPrice": 305000,
+      "medPsm": 580,
+      "medSize": 491
+    },
+    {
+      "month": "2022-08",
+      "label": "Aug 22",
+      "listings": 0,
+      "sold": 30,
+      "volume": 30,
+      "medPrice": 305000,
+      "medPsm": 588,
+      "medSize": 517
+    },
+    {
+      "month": "2022-09",
+      "label": "Sept 22",
+      "listings": 0,
+      "sold": 52,
+      "volume": 52,
+      "medPrice": 230000,
+      "medPsm": 432,
+      "medSize": 608
+    },
+    {
+      "month": "2022-10",
+      "label": "Oct 22",
+      "listings": 0,
+      "sold": 56,
+      "volume": 56,
+      "medPrice": 134000,
+      "medPsm": 223,
+      "medSize": 558
+    },
+    {
+      "month": "2022-11",
+      "label": "Nov 22",
+      "listings": 0,
+      "sold": 38,
+      "volume": 38,
+      "medPrice": 134000,
+      "medPsm": 224,
+      "medSize": 609
+    },
+    {
+      "month": "2022-12",
+      "label": "Dec 22",
+      "listings": 0,
+      "sold": 17,
+      "volume": 17,
+      "medPrice": 136000,
+      "medPsm": 368,
+      "medSize": 490
+    },
+    {
+      "month": "2023-01",
+      "label": "Jan 23",
+      "listings": 0,
+      "sold": 13,
+      "volume": 13,
+      "medPrice": 280000,
+      "medPsm": 409,
+      "medSize": 655
+    },
+    {
+      "month": "2023-02",
+      "label": "Feb 23",
+      "listings": 0,
+      "sold": 34,
+      "volume": 34,
+      "medPrice": 265000,
+      "medPsm": 395,
+      "medSize": 612
+    },
+    {
+      "month": "2023-03",
+      "label": "Mar 23",
+      "listings": 0,
+      "sold": 23,
+      "volume": 23,
+      "medPrice": 291000,
+      "medPsm": 483,
+      "medSize": 630
+    },
+    {
+      "month": "2023-04",
+      "label": "Apr 23",
+      "listings": 0,
+      "sold": 25,
+      "volume": 25,
+      "medPrice": 290000,
+      "medPsm": 457,
+      "medSize": 552
+    },
+    {
+      "month": "2023-05",
+      "label": "May 23",
+      "listings": 0,
+      "sold": 26,
+      "volume": 26,
+      "medPrice": 240000,
+      "medPsm": 409,
+      "medSize": 648
+    },
+    {
+      "month": "2023-06",
+      "label": "June 23",
+      "listings": 0,
+      "sold": 19,
+      "volume": 19,
+      "medPrice": 172500,
+      "medPsm": 343,
+      "medSize": 560
+    },
+    {
+      "month": "2023-07",
+      "label": "July 23",
+      "listings": 0,
+      "sold": 19,
+      "volume": 19,
+      "medPrice": 158000,
+      "medPsm": 281,
+      "medSize": 573
+    },
+    {
+      "month": "2023-08",
+      "label": "Aug 23",
+      "listings": 0,
+      "sold": 40,
+      "volume": 40,
+      "medPrice": 185000,
+      "medPsm": 287,
+      "medSize": 570
+    },
+    {
+      "month": "2023-09",
+      "label": "Sept 23",
+      "listings": 0,
+      "sold": 30,
+      "volume": 30,
+      "medPrice": 235000,
+      "medPsm": 427,
+      "medSize": 648
+    },
+    {
+      "month": "2023-10",
+      "label": "Oct 23",
+      "listings": 0,
+      "sold": 28,
+      "volume": 28,
+      "medPrice": 250000,
+      "medPsm": 475,
+      "medSize": 645
+    },
+    {
+      "month": "2023-11",
+      "label": "Nov 23",
+      "listings": 0,
+      "sold": 36,
+      "volume": 36,
+      "medPrice": 199000,
+      "medPsm": 319,
+      "medSize": 555
+    },
+    {
+      "month": "2023-12",
+      "label": "Dec 23",
+      "listings": 0,
+      "sold": 36,
+      "volume": 36,
+      "medPrice": 247500,
+      "medPsm": 478,
+      "medSize": 540
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 24",
+      "listings": 0,
+      "sold": 16,
+      "volume": 16,
+      "medPrice": 305000,
+      "medPsm": 453,
+      "medSize": 661
+    },
+    {
+      "month": "2024-02",
+      "label": "Feb 24",
+      "listings": 0,
+      "sold": 37,
+      "volume": 37,
+      "medPrice": 179000,
+      "medPsm": 262,
+      "medSize": 660
+    },
+    {
+      "month": "2024-03",
+      "label": "Mar 24",
+      "listings": 0,
+      "sold": 81,
+      "volume": 81,
+      "medPrice": 158000,
+      "medPsm": 289,
+      "medSize": 568
+    },
+    {
+      "month": "2024-04",
+      "label": "Apr 24",
+      "listings": 0,
+      "sold": 70,
+      "volume": 70,
+      "medPrice": 164500,
+      "medPsm": 291,
+      "medSize": 540
+    },
+    {
+      "month": "2024-05",
+      "label": "May 24",
+      "listings": 0,
+      "sold": 34,
+      "volume": 34,
+      "medPrice": 179000,
+      "medPsm": 285,
+      "medSize": 693
+    },
+    {
+      "month": "2024-06",
+      "label": "June 24",
+      "listings": 0,
+      "sold": 20,
+      "volume": 20,
+      "medPrice": 269000,
+      "medPsm": 596,
+      "medSize": 524
+    },
+    {
+      "month": "2024-07",
+      "label": "July 24",
+      "listings": 0,
+      "sold": 12,
+      "volume": 12,
+      "medPrice": 245000,
+      "medPsm": 394,
+      "medSize": 645
+    },
+    {
+      "month": "2024-08",
+      "label": "Aug 24",
+      "listings": 0,
+      "sold": 22,
+      "volume": 22,
+      "medPrice": 183000,
+      "medPsm": 425,
+      "medSize": 473
+    },
+    {
+      "month": "2024-09",
+      "label": "Sept 24",
+      "listings": 0,
+      "sold": 8,
+      "volume": 8,
+      "medPrice": 240000,
+      "medPsm": 446,
+      "medSize": 607
+    },
+    {
+      "month": "2024-10",
+      "label": "Oct 24",
+      "listings": 495,
+      "sold": 22,
+      "volume": 517,
+      "medPrice": 300000,
+      "medPsm": 570,
+      "medSize": 530
+    },
+    {
+      "month": "2024-11",
+      "label": "Nov 24",
+      "listings": 14,
+      "sold": 10,
+      "volume": 24,
+      "medPrice": 265000,
+      "medPsm": 547,
+      "medSize": 512
+    },
+    {
+      "month": "2024-12",
+      "label": "Dec 24",
+      "listings": 69,
+      "sold": 8,
+      "volume": 77,
+      "medPrice": 175000,
+      "medPsm": 354,
+      "medSize": 507
+    },
+    {
+      "month": "2025-01",
+      "label": "Jan 25",
+      "listings": 141,
+      "sold": 2,
+      "volume": 143,
+      "medPrice": 295000,
+      "medPsm": 547,
+      "medSize": 526
+    }
+  ],
+  "priceDistribution": [
+    {
+      "range": "$0K",
+      "count": 2
+    },
+    {
+      "range": "$50K",
+      "count": 213
+    },
+    {
+      "range": "$100K",
+      "count": 951
+    },
+    {
+      "range": "$150K",
+      "count": 1406
+    },
+    {
+      "range": "$200K",
+      "count": 684
+    },
+    {
+      "range": "$250K",
+      "count": 880
+    },
+    {
+      "range": "$300K",
+      "count": 551
+    },
+    {
+      "range": "$350K",
+      "count": 220
+    },
+    {
+      "range": "$400K",
+      "count": 109
+    },
+    {
+      "range": "$450K",
+      "count": 25
+    },
+    {
+      "range": "$500K",
+      "count": 7
+    },
+    {
+      "range": "$550K",
+      "count": 1
+    },
+    {
+      "range": "$600K",
+      "count": 1
+    },
+    {
+      "range": "$700K",
+      "count": 1
+    },
+    {
+      "range": "$750K",
+      "count": 1
+    }
+  ],
+  "sizeDistribution": [
+    {
+      "range": "100m²",
+      "count": 3
+    },
+    {
+      "range": "200m²",
+      "count": 87
+    },
+    {
+      "range": "300m²",
+      "count": 437
+    },
+    {
+      "range": "400m²",
+      "count": 1182
+    },
+    {
+      "range": "500m²",
+      "count": 1402
+    },
+    {
+      "range": "600m²",
+      "count": 952
+    },
+    {
+      "range": "700m²",
+      "count": 525
+    },
+    {
+      "range": "800m²",
+      "count": 306
+    },
+    {
+      "range": "900m²",
+      "count": 147
+    },
+    {
+      "range": "1000m²",
+      "count": 11
+    }
+  ],
+  "scatterData": [
+    {
+      "suburb": "Murray Bridge",
+      "market": "Murray Bridge",
+      "medPsm": 220,
+      "medSize": 638,
+      "total": 839
+    },
+    {
+      "suburb": "Winter Valley",
+      "market": "Ballarat",
+      "medPsm": 611,
+      "medSize": 448,
+      "total": 828
+    },
+    {
+      "suburb": "Wangaratta",
+      "market": "Wangaratta",
+      "medPsm": 255,
+      "medSize": 660,
+      "total": 676
+    },
+    {
+      "suburb": "Alfredton",
+      "market": "Ballarat",
+      "medPsm": 387,
+      "medSize": 512,
+      "total": 586
+    },
+    {
+      "suburb": "Smythes Creek",
+      "market": "Ballarat",
+      "medPsm": 451,
+      "medSize": 512,
+      "total": 353
+    },
+    {
+      "suburb": "Lucas",
+      "market": "Ballarat",
+      "medPsm": 567,
+      "medSize": 544,
+      "total": 301
+    },
+    {
+      "suburb": "Bonshaw",
+      "market": "Ballarat",
+      "medPsm": 545,
+      "medSize": 451,
+      "total": 238
+    },
+    {
+      "suburb": "Delacombe",
+      "market": "Ballarat",
+      "medPsm": 263,
+      "medSize": 555,
+      "total": 194
+    },
+    {
+      "suburb": "Brown Hill",
+      "market": "Ballarat",
+      "medPsm": 479,
+      "medSize": 802,
+      "total": 190
+    },
+    {
+      "suburb": "Sebastopol",
+      "market": "Ballarat",
+      "medPsm": 498,
+      "medSize": 485,
+      "total": 110
+    },
+    {
+      "suburb": "Invermay Park",
+      "market": "Ballarat",
+      "medPsm": 535,
+      "medSize": 600,
+      "total": 109
+    },
+    {
+      "suburb": "Miners Rest",
+      "market": "Ballarat",
+      "medPsm": 261,
+      "medSize": 646,
+      "total": 104
+    },
+    {
+      "suburb": "Ballarat East",
+      "market": "Ballarat",
+      "medPsm": 422,
+      "medSize": 741,
+      "total": 99
+    },
+    {
+      "suburb": "Canadian",
+      "market": "Ballarat",
+      "medPsm": 405,
+      "medSize": 524,
+      "total": 83
+    },
+    {
+      "suburb": "Mount Clear",
+      "market": "Ballarat",
+      "medPsm": 394,
+      "medSize": 612,
+      "total": 47
+    },
+    {
+      "suburb": "Buninyong",
+      "market": "Ballarat",
+      "medPsm": 384,
+      "medSize": 831,
+      "total": 40
+    },
+    {
+      "suburb": "Ballarat North",
+      "market": "Ballarat",
+      "medPsm": 304,
+      "medSize": 631,
+      "total": 34
+    },
+    {
+      "suburb": "Waldara",
+      "market": "Wangaratta",
+      "medPsm": 425,
+      "medSize": 820,
+      "total": 32
+    },
+    {
+      "suburb": "Wendouree",
+      "market": "Ballarat",
+      "medPsm": 280,
+      "medSize": 660,
+      "total": 23
+    },
+    {
+      "suburb": "Mount Helen",
+      "market": "Ballarat",
+      "medPsm": 284,
+      "medSize": 817,
+      "total": 22
+    },
+    {
+      "suburb": "Mount Pleasant",
+      "market": "Ballarat",
+      "medPsm": 448,
+      "medSize": 460,
+      "total": 22
+    },
+    {
+      "suburb": "Creswick",
+      "market": "Ballarat",
+      "medPsm": 375,
+      "medSize": 534,
+      "total": 22
+    },
+    {
+      "suburb": "Nerrina",
+      "market": "Ballarat",
+      "medPsm": 395,
+      "medSize": 706,
+      "total": 20
+    },
+    {
+      "suburb": "Smythesdale",
+      "market": "Ballarat",
+      "medPsm": 304,
+      "medSize": 654,
+      "total": 17
+    },
+    {
+      "suburb": "Golden Point",
+      "market": "Ballarat",
+      "medPsm": 392,
+      "medSize": 585,
+      "total": 11
+    },
+    {
+      "suburb": "Ballarat Central",
+      "market": "Ballarat",
+      "medPsm": 417,
+      "medSize": 532,
+      "total": 11
+    },
+    {
+      "suburb": "Black Hill",
+      "market": "Ballarat",
+      "medPsm": 413,
+      "medSize": 634,
+      "total": 10
+    },
+    {
+      "suburb": "Lake Gardens",
+      "market": "Ballarat",
+      "medPsm": 647,
+      "medSize": 506,
+      "total": 6
+    },
+    {
+      "suburb": "Redan",
+      "market": "Ballarat",
+      "medPsm": 349,
+      "medSize": 459,
+      "total": 5
+    }
+  ],
+  "totalClean": 5052
+}

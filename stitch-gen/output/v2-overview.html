@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grange Land Intelligence | Victoria Market Analytics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed-variant": "#005049",
+                        "surface-container-high": "#e7e8ea",
+                        "surface": "#f8f9fb",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#00211e",
+                        "primary-fixed": "#d8e2ff",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#a3ecf0",
+                        "surface-container-highest": "#e1e2e4",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f0f1f3",
+                        "primary": "#00020a",
+                        "on-surface-variant": "#44474f",
+                        "surface-dim": "#d9dadc",
+                        "secondary-fixed-dim": "#8ad3d7",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#edeef0",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-fixed-dim": "#b1c6f9",
+                        "tertiary-fixed": "#84f5e8",
+                        "surface-bright": "#f8f9fb",
+                        "tertiary": "#000202",
+                        "on-primary-fixed-variant": "#314671",
+                        "on-background": "#191c1e",
+                        "on-secondary-fixed": "#002021",
+                        "on-primary-container": "#7084b3",
+                        "secondary": "#14696d",
+                        "outline-variant": "#c5c6d0",
+                        "on-primary-fixed": "#001a42",
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary-fixed": "#00201d",
+                        "on-secondary-fixed-variant": "#004f53",
+                        "tertiary-fixed-dim": "#66d9cc",
+                        "secondary-fixed": "#a6eff3",
+                        "primary-container": "#001b44",
+                        "outline": "#75777f",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#009589",
+                        "on-surface": "#191c1e",
+                        "surface-tint": "#495e8a",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#b1c6f9",
+                        "surface-variant": "#e1e2e4",
+                        "on-secondary-container": "#1b6d71",
+                        "error": "#ba1a1a",
+                        "background": "#f8f9fb"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+            font-size: 20px;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Manrope', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- SideNavBar Shell -->
+<aside class="fixed left-0 top-0 h-full flex flex-col py-8 px-4 z-50 bg-[#001b44] dark:bg-[#00020a] docked left-0 h-full w-64 shadow-[0_12px_32px_-4px_rgba(0,27,68,0.08)]">
+<div class="mb-10 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-gradient-to-br from-secondary-fixed-dim to-secondary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">landscape</span>
+</div>
+<div>
+<h1 class="text-xl font-extrabold tracking-tighter text-white font-headline">Grange</h1>
+<p class="font-inter tracking-wide uppercase text-[10px] text-slate-400">Land Intelligence</p>
+</div>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 bg-white/10 text-[#a3ecf0] border-r-4 border-[#a3ecf0] font-bold" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-manrope text-sm">Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors text-slate-400 hover:text-white hover:bg-white/5" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-manrope text-sm">Corridors</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors text-slate-400 hover:text-white hover:bg-white/5" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-manrope text-sm">Analysis</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors text-slate-400 hover:text-white hover:bg-white/5" href="#">
+<span class="material-symbols-outlined">speed</span>
+<span class="font-manrope text-sm">Velocity</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg transition-colors text-slate-400 hover:text-white hover:bg-white/5" href="#">
+<span class="material-symbols-outlined">compare_arrows</span>
+<span class="font-manrope text-sm">Benchmarks</span>
+</a>
+</nav>
+<div class="mt-auto px-4 pt-6 border-t border-white/10">
+<div class="flex items-center gap-3">
+<img alt="Grange Logo" class="w-10 h-10 rounded-full border-2 border-white/20" data-alt="professional male portrait with minimalist office background soft studio lighting executive headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5OkNTD9qCkkJa15EMtGYBVR2b6sh-rbUvvWV6Y9MGTTc5phQHx-HEVhEqE4YmGQXGbD3r4j_-d2-WPM9EgKnselrLlHOVhxilCPBZdc2IL34xxAwx5VAwi5jlmDBJuZz-a1RCf8w4s5aBgdQG6PSxBPbVQaLJw0kONxMoqIIooLTj6-FPe7bmNfR7SLdN1o3HGFuQYQrsnsTC1ryMJy6jqAVaxswVSNtn5YtpqGdz_CpS9H_18Jdfw_7xEuop23DSNppeFu0P3Qsb"/>
+<div class="overflow-hidden">
+<p class="text-xs font-bold text-white truncate">Marcus Thorne</p>
+<p class="text-[10px] text-slate-400 uppercase tracking-wider">Senior Analyst</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 min-h-screen">
+<!-- TopNavBar Shell -->
+<header class="sticky top-0 z-40 flex items-center justify-between px-8 h-16 bg-[#f8f9fb]/85 backdrop-blur-md border-b border-transparent">
+<div class="flex items-center flex-1 max-w-xl">
+<div class="relative w-full group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface-container-low border-none focus:ring-0 focus:border-b-2 focus:border-secondary rounded-lg pl-10 pr-4 py-2 text-sm font-manrope text-on-surface placeholder:text-outline transition-all" placeholder="Search by Suburb, LGA, or Corridor..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-4 text-outline">
+<button class="hover:text-secondary transition-colors"><span class="material-symbols-outlined">notifications</span></button>
+<button class="hover:text-secondary transition-colors"><span class="material-symbols-outlined">settings</span></button>
+<button class="hover:text-secondary transition-colors"><span class="material-symbols-outlined">help_outline</span></button>
+</div>
+<div class="h-8 w-[1px] bg-outline-variant/30"></div>
+<div class="flex items-center gap-3">
+<span class="text-xs font-bold font-manrope text-on-surface uppercase tracking-widest">Market Status:</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container text-[10px] font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                        ACTIVE
+                    </span>
+</div>
+</div>
+</header>
+<!-- Content Area -->
+<div class="p-8 space-y-8">
+<!-- Page Header -->
+<div class="flex items-end justify-between">
+<div>
+<h2 class="text-3xl font-extrabold tracking-tight font-headline text-primary-container">Market Overview</h2>
+<p class="text-on-surface-variant font-body mt-1">Victoria Residential Land Intelligence &amp; Analytics</p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container-highest text-on-surface text-sm font-semibold flex items-center gap-2 hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                        Last 30 Days
+                    </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-white text-sm font-semibold flex items-center gap-2 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm">download</span>
+                        Export Report
+                    </button>
+</div>
+</div>
+<!-- Bento Grid - KPIs -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- Lot Count -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border-l-4 border-primary-container group hover:bg-white transition-all">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest font-body">Available Lots</p>
+<div class="mt-2 flex items-baseline gap-2">
+<h3 class="text-2xl font-extrabold font-headline text-primary-container">5,052</h3>
+<span class="text-[10px] font-bold text-secondary">+12.4%</span>
+</div>
+</div>
+<!-- Avg Price -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border-l-4 border-secondary group hover:bg-white transition-all">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest font-body">Avg. Price</p>
+<div class="mt-2 flex items-baseline gap-2">
+<h3 class="text-2xl font-extrabold font-headline text-primary-container">$180K</h3>
+<span class="text-[10px] font-bold text-error">-0.8%</span>
+</div>
+</div>
+<!-- Price / m2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border-l-4 border-tertiary-fixed-dim group hover:bg-white transition-all">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest font-body">Rate / m²</p>
+<div class="mt-2 flex items-baseline gap-2">
+<h3 class="text-2xl font-extrabold font-headline text-primary-container">$316</h3>
+<span class="text-[10px] font-bold text-secondary">+2.1%</span>
+</div>
+</div>
+<!-- Lot Size -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border-l-4 border-primary group hover:bg-white transition-all">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest font-body">Avg. Size</p>
+<div class="mt-2 flex items-baseline gap-2">
+<h3 class="text-2xl font-extrabold font-headline text-primary-container">537m²</h3>
+<span class="text-[10px] font-bold text-outline">Flat</span>
+</div>
+</div>
+<!-- Sold -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border-l-4 border-on-secondary-container group hover:bg-white transition-all">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest font-body">Lots Sold</p>
+<div class="mt-2 flex items-baseline gap-2">
+<h3 class="text-2xl font-extrabold font-headline text-primary-container">4,164</h3>
+<span class="text-[10px] font-bold text-secondary">+5.8%</span>
+</div>
+</div>
+<!-- Listed -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border-l-4 border-outline group hover:bg-white transition-all">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest font-body">New Listings</p>
+<div class="mt-2 flex items-baseline gap-2">
+<h3 class="text-2xl font-extrabold font-headline text-primary-container">761</h3>
+<span class="text-[10px] font-bold text-secondary">+1.2%</span>
+</div>
+</div>
+</div>
+<!-- Analysis Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Map Visualization -->
+<div class="lg:col-span-8 space-y-6">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col h-[600px]">
+<div class="p-6 flex items-center justify-between bg-white border-b border-surface-container-high">
+<div>
+<h3 class="font-headline font-extrabold text-lg text-primary-container">Victoria Corridor Mapping</h3>
+<p class="text-xs text-on-surface-variant">Spatial distribution of development activity</p>
+</div>
+<div class="flex bg-surface-container rounded-lg p-1">
+<button class="px-3 py-1 text-[10px] font-bold bg-white rounded shadow-sm">PRICING</button>
+<button class="px-3 py-1 text-[10px] font-bold text-outline">VOLUME</button>
+<button class="px-3 py-1 text-[10px] font-bold text-outline">DEMAND</button>
+</div>
+</div>
+<div class="flex-1 relative bg-surface-container-low overflow-hidden">
+<img alt="Regional Map" class="w-full h-full object-cover opacity-60 grayscale mix-blend-multiply" data-alt="minimalist architectural map of victoria australia regions with clean white aesthetic and subtle topographical lines" data-location="Victoria, Australia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbvqwFbouXMqHsl60O3ywJdENuWn-XKnBiFWtuId5e_TsxoIkGeN3nKjyp2u1LGK20uvyR0g0AF7LZJ0p82UgQWS8VZgKlwTHh3uiCkN4UdVHi1IreN8P4n-_QaUTZme24T9o-oXnuwpWjdsQADuQyDiPs_HuhTUC32E4H1EkvMvFd8fUvj6KfUjGh0iyiZszHSi_kEL27orbsgNJVJ_6kmY-h_oUVKPide5yU2Ekhi6qcS7xo3GIAJQMcu8VPci9fmRuM4qlxUMOf"/>
+<!-- Interactive Map Markers Overlays (Simulated) -->
+<div class="absolute inset-0 p-12 pointer-events-none">
+<div class="absolute top-1/4 left-1/3 w-24 h-24 bg-secondary/20 border-2 border-secondary rounded-full flex items-center justify-center animate-pulse pointer-events-auto cursor-pointer">
+<div class="bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded">Northern</div>
+</div>
+<div class="absolute top-1/2 right-1/4 w-32 h-32 bg-primary-container/20 border-2 border-primary-container rounded-full flex items-center justify-center pointer-events-auto cursor-pointer">
+<div class="bg-primary-container text-white text-[10px] font-bold px-2 py-1 rounded">Eastern</div>
+</div>
+<div class="absolute bottom-1/3 left-1/4 w-40 h-40 bg-tertiary-fixed-dim/30 border-2 border-tertiary-fixed-dim rounded-full flex items-center justify-center pointer-events-auto cursor-pointer">
+<div class="bg-tertiary-fixed-dim text-primary-container text-[10px] font-bold px-2 py-1 rounded">Western</div>
+</div>
+</div>
+<!-- Map Legend -->
+<div class="absolute bottom-6 left-6 p-4 bg-white/90 backdrop-blur rounded-lg border border-surface-container-high shadow-lg flex flex-col gap-3">
+<p class="text-[10px] font-bold text-primary-container uppercase tracking-widest mb-1">Growth Intensity</p>
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span>
+<span class="text-xs font-semibold text-on-surface-variant">High Density (&gt; 20%)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span class="text-xs font-semibold text-on-surface-variant">Moderate (10-20%)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-sm bg-tertiary-fixed-dim"></span>
+<span class="text-xs font-semibold text-on-surface-variant">Stable (0-10%)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Growth Comparisons -->
+<div class="lg:col-span-4 space-y-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-transparent h-full">
+<div class="mb-8">
+<h3 class="font-headline font-extrabold text-lg text-primary-container">Regional Growth</h3>
+<p class="text-xs text-on-surface-variant">Annual price appreciation benchmarks</p>
+</div>
+<div class="space-y-8">
+<!-- Growth Bar 1 -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="text-xs font-bold text-primary-container font-manrope">WESTERN CORRIDOR</span>
+<span class="text-sm font-extrabold text-secondary font-headline">+14.2%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-none overflow-hidden">
+<div class="h-full bg-secondary" style="width: 82%"></div>
+</div>
+<p class="text-[10px] text-outline">Lead suburb: Tarneit (18.4%)</p>
+</div>
+<!-- Growth Bar 2 -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="text-xs font-bold text-primary-container font-manrope">NORTHERN GROWTH</span>
+<span class="text-sm font-extrabold text-secondary font-headline">+9.8%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-none overflow-hidden">
+<div class="h-full bg-secondary" style="width: 65%"></div>
+</div>
+<p class="text-[10px] text-outline">Lead suburb: Mickleham (11.2%)</p>
+</div>
+<!-- Growth Bar 3 -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="text-xs font-bold text-primary-container font-manrope">SOUTH EASTERN</span>
+<span class="text-sm font-extrabold text-primary font-headline">+4.5%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-none overflow-hidden">
+<div class="h-full bg-primary-container" style="width: 40%"></div>
+</div>
+<p class="text-[10px] text-outline">Lead suburb: Clyde North (6.1%)</p>
+</div>
+<!-- Growth Bar 4 -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="text-xs font-bold text-primary-container font-manrope">GEELONG &amp; SURROUNDS</span>
+<span class="text-sm font-extrabold text-primary font-headline">+2.1%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-none overflow-hidden">
+<div class="h-full bg-primary-container" style="width: 25%"></div>
+</div>
+<p class="text-[10px] text-outline">Lead suburb: Armstrong Creek (3.4%)</p>
+</div>
+</div>
+<div class="mt-12 p-4 bg-primary-container rounded-lg relative overflow-hidden group">
+<div class="relative z-10">
+<h4 class="text-white font-headline font-bold text-sm">Need deep-dive analysis?</h4>
+<p class="text-blue-200 text-[10px] mt-1">Access custom demographic datasets.</p>
+<button class="mt-4 w-full bg-secondary-container text-on-secondary-container py-2 rounded font-bold text-[10px] hover:bg-secondary-fixed transition-colors">UPGRADE TO PRO</button>
+</div>
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-white/10 text-8xl pointer-events-none group-hover:scale-110 transition-transform">insights</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Data Table Section -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-transparent overflow-hidden">
+<div class="p-6 flex items-center justify-between border-b border-surface-container-high">
+<h3 class="font-headline font-extrabold text-lg text-primary-container">Suburban Intelligence Ledger</h3>
+<div class="flex items-center gap-3">
+<div class="flex items-center bg-surface-container-low px-3 py-1.5 rounded-lg border-b-2 border-secondary">
+<span class="material-symbols-outlined text-outline text-sm mr-2">filter_list</span>
+<span class="text-xs font-bold text-primary-container">Filter: All LGAs</span>
+</div>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/50">
+<th class="px-6 py-4 text-[10px] font-bold text-outline uppercase tracking-wider">Suburb Name</th>
+<th class="px-6 py-4 text-[10px] font-bold text-outline uppercase tracking-wider">LGA</th>
+<th class="px-6 py-4 text-[10px] font-bold text-outline uppercase tracking-wider text-right">Growth</th>
+<th class="px-6 py-4 text-[10px] font-bold text-outline uppercase tracking-wider text-right">Avg. Price</th>
+<th class="px-6 py-4 text-[10px] font-bold text-outline uppercase tracking-wider text-center">Efficiency</th>
+<th class="px-6 py-4 text-[10px] font-bold text-outline uppercase tracking-wider">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high">
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary-container font-manrope">Tarneit</span>
+<span class="text-[10px] text-outline">Western Corridor</span>
+</div>
+</td>
+<td class="px-6 py-4 text-xs font-semibold text-on-surface-variant">Wyndham City</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-extrabold text-secondary">+18.4%</span>
+</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-bold text-primary-container">$215,000</span>
+</td>
+<td class="px-6 py-4">
+<div class="w-24 mx-auto h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 92%"></div>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded bg-secondary-container/50 text-on-secondary-container text-[10px] font-bold">STABLE</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary-container font-manrope">Mickleham</span>
+<span class="text-[10px] text-outline">Northern Growth</span>
+</div>
+</td>
+<td class="px-6 py-4 text-xs font-semibold text-on-surface-variant">Hume City</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-extrabold text-secondary">+11.2%</span>
+</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-bold text-primary-container">$192,500</span>
+</td>
+<td class="px-6 py-4">
+<div class="w-24 mx-auto h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 78%"></div>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded bg-error-container/30 text-error text-[10px] font-bold">OVERSUPPLY</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary-container font-manrope">Clyde North</span>
+<span class="text-[10px] text-outline">South East</span>
+</div>
+</td>
+<td class="px-6 py-4 text-xs font-semibold text-on-surface-variant">City of Casey</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-extrabold text-primary">+6.1%</span>
+</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-bold text-primary-container">$248,000</span>
+</td>
+<td class="px-6 py-4">
+<div class="w-24 mx-auto h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary-container" style="width: 45%"></div>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded bg-secondary-container/50 text-on-secondary-container text-[10px] font-bold">STABLE</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/30 transition-colors">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary-container font-manrope">Rockbank</span>
+<span class="text-[10px] text-outline">Western Corridor</span>
+</div>
+</td>
+<td class="px-6 py-4 text-xs font-semibold text-on-surface-variant">Melton City</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-extrabold text-secondary">+14.9%</span>
+</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-bold text-primary-container">$175,000</span>
+</td>
+<td class="px-6 py-4">
+<div class="w-24 mx-auto h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 85%"></div>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded bg-secondary-container text-on-secondary-container text-[10px] font-bold">HOT</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-4 bg-surface-container-low/30 border-t border-surface-container-high flex justify-between items-center">
+<p class="text-[10px] text-outline font-bold">SHOWING 4 OF 124 SUBURBS</p>
+<div class="flex gap-2">
+<button class="p-1 rounded bg-white border border-surface-container-high shadow-sm text-primary-container"><span class="material-symbols-outlined text-sm">chevron_left</span></button>
+<button class="p-1 rounded bg-white border border-surface-container-high shadow-sm text-primary-container"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Contextual FAB (Suppressed based on rules for dashboard focus) -->
+<button class="fixed bottom-8 right-8 w-14 h-14 rounded-full bg-gradient-to-br from-primary-container to-primary text-white shadow-2xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all z-50">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+</body></html>

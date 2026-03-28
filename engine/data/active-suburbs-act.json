@@ -1,0 +1,380 @@
+[
+  {
+    "suburb": "DENMAN PROSPECT",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 96
+  },
+  {
+    "suburb": "WHITLAM",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 66
+  },
+  {
+    "suburb": "MACNAMARA",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 55
+  },
+  {
+    "suburb": "TAYLOR",
+    "postcode": "2913",
+    "state": "ACT",
+    "listings": 45
+  },
+  {
+    "suburb": "STRATHNAIRN",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 41
+  },
+  {
+    "suburb": "MELBA",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 40
+  },
+  {
+    "suburb": "MACGREGOR",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 33
+  },
+  {
+    "suburb": "YARRALUMLA",
+    "postcode": "2600",
+    "state": "ACT",
+    "listings": 32
+  },
+  {
+    "suburb": "LAWSON",
+    "postcode": "2617",
+    "state": "ACT",
+    "listings": 32
+  },
+  {
+    "suburb": "RED HILL",
+    "postcode": "2603",
+    "state": "ACT",
+    "listings": 31
+  },
+  {
+    "suburb": "COOMBS",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 31
+  },
+  {
+    "suburb": "ARANDA",
+    "postcode": "2614",
+    "state": "ACT",
+    "listings": 31
+  },
+  {
+    "suburb": "DEAKIN",
+    "postcode": "2600",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "AINSLIE",
+    "postcode": "2602",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "DOWNER",
+    "postcode": "2602",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "O’CONNOR",
+    "postcode": "2602",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "O'CONNOR",
+    "postcode": "2602",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "WATSON",
+    "postcode": "2602",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "FORREST",
+    "postcode": "2603",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "CURTIN",
+    "postcode": "2605",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "GARRAN",
+    "postcode": "2605",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "HUGHES",
+    "postcode": "2605",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "CHIFLEY",
+    "postcode": "2606",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "LYONS",
+    "postcode": "2606",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "PHILLIP",
+    "postcode": "2606",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "FARRER",
+    "postcode": "2607",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "MAWSON",
+    "postcode": "2607",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "PEARCE",
+    "postcode": "2607",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "TORRENS",
+    "postcode": "2607",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "CHAPMAN",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "DUFFY",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "FISHER",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "HOLDER",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "RIVETT",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "STIRLING",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "WARAMANGA",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "WESTON",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "WRIGHT",
+    "postcode": "2611",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "TURNER",
+    "postcode": "2612",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "MACQUARIE",
+    "postcode": "2614",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "SCULLIN",
+    "postcode": "2614",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "WEETANGERA",
+    "postcode": "2614",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "CHARNWOOD",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "FLYNN",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "HIGGINS",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "HOLT",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "LATHAM",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "SPENCE",
+    "postcode": "2615",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "KAMBAH",
+    "postcode": "2902",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "WANNIASSA",
+    "postcode": "2903",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "CONDER",
+    "postcode": "2906",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "CASEY",
+    "postcode": "2913",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "FRANKLIN",
+    "postcode": "2913",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "BONNER",
+    "postcode": "2914",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "FORDE",
+    "postcode": "2914",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "JACKA",
+    "postcode": "2914",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "MONCRIEFF",
+    "postcode": "2914",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "THROSBY",
+    "postcode": "2914",
+    "state": "ACT",
+    "listings": 24
+  },
+  {
+    "suburb": "DICKSON",
+    "postcode": "2602",
+    "state": "ACT",
+    "listings": 8
+  },
+  {
+    "suburb": "NARRABUNDAH",
+    "postcode": "2604",
+    "state": "ACT",
+    "listings": 8
+  },
+  {
+    "suburb": "BRADDON",
+    "postcode": "2612",
+    "state": "ACT",
+    "listings": 8
+  },
+  {
+    "suburb": "CAMPBELL",
+    "postcode": "2612",
+    "state": "ACT",
+    "listings": 8
+  },
+  {
+    "suburb": "CALWELL",
+    "postcode": "2905",
+    "state": "ACT",
+    "listings": 8
+  }
+]

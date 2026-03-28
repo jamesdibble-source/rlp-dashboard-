@@ -1,0 +1,17 @@
+{
+  "name": "rlp-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build-dashboard-v2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "cheerio": "^1.2.0",
+    "pg": "^8.20.0"
+  }
+}

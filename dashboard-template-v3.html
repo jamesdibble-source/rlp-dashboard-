@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Grange Land Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#fcf9f1","surface":"#fcf9f1","surface-low":"#f6f4eb","surface-mid":"#f0eee6","surface-high":"#eae8e0","surface-dim":"#dcdad2","on-surface":"#1b1c17","primary":"#513561","primary-c":"#6a4c7a","secondary":"#486456","tertiary":"#61323a","tertiary-c":"#7c4951"},fontFamily:{"serif":["Playfair Display","serif"],"sans":["Inter","sans-serif"]}}}}</script>
+<style>
+body{font-family:'Inter',sans-serif;background:#fcf9f1;color:#1b1c17}
+.grain{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.03;pointer-events:none}
+.sf::-webkit-scrollbar{width:4px}.sf::-webkit-scrollbar-thumb{background:#dcdad2;border-radius:4px}
+.nav-i{transition:all .15s;border-left:2px solid transparent;color:rgba(27,28,23,.55)}
+.nav-i.ac{color:#6a4c7a;font-weight:700;border-left-color:#6a4c7a;background:#f6f4eb}
+.nav-i:hover:not(.ac){background:#f6f4eb}
+.sp{transition:all .2s}.sp:hover{background:#eae8e0}.sp.ac{background:#6a4c7a;color:#fff}
+.fi{animation:fi .35s ease}@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+.bv{transition:height .6s cubic-bezier(.4,0,.2,1)}
+.bh{transition:width .8s cubic-bezier(.4,0,.2,1)}
+tr.dr:hover td{background:#f6f4eb}
+th{cursor:pointer;user-select:none}
+.sort-a::after{content:'▲';font-size:7px;margin-left:3px;opacity:.6}
+.sort-d::after{content:'▼';font-size:7px;margin-left:3px;opacity:.6}
+.placeholder-panel{background:repeating-linear-gradient(45deg,#f6f4eb,#f6f4eb 10px,#f0eee6 10px,#f0eee6 20px)}
+</style>
+</head>
+<body class="h-screen overflow-hidden relative">
+<div class="absolute inset-0 grain"></div>
+
+<aside class="fixed left-0 top-0 h-full flex flex-col py-8 w-56 border-r border-[#dcdad2] bg-[#fcf9f1] z-20">
+  <div class="px-6 mb-10">
+    <img alt="Grange" class="h-9 w-auto object-contain mb-6" src="https://lh3.googleusercontent.com/aida/ADBb0ujaAK-9ft62u3dTI9Oaquh8Dqxz-rSaeVnBIpQiuY2ciMkuG6DRa2yCDB36Qog-lF8VKZQ2yF3cDBS7JGb9mBUpkAFACUL5bbIuGi-Xo8gnv5nIz2pSRuaHGd0MyvUwGHJuJsAGlBIQ8UHa2aWTBnXIm-memtnt5kPAXnXOkIqPW3XhF-Lkffb_qCM5iRoSjeRBl_GP7EWKZEWRebGgtT-Fr0elfbEvze5fZ3HZ5v7ITSz2J2ijwbW4laiD-ReU7l92aVPOxfJt"/>
+    <div class="text-[9px] tracking-[0.2em] text-[#1b1c17]/40 uppercase">Land Intelligence</div>
+  </div>
+  <nav class="flex-1 space-y-0.5" id="nav"></nav>
+  <div class="px-5 pt-6 border-t border-[#dcdad2] text-[9px] text-[#1b1c17]/30 uppercase tracking-wider">v3.0 · Real-time data</div>
+</aside>
+
+<main class="ml-56 h-screen overflow-y-auto sf bg-[#fcf9f1]" id="main">
+  <header class="flex justify-between items-center w-full px-10 h-14 border-b border-[#dcdad2] bg-[#fcf9f1] sticky top-0 z-10">
+    <span class="text-[#1b1c17] uppercase tracking-[0.2em] text-[10px] font-semibold" id="pgTitle">Overview</span>
+    <div class="flex items-center gap-6">
+      <div class="flex gap-1.5" id="sPills"></div>
+      <div class="flex items-center gap-2 cursor-pointer" onclick="toggleSold()">
+        <span class="text-[9px] uppercase tracking-[0.12em] font-semibold text-[#1b1c17]/45">Sold Only</span>
+        <div class="w-9 h-[18px] rounded-full bg-[#dcdad2] relative transition-colors" id="sT"><div class="w-3.5 h-3.5 rounded-full bg-white absolute top-[2px] left-[2px] transition-all shadow-sm" id="sD"></div></div>
+      </div>
+      <div class="relative"><input class="bg-transparent border-b border-[#dcdad2] focus:border-[#6a4c7a] focus:ring-0 text-[10px] uppercase tracking-widest py-0.5 pr-6 w-40 placeholder:text-[#1b1c17]/25" placeholder="Search suburb..." id="srcIn" oninput="searchTerm=this.value.toLowerCase();render()"/><span class="material-symbols-outlined absolute right-0 top-0.5 text-sm text-[#1b1c17]/50">search</span></div>
+    </div>
+  </header>
+  <div class="w-full max-w-[1400px] mx-auto px-10 py-10" id="content"></div>
+  <footer class="w-full max-w-[1400px] mx-auto px-10 pb-10 flex justify-between text-[8px] uppercase tracking-[0.35em] font-bold text-[#1b1c17]/25">
+    <span>© 2026 Grange Land Intelligence</span><span id="upd"></span>
+  </footer>
+</main>
+
+<script>
+const R=__DATA_INJECT__;
+let pg='overview',cState=null,soldOnly=false,searchTerm='',sortCol=null,sortDir='desc';
+const CL=['#513561','#486456','#61323a','#7c4951','#6a4c7a','#314c3f','#583b68','#8b5e3c','#4a6741','#6b4c3b'];
+const CC={Western:'#513561',Northern:'#486456','South Eastern':'#61323a','North East':'#7c4951',Ballarat:'#6a4c7a',Geelong:'#314c3f',Bendigo:'#583b68',Shepparton:'#486456','Murray Bridge':'#7c4951'};
+const pages=[
+  {id:'overview',icon:'dashboard',label:'Overview'},
+  {id:'pricing',icon:'trending_up',label:'Pricing'},
+  {id:'corridors',icon:'map',label:'Corridors'},
+  {id:'registry',icon:'analytics',label:'Registry'},
+  {id:'health',icon:'monitor_heart',label:'Market Health'},
+  {id:'compare',icon:'compare_arrows',label:'Cross-Market'}
+];
+
+function D(){return cState?R.states[cState]:R.all}
+function fmt(n){return n?'$'+Math.round(n).toLocaleString():'-'}
+function fK(n){if(!n)return'-';return n>=1e6?'$'+(n/1e6).toFixed(1)+'m':n>=1e3?'$'+Math.round(n/1e3)+'k':fmt(n)}
+function fN(n){return n?n.toLocaleString():'0'}
+function pct(a,b){return b?Math.round(a/b*100)+'%':'0%'}
+
+// Nav
+document.getElementById('nav').innerHTML=pages.map(p=>`<a class="nav-i flex items-center pl-5 py-2.5 ${p.id===pg?'ac':''}" href="#" onclick="go('${p.id}');return false"><span class="material-symbols-outlined mr-3 text-base" style="font-variation-settings:'FILL' ${p.id===pg?1:0}">${p.icon}</span><span class="text-[10px] uppercase tracking-[1px]">${p.label}</span></a>`).join('');
+
+function go(p){pg=p;document.querySelectorAll('.nav-i').forEach((el,i)=>{const a=pages[i].id===p;el.classList.toggle('ac',a);el.querySelector('.material-symbols-outlined').style.fontVariationSettings="'FILL' "+(a?1:0);});document.getElementById('pgTitle').textContent=pages.find(x=>x.id===p).label;render();}
+function toggleSold(){soldOnly=!soldOnly;document.getElementById('sT').style.background=soldOnly?'#6a4c7a':'#dcdad2';document.getElementById('sD').style.left=soldOnly?'20px':'2px';render();}
+function sortTbl(c){if(sortCol===c)sortDir=sortDir==='asc'?'desc':'asc';else{sortCol=c;sortDir='desc';}render();}
+
+// State pills
+function renderPills(){
+  const pills=['<button class="sp px-2.5 py-1 text-[8px] uppercase tracking-wider font-semibold rounded-full '+(cState===null?'ac':'bg-[#eae8e0] text-[#1b1c17]/55')+'" onclick="cState=null;renderPills();render()">All</button>'];
+  R.stateList.forEach(s=>{pills.push('<button class="sp px-2.5 py-1 text-[8px] uppercase tracking-wider font-semibold rounded-full '+(cState===s?'ac':'bg-[#eae8e0] text-[#1b1c17]/55')+'" onclick="cState=\''+s+'\';renderPills();render()">'+s+'</button>');});
+  document.getElementById('sPills').innerHTML=pills.join('');
+}
+
+// Helpers
+function sec(t,sub){return '<div class="mb-2"><span class="text-[10px] uppercase tracking-[0.35em] text-[#1b1c17]/40 font-bold">'+t+'</span>'+(sub?'<p class="text-[9px] text-[#1b1c17]/30 uppercase tracking-wider mt-1">'+sub+'</p>':'')+'</div>';}
+function panel(inner,cls){return '<div class="border border-[#dcdad2] p-8 bg-[#fcf9f1] '+(cls||'')+'">' + inner + '</div>';}
+function panelBg(inner,cls){return '<div class="p-8 bg-[#f6f4eb] border border-[#dcdad2] '+(cls||'')+'">' + inner + '</div>';}
+function placeholder(icon,title,desc){return '<div class="border border-[#dcdad2] p-8 bg-[#f6f4eb] flex flex-col items-center justify-center min-h-[200px] text-center"><span class="material-symbols-outlined text-4xl text-[#1b1c17]/15 mb-4">'+icon+'</span><span class="text-[11px] uppercase tracking-[0.3em] font-bold text-[#1b1c17]/50 mb-2">'+title+'</span><p class="text-[10px] text-[#1b1c17]/30 max-w-sm leading-relaxed">'+desc+'</p></div>';}
+function metric(label,val,sub){return '<div class="px-5"><span class="text-[9px] font-semibold tracking-widest uppercase text-[#888] mb-2 block">'+label+'</span><span class="font-sans text-4xl font-medium tracking-tighter text-[#111] block">'+val+'</span>'+(sub?'<span class="text-[9px] text-[#1b1c17]/35 mt-1 block">'+sub+'</span>':'')+'</div>';}
+
+function vBars(data,color,h){
+  if(!data||!data.length)return '<span class="text-[10px] text-[#1b1c17]/35">No data</span>';
+  const mx=Math.max(...data.map(d=>d.count));
+  return '<div class="flex items-end gap-1.5" style="height:'+(h||180)+'px">'+data.map((d,i)=>'<div class="flex-1 flex flex-col items-center justify-end h-full"><span class="text-[8px] font-semibold text-[#1b1c17]/45 mb-0.5">'+fN(d.count)+'</span><div class="w-full bv" style="height:'+Math.max(d.count/mx*100,2)+'%;background:'+(typeof color==='string'?color:CL[i%CL.length])+';opacity:.7;border-radius:1px 1px 0 0"></div></div>').join('')+'</div><div class="flex gap-1.5 mt-1.5">'+data.map(d=>'<div class="flex-1 text-center text-[7px] text-[#1b1c17]/40 uppercase tracking-wider font-semibold">'+d.bracket+'</div>').join('')+'</div>';
+}
+
+function hBars(data,vk,lFn,mx){
+  if(!data||!data.length)return '';
+  const m=mx||Math.max(...data.map(d=>d[vk]));
+  return data.map((d,i)=>'<div class="flex items-center gap-2 mb-1.5"><div class="w-24 text-right text-[10px] font-medium truncate">'+d.suburb+'</div><div class="flex-1 h-4 bg-[#eae8e0] overflow-hidden"><div class="h-full bh" style="width:'+Math.max(d[vk]/m*100,2)+'%;background:'+CL[i%CL.length]+';opacity:.6"></div></div><div class="w-16 text-right text-[10px] font-semibold text-[#513561]">'+lFn(d)+'</div></div>').join('');
+}
+
+function donut(data,sz){
+  if(!data||!data.length)return '';
+  const tot=data.reduce((s,d)=>s+d.total,0);let cum=0;
+  const r=sz/2,ir=sz*.32,cx=sz/2,cy=sz/2;
+  const ps=data.map((d,i)=>{const a=d.total/tot*360;const sa=cum;cum+=a;if(a>=359.9)return`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${CC[d.corridor]||CL[i%CL.length]}" opacity=".75"/><circle cx="${cx}" cy="${cy}" r="${ir}" fill="#f6f4eb"/>`;const la=a>180?1:0;const s1=Math.cos((sa-90)*Math.PI/180),c1=Math.sin((sa-90)*Math.PI/180),s2=Math.cos((sa+a-90)*Math.PI/180),c2=Math.sin((sa+a-90)*Math.PI/180);return`<path d="M${cx+ir*s1},${cy+ir*c1} L${cx+r*s1},${cy+r*c1} A${r},${r},0,${la},1,${cx+r*s2},${cy+r*c2} L${cx+ir*s2},${cy+ir*c2} A${ir},${ir},0,${la},0,${cx+ir*s1},${cy+ir*c1} Z" fill="${CC[d.corridor]||CL[i%CL.length]}" opacity=".75"/>`;});
+  const leg=data.map((d,i)=>`<div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5" style="background:${CC[d.corridor]||CL[i%CL.length]}"></span><span class="text-[9px] font-semibold text-[#1b1c17]/65">${d.corridor}</span><span class="text-[9px] text-[#1b1c17]/35 ml-0.5">${Math.round(d.total/tot*100)}%</span></div>`).join('');
+  return `<div class="flex items-center gap-8"><div class="relative" style="width:${sz}px;height:${sz}px"><svg viewBox="0 0 ${sz} ${sz}">${ps.join('')}</svg><div class="absolute inset-0 flex items-center justify-center"><div class="text-center"><span class="font-sans text-xl font-medium tracking-tight text-[#111]">${fN(tot)}</span><span class="block text-[7px] uppercase tracking-widest text-[#888] mt-0.5">lots</span></div></div></div><div class="space-y-1.5">${leg}</div></div>`;
+}
+
+function duneChart(data,w,h){
+  if(!data||!data.length)return '';
+  const mx=Math.max(...data.map(d=>d.count));
+  const pts=data.map((d,i)=>({x:Math.round(i/(data.length-1)*w),y:h-Math.round(d.count/mx*(h-30))-15}));
+  function smooth(pts,yo){const p=pts.map(pt=>({x:pt.x,y:Math.min(h,pt.y+(yo||0))}));let d=`M0,${h} L0,${p[0].y}`;for(let i=0;i<p.length-1;i++){const cx=(p[i].x+p[i+1].x)/2;d+=` Q${p[i].x},${p[i].y} ${cx},${Math.round((p[i].y+p[i+1].y)/2)}`;}d+=` L${w},${p[p.length-1].y} L${w},${h} Z`;return d;}
+  function line(pts,yo){const p=pts.map(pt=>({x:pt.x,y:Math.min(h,pt.y+(yo||0))}));let d=`M0,${p[0].y}`;for(let i=0;i<p.length-1;i++){const cx=(p[i].x+p[i+1].x)/2;d+=` Q${p[i].x},${p[i].y} ${cx},${Math.round((p[i].y+p[i+1].y)/2)}`;}d+=` L${w},${p[p.length-1].y}`;return d;}
+  return `<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 ${w} ${h}"><defs><linearGradient id="gs" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#486456" stop-opacity=".55"/><stop offset="100%" stop-color="#486456" stop-opacity="0"/></linearGradient><linearGradient id="gp" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#513561" stop-opacity=".45"/><stop offset="100%" stop-color="#513561" stop-opacity="0"/></linearGradient><linearGradient id="gr" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#61323a" stop-opacity=".6"/><stop offset="100%" stop-color="#61323a" stop-opacity="0"/></linearGradient></defs><path d="${smooth(pts,0)}" fill="url(#gs)"/><path d="${line(pts,0)}" fill="none" stroke="#486456" stroke-width=".5"/><path d="${smooth(pts,25)}" fill="url(#gp)"/><path d="${line(pts,25)}" fill="none" stroke="#513561" stroke-width=".8"/><path d="${smooth(pts,50)}" fill="url(#gr)"/><path d="${line(pts,50)}" fill="none" stroke="#61323a" stroke-width="1"/></svg>`;
+}
+
+// ──── PAGE RENDERERS ────
+function renderOverview(){
+  const d=D(),t=d.totals,c=d.corridors;
+  const alerts=c.slice(0,3).map((cr,i)=>`<div class="flex items-start gap-6 mb-6"><span class="font-sans text-4xl font-medium tracking-tight text-[#1A1A1A]/20">${String(i+1).padStart(2,'0')}</span><div><p class="font-bold text-[10px] uppercase tracking-widest text-[#1b1c17] mb-1">${cr.corridor}: ${fN(cr.total)} Lots · ${fK(cr.avg_price)}</p><p class="text-[10px] text-[#1b1c17]/50 leading-relaxed">$${cr.avg_rate}/m² · ${cr.avg_size}m² avg · ${pct(cr.sold,cr.total)} sold</p></div></div>`).join('');
+  
+  return `<div class="fi">
+    <div class="mb-8"><span class="text-[9px] uppercase tracking-[0.35em] text-[#1b1c17]/35 font-bold">${fN(t.total)} lots tracked · ${d.corridors.length} corridors · ${fN(t.sold)} sold · ${fN(t.listings)} listed</span></div>
+    <div class="grid grid-cols-6 border-t border-b border-[#dcdad2] py-8 mb-10">
+      ${metric('Total Lots',fN(t.total))}
+      ${metric('Median Price',fK(t.med_price))}
+      ${metric('Median $/m²','$'+t.med_rate)}
+      ${metric('Median Size',t.med_size+'m²')}
+      ${metric('Active Listed',fN(t.listings))}
+      ${metric('Months Stock',t.months_stock)}
+    </div>
+    <div class="grid grid-cols-5 gap-8 mb-10">
+      <div class="col-span-3 border border-[#dcdad2] p-8 bg-[#f6f4eb] relative overflow-hidden">
+        ${sec('Price Distribution','Peak: '+d.priceDist.reduce((a,b)=>a.count>b.count?a:b).bracket+' ('+fN(d.priceDist.reduce((a,b)=>a.count>b.count?a:b).count)+' lots)')}
+        <div class="h-56 w-full mt-4">${duneChart(d.priceDist,1000,280)}</div>
+      </div>
+      <div class="col-span-2 border border-[#dcdad2] p-8 bg-[#fcf9f1]">
+        ${sec('Market Composition','Corridor share by volume')}
+        <div class="mt-4">${donut(c,160)}</div>
+      </div>
+    </div>
+    <div class="grid grid-cols-5 gap-8 mb-10">
+      <div class="col-span-3">${placeholder('show_chart','Quarterly Sales & Price Trend','Historical data accumulates from daily scraping. First trend charts appear after 1 quarter of data collection.')}</div>
+      <div class="col-span-2 space-y-6"><div class="border-b border-[#1b1c17] pb-2 mb-4"><span class="text-[10px] uppercase tracking-[0.35em] text-[#1b1c17] font-bold">Market Intelligence</span></div>${alerts}</div>
+    </div>
+    ${R.stateList.length>1?`<div class="mb-10">${sec('Cross-Market Snapshot','All states in database')}<div class="grid grid-cols-${Math.min(R.stateList.length,4)} gap-4">${R.stateList.map(s=>{const sd=R.states[s].totals;return`<div class="border border-[#dcdad2] p-6 bg-[#fcf9f1]"><span class="text-lg font-serif text-[#1b1c17] block mb-3">${s}</span><span class="text-2xl font-medium tracking-tight text-[#111]">${fK(sd.med_price)}</span><span class="text-[9px] text-[#1b1c17]/40 ml-2">median</span><div class="mt-3 flex gap-4 text-[10px] text-[#1b1c17]/55"><span>$${sd.med_rate}/m²</span><span>${sd.med_size}m²</span><span>${fN(sd.total)} lots</span></div></div>`;}).join('')}</div></div>`:''}
+    <div class="w-full h-24 relative overflow-hidden border-t border-[#dcdad2]"><img class="w-full h-full object-cover grayscale opacity-10 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgVsKgtAq8C6WZb5_ZscU3PpSk288LmRvUtfQdGyACqGWWuJHV8V48BAsVYTx9dmI7yzPUjWEAAVx3HVHJLiEJmioZ-EDZIr6aHwthFTUWe1H0M038NXNL706U6VsMq5MyqmsZoyMf-BEoLoroak9S1PzBH1LumZiZEeimMBYKE35s_z5f5KWQmEzi-ygdQHlgNaMCbK1jepXDrKEl9k7LKPu7BZSTlko7zCl2_b7zEl_cxN0IfqmPeOzMIrv7awh522WuZ6O9rlk"/><div class="absolute inset-0 bg-gradient-to-t from-[#fcf9f1] to-transparent"></div></div>
+  </div>`;
+}
+
+function renderPricing(){
+  const d=D();
+  return `<div class="fi">
+    <div class="mb-8">${sec('Price Analysis','Distribution, rates and suburb rankings')}</div>
+    <div class="grid grid-cols-3 gap-8 mb-10">
+      ${panelBg(sec('Price Distribution','Lot count by $50K bands')+`<div class="mt-4">${vBars(d.priceDist,'#513561',170)}</div>`)}
+      ${panelBg(sec('Lot Size Distribution','50m² bands')+`<div class="mt-4">${vBars(d.sizeDist,'#486456',170)}</div>`)}
+      ${panelBg(sec('$/m² Rate Distribution','Price efficiency')+`<div class="mt-4">${vBars(d.rateDist,'#61323a',170)}</div>`)}
+    </div>
+    <div class="grid grid-cols-2 gap-8 mb-10">
+      ${placeholder('timeline','Price & Lot Size Over Time — Dual Axis','The key chart: lot price (left axis) vs lot size (right axis) over time. Shows the affordability squeeze — when prices hit $300-350K, lot sizes start shrinking. Populates as historical scraping data accumulates.')}
+      ${placeholder('speed','Affordability Ceiling Analysis','Shows where lot prices cluster relative to the $300-350K affordability threshold. Highlights markets under compression.')}
+    </div>
+    <div class="grid grid-cols-2 gap-8 mb-10">
+      ${panel(sec('Premium Index','Highest $/m² suburbs (min 3 lots)')+`<div class="mt-4">${hBars(d.topRate,'avg_rate',d=>'$'+d.avg_rate)}</div>`)}
+      ${panel(sec('Value Index','Lowest $/m² suburbs (min 3 lots)')+`<div class="mt-4">${hBars(d.bottomRate,'avg_rate',d=>'$'+d.avg_rate)}</div>`)}
+    </div>
+  </div>`;
+}
+
+function renderCorridors(){
+  const d=D();
+  const cards=d.corridors.map(c=>{
+    const sp=Math.round(c.sold/c.total*100);
+    const subs=d.suburbs.filter(s=>s.corridor===c.corridor).slice(0,8);
+    return `<div class="border border-[#dcdad2] p-8 bg-[#fcf9f1] mb-6 fi">
+      <div class="flex justify-between items-start mb-5">
+        <div><h3 class="text-xl font-serif text-[#1b1c17] mb-0.5">${c.corridor}</h3><span class="text-[9px] text-[#1b1c17]/40 uppercase tracking-wider">${fN(c.total)} lots · ${fN(d.lgas.filter(l=>l.corridor===c.corridor).length)} LGAs</span></div>
+        <div class="text-right"><span class="font-sans text-3xl font-medium tracking-tight text-[#111]">${fK(c.avg_price)}</span><span class="text-[8px] block uppercase tracking-widest text-[#888] mt-0.5">avg price</span></div>
+      </div>
+      <div class="h-5 bg-[#eae8e0] flex mb-5 overflow-hidden"><div class="h-full" style="width:${sp}%;background:${CC[c.corridor]||'#513561'};opacity:.8"></div><div class="h-full" style="width:${100-sp}%;background:${CC[c.corridor]||'#513561'};opacity:.25"></div></div>
+      <div class="flex gap-6 mb-5 text-[10px]">
+        <div><span class="text-[8px] uppercase tracking-widest text-[#888] block">$/m²</span><span class="text-lg font-medium">$${c.avg_rate}</span></div>
+        <div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Avg Size</span><span class="text-lg font-medium">${c.avg_size}m²</span></div>
+        <div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Sold</span><span class="text-lg font-medium text-[#486456]">${fN(c.sold)}</span></div>
+        <div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Listed</span><span class="text-lg font-medium text-[#61323a]">${fN(c.listings)}</span></div>
+      </div>
+      ${subs.length?`<div class="border-t border-[#dcdad2] pt-4"><span class="text-[8px] uppercase tracking-widest text-[#888] font-bold mb-2 block">Top Suburbs</span><div class="grid grid-cols-4 gap-2">${subs.map(s=>`<div class="bg-[#f6f4eb] p-2.5"><span class="text-[10px] font-medium block">${s.suburb}</span><span class="text-[9px] text-[#513561] font-semibold">${fmt(s.avg_price)}</span><span class="text-[8px] text-[#1b1c17]/35 ml-1">${fN(s.total)}</span></div>`).join('')}</div></div>`:''}
+      <div class="grid grid-cols-2 gap-4 mt-5">
+        ${placeholder('show_chart','Quarterly Sales Trend','Corridor volume over time — populates with historical data')}
+        ${placeholder('bubble_chart','Relative Value Position','$/m² vs price scatter — shows where this corridor sits vs neighbours')}
+      </div>
+    </div>`;
+  }).join('');
+  return `<div class="fi"><div class="mb-8">${sec('Growth Corridor Index','Comparative analysis')}</div>${cards}</div>`;
+}
+
+function renderRegistry(){
+  const d=D();
+  let subs=d.suburbs;
+  if(searchTerm)subs=subs.filter(s=>s.suburb.toLowerCase().includes(searchTerm)||(s.lga||'').toLowerCase().includes(searchTerm)||(s.corridor||'').toLowerCase().includes(searchTerm));
+  if(sortCol)subs=[...subs].sort((a,b)=>sortDir==='asc'?(a[sortCol]>b[sortCol]?1:-1):(a[sortCol]<b[sortCol]?1:-1));
+  const cols=[{k:'suburb',l:'Suburb',a:'left'},{k:'lga',l:'LGA',a:'left'},{k:'corridor',l:'Corridor',a:'left'},{k:'total',l:'Lots',a:'right'},{k:'sold',l:'Sold',a:'right'},{k:'listings',l:'Listed',a:'right'},{k:'avg_price',l:'Avg Price',a:'right'},{k:'avg_size',l:'Size',a:'right'},{k:'avg_rate',l:'$/m²',a:'right'}];
+  const th=cols.map(c=>`<th class="text-${c.a} text-[9px] font-bold uppercase tracking-[0.12em] text-[#888] py-2 px-2.5 ${sortCol===c.k?(sortDir==='asc'?'sort-a':'sort-d'):''}" onclick="sortTbl('${c.k}')">${c.l}</th>`).join('');
+  const tb=subs.slice(0,200).map(s=>`<tr class="dr"><td class="py-2 px-2.5 text-[11px] font-medium">${s.suburb}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${s.lga||'-'}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${s.corridor||'-'}</td><td class="py-2 px-2.5 text-[11px] text-right font-medium">${fN(s.total)}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#486456]">${fN(s.sold)}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#61323a]">${fN(s.listings)}</td><td class="py-2 px-2.5 text-[11px] text-right">${fmt(s.avg_price)}</td><td class="py-2 px-2.5 text-[11px] text-right">${s.avg_size}m²</td><td class="py-2 px-2.5 text-[11px] text-right font-semibold text-[#513561]">$${s.avg_rate}</td></tr>`).join('');
+  const activeKey=cState||'VIC';
+  const active=R.activeSuburbs[activeKey]||[];
+  return `<div class="fi">
+    <div class="mb-6">${sec('Parcel Ledger','Showing '+Math.min(subs.length,200)+' of '+subs.length+' suburbs'+(searchTerm?' matching "'+searchTerm+'"':''))}</div>
+    <div class="mb-8 p-6 bg-[#f6f4eb] border border-[#dcdad2]"><span class="text-[10px] uppercase tracking-[0.3em] font-bold text-[#1b1c17] mb-4 block">LGA Summary</span><div class="grid grid-cols-4 gap-3">${d.lgas.slice(0,8).map(l=>`<div class="bg-[#fcf9f1] p-3 border border-[#dcdad2]"><span class="text-[11px] font-medium block mb-0.5">${l.lga}</span><span class="text-xl font-medium text-[#111]">${fN(l.total)}</span><span class="text-[9px] text-[#1b1c17]/35 ml-1">lots</span><div class="mt-1.5"><span class="text-[9px] text-[#513561] font-semibold">$${l.avg_rate}/m²</span><span class="text-[9px] text-[#1b1c17]/35 ml-2">${fK(l.avg_price)}</span></div></div>`).join('')}</div></div>
+    <div class="border border-[#dcdad2] bg-[#fcf9f1] max-h-[500px] overflow-y-auto sf mb-8"><table class="w-full"><thead class="sticky top-0 bg-[#fcf9f1] border-b border-[#dcdad2]"><tr>${th}</tr></thead><tbody>${tb}</tbody></table></div>
+    ${active.length?`<div>${sec('Discovery Index',active.length+' active suburbs found via Domain scan')}<div class="grid grid-cols-6 gap-1.5 max-h-[250px] overflow-y-auto sf">${active.slice(0,120).map(a=>`<div class="flex justify-between py-1 px-2 bg-[#f6f4eb] text-[9px]"><span class="font-medium">${a.suburb}</span><span class="font-semibold text-[#513561]">${a.listings}</span></div>`).join('')}</div></div>`:''}
+  </div>`;
+}
+
+function renderHealth(){
+  return `<div class="fi">
+    <div class="mb-8">${sec('Market Cycle Intelligence','Automated health indicators from time-series analysis')}</div>
+    <div class="grid grid-cols-3 gap-6 mb-10">
+      ${placeholder('speed','Days on Market Trend','Falling DOM = recovering market. Rising = softening. Requires listing date tracking.')}
+      ${placeholder('trending_up','$/m² Momentum','Acceleration or deceleration of price per square metre growth rate.')}
+      ${placeholder('straighten','Lot Size Trend','Are lots shrinking? Signals affordability compression — developers cutting sizes to maintain price points.')}
+    </div>
+    <div class="grid grid-cols-3 gap-6 mb-10">
+      ${placeholder('inventory','Stock Level Gauge','Months of trading stock per market. <2 months = undersupplied. >6 months = oversupplied.')}
+      ${placeholder('bolt','Sales Velocity','Lots sold per month trend. Accelerating or decelerating.')}
+      ${placeholder('cycle','Cycle Position','Rising → Peak → Flattening → Declining → Bottom → Recovering. Auto-derived from DOM + $/m² + stock trends.')}
+    </div>
+    <div class="grid grid-cols-2 gap-6 mb-10">
+      ${placeholder('history','Historical Context','Current $/m² vs 5-year average. Current median vs 5-year average. Shows whether market is above or below trend.')}
+      ${placeholder('compare','Neighbour Comparison','Select a suburb → see its 5 closest suburbs and relative price positioning. Are you paying a premium or getting a discount?')}
+    </div>
+    <div class="p-6 bg-[#f6f4eb] border border-[#dcdad2] text-center"><span class="text-[10px] text-[#1b1c17]/40 uppercase tracking-wider">These indicators auto-populate as time-series data accumulates from daily scraping. First meaningful signals after ~3 months of data.</span></div>
+  </div>`;
+}
+
+function renderCompare(){
+  const sl=R.stateList;
+  return `<div class="fi">
+    <div class="mb-8">${sec('National Comparison','All capital city markets side by side')}</div>
+    <div class="grid grid-cols-${Math.min(sl.length,4)} gap-6 mb-10">${sl.map(s=>{const t=R.states[s].totals;return`<div class="border border-[#dcdad2] p-6 bg-[#fcf9f1]"><span class="text-xl font-serif text-[#1b1c17] block mb-4">${s}</span><div class="space-y-3"><div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Median Price</span><span class="text-2xl font-medium tracking-tight text-[#111]">${fK(t.med_price)}</span></div><div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Median $/m²</span><span class="text-2xl font-medium tracking-tight text-[#111]">$${t.med_rate}</span></div><div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Median Size</span><span class="text-2xl font-medium tracking-tight text-[#111]">${t.med_size}m²</span></div><div class="flex gap-4 pt-3 border-t border-[#dcdad2]"><div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Total</span><span class="text-sm font-medium">${fN(t.total)}</span></div><div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Sold</span><span class="text-sm font-medium text-[#486456]">${fN(t.sold)}</span></div><div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Stock Mo.</span><span class="text-sm font-medium">${t.months_stock}</span></div></div></div></div>`;}).join('')}</div>
+    <div class="grid grid-cols-2 gap-8 mb-10">
+      ${placeholder('waterfall_chart','Price Convergence','How city median prices move relative to each other over time. Adelaide catching Melbourne? Perth catching SEQ?')}
+      ${placeholder('leaderboard','Affordability Ranking','Cheapest to most expensive by $/m² — national bar chart')}
+    </div>
+    <div class="grid grid-cols-2 gap-8">
+      ${placeholder('trending_up','Sales Momentum','Which markets are accelerating vs decelerating — quarterly sales change rate')}
+      ${placeholder('balance','Supply vs Demand','Months of stock gauge per market — visual supply indicator')}
+    </div>
+  </div>`;
+}
+
+// Main render
+function render(){
+  document.getElementById('upd').textContent='Updated '+new Date().toLocaleDateString('en-AU',{day:'numeric',month:'short',year:'numeric'});
+  const P={overview:renderOverview,pricing:renderPricing,corridors:renderCorridors,registry:renderRegistry,health:renderHealth,compare:renderCompare};
+  document.getElementById('content').innerHTML=P[pg]();
+}
+
+renderPills();render();
+</script>
+</body></html>

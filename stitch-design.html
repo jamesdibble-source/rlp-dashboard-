@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grange Land Intelligence - Master Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#7d747e",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#4b444d",
+              "background": "#fcf9f1",
+              "tertiary-fixed-dim": "#f8b5bd",
+              "on-tertiary-fixed-variant": "#693940",
+              "on-tertiary": "#ffffff",
+              "inverse-on-surface": "#f3f1e9",
+              "surface-variant": "#e4e2da",
+              "primary": "#513561",
+              "primary-fixed": "#f5d9ff",
+              "on-error": "#ffffff",
+              "inverse-surface": "#30312b",
+              "on-primary-fixed-variant": "#583b68",
+              "error": "#ba1a1a",
+              "surface-tint": "#715381",
+              "on-tertiary-fixed": "#340e16",
+              "on-error-container": "#93000a",
+              "tertiary": "#61323a",
+              "on-primary-fixed": "#2a0f3a",
+              "error-container": "#ffdad6",
+              "surface": "#fcf9f1",
+              "on-primary-container": "#e6c1f7",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed": "#042015",
+              "on-secondary-container": "#4e6b5c",
+              "surface-container-high": "#eae8e0",
+              "surface-container": "#f0eee6",
+              "on-surface": "#1b1c17",
+              "on-background": "#1b1c17",
+              "tertiary-container": "#7c4951",
+              "primary-fixed-dim": "#deb9ef",
+              "secondary": "#486456",
+              "surface-container-highest": "#e4e2da",
+              "secondary-fixed": "#caead8",
+              "on-secondary-fixed-variant": "#314c3f",
+              "surface-dim": "#dcdad2",
+              "tertiary-fixed": "#ffd9dd",
+              "outline-variant": "#cec3ce",
+              "inverse-primary": "#deb9ef",
+              "primary-container": "#6a4c7a",
+              "surface-container-low": "#f6f4eb",
+              "secondary-fixed-dim": "#aecebc",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#ffbdc5",
+              "surface-bright": "#fcf9f1",
+              "secondary-container": "#caead8"
+            },
+            fontFamily: {
+              "serif": ["Playfair Display", "serif"],
+              "sans": ["Inter", "sans-serif"],
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #fcf9f1; color: #1b1c17; }
+        .serif-text { font-family: 'Playfair Display', serif; }
+        .hairline-grid { border: 0.5px solid #dcdad2; }
+        .archival-grain {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        /* Refined Metric Numbers: Sophisticated, light-weight serif/sans hybrid feel */
+        .metric-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+<body class="h-screen overflow-hidden relative">
+<div class="absolute inset-0 archival-grain"></div>
+<!-- SideNavBar (Shared Component) -->
+<aside class="fixed left-0 top-0 h-full flex flex-col py-8 w-64 border-r border-[#dcdad2] bg-[#fcf9f1] z-20">
+<div class="px-8 mb-12">
+<img alt="Grange Logo" class="h-10 w-auto object-contain mb-8" src="https://lh3.googleusercontent.com/aida/ADBb0ujaAK-9ft62u3dTI9Oaquh8Dqxz-rSaeVnBIpQiuY2ciMkuG6DRa2yCDB36Qog-lF8VKZQ2yF3cDBS7JGb9mBUpkAFACUL5bbIuGi-Xo8gnv5nIz2pSRuaHGd0MyvUwGHJuJsAGlBIQ8UHa2aWTBnXIm-memtnt5kPAXnXOkIqPW3XhF-Lkffb_qCM5iRoSjeRBl_GP7EWKZEWRebGgtT-Fr0elfbEvze5fZ3HZ5v7ITSz2J2ijwbW4laiD-ReU7l92aVPOxfJt"/>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center text-[#6a4c7a] font-bold border-l-2 border-[#6a4c7a] pl-6 py-3 bg-[#f6f4eb] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mr-4" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="text-xs uppercase tracking-[1.2px]">Overview</span>
+</a>
+<a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mr-4">map</span>
+<span class="text-xs uppercase tracking-[1.2px]">Geospatial</span>
+</a>
+<a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mr-4">history</span>
+<span class="text-xs uppercase tracking-[1.2px]">Historical Archives</span>
+</a>
+<a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mr-4">terrain</span>
+<span class="text-xs uppercase tracking-[1.2px]">Topography</span>
+</a>
+<a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mr-4">analytics</span>
+<span class="text-xs uppercase tracking-[1.2px]">Soil Reports</span>
+</a>
+</nav>
+<div class="px-6 pt-8 border-t border-[#dcdad2]">
+<a class="flex items-center text-[#1b1c17]/60 font-medium py-2 hover:bg-[#f6f4eb] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mr-4 text-sm">settings</span>
+<span class="text-[10px] uppercase tracking-[1.2px]">Settings</span>
+</a>
+<a class="flex items-center text-[#1b1c17]/60 font-medium py-2 hover:bg-[#f6f4eb] transition-colors duration-150" href="#">
+<span class="material-symbols-outlined mr-4 text-sm">help</span>
+<span class="text-[10px] uppercase tracking-[1.2px]">Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-64 h-screen overflow-y-auto bg-[#fcf9f1] flex flex-col items-center">
+<!-- TopAppBar (Shared Component) - Cleaned up and Minimal -->
+<header class="flex justify-between items-center w-full px-12 h-20 border-b border-[#dcdad2] bg-[#fcf9f1]">
+<div class="flex items-center gap-8">
+<nav class="flex gap-6">
+<a class="text-[#1b1c17] uppercase tracking-[0.2em] text-[10px] font-semibold hover:text-[#486456] transition-opacity" href="#">Archive Explorer</a>
+<a class="text-[#1b1c17]/40 uppercase tracking-[0.2em] text-[10px] font-semibold hover:text-[#486456] transition-opacity" href="#">Field Notes</a>
+</nav>
+</div>
+<div class="flex items-center gap-8">
+<div class="relative group">
+<input class="bg-transparent border-b border-[#dcdad2] focus:border-[#6a4c7a] focus:ring-0 text-[10px] uppercase tracking-widest py-1 pr-8 w-48 placeholder:text-[#1b1c17]/30 transition-all" placeholder="Search archive..." type="text"/>
+<span class="material-symbols-outlined absolute right-0 top-1 text-sm text-[#1b1c17]/60">search</span>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[#1b1c17]/60 cursor-pointer text-lg">notifications</span>
+<span class="material-symbols-outlined text-[#1b1c17]/60 cursor-pointer text-lg">account_circle</span>
+</div>
+</div>
+</header>
+<!-- Editorial Canvas -->
+<div class="w-full max-w-[1400px] flex-1 px-12 py-12">
+<!-- Hero Header - Minimal Title removed as per request 3 -->
+<div class="mb-12">
+<p class="text-[10px] uppercase tracking-[0.4em] text-[#1b1c17]/40 font-bold">Registry of Regional Data Footprints since 1924</p>
+</div>
+<!-- Top Metric Row - Refined Typography -->
+<div class="grid grid-cols-4 border-t border-b border-[#dcdad2] py-12 mb-12">
+<div class="px-8 border-r border-[#dcdad2]">
+<span class="font-sans text-[11px] font-semibold tracking-widest uppercase text-[#888888] mb-3 block">Total Tracked</span>
+<span class="font-sans text-6xl font-medium tracking-tighter text-[#111111] block">5,052</span>
+</div>
+<div class="px-8 border-r border-[#dcdad2]">
+<span class="font-sans text-[11px] font-semibold tracking-widest uppercase text-[#888888] mb-3 block">Median Price</span>
+<span class="font-sans text-6xl font-medium tracking-tighter text-[#111111] block">$180k</span>
+</div>
+<div class="px-8 border-r border-[#dcdad2]">
+<span class="font-sans text-[11px] font-semibold tracking-widest uppercase text-[#888888] mb-3 block">Price Per m²</span>
+<span class="font-sans text-6xl font-medium tracking-tighter text-[#111111] block">$316</span>
+</div>
+<div class="px-8">
+<span class="font-sans text-[11px] font-semibold tracking-widest uppercase text-[#888888] mb-3 block">Active Listings</span>
+<span class="font-sans text-6xl font-medium tracking-tighter text-[#111111] block">761</span>
+</div>
+</div>
+<!-- Middle Row: Price Distribution -->
+<div class="mb-12 border border-[#dcdad2] p-12 relative overflow-hidden bg-[#f6f4eb]">
+<div class="flex justify-between items-start relative z-10 mb-12">
+<div>
+<h3 class="text-[11px] uppercase tracking-[0.4em] font-bold text-[#1b1c17] mb-2">Price Distribution</h3>
+<p class="text-[10px] uppercase tracking-[0.1em] text-[#1b1c17]/50 max-w-md leading-relaxed">Variance in valuation across centralized quadrants.</p>
+</div>
+<div class="flex gap-6">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-[#513561]"></span>
+<span class="text-[9px] uppercase tracking-widest font-bold">Plum Basin</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-[#61323a]"></span>
+<span class="text-[9px] uppercase tracking-widest font-bold">Rose Ridge</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-[#486456]"></span>
+<span class="text-[9px] uppercase tracking-widest font-bold">Sage Valley</span>
+</div>
+</div>
+</div>
+<!-- Custom SVG Dune Chart -->
+<div class="h-64 w-full relative">
+<div class="absolute inset-0 pointer-events-none">
+<svg height="100%" width="100%">
+<defs>
+<pattern height="40" id="dotted-grid" patternunits="userSpaceOnUse" width="100%">
+<line stroke="#1b1c17" stroke-dasharray="2 4" stroke-opacity="0.1" x1="0" x2="100%" y1="0" y2="0"></line>
+</pattern>
+</defs>
+<rect fill="url(#dotted-grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<svg class="w-full h-full relative" preserveaspectratio="none" viewbox="0 0 1000 300">
+<defs>
+<lineargradient id="grad-sage" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#486456" stop-opacity="0.6"></stop>
+<stop offset="100%" stop-color="#486456" stop-opacity="0"></stop>
+</lineargradient>
+<lineargradient id="grad-plum" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#513561" stop-opacity="0.5"></stop>
+<stop offset="100%" stop-color="#513561" stop-opacity="0"></stop>
+</lineargradient>
+<lineargradient id="grad-rose" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#61323a" stop-opacity="0.7"></stop>
+<stop offset="100%" stop-color="#61323a" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,300 L0,250 Q200,50 400,180 T700,100 T1000,280 L1000,300 Z" fill="url(#grad-sage)"></path>
+<path d="M0,250 Q200,50 400,180 T700,100 T1000,280" fill="none" stroke="#486456" stroke-width="0.5"></path>
+<path d="M0,300 L0,200 Q300,120 500,250 T800,180 T1000,220 L1000,300 Z" fill="url(#grad-plum)"></path>
+<path d="M0,200 Q300,120 500,250 T800,180 T1000,220" fill="none" stroke="#513561" stroke-width="0.8"></path>
+<path d="M0,300 L0,280 Q150,200 350,260 T600,150 T850,220 T1000,290 L1000,300 Z" fill="url(#grad-rose)"></path>
+<path d="M0,280 Q150,200 350,260 T600,150 T850,220 T1000,290" fill="none" stroke="#61323a" stroke-width="1.2"></path>
+</svg>
+<div class="absolute bottom-0 left-0 w-full h-full flex justify-between pointer-events-none opacity-10">
+<div class="w-px h-full bg-[#1b1c17]"></div>
+<div class="w-px h-full bg-[#1b1c17]"></div>
+<div class="w-px h-full bg-[#1b1c17]"></div>
+<div class="w-px h-full bg-[#1b1c17]"></div>
+<div class="w-px h-full bg-[#1b1c17]"></div>
+</div>
+</div>
+</div>
+<!-- Bottom Row -->
+<div class="grid grid-cols-5 gap-12">
+<!-- Median Price Trend -->
+<div class="col-span-3 border border-[#dcdad2] p-12 bg-[#fcf9f1]">
+<div class="flex justify-between items-end mb-10">
+<div>
+<h4 class="text-[10px] uppercase tracking-[0.3em] text-[#1b1c17]/50 mb-2 font-bold">Performance Matrix</h4>
+<span class="text-3xl font-serif text-[#1b1c17]">Price Evolution Trend</span>
+</div>
+<div class="text-right">
+<span class="font-sans text-5xl font-medium tracking-tight text-[#1A1A1A] block">+12.4%</span>
+<span class="text-[9px] block uppercase tracking-[0.2em] font-bold text-[#1b1c17]/40 mt-1">YoY Change</span>
+</div>
+</div>
+<div class="h-40 w-full">
+<svg class="w-full h-full" viewbox="0 0 500 100">
+<defs>
+<lineargradient id="grad-trend" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#486456" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#486456" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,80 C100,90 150,20 250,50 S400,10 500,40 L500,100 L0,100 Z" fill="url(#grad-trend)"></path>
+<path d="M0,80 C100,90 150,20 250,50 S400,10 500,40" fill="none" stroke="#486456" stroke-width="1"></path>
+<circle cx="250" cy="50" fill="#486456" r="2.5"></circle>
+<text fill="#486456" font-family="Inter" font-size="7" font-weight="700" style="letter-spacing: 1px;" x="255" y="45">MID-Q3 PEAK</text>
+<line stroke="#dcdad2" stroke-width="0.5" x1="0" x2="500" y1="95" y2="95"></line>
+</svg>
+</div>
+</div>
+<!-- Market Alerts -->
+<div class="col-span-2 space-y-8">
+<h4 class="text-[11px] uppercase tracking-[0.4em] text-[#1b1c17] font-bold border-b border-[#1b1c17] pb-3">Archival Alerts</h4>
+<div class="flex items-start gap-8 group">
+<span class="font-sans text-5xl font-medium tracking-tight text-[#1A1A1A] block">01</span>
+<div class="pt-1">
+<p class="font-bold text-[11px] uppercase tracking-widest text-[#1b1c17] mb-2">Unusual Volatility: Sector 4-G</p>
+<p class="text-[11px] text-[#1b1c17]/60 leading-relaxed uppercase tracking-tight font-medium">Topography shifts northern soil reports. Adjusting valuations.</p>
+</div>
+</div>
+<div class="flex items-start gap-8 group">
+<span class="font-sans text-5xl font-medium tracking-tight text-[#1A1A1A] block">02</span>
+<div class="pt-1">
+<p class="font-bold text-[11px] uppercase tracking-widest text-[#1b1c17] mb-2">Historical Archive Locked</p>
+<p class="text-[11px] text-[#1b1c17]/60 leading-relaxed uppercase tracking-tight font-medium">1954 drainage registry under digitization. Restored in 12h.</p>
+</div>
+</div>
+<div class="flex items-start gap-8 group">
+<span class="font-sans text-5xl font-medium tracking-tight text-[#1A1A1A] block">03</span>
+<div class="pt-1">
+<p class="font-bold text-[11px] uppercase tracking-widest text-[#1b1c17] mb-2">New Soil Composition Log</p>
+<p class="text-[11px] text-[#1b1c17]/60 leading-relaxed uppercase tracking-tight font-medium">Terracotta confirmed in Eastern Meadows. High impact pricing.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Texture Image -->
+<div class="mt-16 w-full h-32 relative overflow-hidden border-t border-[#dcdad2]">
+<img class="w-full h-full object-cover grayscale opacity-10 mix-blend-multiply" data-alt="abstract aerial view of vintage topographic maps and old parchment paper with ink stains and refined textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgVsKgtAq8C6WZb5_ZscU3PpSk288LmRvUtfQdGyACqGWWuJHV8V48BAsVYTx9dmI7yzPUjWEAAVx3HVHJLiEJmioZ-EDZIr6aHwthFTUWe1H0M038NXNL706U6VsMq5MyqmsZoyMf-BEoLoroak9S1PzBH1LumZiZEeimMBYKE35s_z5f5KWQmEzi-ygdQHlgNaMCbK1jepXDrKEl9k7LKPu7BZSTlko7zCl2_b7zEl_cxN0IfqmPeOzMIrv7awh522WuZ6O9rlk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#fcf9f1] to-transparent"></div>
+</div>
+</div>
+<!-- Footer Attribution -->
+<footer class="w-full max-w-[1400px] px-12 pb-12 flex justify-between items-center text-[9px] uppercase tracking-[0.4em] font-bold text-[#1b1c17]/30">
+<div>© 2024 Grange Land Intelligence. All rights reserved.</div>
+<div class="flex gap-10">
+<a class="hover:text-[#1b1c17] transition-colors" href="#">Privacy Registry</a>
+<a class="hover:text-[#1b1c17] transition-colors" href="#">Data Ethics</a>
+<a class="hover:text-[#1b1c17] transition-colors" href="#">System Logs</a>
+</div>
+</footer>
+</main>
+</body></html>

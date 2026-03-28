@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grange Land Intelligence | Analytics Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e7e8ea",
+                        "on-surface-variant": "#44474f",
+                        "tertiary-container": "#00211e",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-fixed": "#d8e2ff",
+                        "tertiary-fixed": "#84f5e8",
+                        "primary": "#00020a",
+                        "on-background": "#191c1e",
+                        "background": "#f8f9fb",
+                        "on-secondary-container": "#1b6d71",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f8f9fb",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c5c6d0",
+                        "outline": "#75777f",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e1e2e4",
+                        "inverse-on-surface": "#f0f1f3",
+                        "primary-container": "#001b44",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#001a42",
+                        "surface-container": "#edeef0",
+                        "on-primary-container": "#7084b3",
+                        "secondary-fixed-dim": "#8ad3d7",
+                        "on-tertiary-fixed": "#00201d",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#a6eff3",
+                        "surface-dim": "#d9dadc",
+                        "on-error": "#ffffff",
+                        "tertiary": "#000202",
+                        "on-surface": "#191c1e",
+                        "inverse-primary": "#b1c6f9",
+                        "surface-tint": "#495e8a",
+                        "secondary-container": "#a3ecf0",
+                        "primary-fixed-dim": "#b1c6f9",
+                        "on-secondary-fixed-variant": "#004f53",
+                        "on-tertiary-fixed-variant": "#005049",
+                        "on-secondary-fixed": "#002021",
+                        "surface-container-highest": "#e1e2e4",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#14696d",
+                        "surface-bright": "#f8f9fb",
+                        "on-primary-fixed-variant": "#314671",
+                        "tertiary-fixed-dim": "#66d9cc",
+                        "on-tertiary-container": "#009589"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+            font-size: 20px;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- SideNavBar Shell -->
+<aside class="fixed inset-y-0 left-0 z-50 flex flex-col w-72 bg-[#001b44] dark:bg-[#00020a] shadow-[0_12_32px_-4px_rgba(0,27,68,0.08)]">
+<!-- Brand Header -->
+<div class="px-8 py-10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-secondary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container font-bold" data-icon="landscape">landscape</span>
+</div>
+<div>
+<h1 class="text-2xl font-extrabold text-white tracking-tight">Grange</h1>
+<p class="font-medium font-inter tracking-wide uppercase text-[10px] text-cyan-400">Land Intelligence</p>
+</div>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<nav class="flex-1 px-4 space-y-1">
+<!-- Overview (Active) -->
+<a class="flex items-center gap-3 px-4 py-3 text-cyan-400 border-r-4 border-cyan-400 bg-white/5 font-bold transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-medium font-inter tracking-wide uppercase text-[12px]">Overview</span>
+</a>
+<!-- Corridors -->
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-medium font-inter tracking-wide uppercase text-[12px]">Corridors</span>
+</a>
+<!-- Analysis -->
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-medium font-inter tracking-wide uppercase text-[12px]">Analysis</span>
+</a>
+<!-- Velocity -->
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="speed">speed</span>
+<span class="font-medium font-inter tracking-wide uppercase text-[12px]">Velocity</span>
+</a>
+<!-- Benchmarks -->
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-white/10 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="compare_arrows">compare_arrows</span>
+<span class="font-medium font-inter tracking-wide uppercase text-[12px]">Benchmarks</span>
+</a>
+</nav>
+<!-- CTA -->
+<div class="px-6 mb-8">
+<button class="w-full bg-gradient-to-br from-secondary to-primary-container text-white py-4 rounded-xl font-bold text-sm tracking-wide shadow-xl active:scale-95 transition-transform">
+                New Analysis
+            </button>
+</div>
+<!-- Footer Tabs -->
+<div class="px-4 pb-8 space-y-1">
+<a class="flex items-center gap-3 px-4 py-2 text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-medium font-inter tracking-wide uppercase text-[12px]">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span class="font-medium font-inter tracking-wide uppercase text-[12px]">Support</span>
+</a>
+</div>
+</aside>
+<!-- TopNavBar Shell -->
+<header class="fixed top-0 right-0 left-72 h-16 flex items-center justify-between px-8 z-40 bg-[#f8f9fb] dark:bg-[#00020a]">
+<div class="flex items-center gap-6 flex-1">
+<div class="relative w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="w-full bg-surface-container-low border-none rounded-lg pl-10 pr-4 py-2 text-sm font-inter focus:ring-2 focus:ring-secondary/20 transition-all" placeholder="Search corridors, LGAs or suburbs..." type="text"/>
+</div>
+<div class="flex items-center gap-4 ml-4">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Market Status:</span>
+<div class="flex items-center gap-2 px-3 py-1 bg-secondary-container/30 rounded-full">
+<div class="w-2 h-2 bg-secondary rounded-full"></div>
+<span class="text-[11px] font-bold text-on-secondary-container">LIVE UPDATES</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:bg-slate-100 rounded-lg transition-all">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<div class="h-8 w-[1px] bg-outline-variant/30 mx-2"></div>
+<button class="flex items-center gap-3 pl-2 pr-1 py-1 hover:bg-slate-100 rounded-lg transition-all">
+<span class="text-sm font-semibold text-primary-container">Analyst Portal</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="User" class="w-full h-full object-cover" data-alt="professional portrait of a man in business attire with clean minimalist lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyJum17mDvyO-hTuSm-owzW4fusm07OVON9xZUO9iapj1vJthxUWIZAQjPWdZK2UUOG2VJgpwL9l_4g5ELq580TvqFu4fSo5suEl4K0alSv_N3VMTkt-KppeGMwdi6TSr7YcFWqY5aOGcffAvOr2ph7pGe39c9c6CrKzjAUEn1aXvzzqGEO7PdCAePwaBcENZnBq1ZIsXPix6vO7i1GKX0aZejD3l4GkMjbyZo36DriRFOqqgCohLbP4cGRu2vnk-J4-UacpGTdv0R"/>
+</div>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="ml-72 mt-16 p-8 min-h-screen">
+<!-- Header Section -->
+<div class="flex justify-between items-end mb-8">
+<div>
+<nav class="flex items-center gap-2 text-[11px] font-bold text-outline uppercase tracking-widest mb-2">
+<span>Australia</span>
+<span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span>
+<span>Victoria</span>
+<span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span>
+<span class="text-secondary">LGA Highlights</span>
+</nav>
+<h2 class="text-4xl font-extrabold text-primary-container tracking-tight">Victoria Market Overview</h2>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low p-1.5 rounded-xl">
+<button class="px-4 py-2 text-xs font-bold uppercase tracking-wider text-outline hover:text-primary-container transition-colors">All Data</button>
+<button class="px-6 py-2 bg-surface-container-lowest shadow-sm rounded-lg text-xs font-bold uppercase tracking-wider text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm filled-icon" data-icon="check_circle">check_circle</span>
+                    Sold Only
+                </button>
+</div>
+</div>
+<!-- Bento Layout Start -->
+<div class="grid grid-cols-12 gap-6">
+<!-- Map Section -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)] relative">
+<div class="absolute top-6 left-6 z-10 flex flex-col gap-3">
+<div class="bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-white/20">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest mb-1">Current Selection</p>
+<p class="text-lg font-extrabold text-primary-container">Greater Victoria Region</p>
+<div class="mt-2 flex items-center gap-2 text-xs font-semibold text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                            79 LGAs Tracked
+                        </div>
+</div>
+</div>
+<div class="w-full h-[450px] bg-surface-container-high relative flex items-center justify-center overflow-hidden">
+<img alt="Map of Victoria" class="w-full h-full object-cover opacity-80 mix-blend-multiply" data-alt="Satellite topographic map of Victoria Australia showing terrain and regional boundaries with digital overlay highlights" data-location="Victoria, Australia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfptss0STgMeLcd6vFGJ_cUzuLdAZHW6lh-EejmIms7Gmbq9kvRzlYjTbHWPtZfb5A9uDr9xR6jkNqRLK8mQYKAXgHt1W3EYLqmTrYXwlmMvUxfnJ3vNl5E2iZOGmhg8PsDaBHhjfxC_dP4puCCKhylv1W9c8JAJqCEXrNCcSemHbGEZq6TcX_nLiuQm_GzEX92xAhFXbwcJC_c_1vZFyyxv769bsVXKJhpBt1QqT_C0T2linF8SRYqfPU1Opnx3Wt0zYnC3aR3YqM"/>
+<!-- Fake Map Overlay Elements -->
+<div class="absolute inset-0 bg-primary-container/5 pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/3 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
+<div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-cyan-400/10 rounded-full blur-3xl"></div>
+</div>
+<div class="absolute bottom-6 right-6 flex gap-2">
+<button class="bg-white p-2 rounded-lg shadow-md hover:bg-slate-50 transition-colors">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+<button class="bg-white p-2 rounded-lg shadow-md hover:bg-slate-50 transition-colors">
+<span class="material-symbols-outlined" data-icon="remove">remove</span>
+</button>
+</div>
+</div>
+<!-- Comparison Bar Charts (Right Sidebar) -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-lowest rounded-xl p-6 shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)]">
+<h3 class="text-sm font-extrabold text-primary-container uppercase tracking-widest mb-6 flex items-center justify-between">
+                    Market Comparison
+                    <span class="material-symbols-outlined text-outline" data-icon="more_horiz">more_horiz</span>
+</h3>
+<div class="space-y-8">
+<!-- Ballarat -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="text-sm font-bold text-primary-container">Ballarat</span>
+<span class="text-xs font-bold text-secondary">+12.4%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-none overflow-hidden">
+<div class="h-full bg-secondary" style="width: 85%;"></div>
+</div>
+<p class="text-[10px] text-outline font-medium">Growth velocity exceeding state average</p>
+</div>
+<!-- Wangaratta -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="text-sm font-bold text-primary-container">Wangaratta</span>
+<span class="text-xs font-bold text-secondary">+8.1%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-none overflow-hidden">
+<div class="h-full bg-secondary" style="width: 62%;"></div>
+</div>
+<p class="text-[10px] text-outline font-medium">Stable regional corridor performance</p>
+</div>
+<!-- Murray Bridge -->
+<div class="space-y-2">
+<div class="flex justify-between items-end">
+<span class="text-sm font-bold text-primary-container">Murray Bridge</span>
+<span class="text-xs font-bold text-on-error-container">-2.3%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-none overflow-hidden">
+<div class="h-full bg-outline-variant" style="width: 35%;"></div>
+</div>
+<p class="text-[10px] text-outline font-medium">Correction observed in outer perimeter</p>
+</div>
+</div>
+<div class="mt-10 p-4 bg-secondary-container/20 rounded-xl border border-secondary-container/30">
+<p class="text-[10px] font-bold text-secondary uppercase tracking-widest mb-1">Intelligence Insight</p>
+<p class="text-xs font-medium text-on-secondary-container leading-relaxed">Regional demand is shifting toward the Western Corridor. Recommendation: Increase exposure to Ballarat assets.</p>
+</div>
+</div>
+<!-- Metrics Grid -->
+<div class="col-span-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- Lots -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)]">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest mb-2">Total Lots</p>
+<p class="text-3xl font-extrabold text-primary-container font-headline">5,052</p>
+<div class="mt-2 flex items-center gap-1 text-[11px] font-bold text-secondary">
+<span class="material-symbols-outlined text-xs" data-icon="trending_up">trending_up</span>
+                        214 new
+                    </div>
+</div>
+<!-- Median -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)]">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest mb-2">Median Price</p>
+<p class="text-3xl font-extrabold text-primary-container font-headline">$180K</p>
+<div class="mt-2 flex items-center gap-1 text-[11px] font-bold text-secondary">
+<span class="material-symbols-outlined text-xs" data-icon="trending_up">trending_up</span>
+                        4.2% YoY
+                    </div>
+</div>
+<!-- NSA -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)]">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest mb-2">NSA Yield</p>
+<p class="text-3xl font-extrabold text-primary-container font-headline">$316/m²</p>
+<div class="mt-2 flex items-center gap-1 text-[11px] font-bold text-outline">
+<span class="material-symbols-outlined text-xs" data-icon="horizontal_rule">horizontal_rule</span>
+                        Steady
+                    </div>
+</div>
+<!-- Size -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)]">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest mb-2">Avg. Size</p>
+<p class="text-3xl font-extrabold text-primary-container font-headline">537m²</p>
+<div class="mt-2 flex items-center gap-1 text-[11px] font-bold text-on-error-container">
+<span class="material-symbols-outlined text-xs" data-icon="trending_down">trending_down</span>
+                        -12m²
+                    </div>
+</div>
+<!-- Sold -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)]">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest mb-2">Sold Count</p>
+<p class="text-3xl font-extrabold text-primary-container font-headline">4,164</p>
+<div class="mt-2 flex items-center gap-1 text-[11px] font-bold text-secondary">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span>
+                        82% Ratio
+                    </div>
+</div>
+<!-- Listed -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)]">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest mb-2">Currently Listed</p>
+<p class="text-3xl font-extrabold text-primary-container font-headline">761</p>
+<div class="mt-2 flex items-center gap-1 text-[11px] font-bold text-on-error-container">
+<span class="material-symbols-outlined text-xs" data-icon="warning">warning</span>
+                        Low stock
+                    </div>
+</div>
+</div>
+<!-- Data Table Section -->
+<div class="col-span-12 bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)] overflow-hidden">
+<div class="px-8 py-6 flex justify-between items-center bg-surface-container-low/50">
+<h3 class="text-sm font-extrabold text-primary-container uppercase tracking-widest">Performance Benchmarks</h3>
+<div class="flex gap-4">
+<button class="flex items-center gap-2 text-xs font-bold text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="filter_list">filter_list</span>
+                            Filter
+                        </button>
+<button class="flex items-center gap-2 text-xs font-bold text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+                            Export CSV
+                        </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/30 border-b border-outline-variant/10">
+<th class="px-8 py-4 text-[10px] font-bold text-outline uppercase tracking-widest">Suburb Name</th>
+<th class="px-8 py-4 text-[10px] font-bold text-outline uppercase tracking-widest">LGA Corridor</th>
+<th class="px-8 py-4 text-[10px] font-bold text-outline uppercase tracking-widest">Growth %</th>
+<th class="px-8 py-4 text-[10px] font-bold text-outline uppercase tracking-widest">Avg. Price</th>
+<th class="px-8 py-4 text-[10px] font-bold text-outline uppercase tracking-widest">NSA Efficiency</th>
+<th class="px-8 py-4 text-[10px] font-bold text-outline uppercase tracking-widest">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-8 py-5">
+<span class="font-bold text-primary-container">Armstrong Creek</span>
+</td>
+<td class="px-8 py-5 text-sm font-medium text-on-surface-variant">Greater Geelong</td>
+<td class="px-8 py-5">
+<span class="text-xs font-bold text-secondary">+15.2%</span>
+</td>
+<td class="px-8 py-5 text-sm font-bold text-primary-container">$342,000</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-3">
+<div class="w-16 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 88%;"></div>
+</div>
+<span class="text-xs font-bold">88%</span>
+</div>
+</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-full uppercase tracking-tighter">High Yield</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-8 py-5">
+<span class="font-bold text-primary-container">Lucas</span>
+</td>
+<td class="px-8 py-5 text-sm font-medium text-on-surface-variant">City of Ballarat</td>
+<td class="px-8 py-5">
+<span class="text-xs font-bold text-secondary">+11.8%</span>
+</td>
+<td class="px-8 py-5 text-sm font-bold text-primary-container">$298,500</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-3">
+<div class="w-16 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 72%;"></div>
+</div>
+<span class="text-xs font-bold">72%</span>
+</div>
+</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold rounded-full uppercase tracking-tighter">Stable</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-8 py-5">
+<span class="font-bold text-primary-container">Winter Valley</span>
+</td>
+<td class="px-8 py-5 text-sm font-medium text-on-surface-variant">City of Ballarat</td>
+<td class="px-8 py-5">
+<span class="text-xs font-bold text-secondary">+9.4%</span>
+</td>
+<td class="px-8 py-5 text-sm font-bold text-primary-container">$285,000</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-3">
+<div class="w-16 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 65%;"></div>
+</div>
+<span class="text-xs font-bold">65%</span>
+</div>
+</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold rounded-full uppercase tracking-tighter">Monitoring</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="px-8 py-5">
+<span class="font-bold text-primary-container">Wallan</span>
+</td>
+<td class="px-8 py-5 text-sm font-medium text-on-surface-variant">Mitchell Shire</td>
+<td class="px-8 py-5">
+<span class="text-xs font-bold text-on-error-container">-1.5%</span>
+</td>
+<td class="px-8 py-5 text-sm font-bold text-primary-container">$265,000</td>
+<td class="px-8 py-5">
+<div class="flex items-center gap-3">
+<div class="w-16 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-outline-variant" style="width: 42%;"></div>
+</div>
+<span class="text-xs font-bold">42%</span>
+</div>
+</td>
+<td class="px-8 py-5">
+<span class="px-3 py-1 bg-error-container text-on-error-container text-[10px] font-bold rounded-full uppercase tracking-tighter">Volatile</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action for New Analysis (Suppressed on analytics pages usually, but kept for main dashboard relevance) -->
+<div class="fixed bottom-8 right-8">
+<button class="flex items-center gap-3 bg-secondary px-6 py-4 rounded-xl text-white shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200">
+<span class="material-symbols-outlined font-bold" data-icon="add">add</span>
+<span class="font-extrabold uppercase text-[12px] tracking-widest">Generate Report</span>
+</button>
+</div>
+</body></html>

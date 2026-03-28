@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grange Land Intelligence — Victoria</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0e1a; color: #e2e8f0; }
+.sidebar { position: fixed; left: 0; top: 0; bottom: 0; width: 240px; background: #0f1629; border-right: 1px solid #1e293b; padding: 24px 16px; z-index: 10; }
+.logo { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.logo-sub { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 32px; }
+.nav-item { display: flex; align-items: center; padding: 10px 12px; border-radius: 8px; color: #94a3b8; font-size: 14px; cursor: pointer; margin-bottom: 4px; transition: all 0.2s; }
+.nav-item:hover { background: #1e293b; color: #e2e8f0; }
+.nav-item.active { background: #1e40af; color: #fff; }
+.nav-icon { width: 20px; margin-right: 10px; text-align: center; }
+.main { margin-left: 240px; padding: 24px 32px; }
+.topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.topbar h1 { font-size: 24px; font-weight: 600; }
+.topbar-right { display: flex; gap: 12px; align-items: center; }
+.badge { background: #1e40af; color: #fff; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+.badge-green { background: #059669; }
+.badge-amber { background: #d97706; }
+.toggle-container { display: flex; align-items: center; gap: 8px; background: #1e293b; padding: 6px 12px; border-radius: 8px; }
+.toggle-label { font-size: 13px; color: #94a3b8; }
+.toggle { width: 40px; height: 22px; background: #374151; border-radius: 11px; cursor: pointer; position: relative; transition: background 0.2s; }
+.toggle.on { background: #2563eb; }
+.toggle::after { content: ''; position: absolute; width: 18px; height: 18px; background: #fff; border-radius: 50%; top: 2px; left: 2px; transition: left 0.2s; }
+.toggle.on::after { left: 20px; }
+.metrics { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-bottom: 24px; }
+.metric-card { background: #111827; border: 1px solid #1e293b; border-radius: 12px; padding: 16px 20px; }
+.metric-label { font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.metric-value { font-size: 28px; font-weight: 700; color: #fff; }
+.metric-sub { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+.section { margin-bottom: 32px; }
+.section-title { font-size: 18px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.section-title .dot { width: 8px; height: 8px; border-radius: 50%; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.card { background: #111827; border: 1px solid #1e293b; border-radius: 12px; padding: 20px; }
+.card-title { font-size: 14px; font-weight: 600; color: #94a3b8; margin-bottom: 16px; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; padding: 8px 12px; font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid #1e293b; cursor: pointer; }
+th:hover { color: #e2e8f0; }
+td { padding: 8px 12px; font-size: 13px; border-bottom: 1px solid #0f172a; }
+tr:hover { background: #1e293b; }
+.text-right { text-align: right; }
+.text-green { color: #10b981; }
+.text-amber { color: #f59e0b; }
+.text-blue { color: #3b82f6; }
+.bar-bg { background: #1e293b; border-radius: 4px; height: 24px; position: relative; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease; }
+.bar-label { position: absolute; right: 8px; top: 4px; font-size: 11px; color: #e2e8f0; }
+.corridor-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.corridor-name { width: 120px; font-size: 13px; font-weight: 500; }
+.corridor-bar { flex: 1; }
+.corridor-stats { display: flex; gap: 16px; font-size: 12px; color: #94a3b8; min-width: 240px; }
+.discovery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; max-height: 500px; overflow-y: auto; }
+.discovery-item { background: #1e293b; padding: 8px 12px; border-radius: 6px; font-size: 12px; display: flex; justify-content: space-between; }
+.discovery-item .count { color: #3b82f6; font-weight: 600; }
+.status-bar { display: flex; gap: 2px; margin-top: 8px; }
+.status-sold { background: #059669; height: 4px; border-radius: 2px; }
+.status-listing { background: #f59e0b; height: 4px; border-radius: 2px; }
+.scroll-table { max-height: 600px; overflow-y: auto; }
+.filter-pills { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.pill { padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; cursor: pointer; background: #1e293b; color: #94a3b8; border: 1px solid #374151; transition: all 0.2s; }
+.pill.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+.pill:hover:not(.active) { background: #374151; color: #e2e8f0; }
+.stat-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #1e293b; }
+.stat-row:last-child { border-bottom: none; }
+.timestamp { font-size: 11px; color: #475569; }
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo">Grange</div>
+  <div class="logo-sub">Land Intelligence</div>
+  <div class="nav-item active"><span class="nav-icon">📊</span> Overview</div>
+  <div class="nav-item"><span class="nav-icon">💰</span> Price Analysis</div>
+  <div class="nav-item"><span class="nav-icon">📈</span> Sales Velocity</div>
+  <div class="nav-item"><span class="nav-icon">🗺️</span> Growth Corridors</div>
+  <div class="nav-item"><span class="nav-icon">📋</span> Benchmarks</div>
+  <div style="position:absolute;bottom:24px;left:16px;right:16px;">
+    <div style="font-size:11px;color:#475569;">Data as at</div>
+    <div style="font-size:12px;color:#94a3b8;" id="timestamp"></div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="topbar">
+    <div>
+      <h1>Victoria — Land Market Overview</h1>
+      <div class="timestamp" id="subtitle"></div>
+    </div>
+    <div class="topbar-right">
+      <span class="badge badge-green">LIVE DATA</span>
+      <span class="badge">835 SUBURBS DISCOVERED</span>
+      <div class="toggle-container">
+        <span class="toggle-label">Sold Only</span>
+        <div class="toggle" id="soldToggle" onclick="toggleSold()"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="metrics" id="metrics"></div>
+
+  <div class="section">
+    <div class="section-title"><div class="dot" style="background:#3b82f6"></div> Corridor Comparison</div>
+    <div class="card" id="corridorChart"></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="section">
+      <div class="section-title"><div class="dot" style="background:#8b5cf6"></div> LGA Breakdown</div>
+      <div class="card scroll-table" id="lgaTable"></div>
+    </div>
+    <div class="section">
+      <div class="section-title"><div class="dot" style="background:#10b981"></div> Discovery Results — Top Active Suburbs</div>
+      <div class="card" id="discoveryPanel"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><div class="dot" style="background:#f59e0b"></div> Suburb Detail</div>
+    <div class="filter-pills" id="corridorFilter"></div>
+    <div class="card scroll-table" id="suburbTable"></div>
+  </div>
+</div>
+
+<script>
+// DATA INJECTION
+const DATA = __DATA__;
+const ACTIVE = __ACTIVE__;
+
+let soldOnly = false;
+
+function fmt(n) { return n ? '$' + Math.round(n).toLocaleString() : '-'; }
+function fmtN(n) { return n ? n.toLocaleString() : '0'; }
+
+function toggleSold() {
+  soldOnly = !soldOnly;
+  document.getElementById('soldToggle').classList.toggle('on', soldOnly);
+  render();
+}
+
+function render() {
+  const t = DATA.totals;
+  
+  document.getElementById('timestamp').textContent = new Date().toLocaleDateString('en-AU', { day:'numeric', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit' });
+  document.getElementById('subtitle').textContent = `${fmtN(t.total)} lots tracked across ${DATA.lgas.length} LGAs • ${DATA.suburbs.length} suburbs in database • ${ACTIVE.length} suburbs discovered`;
+
+  // Metrics
+  const sold = t.sold;
+  const listings = t.listings;
+  document.getElementById('metrics').innerHTML = `
+    <div class="metric-card"><div class="metric-label">Total Lots</div><div class="metric-value">${fmtN(t.total)}</div><div class="metric-sub">${fmtN(sold)} sold • ${fmtN(listings)} listed</div></div>
+    <div class="metric-card"><div class="metric-label">Avg Price</div><div class="metric-value">${fmt(t.avg_price)}</div><div class="metric-sub">Range: ${fmt(t.min_price)} – ${fmt(t.max_price > 5000000 ? 5000000 : t.max_price)}</div></div>
+    <div class="metric-card"><div class="metric-label">Avg $/m²</div><div class="metric-value">$${t.avg_rate}</div><div class="metric-sub">Normalised rate</div></div>
+    <div class="metric-card"><div class="metric-label">Avg Lot Size</div><div class="metric-value">${t.avg_size}m²</div><div class="metric-sub">150m² – 2,000m² filter</div></div>
+    <div class="metric-card"><div class="metric-label">Active Suburbs</div><div class="metric-value">${ACTIVE.length}</div><div class="metric-sub">Discovery scan complete</div></div>
+    <div class="metric-card"><div class="metric-label">LGAs Covered</div><div class="metric-value">${DATA.lgas.length}</div><div class="metric-sub">${DATA.corridors.length} corridors</div></div>
+  `;
+
+  // Corridor chart
+  const maxLots = Math.max(...DATA.corridors.map(c => c.total));
+  const colors = { 'Western': '#3b82f6', 'Northern': '#8b5cf6', 'Ballarat': '#f59e0b', 'North East': '#10b981', 'South Eastern': '#ef4444', 'Geelong': '#06b6d4', 'Bendigo': '#ec4899' };
+  document.getElementById('corridorChart').innerHTML = DATA.corridors.map(c => `
+    <div class="corridor-row">
+      <div class="corridor-name">${c.corridor}</div>
+      <div class="corridor-bar">
+        <div class="bar-bg">
+          <div class="bar-fill" style="width:${(c.total/maxLots*100)}%;background:${colors[c.corridor]||'#6366f1'}"></div>
+          <div class="bar-label">${fmtN(c.total)} lots</div>
+        </div>
+        <div class="status-bar">
+          <div class="status-sold" style="width:${(c.sold/c.total*100)}%"></div>
+          <div class="status-listing" style="width:${(c.listings/c.total*100)}%"></div>
+        </div>
+      </div>
+      <div class="corridor-stats">
+        <span>Avg ${fmt(c.avg_price)}</span>
+        <span>${c.avg_size}m²</span>
+        <span class="text-blue">$${c.avg_rate}/m²</span>
+      </div>
+    </div>
+  `).join('');
+
+  // LGA table
+  document.getElementById('lgaTable').innerHTML = `<table>
+    <tr><th>LGA</th><th>Corridor</th><th class="text-right">Lots</th><th class="text-right">Sold</th><th class="text-right">Listed</th><th class="text-right">Avg Price</th><th class="text-right">Avg Size</th><th class="text-right">$/m²</th></tr>
+    ${DATA.lgas.map(l => `<tr>
+      <td><strong>${l.lga}</strong></td><td>${l.corridor||'-'}</td>
+      <td class="text-right">${fmtN(l.total)}</td><td class="text-right">${fmtN(l.sold)}</td><td class="text-right">${fmtN(l.listings)}</td>
+      <td class="text-right">${fmt(l.avg_price)}</td><td class="text-right">${l.avg_size}m²</td><td class="text-right text-blue">$${l.avg_rate}</td>
+    </tr>`).join('')}
+  </table>`;
+
+  // Discovery panel
+  const top50 = ACTIVE.slice(0, 60);
+  document.getElementById('discoveryPanel').innerHTML = `
+    <div style="margin-bottom:12px;font-size:12px;color:#94a3b8;">835 VIC suburbs with active land listings on Domain. Top 60 by listing count:</div>
+    <div class="discovery-grid">
+      ${top50.map(a => `<div class="discovery-item"><span>${a.suburb}</span><span class="count">${a.listings}</span></div>`).join('')}
+    </div>
+  `;
+
+  // Suburb table
+  const corridors = [...new Set(DATA.suburbs.map(s => s.corridor).filter(Boolean))];
+  document.getElementById('corridorFilter').innerHTML = `
+    <div class="pill active" onclick="filterCorridor(null, this)">All</div>
+    ${corridors.map(c => `<div class="pill" onclick="filterCorridor('${c}', this)">${c}</div>`).join('')}
+  `;
+
+  renderSuburbTable(null);
+}
+
+function filterCorridor(corridor, el) {
+  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  if (el) el.classList.add('active');
+  renderSuburbTable(corridor);
+}
+
+function renderSuburbTable(corridor) {
+  let subs = DATA.suburbs;
+  if (corridor) subs = subs.filter(s => s.corridor === corridor);
+  
+  document.getElementById('suburbTable').innerHTML = `<table>
+    <tr><th>Suburb</th><th>LGA</th><th>Corridor</th><th class="text-right">Total</th><th class="text-right">Sold</th><th class="text-right">Listed</th><th class="text-right">Avg Price</th><th class="text-right">Avg Size</th><th class="text-right">$/m²</th></tr>
+    ${subs.map(s => `<tr>
+      <td><strong>${s.suburb}</strong></td><td>${s.lga}</td><td>${s.corridor||'-'}</td>
+      <td class="text-right">${fmtN(s.total)}</td><td class="text-right">${fmtN(s.sold)}</td><td class="text-right">${fmtN(s.listings)}</td>
+      <td class="text-right">${fmt(s.avg_price)}</td><td class="text-right">${s.avg_size}m²</td><td class="text-right text-blue">$${s.avg_rate}</td>
+    </tr>`).join('')}
+  </table>`;
+}
+
+render();
+</script>
+</body>
+</html>

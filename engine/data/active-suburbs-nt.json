@@ -1,0 +1,338 @@
+[
+  {
+    "suburb": "KATHERINE",
+    "postcode": "0850",
+    "state": "NT",
+    "listings": 164
+  },
+  {
+    "suburb": "BLACKMORE",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 77
+  },
+  {
+    "suburb": "BAYVIEW",
+    "postcode": "0820",
+    "state": "NT",
+    "listings": 65
+  },
+  {
+    "suburb": "BERRY SPRINGS",
+    "postcode": "0838",
+    "state": "NT",
+    "listings": 58
+  },
+  {
+    "suburb": "COOLALINGA",
+    "postcode": "0839",
+    "state": "NT",
+    "listings": 53
+  },
+  {
+    "suburb": "DUNDEE DOWNS",
+    "postcode": "0840",
+    "state": "NT",
+    "listings": 52
+  },
+  {
+    "suburb": "STUART PARK",
+    "postcode": "0820",
+    "state": "NT",
+    "listings": 48
+  },
+  {
+    "suburb": "DUNDEE BEACH",
+    "postcode": "0840",
+    "state": "NT",
+    "listings": 48
+  },
+  {
+    "suburb": "BERRIMAH",
+    "postcode": "0828",
+    "state": "NT",
+    "listings": 40
+  },
+  {
+    "suburb": "HUMPTY DOO",
+    "postcode": "0836",
+    "state": "NT",
+    "listings": 39
+  },
+  {
+    "suburb": "VIRGINIA",
+    "postcode": "0834",
+    "state": "NT",
+    "listings": 33
+  },
+  {
+    "suburb": "FANNIE BAY",
+    "postcode": "0820",
+    "state": "NT",
+    "listings": 32
+  },
+  {
+    "suburb": "MARRAKAI",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 32
+  },
+  {
+    "suburb": "GUNN",
+    "postcode": "0832",
+    "state": "NT",
+    "listings": 32
+  },
+  {
+    "suburb": "ACACIA HILLS",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 31
+  },
+  {
+    "suburb": "DUNDEE FOREST",
+    "postcode": "0840",
+    "state": "NT",
+    "listings": 31
+  },
+  {
+    "suburb": "TENNANT CREEK",
+    "postcode": "0860",
+    "state": "NT",
+    "listings": 30
+  },
+  {
+    "suburb": "MUIRHEAD",
+    "postcode": "0810",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "CULLEN BAY",
+    "postcode": "0820",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "PARAP",
+    "postcode": "0820",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "BEES CREEK",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "EVA VALLEY",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "FLY CREEK",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "LLOYD CREEK",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "MCMINNS LAGOON",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTHPORT",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "WAGAIT BEACH",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "HOLTZE",
+    "postcode": "0829",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "DURACK",
+    "postcode": "0830",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "FARRAR",
+    "postcode": "0830",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "MARLOW LAGOON",
+    "postcode": "0830",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODROFFE",
+    "postcode": "0830",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "JOHNSTON",
+    "postcode": "0832",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "ROSEBERY",
+    "postcode": "0832",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "ROSEBERY HEIGHTS",
+    "postcode": "0832",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "ZUCCOLI",
+    "postcode": "0832",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "HOWARD SPRINGS",
+    "postcode": "0835",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "GIRRAWEEN",
+    "postcode": "0836",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "HERBERT",
+    "postcode": "0836",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "NOONAMAH",
+    "postcode": "0837",
+    "state": "NT",
+    "listings": 24
+  },
+  {
+    "suburb": "MOIL",
+    "postcode": "0810",
+    "state": "NT",
+    "listings": 23
+  },
+  {
+    "suburb": "BELLAMACK",
+    "postcode": "0832",
+    "state": "NT",
+    "listings": 23
+  },
+  {
+    "suburb": "LARRAKEYAH",
+    "postcode": "0820",
+    "state": "NT",
+    "listings": 16
+  },
+  {
+    "suburb": "THE GARDENS",
+    "postcode": "0820",
+    "state": "NT",
+    "listings": 16
+  },
+  {
+    "suburb": "MARRARA",
+    "postcode": "0812",
+    "state": "NT",
+    "listings": 15
+  },
+  {
+    "suburb": "LIVINGSTONE",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 15
+  },
+  {
+    "suburb": "COCONUT GROVE",
+    "postcode": "0810",
+    "state": "NT",
+    "listings": 8
+  },
+  {
+    "suburb": "KNUCKEY LAGOON",
+    "postcode": "0828",
+    "state": "NT",
+    "listings": 8
+  },
+  {
+    "suburb": "DRIVER",
+    "postcode": "0830",
+    "state": "NT",
+    "listings": 8
+  },
+  {
+    "suburb": "BYNOE",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 7
+  },
+  {
+    "suburb": "CHARLOTTE",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 7
+  },
+  {
+    "suburb": "COLLETT CREEK",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 7
+  },
+  {
+    "suburb": "ROBIN FALLS",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 7
+  },
+  {
+    "suburb": "STAPLETON",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 7
+  },
+  {
+    "suburb": "BORROLOOLA",
+    "postcode": "0854",
+    "state": "NT",
+    "listings": 7
+  },
+  {
+    "suburb": "COX PENINSULA",
+    "postcode": "0822",
+    "state": "NT",
+    "listings": 6
+  }
+]
