@@ -58,7 +58,11 @@ th{cursor:pointer;user-select:none}
         <button class="vt px-3 py-1 text-[8px] uppercase tracking-wider font-bold rounded-full transition-all" data-view="sold" onclick="setView('sold')">Sold</button>
         <button class="vt px-3 py-1 text-[8px] uppercase tracking-wider font-bold rounded-full transition-all" data-view="listing" onclick="setView('listing')">For Sale</button>
       </div>
-      <div class="relative"><input class="bg-transparent border-b border-[#dcdad2] focus:border-[#6a4c7a] focus:ring-0 text-[10px] uppercase tracking-widest py-0.5 pr-6 w-40 placeholder:text-[#1b1c17]/25" placeholder="Search suburb..." id="srcIn" oninput="onSearchInput(this.value)" onkeydown="if(event.key==='Enter')onSearchCommit()"/><span class="material-symbols-outlined absolute right-0 top-0.5 text-sm text-[#1b1c17]/50 cursor-pointer" onclick="onSearchCommit()">search</span></div>
+      <div class="relative" id="searchWrap">
+        <input class="bg-transparent border-b border-[#dcdad2] focus:border-[#6a4c7a] focus:ring-0 text-[10px] uppercase tracking-widest py-0.5 pr-6 w-52 placeholder:text-[#1b1c17]/25" placeholder="Search suburb..." id="srcIn" oninput="onSearchInput(this.value)" onkeydown="onSearchKey(event)" onfocus="showAC()" autocomplete="off"/>
+        <span class="material-symbols-outlined absolute right-0 top-0.5 text-sm text-[#1b1c17]/50 cursor-pointer" onclick="onSearchCommit()">search</span>
+        <div id="acDrop" class="hidden absolute top-8 left-0 w-72 max-h-64 overflow-y-auto sf bg-white border border-[#dcdad2] shadow-lg z-50"></div>
+      </div>
     </div>
   </header>
   <div class="w-full max-w-[1400px] mx-auto px-10 py-10" id="content"></div>
@@ -424,20 +428,58 @@ function tsBarChart(w,h,data,labels,color,yFmt){
   svg+='</svg>';return svg;
 }
 
+let acIdx=-1; // autocomplete highlight index
+// Build suburb list with counts (cached)
+let _subCache=null;
+function getSubList(){
+  if(_subCache)return _subCache;
+  const map={};
+  (R.lots||[]).forEach(l=>{if(!map[l.suburb])map[l.suburb]={name:l.suburb,state:l.state,corridor:l.corridor||'',count:0,sold:0};map[l.suburb].count++;if(l.status==='sold')map[l.suburb].sold++;});
+  _subCache=Object.values(map).sort((a,b)=>b.count-a.count);
+  return _subCache;
+}
+
 function onSearchInput(val){
   searchTerm=val.toLowerCase();
-  // If cleared, deselect suburb
-  if(!val.trim()){activeSub=null;renderSubBadge();}
-  render();
+  if(!val.trim()){activeSub=null;renderSubBadge();hideAC();render();return;}
+  showAC();
+}
+function showAC(){
+  const val=(document.getElementById('srcIn')?.value||'').trim().toLowerCase();
+  const drop=document.getElementById('acDrop');
+  if(!drop||!val||val.length<1){hideAC();return;}
+  const subs=getSubList();
+  let matches=subs.filter(s=>s.name.toLowerCase().startsWith(val));
+  if(matches.length<8)matches=matches.concat(subs.filter(s=>!s.name.toLowerCase().startsWith(val)&&s.name.toLowerCase().includes(val)));
+  matches=matches.slice(0,12);
+  if(!matches.length){hideAC();return;}
+  acIdx=-1;
+  drop.innerHTML=matches.map((s,i)=>`<div class="ac-item flex items-center justify-between px-3 py-2 cursor-pointer hover:bg-[#f6f4eb] transition-colors text-[11px]" data-idx="${i}" data-name="${s.name}" onclick="pickAC('${s.name}')" onmouseenter="acIdx=${i};highlightAC()"><div><span class="font-semibold text-[#1b1c17]">${titleCase(s.name)}</span><span class="text-[#1b1c17]/35 ml-2 text-[9px]">${s.state} · ${s.corridor}</span></div><div class="text-[9px] text-[#1b1c17]/40">${s.count} lots${s.sold?' · '+s.sold+' sold':''}</div></div>`).join('');
+  drop.classList.remove('hidden');
+}
+function hideAC(){const d=document.getElementById('acDrop');if(d){d.classList.add('hidden');d.innerHTML='';}}
+function highlightAC(){
+  document.querySelectorAll('.ac-item').forEach((el,i)=>{el.style.background=i===acIdx?'#f0e6f6':'';});
+}
+function pickAC(name){hideAC();selectSuburb(name);go('overview');}
+function onSearchKey(e){
+  const items=document.querySelectorAll('.ac-item');
+  if(!items.length){if(e.key==='Enter')onSearchCommit();return;}
+  if(e.key==='ArrowDown'){e.preventDefault();acIdx=Math.min(acIdx+1,items.length-1);highlightAC();}
+  else if(e.key==='ArrowUp'){e.preventDefault();acIdx=Math.max(acIdx-1,0);highlightAC();}
+  else if(e.key==='Enter'){e.preventDefault();if(acIdx>=0&&items[acIdx]){pickAC(items[acIdx].dataset.name);}else{onSearchCommit();}}
+  else if(e.key==='Escape'){hideAC();}
 }
 function onSearchCommit(){
+  hideAC();
   const val=(document.getElementById('srcIn')?.value||'').trim();
   if(!val){selectSuburb(null);return;}
-  // Find exact match from lots data
-  const allSubs=[...new Set((R.lots||[]).map(l=>l.suburb))];
-  const match=allSubs.find(s=>s.toLowerCase()===val.toLowerCase())||allSubs.find(s=>s.toLowerCase().includes(val.toLowerCase()));
-  if(match)selectSuburb(match);
+  const subs=getSubList();
+  const match=subs.find(s=>s.name.toLowerCase()===val.toLowerCase())||subs.find(s=>s.name.toLowerCase().includes(val.toLowerCase()));
+  if(match)selectSuburb(match.name);
 }
+// Close dropdown when clicking outside
+document.addEventListener('click',e=>{if(!document.getElementById('searchWrap')?.contains(e.target))hideAC();});
 function sortTbl(c){if(sortCol===c)sortDir=sortDir==='asc'?'desc':'asc';else{sortCol=c;sortDir='desc';}render();}
 function renderPills(){
   const pills=['<button class="sp px-2.5 py-1 text-[8px] uppercase tracking-wider font-semibold rounded-full '+(cState===null?'ac':'bg-[#eae8e0] text-[#1b1c17]/55')+'" onclick="cState=null;renderPills();render()">All</button>'];
