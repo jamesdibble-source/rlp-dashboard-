@@ -58,7 +58,7 @@ th{cursor:pointer;user-select:none}
         <button class="vt px-3 py-1 text-[8px] uppercase tracking-wider font-bold rounded-full transition-all" data-view="sold" onclick="setView('sold')">Sold</button>
         <button class="vt px-3 py-1 text-[8px] uppercase tracking-wider font-bold rounded-full transition-all" data-view="listing" onclick="setView('listing')">For Sale</button>
       </div>
-      <div class="relative"><input class="bg-transparent border-b border-[#dcdad2] focus:border-[#6a4c7a] focus:ring-0 text-[10px] uppercase tracking-widest py-0.5 pr-6 w-40 placeholder:text-[#1b1c17]/25" placeholder="Search suburb..." id="srcIn" oninput="searchTerm=this.value.toLowerCase();render()"/><span class="material-symbols-outlined absolute right-0 top-0.5 text-sm text-[#1b1c17]/50">search</span></div>
+      <div class="relative"><input class="bg-transparent border-b border-[#dcdad2] focus:border-[#6a4c7a] focus:ring-0 text-[10px] uppercase tracking-widest py-0.5 pr-6 w-40 placeholder:text-[#1b1c17]/25" placeholder="Search suburb..." id="srcIn" oninput="onSearchInput(this.value)" onkeydown="if(event.key==='Enter')onSearchCommit()"/><span class="material-symbols-outlined absolute right-0 top-0.5 text-sm text-[#1b1c17]/50 cursor-pointer" onclick="onSearchCommit()">search</span></div>
     </div>
   </header>
   <div class="w-full max-w-[1400px] mx-auto px-10 py-10" id="content"></div>
@@ -83,7 +83,82 @@ const pages=[
   {id:'compare',icon:'compare_arrows',label:'Compare'}
 ];
 
-function D(){return cState?R.states[cState]:R.all}
+let activeSub=null; // currently selected suburb name (null = show all)
+
+function D(){
+  // If a suburb is selected, compute metrics from lot data on the fly
+  if(activeSub){return computeSuburbData(activeSub);}
+  return cState?R.states[cState]:R.all;
+}
+
+function computeSuburbData(subName){
+  let lots=filterLots(R.lots||[]).filter(l=>l.suburb===subName);
+  if(cState) lots=lots.filter(l=>l.state===cState);
+  if(!lots.length) return cState?R.states[cState]:R.all; // fallback
+  
+  const prices=lots.map(l=>l.price).sort((a,b)=>a-b);
+  const sizes=lots.map(l=>l.lot_size).sort((a,b)=>a-b);
+  const rates=lots.map(l=>l.rate).filter(r=>r>0).sort((a,b)=>a-b);
+  const sold=lots.filter(l=>l.status==='sold');
+  const listing=lots.filter(l=>l.status!=='sold');
+  
+  const med=arr=>arr.length?arr[Math.floor(arr.length/2)]:0;
+  const avg=arr=>arr.length?Math.round(arr.reduce((s,v)=>s+v,0)/arr.length):0;
+  
+  const totals={
+    total:lots.length, sold:sold.length, listings:listing.length,
+    avg_price:avg(prices), avg_size:avg(sizes), avg_rate:avg(rates),
+    med_price:med(prices), med_size:med(sizes), med_rate:Math.round(med(rates)),
+    months_stock:sold.length>0?(listing.length/(sold.length/12)).toFixed(1):'—'
+  };
+  
+  // Price distribution
+  const pBands=[{lo:0,hi:150000,b:'<150k'},{lo:150000,hi:200000,b:'150-200k'},{lo:200000,hi:250000,b:'200-250k'},{lo:250000,hi:300000,b:'250-300k'},{lo:300000,hi:350000,b:'300-350k'},{lo:350000,hi:400000,b:'350-400k'},{lo:400000,hi:450000,b:'400-450k'},{lo:450000,hi:500000,b:'450-500k'},{lo:500000,hi:600000,b:'500-600k'},{lo:600000,hi:9e9,b:'600k+'}];
+  const priceDist=pBands.map(b=>({bracket:b.b,count:lots.filter(l=>l.price>=b.lo&&l.price<b.hi).length})).filter(d=>d.count>0);
+  
+  // Size distribution
+  const sBands=[{lo:0,hi:200,b:'<200'},{lo:200,hi:250,b:'200-250'},{lo:250,hi:300,b:'250-300'},{lo:300,hi:350,b:'300-350'},{lo:350,hi:400,b:'350-400'},{lo:400,hi:450,b:'400-450'},{lo:450,hi:500,b:'450-500'},{lo:500,hi:550,b:'500-550'},{lo:550,hi:600,b:'550-600'},{lo:600,hi:700,b:'600-700'},{lo:700,hi:800,b:'700-800'},{lo:800,hi:9e9,b:'800+'}];
+  const sizeDist=sBands.map(b=>({bracket:b.b,count:lots.filter(l=>l.lot_size>=b.lo&&l.lot_size<b.hi).length})).filter(d=>d.count>0);
+  
+  // Rate distribution
+  const rBands=[{lo:0,hi:200,b:'<200'},{lo:200,hi:400,b:'200-400'},{lo:400,hi:600,b:'400-600'},{lo:600,hi:800,b:'600-800'},{lo:800,hi:1000,b:'800-1k'},{lo:1000,hi:1200,b:'1-1.2k'},{lo:1200,hi:9e9,b:'1.2k+'}];
+  const rateDist=rBands.map(b=>({bracket:b.b,count:lots.filter(l=>l.rate>=b.lo&&l.rate<b.hi).length})).filter(d=>d.count>0);
+  
+  // Corridor info (the suburb's corridor)
+  const cor=lots[0]?.corridor||'Unknown';
+  const corridors=[{corridor:cor,total:lots.length,avg_price:avg(prices),avg_size:avg(sizes),avg_rate:avg(rates),sold:sold.length,listings:listing.length}];
+  
+  // Top/bottom rate — just this suburb
+  const topRate=[{suburb:subName,corridor:cor,avg_rate:avg(rates),avg_price:avg(prices),count:lots.length}];
+  const bottomRate=topRate;
+  
+  return {totals,corridors,lgas:[],suburbs:[{suburb:subName,lga:'',corridor:cor,state:lots[0]?.state||'',total:lots.length,sold:sold.length,listings:listing.length,avg_price:avg(prices),avg_size:avg(sizes),avg_rate:avg(rates)}],priceDist,sizeDist,rateDist,topRate,bottomRate};
+}
+
+function selectSuburb(name){
+  activeSub=name||null;
+  searchTerm=name?name.toLowerCase():'';
+  const inp=document.getElementById('srcIn');
+  if(inp)inp.value=name||'';
+  renderSubBadge();
+  render();
+}
+
+function renderSubBadge(){
+  let el=document.getElementById('subBadge');
+  if(!el){
+    const hdr=document.querySelector('header .flex.items-center');
+    if(!hdr)return;
+    const d=document.createElement('div');d.id='subBadge';d.className='flex items-center';
+    hdr.prepend(d);el=d;
+  }
+  if(activeSub){
+    el.innerHTML='<span class="flex items-center gap-1.5 bg-[#6a4c7a] text-white px-3 py-1 rounded-full text-[9px] uppercase tracking-wider font-bold mr-3">'+titleCase(activeSub)+'<span class="cursor-pointer ml-1 opacity-70 hover:opacity-100" onclick="selectSuburb(null)">✕</span></span>';
+  } else {
+    el.innerHTML='';
+  }
+}
+
 function fmt(n){return n?'$'+Math.round(n).toLocaleString():'-'}
 function fK(n){if(!n)return'-';return n>=1e6?'$'+(n/1e6).toFixed(1)+'m':n>=1e3?'$'+Math.round(n/1e3)+'k':fmt(n)}
 function fN(n){return n?n.toLocaleString():'0'}
@@ -269,7 +344,46 @@ document.getElementById('nav').innerHTML=pages.map(p=>`<a class="nav-i flex item
 function go(p){pg=p;document.querySelectorAll('.nav-i').forEach((el,i)=>{const a=pages[i].id===p;el.classList.toggle('ac',a);el.querySelector('.material-symbols-outlined').style.fontVariationSettings="'FILL' "+(a?1:0);});document.getElementById('pgTitle').textContent=pages.find(x=>x.id===p).label;render();}
 function setView(v){viewMode=v;document.querySelectorAll('.vt').forEach(b=>{const a=b.dataset.view===v;b.style.background=a?'#6a4c7a':'transparent';b.style.color=a?'#fff':'rgba(27,28,23,.45)';});render();}
 function filterLots(lots){if(viewMode==='both')return lots;if(viewMode==='sold')return lots.filter(l=>l.status==='sold');return lots.filter(l=>l.status!=='sold');}
-function TS(){return cState&&R.stateTS[cState]?R.stateTS[cState]:R.ts;}
+function TS(){
+  if(activeSub){return computeSuburbTS(activeSub);}
+  return cState&&R.stateTS[cState]?R.stateTS[cState]:R.ts;
+}
+function computeSuburbTS(subName){
+  // Build time series from individual lots for this suburb
+  const lots=filterLots(R.lots||[]).filter(l=>l.suburb===subName);
+  if(cState) lots.filter(l=>l.state===cState);
+  const baseTS=cState&&R.stateTS[cState]?R.stateTS[cState]:R.ts;
+  const quarters=baseTS.quarters||[];
+  
+  function toQ(d){if(!d)return null;const y=parseInt(d.slice(0,4)),m=parseInt(d.slice(5,7));if(isNaN(y)||isNaN(m)||y<2020)return null;return y+'-Q'+Math.ceil(m/3);}
+  function med(arr){if(!arr.length)return 0;const s=[...arr].sort((a,b)=>a-b);return s[Math.floor(s.length/2)];}
+  
+  const soldByQ={};
+  lots.filter(l=>l.status==='sold'&&l.sd).forEach(l=>{
+    const q=toQ(l.sd);if(!q)return;
+    if(!soldByQ[q])soldByQ[q]={prices:[],sizes:[],rates:[],count:0};
+    soldByQ[q].prices.push(l.price);soldByQ[q].sizes.push(l.lot_size);
+    if(l.rate>0)soldByQ[q].rates.push(l.rate);soldByQ[q].count++;
+  });
+  
+  const listedByQ={};
+  lots.filter(l=>l.ld).forEach(l=>{
+    const q=toQ(l.ld);if(!q)return;
+    if(!listedByQ[q])listedByQ[q]={prices:[],sizes:[],rates:[],count:0};
+    listedByQ[q].prices.push(l.price);listedByQ[q].sizes.push(l.lot_size);
+    if(l.rate>0)listedByQ[q].rates.push(l.rate);listedByQ[q].count++;
+  });
+  
+  return {
+    quarters,
+    sold:quarters.map(q=>{const d=soldByQ[q];return d?{q,count:d.count,medPrice:Math.round(med(d.prices)),medSize:Math.round(med(d.sizes)),medRate:Math.round(med(d.rates)),corridors:{}}:{q,count:0,medPrice:0,medSize:0,medRate:0,corridors:{}};}),
+    listed:quarters.map(q=>{const d=listedByQ[q];return d?{q,count:d.count,medPrice:Math.round(med(d.prices)),medSize:Math.round(med(d.sizes)),medRate:Math.round(med(d.rates))}:{q,count:0,medPrice:0,medSize:0,medRate:0};}),
+    soldMonthly:baseTS.soldMonthly||[],
+    months:baseTS.months||[],
+    corridorSeries:{},
+    suburbSeries:{}
+  };
+}
 // Real time-series line chart from data
 function tsLineChart(w,h,series,labels,yFmt){
   // series = [{data:[numbers], color, label}], labels = quarter strings
@@ -310,6 +424,20 @@ function tsBarChart(w,h,data,labels,color,yFmt){
   svg+='</svg>';return svg;
 }
 
+function onSearchInput(val){
+  searchTerm=val.toLowerCase();
+  // If cleared, deselect suburb
+  if(!val.trim()){activeSub=null;renderSubBadge();}
+  render();
+}
+function onSearchCommit(){
+  const val=(document.getElementById('srcIn')?.value||'').trim();
+  if(!val){selectSuburb(null);return;}
+  // Find exact match from lots data
+  const allSubs=[...new Set((R.lots||[]).map(l=>l.suburb))];
+  const match=allSubs.find(s=>s.toLowerCase()===val.toLowerCase())||allSubs.find(s=>s.toLowerCase().includes(val.toLowerCase()));
+  if(match)selectSuburb(match);
+}
 function sortTbl(c){if(sortCol===c)sortDir=sortDir==='asc'?'desc':'asc';else{sortCol=c;sortDir='desc';}render();}
 function renderPills(){
   const pills=['<button class="sp px-2.5 py-1 text-[8px] uppercase tracking-wider font-semibold rounded-full '+(cState===null?'ac':'bg-[#eae8e0] text-[#1b1c17]/55')+'" onclick="cState=null;renderPills();render()">All</button>'];
@@ -427,8 +555,7 @@ function renderScatter(){
 function lotClick(id){
   highlightLot=id;
   const lot=(R.lots||[]).find(l=>l.id===id);
-  if(lot){searchTerm=lot.suburb.toLowerCase();document.getElementById('srcIn').value=lot.suburb;}
-  go('registry');
+  if(lot){selectSuburb(lot.suburb);go('suburb');}
 }
 
 // ──── PAGE RENDERERS ────
@@ -468,7 +595,7 @@ function renderOverview(){
   }
   
   return `<div class="fi">
-    <div class="mb-8"><span class="text-[9px] uppercase tracking-[0.35em] text-[#1b1c17]/35 font-bold">${fN(t.total)} lots tracked · ${c.length} corridors · ${fN(t.sold)} sold · ${fN(t.listings)} listed</span></div>
+    <div class="mb-8"><span class="text-[9px] uppercase tracking-[0.35em] text-[#1b1c17]/35 font-bold">${activeSub?titleCase(activeSub)+' · ':''} ${fN(t.total)} lots tracked · ${activeSub?'':c.length+' corridors · '}${fN(t.sold)} sold · ${fN(t.listings)} listed</span></div>
     <div class="grid grid-cols-6 border-t border-b border-[#dcdad2] py-8 mb-10">
       ${metric('Total Lots',fN(t.total),'across '+R.stateList.join(', '))}
       ${metric('Median Price',fK(t.med_price),'QoQ / YoY deltas pending',2.1)}
@@ -665,7 +792,7 @@ function renderRegistry(){
       return `<tr class="dr" style="${hl}"><td class="py-2 px-2.5 text-[11px] font-medium">${l.address||l.suburb}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${l.suburb}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${l.corridor||'-'}</td><td class="py-2 px-2.5 text-[11px] text-right font-medium">${l.lot_size}m²</td><td class="py-2 px-2.5 text-[11px] text-right text-[#486456]">${l.status}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#61323a]">${fmt(l.price)}</td><td class="py-2 px-2.5 text-[11px] text-right">${fmt(l.price)}</td><td class="py-2 px-2.5 text-[11px] text-right">${l.lot_size}m²</td><td class="py-2 px-2.5 text-[11px] text-right font-semibold text-[#513561]">$${Math.round(l.rate)}</td></tr>`;
     }).join('');
   }
-  const tb=highlightLot&&lotRows?lotRows:subs.slice(0,200).map(s=>`<tr class="dr"><td class="py-2 px-2.5 text-[11px] font-medium">${s.suburb}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${s.lga||'-'}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${s.corridor||'-'}</td><td class="py-2 px-2.5 text-[11px] text-right font-medium">${fN(s.total)}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#486456]">${fN(s.sold)}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#61323a]">${fN(s.listings)}</td><td class="py-2 px-2.5 text-[11px] text-right">${fmt(s.avg_price)}</td><td class="py-2 px-2.5 text-[11px] text-right">${s.avg_size}m²</td><td class="py-2 px-2.5 text-[11px] text-right font-semibold text-[#513561]">$${s.avg_rate}</td></tr>`).join('');
+  const tb=highlightLot&&lotRows?lotRows:subs.slice(0,200).map(s=>`<tr class="dr"><td class="py-2 px-2.5 text-[11px] font-medium cursor-pointer hover:text-[#6a4c7a]" onclick="selectSuburb('${s.suburb}');go('overview')">${titleCase(s.suburb)}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${s.lga||'-'}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${s.corridor||'-'}</td><td class="py-2 px-2.5 text-[11px] text-right font-medium">${fN(s.total)}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#486456]">${fN(s.sold)}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#61323a]">${fN(s.listings)}</td><td class="py-2 px-2.5 text-[11px] text-right">${fmt(s.avg_price)}</td><td class="py-2 px-2.5 text-[11px] text-right">${s.avg_size}m²</td><td class="py-2 px-2.5 text-[11px] text-right font-semibold text-[#513561]">$${s.avg_rate}</td></tr>`).join('');
   return `<div class="fi">
     <div class="mb-6">${sec('Parcel Ledger','Showing '+Math.min(subs.length,200)+' of '+subs.length+' suburbs',{t:'Parcel Ledger',w:'Full database of every suburb with land activity. Sortable by any column. Click a column header to sort. Use the search bar to filter by suburb, LGA, or corridor name.',m:'Aggregated from all scraped lot data. Avg Price = mean of all lot prices in that suburb. $/m² = mean of price÷area for each lot. Sold/Listed counts from listing status at time of scrape.'})}</div>
     <div class="mb-8 p-6 bg-[#f6f4eb] border border-[#dcdad2]"><span class="text-[10px] uppercase tracking-[0.3em] font-bold text-[#1b1c17] mb-4 block">LGA Summary ${info('LGA Summary','Local Government Areas with the most land market activity. Each card shows total lots, average $/m² rate, and average lot price.','Lots grouped by LGA field. Top 8 by lot count displayed.')}</span><div class="grid grid-cols-4 gap-3">${d.lgas.slice(0,8).map(l=>`<div class="bg-[#fcf9f1] p-3 border border-[#dcdad2]"><span class="text-[11px] font-medium block mb-0.5">${l.lga}</span><span class="text-xl font-medium text-[#111]">${fN(l.total)}</span><span class="text-[9px] text-[#1b1c17]/35 ml-1">lots</span><div class="mt-1.5"><span class="text-[9px] text-[#513561] font-semibold">$${l.avg_rate}/m²</span><span class="text-[9px] text-[#1b1c17]/35 ml-2">${fK(l.avg_price)}</span></div></div>`).join('')}</div></div>
@@ -745,8 +872,8 @@ function renderSuburb(){
   
   return `<div class="fi">
     <div class="mb-6 flex items-center gap-4">
-      <select onchange="searchTerm=this.value.toLowerCase();render()" class="bg-[#fcf9f1] border border-[#dcdad2] text-[12px] uppercase tracking-wider py-2 px-4 font-bold text-[#1b1c17] focus:ring-1 focus:ring-[#6a4c7a] w-72">
-        ${subs.map(s=>'<option value="'+s.suburb.toLowerCase()+'"'+(s.suburb===current.suburb?' selected':'')+'>'+titleCase(s.suburb)+' ('+s.total+' lots)</option>').join('')}
+      <select onchange="selectSuburb(this.options[this.selectedIndex].dataset.name)" class="bg-[#fcf9f1] border border-[#dcdad2] text-[12px] uppercase tracking-wider py-2 px-4 font-bold text-[#1b1c17] focus:ring-1 focus:ring-[#6a4c7a] w-72">
+        ${subs.map(s=>'<option value="'+s.suburb.toLowerCase()+'" data-name="'+s.suburb+'"'+(s.suburb===current.suburb?' selected':'')+'>'+titleCase(s.suburb)+' ('+s.total+' lots)</option>').join('')}
       </select>
       <a href="${mapUrl}" target="_blank" class="flex items-center gap-1 text-[10px] text-[#6a4c7a] hover:text-[#513561] font-semibold"><span class="material-symbols-outlined text-sm">map</span>View on Google Maps</a>
       <span class="text-[9px] text-[#1b1c17]/30 uppercase tracking-wider">${current.corridor||''} · ${current.lga||''} · ${current.state||''}</span>
