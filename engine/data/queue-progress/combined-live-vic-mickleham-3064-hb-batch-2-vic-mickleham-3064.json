@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-03T02:41:16.965Z",
+    "createdAt": "2026-04-03T02:40:05.002Z",
+    "mode": "test",
+    "states": [
+      "VIC"
+    ],
+    "sources": [
+      "domain",
+      "openlot",
+      "rea"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1
+  },
+  "queue": [
+    {
+      "id": "VIC:MICKLEHAM:3064",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "MICKLEHAM",
+        "postcode": "3064",
+        "state": "VIC",
+        "listings": 204,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-03T02:40:05.003Z",
+      "sourceResults": {
+        "domain": {
+          "status": "ok",
+          "count": 56,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-03T02:41:16.942Z"
+        },
+        "openlot": {
+          "status": "ok",
+          "count": 10,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-03T02:41:16.942Z"
+        },
+        "rea": {
+          "status": "ok",
+          "count": 20,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-03T02:41:16.942Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 64,
+        "inserted": 40,
+        "updated": 24,
+        "finishedAt": "2026-04-03T02:41:16.965Z"
+      }
+    }
+  ]
+}

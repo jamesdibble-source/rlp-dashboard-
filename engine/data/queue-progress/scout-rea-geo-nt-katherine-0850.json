@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-04T03:17:17.004Z",
+    "createdAt": "2026-04-04T03:16:07.218Z",
+    "mode": "test",
+    "states": [
+      "NT"
+    ],
+    "sources": [
+      "domain",
+      "rea"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1,
+    "queueLimit": 1
+  },
+  "queue": [
+    {
+      "id": "NT:KATHERINE:0850",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "KATHERINE",
+        "postcode": "0850",
+        "state": "NT",
+        "listings": 164,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T03:16:07.219Z",
+      "sourceResults": {
+        "domain": {
+          "status": "ok",
+          "count": 41,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T03:17:16.973Z"
+        },
+        "rea": {
+          "status": "ok",
+          "count": 11,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T03:17:16.973Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 50,
+        "inserted": 50,
+        "updated": 0,
+        "finishedAt": "2026-04-04T03:17:17.004Z"
+      }
+    }
+  ]
+}

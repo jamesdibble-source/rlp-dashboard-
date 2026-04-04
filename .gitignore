@@ -1,0 +1,14 @@
+node_modules/
+engine/data/lots.db
+engine/data/lots.db-shm
+engine/data/lots.db-wal
+engine/data/scrape-progress-*.json
+engine/data/rea-progress-*.json
+engine/data/sold-progress-*.json
+engine/data/discover-progress-*.json
+deploy/
+/tmp/
+*.log
+.DS_Store
+credentials/
+~$*

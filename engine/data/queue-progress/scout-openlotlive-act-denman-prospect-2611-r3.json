@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-04T03:20:47.122Z",
+    "createdAt": "2026-04-04T03:20:26.840Z",
+    "mode": "test",
+    "states": [
+      "ACT"
+    ],
+    "sources": [
+      "openlot"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1,
+    "queueLimit": 1
+  },
+  "queue": [
+    {
+      "id": "ACT:DENMAN PROSPECT:2611",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "DENMAN PROSPECT",
+        "postcode": "2611",
+        "state": "ACT",
+        "listings": 96,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "partial",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T03:20:26.841Z",
+      "sourceResults": {
+        "openlot": {
+          "status": "error",
+          "count": 0,
+          "inserted": 0,
+          "updated": 0,
+          "error": "Command failed: /usr/local/bin/node /Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-live-to-ingest.js --suburb DENMAN PROSPECT --state ACT --postcode 2611 --mode test --output /var/folders/wj/1q27r9490g54mnc7l9_hl8_c0000gn/T/openlot-live-summary-1775272826841-b8tqzcc50b6.json --skipIngest\n/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:690\n          throw new Error(`Search button is still disabled before click for label \"${step.label}\"`);\n          ^\n\nError: Search button is still disabled before click for label \"Search\"\n    at Object.click (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:690:17)\n    at executePlan (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:798:72)\n    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:853:19)\n    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:869:3)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n\nNode.js v22.16.0\nnode:child_process:921\n    throw err;\n    ^\n\nError: Command failed: /usr/local/bin/node engine/openlot-browser-a2ui-runner.js --input /Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/tmp/openlot-live-runs/act-denman-prospect-2611-2026-04-04T03-20-26-857Z/work/a2ui-plan.jsonl --adapter openclaw-cli-executor --snapshotFormat ai --snapshotOutDir /Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/tmp/openlot-live-runs/act-denman-prospect-2611-2026-04-04T03-20-26-857Z/snapshots --output /Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/tmp/openlot-live-runs/act-denman-prospect-2611-2026-04-04T03-20-26-857Z/work/cli-execution.json\n/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:690\n          throw new Error(`Search button is still disabled before click for label \"${step.label}\"`);\n          ^\n\nError: Search button is still disabled before click for label \"Search\"\n    at Object.click (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:690:17)\n    at executePlan (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:798:72)\n    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:853:19)\n    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:869:3)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n\nNode.js v22.16.0\n\n    at genericNodeError (node:internal/errors:983:15)\n    at wrappedFn (node:internal/errors:537:14)\n    at checkExecSyncError (node:child_process:882:11)\n    at execFileSync (node:child_process:918:15)\n    at runNode (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-live-to-ingest.js:52:18)\n    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-live-to-ingest.js:121:24)\n    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-live-to-ingest.js:196:3)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32) {\n  status: 1,\n  signal: null,\n  output: [\n    null,\n    '',\n    '/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:690\\n' +\n      '          throw new Error(`Search button is still disabled before click for label \"${step.label}\"`);\\n' +\n      '          ^\\n' +\n      '\\n' +\n      'Error: Search button is still disabled before click for label \"Search\"\\n' +\n      '    at Object.click (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:690:17)\\n' +\n      '    at executePlan (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:798:72)\\n' +\n      '    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:853:19)\\n' +\n      '    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:869:3)\\n' +\n      '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\\n' +\n      '    at Object..js (node:internal/modules/cjs/loader:1895:10)\\n' +\n      '    at Module.load (node:internal/modules/cjs/loader:1465:32)\\n' +\n      '    at Function._load (node:internal/modules/cjs/loader:1282:12)\\n' +\n      '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\\n' +\n      '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\\n' +\n      '\\n' +\n      'Node.js v22.16.0\\n'\n  ],\n  pid: 10699,\n  stdout: '',\n  stderr: '/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:690\\n' +\n    '          throw new Error(`Search button is still disabled before click for label \"${step.label}\"`);\\n' +\n    '          ^\\n' +\n    '\\n' +\n    'Error: Search button is still disabled before click for label \"Search\"\\n' +\n    '    at Object.click (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:690:17)\\n' +\n    '    at executePlan (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:798:72)\\n' +\n    '    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:853:19)\\n' +\n    '    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:869:3)\\n' +\n    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\\n' +\n    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\\n' +\n    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\\n' +\n    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\\n' +\n    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\\n' +\n    '    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\\n' +\n    '\\n' +\n    'Node.js v22.16.0\\n'\n}\n\nNode.js v22.16.0\n",
+          "finishedAt": "2026-04-04T03:20:47.122Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 0,
+        "inserted": 0,
+        "updated": 0,
+        "finishedAt": "2026-04-04T03:20:47.122Z"
+      }
+    }
+  ]
+}

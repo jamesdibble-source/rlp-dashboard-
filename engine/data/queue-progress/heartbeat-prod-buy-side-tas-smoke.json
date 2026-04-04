@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-04T02:02:21.777Z",
+    "createdAt": "2026-04-04T02:01:22.026Z",
+    "mode": "test",
+    "states": [
+      "TAS"
+    ],
+    "sources": [
+      "domain",
+      "rea"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1,
+    "queueLimit": 1
+  },
+  "queue": [
+    {
+      "id": "TAS:ABERDEEN:7310",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "ABERDEEN",
+        "postcode": "7310",
+        "state": "TAS",
+        "listings": 24,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T02:01:22.027Z",
+      "sourceResults": {
+        "domain": {
+          "status": "ok",
+          "count": 20,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T02:02:21.773Z"
+        },
+        "rea": {
+          "status": "ok",
+          "count": 0,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T02:02:21.773Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 19,
+        "inserted": 19,
+        "updated": 0,
+        "finishedAt": "2026-04-04T02:02:21.777Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Price Analysis | Grange Land Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#00020a",
+              "on-background": "#191c1e",
+              "tertiary-container": "#00211e",
+              "surface-tint": "#495e8a",
+              "on-secondary-fixed-variant": "#004f53",
+              "outline-variant": "#c5c6d0",
+              "primary-fixed": "#d8e2ff",
+              "on-tertiary-container": "#009589",
+              "on-error-container": "#93000a",
+              "tertiary": "#000202",
+              "surface": "#f8f9fb",
+              "surface-bright": "#f8f9fb",
+              "outline": "#75777f",
+              "surface-variant": "#e1e2e4",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#44474f",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#7084b3",
+              "on-primary-fixed": "#001a42",
+              "surface-container-highest": "#e1e2e4",
+              "on-tertiary-fixed-variant": "#005049",
+              "secondary": "#14696d",
+              "background": "#f8f9fb",
+              "tertiary-fixed": "#84f5e8",
+              "secondary-fixed-dim": "#8ad3d7",
+              "primary-fixed-dim": "#b1c6f9",
+              "on-secondary-container": "#1b6d71",
+              "surface-container-high": "#e7e8ea",
+              "on-error": "#ffffff",
+              "surface-container-low": "#f2f4f6",
+              "on-secondary-fixed": "#002021",
+              "on-tertiary": "#ffffff",
+              "on-surface": "#191c1e",
+              "on-primary-fixed-variant": "#314671",
+              "on-tertiary-fixed": "#00201d",
+              "inverse-surface": "#2e3132",
+              "secondary-fixed": "#a6eff3",
+              "surface-dim": "#d9dadc",
+              "error-container": "#ffdad6",
+              "secondary-container": "#a3ecf0",
+              "inverse-primary": "#b1c6f9",
+              "tertiary-fixed-dim": "#66d9cc",
+              "on-secondary": "#ffffff",
+              "surface-container": "#edeef0",
+              "inverse-on-surface": "#f0f1f3",
+              "primary-container": "#001b44",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+            font-size: 20px;
+        }
+        .chart-grid-line {
+            stroke: rgba(197, 198, 208, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container">
+<!-- SideNavBar Shell -->
+<aside class="fixed left-0 top-0 h-screen flex flex-col z-50 bg-[#001b44] dark:bg-[#00020a] docked left-0 h-full w-64 shadow-[12px_0_32px_-4px_rgba(0,27,68,0.08)]">
+<div class="p-8">
+<h1 class="text-xl font-extrabold text-white tracking-tight">Grange Land</h1>
+<p class="font-manrope font-extrabold uppercase tracking-wider text-[10px] text-[#a3ecf0] dark:text-[#66d9cc] mt-1">Intelligence Platform</p>
+</div>
+<nav class="flex-1 mt-4">
+<a class="text-white/70 hover:text-white py-4 px-6 flex items-center gap-3 transition-colors hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-manrope font-extrabold uppercase tracking-wider text-[10px]">Overview</span>
+</a>
+<a class="text-white/70 hover:text-white py-4 px-6 flex items-center gap-3 transition-colors hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">trending_up</span>
+<span class="font-manrope font-extrabold uppercase tracking-wider text-[10px]">Growth Corridors</span>
+</a>
+<a class="bg-white/10 text-[#a3ecf0] border-r-4 border-[#14696d] py-4 px-6 flex items-center gap-3 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-manrope font-extrabold uppercase tracking-wider text-[10px]">Price Analysis</span>
+</a>
+<a class="text-white/70 hover:text-white py-4 px-6 flex items-center gap-3 transition-colors hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">speed</span>
+<span class="font-manrope font-extrabold uppercase tracking-wider text-[10px]">Sales Velocity</span>
+</a>
+<a class="text-white/70 hover:text-white py-4 px-6 flex items-center gap-3 transition-colors hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="font-manrope font-extrabold uppercase tracking-wider text-[10px]">Market Benchmarks</span>
+</a>
+</nav>
+<div class="mt-auto mb-8">
+<a class="text-white/70 hover:text-white py-4 px-6 flex items-center gap-3 transition-colors hover:bg-white/5" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-manrope font-extrabold uppercase tracking-wider text-[10px]">Settings</span>
+</a>
+<a class="text-white/70 hover:text-white py-4 px-6 flex items-center gap-3 transition-colors hover:bg-white/5" href="#">
+<span class="material-symbols-outlined">help_outline</span>
+<span class="font-manrope font-extrabold uppercase tracking-wider text-[10px]">Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Wrapper -->
+<main class="ml-64 min-h-screen">
+<!-- TopNavBar Shell -->
+<header class="flex justify-between items-center h-20 px-8 w-full bg-[#f8f9fb] dark:bg-[#191c1e]">
+<div class="flex items-center gap-8">
+<h2 class="font-manrope font-extrabold text-2xl tracking-tight text-[#001b44] dark:text-white">Price Analysis</h2>
+<!-- Search Component -->
+<div class="relative flex items-center bg-surface-container-low rounded-lg px-4 py-2 w-96 focus-within:ring-2 focus-within:ring-[#14696d]/20 transition-all">
+<span class="material-symbols-outlined text-outline">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-outline/60" placeholder="Search markets, regions, or lot types..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<button class="p-2 text-on-surface hover:bg-[#f2f4f6] dark:hover:bg-[#2e3133] rounded-lg transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-on-surface hover:bg-[#f2f4f6] dark:hover:bg-[#2e3133] rounded-lg transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-surface-container-high">
+<img alt="User Profile Avatar" class="w-full h-full object-cover" data-alt="professional portrait of a real estate executive with a confident expression in a clean studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBap7IVMuU4r0b2H5-aswbtvgFDsQy83zyf66S4lXN9DrIFevhTgLBQSBLVQDlPp_je9YwmqZlvcSFVLfFe0lDtIyGU8UmFsWDanDtgvQfvHRyXxBqH4iF_lFQpqPNQrBFlO8p-kAa3uIuwy8wJbC-O3bsCIopnFkCNcMceH8xIdO42OwvrbvikTeYFFBGjTJ8grESeq6g3br2vijTVgnG19V2mk1WHyoJ-PF8KH779e2HQY-XjM0kmyJAhpA9Ka_fmUcbMHL96LB0g"/>
+</div>
+</div>
+</header>
+<!-- Separation Line -->
+<div class="bg-[#f2f4f6] dark:bg-[#2e3133] h-[1px] w-full"></div>
+<!-- Content Canvas -->
+<div class="p-8 space-y-8">
+<!-- Contextual Filter Header -->
+<div class="flex justify-between items-end">
+<div class="space-y-1">
+<p class="font-label text-xs font-bold uppercase tracking-[0.1em] text-outline">Market Snapshot</p>
+<h3 class="font-headline text-3xl text-primary">Greater Melbourne Region</h3>
+</div>
+<!-- Segmented Control -->
+<div class="bg-surface-container-low p-1 rounded-lg flex gap-1">
+<button class="px-6 py-2 rounded-md bg-surface-container-lowest shadow-sm text-sm font-bold text-secondary">All Markets</button>
+<button class="px-6 py-2 rounded-md text-sm font-semibold text-outline hover:text-on-surface transition-colors">Sold Only</button>
+</div>
+</div>
+<!-- Top Row: Area Charts (Bento Grid Style) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Median Price Trend Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_12px_32px_-4px_rgba(0,27,68,0.08)]">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h4 class="font-label text-xs font-bold uppercase tracking-[0.1em] text-outline mb-1">Median Price Trend</h4>
+<p class="font-headline text-2xl text-primary tracking-tight">$214,500 <span class="text-sm font-bold text-secondary bg-secondary-container px-2 py-0.5 rounded ml-2">+2.4% MoM</span></p>
+</div>
+<span class="material-symbols-outlined text-outline">more_horiz</span>
+</div>
+<!-- Chart Visualization Placeholder (SVG Line) -->
+<div class="h-64 relative group">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 40">
+<defs>
+<lineargradient id="blueGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#001b44" stop-opacity="0.1"></stop>
+<stop offset="100%" stop-color="#001b44" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0 35 L10 32 L20 34 L30 28 L40 30 L50 22 L60 25 L70 18 L80 15 L90 12 L100 8 V40 H0 Z" fill="url(#blueGradient)"></path>
+<path d="M0 35 L10 32 L20 34 L30 28 L40 30 L50 22 L60 25 L70 18 L80 15 L90 12 L100 8" fill="none" stroke="#001b44" stroke-width="0.5"></path>
+<circle cx="100" cy="8" fill="#001b44" r="1"></circle>
+</svg>
+<div class="absolute bottom-0 left-0 w-full flex justify-between text-[10px] font-bold text-outline pt-4 border-t border-outline-variant/15">
+<span>JAN 22</span>
+<span>JUL 22</span>
+<span>JAN 23</span>
+<span>JUL 23</span>
+<span>CURRENT</span>
+</div>
+</div>
+</div>
+<!-- Median $/m² Trend Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_12px_32px_-4px_rgba(0,27,68,0.08)]">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h4 class="font-label text-xs font-bold uppercase tracking-[0.1em] text-outline mb-1">Median $/m² Trend</h4>
+<p class="font-headline text-2xl text-primary tracking-tight">$342.10 <span class="text-sm font-bold text-on-tertiary-container bg-tertiary-fixed-dim px-2 py-0.5 rounded ml-2">+1.8% MoM</span></p>
+</div>
+<span class="material-symbols-outlined text-outline">more_horiz</span>
+</div>
+<!-- Chart Visualization Placeholder (SVG Line) -->
+<div class="h-64 relative">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 40">
+<defs>
+<lineargradient id="tealGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#14696d" stop-opacity="0.1"></stop>
+<stop offset="100%" stop-color="#14696d" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0 38 L10 35 L20 32 L30 34 L40 28 L50 25 L60 22 L70 20 L80 14 L90 16 L100 10 V40 H0 Z" fill="url(#tealGradient)"></path>
+<path d="M0 38 L10 35 L20 32 L30 34 L40 28 L50 25 L60 22 L70 20 L80 14 L90 16 L100 10" fill="none" stroke="#14696d" stroke-width="0.5"></path>
+<circle cx="100" cy="10" fill="#14696d" r="1"></circle>
+</svg>
+<div class="absolute bottom-0 left-0 w-full flex justify-between text-[10px] font-bold text-outline pt-4 border-t border-outline-variant/15">
+<span>JAN 22</span>
+<span>JUL 22</span>
+<span>JAN 23</span>
+<span>JUL 23</span>
+<span>CURRENT</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Middle Row: Bar Charts -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Price Distribution Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_12px_32px_-4px_rgba(0,27,68,0.08)]">
+<h4 class="font-label text-xs font-bold uppercase tracking-[0.1em] text-outline mb-8">Price Distribution ($)</h4>
+<div class="h-48 flex items-end gap-2 px-2">
+<div class="flex-1 bg-on-primary-container/20 hover:bg-on-primary-container transition-colors rounded-t h-[20%]"></div>
+<div class="flex-1 bg-on-primary-container/20 hover:bg-on-primary-container transition-colors rounded-t h-[45%]"></div>
+<div class="flex-1 bg-on-primary-container/20 hover:bg-on-primary-container transition-colors rounded-t h-[75%]"></div>
+<div class="flex-1 bg-on-primary-container hover:bg-on-primary-container transition-colors rounded-t h-[95%]"></div>
+<div class="flex-1 bg-on-primary-container/20 hover:bg-on-primary-container transition-colors rounded-t h-[60%]"></div>
+<div class="flex-1 bg-on-primary-container/20 hover:bg-on-primary-container transition-colors rounded-t h-[35%]"></div>
+<div class="flex-1 bg-on-primary-container/20 hover:bg-on-primary-container transition-colors rounded-t h-[15%]"></div>
+</div>
+<div class="flex justify-between mt-4 text-[10px] font-bold text-outline uppercase">
+<span>$50k</span>
+<span>$150k</span>
+<span>$250k</span>
+<span>$350k</span>
+<span>$450k+</span>
+</div>
+</div>
+<!-- Lot Size Distribution Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_12px_32px_-4px_rgba(0,27,68,0.08)]">
+<h4 class="font-label text-xs font-bold uppercase tracking-[0.1em] text-outline mb-8">Lot Size Distribution (m²)</h4>
+<div class="h-48 flex items-end gap-2 px-2">
+<div class="flex-1 bg-[#d1a000]/20 hover:bg-[#d1a000] transition-colors rounded-t h-[10%]"></div>
+<div class="flex-1 bg-[#d1a000]/20 hover:bg-[#d1a000] transition-colors rounded-t h-[30%]"></div>
+<div class="flex-1 bg-[#d1a000] hover:bg-[#d1a000] transition-colors rounded-t h-[85%]"></div>
+<div class="flex-1 bg-[#d1a000]/20 hover:bg-[#d1a000] transition-colors rounded-t h-[70%]"></div>
+<div class="flex-1 bg-[#d1a000]/20 hover:bg-[#d1a000] transition-colors rounded-t h-[40%]"></div>
+<div class="flex-1 bg-[#d1a000]/20 hover:bg-[#d1a000] transition-colors rounded-t h-[20%]"></div>
+<div class="flex-1 bg-[#d1a000]/20 hover:bg-[#d1a000] transition-colors rounded-t h-[5%]"></div>
+</div>
+<div class="flex justify-between mt-4 text-[10px] font-bold text-outline uppercase">
+<span>100m²</span>
+<span>200m²</span>
+<span>300m²</span>
+<span>400m²</span>
+<span>500m²+</span>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Quantitative Insights -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Insight Card 1 (Blue Accent) -->
+<div class="bg-primary-container text-white rounded-xl p-6 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-6xl">insights</span>
+</div>
+<div class="relative z-10">
+<div class="bg-white/10 w-8 h-8 rounded flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+</div>
+<h5 class="font-bold text-sm mb-2 text-[#a3ecf0]">Price Momentum</h5>
+<p class="text-sm leading-relaxed text-white/80">
+                            Median prices have sustained a <span class="text-white font-bold">2.4% MoM</span> increase, primarily driven by the supply shortage in high-amenity growth corridors.
+                        </p>
+</div>
+</div>
+<!-- Insight Card 2 (Purple Accent) -->
+<div class="bg-surface-container-lowest border-l-4 border-on-primary-container rounded-xl p-6 shadow-sm">
+<div class="bg-on-primary-container/10 w-8 h-8 rounded flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-sm text-on-primary-container">pie_chart</span>
+</div>
+<h5 class="font-bold text-sm mb-2 text-on-primary-container">Bracket Dominance</h5>
+<p class="text-sm leading-relaxed text-on-surface-variant">
+                        The <span class="text-on-surface font-bold">$250k-$300k</span> price bracket now represents <span class="text-on-surface font-bold">38%</span> of all transactional volume across the western corridor.
+                    </p>
+</div>
+<!-- Insight Card 3 (Orange Accent) -->
+<div class="bg-surface-container-lowest border-l-4 border-[#d16d00] rounded-xl p-6 shadow-sm">
+<div class="bg-[#d16d00]/10 w-8 h-8 rounded flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-sm text-[#d16d00]">square_foot</span>
+</div>
+<h5 class="font-bold text-sm mb-2 text-[#d16d00]">Yield Efficiency</h5>
+<p class="text-sm leading-relaxed text-on-surface-variant">
+                        Average $/m² for <span class="text-on-surface font-bold">350-400m²</span> lots has peaked at <span class="text-on-surface font-bold">$412</span>, suggesting a shift toward higher density smaller-lot designs.
+                    </p>
+</div>
+</div>
+</div>
+<!-- FAB - Only on relevant dashboard screens -->
+<button class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-primary-container to-primary text-white rounded-xl shadow-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined">add</span>
+</button>
+</main>
+</body></html>

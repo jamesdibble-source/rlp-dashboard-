@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-02T17:41:16.402Z",
+    "createdAt": "2026-04-02T17:39:41.831Z",
+    "mode": "test",
+    "states": [
+      "VIC"
+    ],
+    "sources": [
+      "domain",
+      "rea"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1
+  },
+  "queue": [
+    {
+      "id": "VIC:TARNEIT:3029",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "TARNEIT",
+        "postcode": "3029",
+        "state": "VIC",
+        "listings": 203,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-02T17:39:41.831Z",
+      "sourceResults": {
+        "domain": {
+          "status": "ok",
+          "count": 41,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-02T17:41:16.393Z"
+        },
+        "rea": {
+          "status": "ok",
+          "count": 18,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-02T17:41:16.393Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 50,
+        "inserted": 0,
+        "updated": 50,
+        "finishedAt": "2026-04-02T17:41:16.401Z"
+      }
+    }
+  ]
+}

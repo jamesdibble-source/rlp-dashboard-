@@ -1,0 +1,3 @@
+@echo off
+echo Running bulk REA ingestion for VIC suburbs only...
+node engine/run-bulk-ingest.js --state VIC

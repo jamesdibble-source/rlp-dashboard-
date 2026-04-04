@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>Grange Land Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#fcf9f1","surface":"#fcf9f1","surface-low":"#f6f4eb","surface-mid":"#f0eee6","surface-high":"#eae8e0","surface-dim":"#dcdad2","on-surface":"#1b1c17","primary":"#513561","primary-c":"#6a4c7a","secondary":"#486456","tertiary":"#61323a","tertiary-c":"#7c4951"},fontFamily:{"serif":["Playfair Display","serif"],"sans":["Inter","sans-serif"]}}}}</script>
+<style>
+body{font-family:'Inter',sans-serif;background:#fcf9f1;color:#1b1c17}
+.grain{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.03;pointer-events:none}
+.sf::-webkit-scrollbar{width:4px}.sf::-webkit-scrollbar-thumb{background:#dcdad2;border-radius:4px}
+.nav-i{transition:all .15s;border-left:2px solid transparent;color:rgba(27,28,23,.55)}
+.nav-i.ac{color:#6a4c7a;font-weight:700;border-left-color:#6a4c7a;background:#f6f4eb}
+.nav-i:hover:not(.ac){background:#f6f4eb}
+.sp{transition:all .2s}.sp:hover{background:#eae8e0}.sp.ac{background:#6a4c7a;color:#fff}
+.fi{animation:fi .35s ease}@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+.bv{transition:height .6s cubic-bezier(.4,0,.2,1)}
+.bh{transition:width .8s cubic-bezier(.4,0,.2,1)}
+tr.dr:hover td{background:#f6f4eb}
+th{cursor:pointer;user-select:none}
+.sort-a::after{content:'▲';font-size:7px;margin-left:3px;opacity:.6}
+.sort-d::after{content:'▼';font-size:7px;margin-left:3px;opacity:.6}
+/* Info tooltip */
+.info-wrap{position:relative;display:inline-flex;align-items:center}
+.info-btn{cursor:pointer;color:rgba(27,28,23,.25);transition:color .15s;font-size:16px;vertical-align:middle}
+.info-btn:hover{color:#6a4c7a}
+.info-pop{display:none;position:absolute;left:24px;top:-8px;z-index:50;width:320px;background:#fff;border:1px solid #dcdad2;padding:14px 16px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.info-wrap:hover .info-pop{display:block}
+.info-pop h4{font-size:10px;text-transform:uppercase;letter-spacing:0.15em;font-weight:700;color:#513561;margin-bottom:6px}
+.info-pop p{font-size:11px;line-height:1.55;color:#1b1c17;opacity:.7;margin-bottom:6px}
+.info-pop .method{font-size:10px;color:#486456;border-top:1px solid #f0eee6;padding-top:6px;margin-top:4px}
+/* Mock chart styles */
+.mock-line{fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.mock-area{opacity:.12}
+.mock-bar{opacity:.7;transition:opacity .2s}.mock-bar:hover{opacity:1}
+.mock-dot{fill:#513561;opacity:.5}
+</style>
+</head>
+<body class="h-screen overflow-hidden relative">
+<div class="absolute inset-0 grain"></div>
+
+<aside class="fixed left-0 top-0 h-full flex flex-col py-8 w-56 border-r border-[#dcdad2] bg-[#fcf9f1] z-20">
+  <div class="px-6 mb-10">
+    <img alt="Grange" class="h-16 w-auto object-contain mb-4" src="https://lh3.googleusercontent.com/aida/ADBb0ujaAK-9ft62u3dTI9Oaquh8Dqxz-rSaeVnBIpQiuY2ciMkuG6DRa2yCDB36Qog-lF8VKZQ2yF3cDBS7JGb9mBUpkAFACUL5bbIuGi-Xo8gnv5nIz2pSRuaHGd0MyvUwGHJuJsAGlBIQ8UHa2aWTBnXIm-memtnt5kPAXnXOkIqPW3XhF-Lkffb_qCM5iRoSjeRBl_GP7EWKZEWRebGgtT-Fr0elfbEvze5fZ3HZ5v7ITSz2J2ijwbW4laiD-ReU7l92aVPOxfJt"/>
+    <div class="text-[9px] tracking-[0.2em] text-[#1b1c17]/40 uppercase">Land Intelligence</div>
+  </div>
+  <nav class="flex-1 space-y-0.5" id="nav"></nav>
+  <div class="px-5 pt-6 border-t border-[#dcdad2] text-[9px] text-[#1b1c17]/30 uppercase tracking-wider">v5.0 · Live Data</div>
+</aside>
+
+<main class="ml-56 h-screen overflow-y-auto sf bg-[#fcf9f1]" id="main">
+  <header class="flex justify-between items-center w-full px-10 h-14 border-b border-[#dcdad2] bg-[#fcf9f1] sticky top-0 z-10">
+    <span class="text-[#1b1c17] uppercase tracking-[0.2em] text-[10px] font-semibold" id="pgTitle">Overview</span>
+    <div class="flex items-center gap-6">
+      <div class="flex gap-1.5" id="sPills"></div>
+      <div class="flex gap-0.5 bg-[#eae8e0] rounded-full p-0.5" id="viewToggle">
+        <button class="vt px-3 py-1 text-[8px] uppercase tracking-wider font-bold rounded-full transition-all" data-view="both" onclick="setView('both')">Both</button>
+        <button class="vt px-3 py-1 text-[8px] uppercase tracking-wider font-bold rounded-full transition-all" data-view="sold" onclick="setView('sold')">Sold</button>
+        <button class="vt px-3 py-1 text-[8px] uppercase tracking-wider font-bold rounded-full transition-all" data-view="listing" onclick="setView('listing')">For Sale</button>
+      </div>
+      <div class="relative" id="searchWrap">
+        <input class="bg-transparent border-b border-[#dcdad2] focus:border-[#6a4c7a] focus:ring-0 text-[10px] uppercase tracking-widest py-0.5 pr-6 w-52 placeholder:text-[#1b1c17]/25" placeholder="Search suburb..." id="srcIn" oninput="onSearchInput(this.value)" onkeydown="onSearchKey(event)" onfocus="showAC()" autocomplete="off"/>
+        <span class="material-symbols-outlined absolute right-0 top-0.5 text-sm text-[#1b1c17]/50 cursor-pointer" onclick="onSearchCommit()">search</span>
+        <div id="acDrop" class="hidden absolute top-8 left-0 w-72 max-h-64 overflow-y-auto sf bg-white border border-[#dcdad2] shadow-lg z-50"></div>
+      </div>
+    </div>
+  </header>
+  <div class="w-full max-w-[1400px] mx-auto px-10 py-10" id="content"></div>
+  <footer class="w-full max-w-[1400px] mx-auto px-10 pb-10 flex justify-between text-[8px] uppercase tracking-[0.35em] font-bold text-[#1b1c17]/25">
+    <span>© 2026 Grange Land Intelligence</span><span id="upd"></span>
+  </footer>
+</main>
+
+<script>
+const R=__DATA_INJECT__;
+let pg='overview',cState=null,viewMode='both',searchTerm='',sortCol=null,sortDir='desc',scatterSub='',highlightLot=null;
+const CL=['#513561','#486456','#61323a','#7c4951','#6a4c7a','#314c3f','#583b68','#8b5e3c','#4a6741','#6b4c3b'];
+const CC={Western:'#513561',Northern:'#486456','South Eastern':'#61323a','North East':'#7c4951',Ballarat:'#6a4c7a',Geelong:'#314c3f',Bendigo:'#583b68',Shepparton:'#486456','Murray Bridge':'#7c4951',Gippsland:'#4a6741','Other VIC':'#8b5e3c','Western District':'#6b4c3b','Sunbury-Macedon':'#583b68'};
+const pages=[
+  {id:'overview',icon:'dashboard',label:'Overview'},
+  {id:'pricing',icon:'trending_up',label:'Pricing'},
+  {id:'velocity',icon:'speed',label:'Sales Velocity'},
+  {id:'corridors',icon:'map',label:'Corridors'},
+  {id:'suburb',icon:'location_on',label:'Suburb Profile'},
+  {id:'registry',icon:'analytics',label:'Registry'},
+  {id:'health',icon:'monitor_heart',label:'Market Health'},
+  {id:'compare',icon:'compare_arrows',label:'Compare'}
+];
+
+let activeSub=null; // currently selected suburb name (null = show all)
+
+function D(){
+  // If a suburb is selected, compute metrics from lot data on the fly
+  if(activeSub){return computeSuburbData(activeSub);}
+  return cState?R.states[cState]:R.all;
+}
+
+function computeSuburbData(subName){
+  let lots=filterLots(R.lots||[]).filter(l=>l.suburb===subName);
+  if(cState) lots=lots.filter(l=>l.state===cState);
+  if(!lots.length) return cState?R.states[cState]:R.all; // fallback
+  
+  const sold=lots.filter(l=>l.status==='sold');
+  const listing=lots.filter(l=>l.status!=='sold');
+  
+  const med=arr=>{const s=[...arr].sort((a,b)=>a-b);return s.length?s[Math.floor(s.length/2)]:0;};
+  const avg=arr=>arr.length?Math.round(arr.reduce((s,v)=>s+v,0)/arr.length):0;
+  
+  // Current listings for medians; fall back to recent sold if <10
+  const sixMoAgo=new Date(Date.now()-180*86400000).toISOString().slice(0,10);
+  const twelveAgo=new Date(Date.now()-365*86400000).toISOString().slice(0,10);
+  const recentSold=sold.filter(l=>(l.sd||'')>=sixMoAgo);
+  const last12=lots.filter(l=>(l.status!=='sold')||(l.sd||'')>=twelveAgo);
+  
+  let mPrices=listing.map(l=>l.price); if(mPrices.length<10) mPrices=listing.concat(recentSold).map(l=>l.price);
+  let mSizes=listing.map(l=>l.lot_size); if(mSizes.length<10) mSizes=listing.concat(recentSold).map(l=>l.lot_size);
+  let mRates=listing.map(l=>l.rate).filter(r=>r>0); if(mRates.length<10) mRates=listing.concat(recentSold).map(l=>l.rate).filter(r=>r>0);
+  
+  const totals={
+    total:lots.length, sold:sold.length, listings:listing.length,
+    avg_price:avg(last12.map(l=>l.price)), avg_size:avg(last12.map(l=>l.lot_size)), avg_rate:avg(last12.map(l=>l.rate).filter(r=>r>0)),
+    med_price:med(mPrices), med_size:med(mSizes), med_rate:Math.round(med(mRates)),
+    months_stock:sold.length>0?(listing.length/(sold.length/12)).toFixed(1):'—'
+  };
+  
+  // Price distribution
+  const pBands=[{lo:0,hi:150000,b:'<150k'},{lo:150000,hi:200000,b:'150-200k'},{lo:200000,hi:250000,b:'200-250k'},{lo:250000,hi:300000,b:'250-300k'},{lo:300000,hi:350000,b:'300-350k'},{lo:350000,hi:400000,b:'350-400k'},{lo:400000,hi:450000,b:'400-450k'},{lo:450000,hi:500000,b:'450-500k'},{lo:500000,hi:600000,b:'500-600k'},{lo:600000,hi:9e9,b:'600k+'}];
+  const priceDist=pBands.map(b=>({bracket:b.b,count:lots.filter(l=>l.price>=b.lo&&l.price<b.hi).length})).filter(d=>d.count>0);
+  
+  // Size distribution
+  const sBands=[{lo:0,hi:200,b:'<200'},{lo:200,hi:250,b:'200-250'},{lo:250,hi:300,b:'250-300'},{lo:300,hi:350,b:'300-350'},{lo:350,hi:400,b:'350-400'},{lo:400,hi:450,b:'400-450'},{lo:450,hi:500,b:'450-500'},{lo:500,hi:550,b:'500-550'},{lo:550,hi:600,b:'550-600'},{lo:600,hi:700,b:'600-700'},{lo:700,hi:800,b:'700-800'},{lo:800,hi:9e9,b:'800+'}];
+  const sizeDist=sBands.map(b=>({bracket:b.b,count:lots.filter(l=>l.lot_size>=b.lo&&l.lot_size<b.hi).length})).filter(d=>d.count>0);
+  
+  // Rate distribution
+  const rBands=[{lo:0,hi:200,b:'<200'},{lo:200,hi:400,b:'200-400'},{lo:400,hi:600,b:'400-600'},{lo:600,hi:800,b:'600-800'},{lo:800,hi:1000,b:'800-1k'},{lo:1000,hi:1200,b:'1-1.2k'},{lo:1200,hi:9e9,b:'1.2k+'}];
+  const rateDist=rBands.map(b=>({bracket:b.b,count:lots.filter(l=>l.rate>=b.lo&&l.rate<b.hi).length})).filter(d=>d.count>0);
+  
+  // Corridor info (the suburb's corridor)
+  const cor=lots[0]?.corridor||'Unknown';
+  const corridors=[{corridor:cor,total:lots.length,avg_price:avg(prices),avg_size:avg(sizes),avg_rate:avg(rates),sold:sold.length,listings:listing.length}];
+  
+  // Top/bottom rate — just this suburb
+  const topRate=[{suburb:subName,corridor:cor,avg_rate:avg(rates),avg_price:avg(prices),count:lots.length}];
+  const bottomRate=topRate;
+  
+  return {totals,corridors,lgas:[],suburbs:[{suburb:subName,lga:'',corridor:cor,state:lots[0]?.state||'',total:lots.length,sold:sold.length,listings:listing.length,avg_price:avg(prices),avg_size:avg(sizes),avg_rate:avg(rates)}],priceDist,sizeDist,rateDist,topRate,bottomRate};
+}
+
+function selectSuburb(name){
+  activeSub=name||null;
+  searchTerm=name?name.toLowerCase():'';
+  const inp=document.getElementById('srcIn');
+  if(inp)inp.value=name||'';
+  renderSubBadge();
+  render();
+}
+
+function renderSubBadge(){
+  let el=document.getElementById('subBadge');
+  if(!el){
+    const hdr=document.querySelector('header .flex.items-center');
+    if(!hdr)return;
+    const d=document.createElement('div');d.id='subBadge';d.className='flex items-center';
+    hdr.prepend(d);el=d;
+  }
+  if(activeSub){
+    el.innerHTML='<span class="flex items-center gap-1.5 bg-[#6a4c7a] text-white px-3 py-1 rounded-full text-[9px] uppercase tracking-wider font-bold mr-3">'+titleCase(activeSub)+'<span class="cursor-pointer ml-1 opacity-70 hover:opacity-100" onclick="selectSuburb(null)">✕</span></span>';
+  } else {
+    el.innerHTML='';
+  }
+}
+
+function fmt(n){return n?'$'+Math.round(n).toLocaleString():'-'}
+function fK(n){if(!n)return'-';return n>=1e6?'$'+(n/1e6).toFixed(1)+'m':n>=1e3?'$'+Math.round(n/1e3)+'k':fmt(n)}
+function fN(n){return n?n.toLocaleString():'0'}
+function pct(a,b){return b?Math.round(a/b*100)+'%':'0%'}
+
+// Info tooltip builder
+function info(title,what,method){
+  return `<span class="info-wrap"><span class="material-symbols-outlined info-btn">info</span><div class="info-pop"><h4>${title}</h4><p>${what}</p><div class="method"><strong>How it's computed:</strong> ${method}</div></div></span>`;
+}
+
+// Mock SVG chart generators
+function mockLineChart(w,h,lines,labels){
+  // lines = [{data:[0-1 values], color, label}]
+  const pad={t:20,b:30,l:5,r:5};
+  const cw=w-pad.l-pad.r, ch=h-pad.t-pad.b;
+  let svg=`<svg viewBox="0 0 ${w} ${h}" class="w-full">`;
+  // Grid lines
+  for(let i=0;i<=4;i++){
+    const y=pad.t+ch*(i/4);
+    svg+=`<line x1="${pad.l}" y1="${y}" x2="${w-pad.r}" y2="${y}" stroke="#dcdad2" stroke-width="0.5"/>`;
+  }
+  // Lines
+  lines.forEach(ln=>{
+    const pts=ln.data.map((v,i)=>{
+      const x=pad.l+(i/(ln.data.length-1))*cw;
+      const y=pad.t+ch*(1-v);
+      return `${x},${y}`;
+    });
+    svg+=`<polyline points="${pts.join(' ')}" class="mock-line" stroke="${ln.color}"/>`;
+    // Area
+    svg+=`<polygon points="${pad.l},${pad.t+ch} ${pts.join(' ')} ${w-pad.r},${pad.t+ch}" fill="${ln.color}" class="mock-area"/>`;
+  });
+  // X labels
+  if(labels){
+    labels.forEach((l,i)=>{
+      const x=pad.l+(i/(labels.length-1))*cw;
+      svg+=`<text x="${x}" y="${h-5}" text-anchor="middle" fill="#1b1c17" opacity=".3" font-size="8" font-family="Inter">${l}</text>`;
+    });
+  }
+  // Legend
+  let lx=pad.l;
+  lines.forEach(ln=>{
+    svg+=`<rect x="${lx}" y="2" width="10" height="3" fill="${ln.color}" rx="1"/>`;
+    svg+=`<text x="${lx+13}" y="7" fill="#1b1c17" opacity=".5" font-size="7" font-family="Inter">${ln.label||''}</text>`;
+    lx+=(ln.label||'').length*4+25;
+  });
+  svg+=`</svg>`;
+  return svg;
+}
+
+function mockBarChart(w,h,data,color){
+  // data=[{label,value}]
+  const pad={t:15,b:25,l:5,r:5};
+  const cw=w-pad.l-pad.r, ch=h-pad.t-pad.b;
+  const mx=Math.max(...data.map(d=>d.value));
+  const bw=Math.min(cw/data.length-4, 40);
+  let svg=`<svg viewBox="0 0 ${w} ${h}" class="w-full">`;
+  data.forEach((d,i)=>{
+    const x=pad.l+(i/(data.length))*cw+bw*0.3;
+    const bh=ch*(d.value/mx);
+    const y=pad.t+ch-bh;
+    svg+=`<rect x="${x}" y="${y}" width="${bw*0.7}" height="${bh}" fill="${typeof color==='string'?color:CL[i%CL.length]}" class="mock-bar" rx="1"/>`;
+    svg+=`<text x="${x+bw*0.35}" y="${h-5}" text-anchor="middle" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">${d.label}</text>`;
+    svg+=`<text x="${x+bw*0.35}" y="${y-3}" text-anchor="middle" fill="#1b1c17" opacity=".4" font-size="7" font-family="Inter" font-weight="600">${d.value}</text>`;
+  });
+  svg+=`</svg>`;
+  return svg;
+}
+
+function mockDualAxis(w,h){
+  // Price (left) + Lot Size (right) over time — the affordability squeeze chart
+  const qs=['Q1 23','Q2 23','Q3 23','Q4 23','Q1 24','Q2 24','Q3 24','Q4 24','Q1 25','Q2 25','Q3 25','Q4 25'];
+  const price=[.45,.47,.50,.52,.55,.58,.60,.62,.63,.65,.67,.70]; // rising
+  const size= [.70,.68,.65,.63,.60,.57,.55,.52,.50,.48,.46,.44]; // shrinking
+  const pad={t:25,b:30,l:35,r:35};
+  const cw=w-pad.l-pad.r, ch=h-pad.t-pad.b;
+  let svg=`<svg viewBox="0 0 ${w} ${h}" class="w-full">`;
+  // Grid
+  for(let i=0;i<=4;i++){const y=pad.t+ch*(i/4);svg+=`<line x1="${pad.l}" y1="${y}" x2="${w-pad.r}" y2="${y}" stroke="#dcdad2" stroke-width="0.5"/>`;}
+  // Left axis labels (price)
+  ['$500k','$425k','$350k','$275k','$200k'].forEach((l,i)=>{
+    svg+=`<text x="${pad.l-4}" y="${pad.t+ch*(i/4)+3}" text-anchor="end" fill="#513561" opacity=".5" font-size="7" font-family="Inter">${l}</text>`;
+  });
+  // Right axis labels (lot size)
+  ['650m²','550m²','450m²','350m²','250m²'].forEach((l,i)=>{
+    svg+=`<text x="${w-pad.r+4}" y="${pad.t+ch*(i/4)+3}" text-anchor="start" fill="#486456" opacity=".5" font-size="7" font-family="Inter">${l}</text>`;
+  });
+  // Price line
+  const pp=price.map((v,i)=>`${pad.l+(i/(qs.length-1))*cw},${pad.t+ch*(1-v)}`);
+  svg+=`<polygon points="${pad.l},${pad.t+ch} ${pp.join(' ')} ${w-pad.r},${pad.t+ch}" fill="#513561" opacity=".08"/>`;
+  svg+=`<polyline points="${pp.join(' ')}" fill="none" stroke="#513561" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>`;
+  // Size line
+  const sp=size.map((v,i)=>`${pad.l+(i/(qs.length-1))*cw},${pad.t+ch*(1-v)}`);
+  svg+=`<polygon points="${pad.l},${pad.t+ch} ${sp.join(' ')} ${w-pad.r},${pad.t+ch}" fill="#486456" opacity=".08"/>`;
+  svg+=`<polyline points="${sp.join(' ')}" fill="none" stroke="#486456" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,3"/>`;
+  // X labels
+  qs.forEach((l,i)=>{svg+=`<text x="${pad.l+(i/(qs.length-1))*cw}" y="${h-5}" text-anchor="middle" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">${l}</text>`;});
+  // Legend
+  svg+=`<rect x="${pad.l}" y="4" width="12" height="3" fill="#513561" rx="1"/><text x="${pad.l+15}" y="8" fill="#513561" opacity=".6" font-size="8" font-family="Inter" font-weight="600">Median Price</text>`;
+  svg+=`<line x1="${pad.l+95}" y1="6" x2="${pad.l+107}" y2="6" stroke="#486456" stroke-width="2" stroke-dasharray="4,2"/><text x="${pad.l+110}" y="8" fill="#486456" opacity=".6" font-size="8" font-family="Inter" font-weight="600">Median Lot Size</text>`;
+  // Affordability line
+  const aff_y=pad.t+ch*(1-0.55); // ~$350K line
+  svg+=`<line x1="${pad.l}" y1="${aff_y}" x2="${w-pad.r}" y2="${aff_y}" stroke="#61323a" stroke-width="1" stroke-dasharray="3,3" opacity=".4"/>`;
+  svg+=`<text x="${w-pad.r}" y="${aff_y-4}" text-anchor="end" fill="#61323a" opacity=".5" font-size="7" font-family="Inter">Affordability Ceiling ~$350K</text>`;
+  svg+=`</svg>`;
+  return svg;
+}
+
+function mockScatter(w,h){
+  // $/m² vs median price per suburb — relative value
+  const pad={t:20,b:30,l:40,r:10};
+  const cw=w-pad.l-pad.r, ch=h-pad.t-pad.b;
+  let svg=`<svg viewBox="0 0 ${w} ${h}" class="w-full">`;
+  for(let i=0;i<=4;i++){const y=pad.t+ch*(i/4);svg+=`<line x1="${pad.l}" y1="${y}" x2="${w-pad.r}" y2="${y}" stroke="#dcdad2" stroke-width="0.5"/>`;}
+  // Random dots grouped by corridor color
+  const dots=[
+    {x:.2,y:.3,s:12,c:'#513561'},{x:.25,y:.35,s:8,c:'#513561'},{x:.3,y:.28,s:15,c:'#513561'},{x:.22,y:.32,s:6,c:'#513561'},
+    {x:.5,y:.5,s:10,c:'#486456'},{x:.55,y:.55,s:14,c:'#486456'},{x:.48,y:.48,s:7,c:'#486456'},{x:.52,y:.52,s:9,c:'#486456'},
+    {x:.7,y:.7,s:8,c:'#61323a'},{x:.75,y:.65,s:11,c:'#61323a'},{x:.72,y:.72,s:6,c:'#61323a'},
+    {x:.15,y:.8,s:18,c:'#6a4c7a'},{x:.12,y:.75,s:10,c:'#6a4c7a'},{x:.18,y:.82,s:8,c:'#6a4c7a'},
+    {x:.6,y:.4,s:9,c:'#7c4951'},{x:.65,y:.38,s:7,c:'#7c4951'},
+    {x:.85,y:.55,s:5,c:'#314c3f'},{x:.88,y:.5,s:8,c:'#314c3f'},
+  ];
+  dots.forEach(d=>{
+    svg+=`<circle cx="${pad.l+d.x*cw}" cy="${pad.t+(1-d.y)*ch}" r="${d.s}" fill="${d.c}" opacity=".35" stroke="${d.c}" stroke-width="1" stroke-opacity=".5"/>`;
+  });
+  svg+=`<text x="${pad.l-4}" y="${pad.t+5}" text-anchor="end" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">$1,400</text>`;
+  svg+=`<text x="${pad.l-4}" y="${pad.t+ch}" text-anchor="end" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">$200</text>`;
+  svg+=`<text x="${pad.l}" y="${h-5}" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">$150K</text>`;
+  svg+=`<text x="${w-pad.r}" y="${h-5}" text-anchor="end" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">$700K</text>`;
+  svg+=`<text x="${w/2}" y="${h-5}" text-anchor="middle" fill="#1b1c17" opacity=".25" font-size="7" font-family="Inter">Median Price →</text>`;
+  svg+=`<text x="${pad.l-4}" y="${pad.t+ch/2}" text-anchor="end" fill="#1b1c17" opacity=".25" font-size="7" font-family="Inter" transform="rotate(-90,${pad.l-12},${pad.t+ch/2})">$/m² →</text>`;
+  svg+=`</svg>`;
+  return svg;
+}
+
+function mockGauge(w,h,val,label,color){
+  const cx=w/2, cy=h*0.6, r=Math.min(w,h)*0.38;
+  const startA=-200, endA=20; // 220-degree arc
+  const valA=startA+(endA-startA)*val;
+  function arc(a){return{x:cx+r*Math.cos(a*Math.PI/180),y:cy+r*Math.sin(a*Math.PI/180)};}
+  const s=arc(startA),e=arc(endA),v=arc(valA);
+  let svg=`<svg viewBox="0 0 ${w} ${h}" class="w-full">`;
+  // Background arc
+  svg+=`<path d="M${s.x},${s.y} A${r},${r} 0 1,1 ${e.x},${e.y}" fill="none" stroke="#eae8e0" stroke-width="8" stroke-linecap="round"/>`;
+  // Value arc
+  const large=valA-startA>180?1:0;
+  svg+=`<path d="M${s.x},${s.y} A${r},${r} 0 ${large},1 ${v.x},${v.y}" fill="none" stroke="${color}" stroke-width="8" stroke-linecap="round" opacity=".7"/>`;
+  // Needle dot
+  svg+=`<circle cx="${v.x}" cy="${v.y}" r="4" fill="${color}"/>`;
+  // Label
+  svg+=`<text x="${cx}" y="${cy-5}" text-anchor="middle" fill="#1b1c17" font-size="18" font-weight="600" font-family="Inter">${label}</text>`;
+  svg+=`</svg>`;
+  return svg;
+}
+
+function mockHeatmap(w,h){
+  const rows=['Tarneit','Mickleham','Clyde Nth','Armstrong Ck','Wollert','Pakenham','Truganina','Craigieburn'];
+  const cols=['Q1 24','Q2 24','Q3 24','Q4 24','Q1 25','Q2 25','Q3 25','Q4 25'];
+  const pad={t:15,b:5,l:80,r:5};
+  const cw=(w-pad.l-pad.r)/cols.length, rh=(h-pad.t-pad.b)/rows.length;
+  let svg=`<svg viewBox="0 0 ${w} ${h}" class="w-full">`;
+  rows.forEach((r,ri)=>{
+    svg+=`<text x="${pad.l-4}" y="${pad.t+ri*rh+rh/2+3}" text-anchor="end" fill="#1b1c17" opacity=".5" font-size="8" font-family="Inter">${r}</text>`;
+    cols.forEach((c,ci)=>{
+      const v=Math.random();
+      // Red = hot/expensive, Blue = cool/cheap
+      const r=Math.round(50+v*200), g=Math.round(50+(1-v)*80), b=Math.round(200-v*180);
+      const color=`rgba(${r},${g},${b},${0.3+v*0.5})`;
+      svg+=`<rect x="${pad.l+ci*cw+1}" y="${pad.t+ri*rh+1}" width="${cw-2}" height="${rh-2}" fill="${color}" rx="2"/>`;
+    });
+  });
+  cols.forEach((c,ci)=>{
+    svg+=`<text x="${pad.l+ci*cw+cw/2}" y="${pad.t-4}" text-anchor="middle" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">${c}</text>`;
+  });
+  svg+=`</svg>`;
+  return svg;
+}
+
+// ──── NAV ────
+document.getElementById('nav').innerHTML=pages.map(p=>`<a class="nav-i flex items-center pl-5 py-2.5 ${p.id===pg?'ac':''}" href="#" onclick="go('${p.id}');return false"><span class="material-symbols-outlined mr-3 text-base" style="font-variation-settings:'FILL' ${p.id===pg?1:0}">${p.icon}</span><span class="text-[10px] uppercase tracking-[1px]">${p.label}</span></a>`).join('');
+
+function go(p){pg=p;document.querySelectorAll('.nav-i').forEach((el,i)=>{const a=pages[i].id===p;el.classList.toggle('ac',a);el.querySelector('.material-symbols-outlined').style.fontVariationSettings="'FILL' "+(a?1:0);});document.getElementById('pgTitle').textContent=pages.find(x=>x.id===p).label;render();}
+function setView(v){viewMode=v;document.querySelectorAll('.vt').forEach(b=>{const a=b.dataset.view===v;b.style.background=a?'#6a4c7a':'transparent';b.style.color=a?'#fff':'rgba(27,28,23,.45)';});render();}
+function filterLots(lots){if(viewMode==='both')return lots;if(viewMode==='sold')return lots.filter(l=>l.status==='sold');return lots.filter(l=>l.status!=='sold');}
+function TS(){
+  if(activeSub){return computeSuburbTS(activeSub);}
+  return cState&&R.stateTS[cState]?R.stateTS[cState]:R.ts;
+}
+function computeSuburbTS(subName){
+  // Build time series from individual lots for this suburb
+  const lots=filterLots(R.lots||[]).filter(l=>l.suburb===subName);
+  if(cState) lots.filter(l=>l.state===cState);
+  const baseTS=cState&&R.stateTS[cState]?R.stateTS[cState]:R.ts;
+  const quarters=baseTS.quarters||[];
+  
+  function toQ(d){if(!d)return null;const y=parseInt(d.slice(0,4)),m=parseInt(d.slice(5,7));if(isNaN(y)||isNaN(m)||y<2020)return null;return y+'-Q'+Math.ceil(m/3);}
+  function med(arr){if(!arr.length)return 0;const s=[...arr].sort((a,b)=>a-b);return s[Math.floor(s.length/2)];}
+  
+  const soldByQ={};
+  lots.filter(l=>l.status==='sold'&&l.sd).forEach(l=>{
+    const q=toQ(l.sd);if(!q)return;
+    if(!soldByQ[q])soldByQ[q]={prices:[],sizes:[],rates:[],count:0};
+    soldByQ[q].prices.push(l.price);soldByQ[q].sizes.push(l.lot_size);
+    if(l.rate>0)soldByQ[q].rates.push(l.rate);soldByQ[q].count++;
+  });
+  
+  const listedByQ={};
+  lots.filter(l=>l.ld).forEach(l=>{
+    const q=toQ(l.ld);if(!q)return;
+    if(!listedByQ[q])listedByQ[q]={prices:[],sizes:[],rates:[],count:0};
+    listedByQ[q].prices.push(l.price);listedByQ[q].sizes.push(l.lot_size);
+    if(l.rate>0)listedByQ[q].rates.push(l.rate);listedByQ[q].count++;
+  });
+  
+  return {
+    quarters,
+    sold:quarters.map(q=>{const d=soldByQ[q];return d?{q,count:d.count,medPrice:Math.round(med(d.prices)),medSize:Math.round(med(d.sizes)),medRate:Math.round(med(d.rates)),corridors:{}}:{q,count:0,medPrice:0,medSize:0,medRate:0,corridors:{}};}),
+    listed:quarters.map(q=>{const d=listedByQ[q];return d?{q,count:d.count,medPrice:Math.round(med(d.prices)),medSize:Math.round(med(d.sizes)),medRate:Math.round(med(d.rates))}:{q,count:0,medPrice:0,medSize:0,medRate:0};}),
+    soldMonthly:baseTS.soldMonthly||[],
+    months:baseTS.months||[],
+    corridorSeries:{},
+    suburbSeries:{}
+  };
+}
+// Real time-series line chart from data
+function tsLineChart(w,h,series,labels,yFmt){
+  // series = [{data:[numbers], color, label}], labels = quarter strings
+  const pad={t:24,b:30,l:55,r:15};
+  const cw=w-pad.l-pad.r,ch=h-pad.t-pad.b;
+  const allVals=series.flatMap(s=>s.data).filter(v=>v>0);
+  if(!allVals.length)return '<div class="flex items-center justify-center h-full text-[10px] text-[#1b1c17]/30 uppercase tracking-wider">Time-series data building — check back after daily scrapes</div>';
+  const minV=Math.min(...allVals)*0.85,maxV=Math.max(...allVals)*1.1;
+  const range=maxV-minV||1;
+  let svg='<svg viewBox="0 0 '+w+' '+h+'" class="w-full h-full" preserveAspectRatio="xMidYMid meet">';
+  // Grid
+  for(let i=0;i<=4;i++){const y=pad.t+ch*(i/4);const v=maxV-range*(i/4);svg+='<line x1="'+pad.l+'" y1="'+y+'" x2="'+(w-pad.r)+'" y2="'+y+'" stroke="#dcdad2" stroke-width="0.5"/>';svg+='<text x="'+(pad.l-6)+'" y="'+(y+3)+'" text-anchor="end" fill="#1b1c17" opacity=".3" font-size="9" font-family="Inter">'+(yFmt?yFmt(v):fK(Math.round(v)))+'</text>';}
+  // X labels
+  labels.forEach((l,i)=>{const x=pad.l+cw*(i/(labels.length-1||1));svg+='<text x="'+x+'" y="'+(h-6)+'" text-anchor="middle" fill="#1b1c17" opacity=".3" font-size="8" font-family="Inter">'+l+'</text>';});
+  // Lines
+  series.forEach(s=>{
+    const pts=s.data.map((v,i)=>{const x=pad.l+cw*(i/(labels.length-1||1));const y=pad.t+ch*(1-(v-minV)/range);return x.toFixed(1)+','+y.toFixed(1);}).filter((_,i)=>s.data[i]>0);
+    if(pts.length>1){svg+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="'+s.color+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>';
+    // Area fill
+    const first=pts[0].split(',')[0],last=pts[pts.length-1].split(',')[0];
+    svg+='<polygon points="'+first+','+(pad.t+ch)+' '+pts.join(' ')+' '+last+','+(pad.t+ch)+'" fill="'+s.color+'" opacity=".06"/>';}
+    // Dots
+    s.data.forEach((v,i)=>{if(v<=0)return;const x=pad.l+cw*(i/(labels.length-1||1));const y=pad.t+ch*(1-(v-minV)/range);svg+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="3" fill="'+s.color+'" opacity=".7"><title>'+s.label+': '+(yFmt?yFmt(v):fK(v))+' ('+labels[i]+')</title></circle>';});
+  });
+  // Legend
+  let lx=pad.l;series.forEach(s=>{svg+='<circle cx="'+lx+'" cy="10" r="4" fill="'+s.color+'" opacity=".7"/><text x="'+(lx+8)+'" y="13" fill="#1b1c17" opacity=".5" font-size="9" font-family="Inter" font-weight="600">'+s.label+'</text>';lx+=s.label.length*6+30;});
+  svg+='</svg>';return svg;
+}
+// Real bar chart from time-series
+function tsBarChart(w,h,data,labels,color,yFmt){
+  const pad={t:15,b:30,l:50,r:10};
+  const cw=w-pad.l-pad.r,ch=h-pad.t-pad.b;
+  const mx=Math.max(...data,1);
+  let svg='<svg viewBox="0 0 '+w+' '+h+'" class="w-full h-full" preserveAspectRatio="xMidYMid meet">';
+  for(let i=0;i<=3;i++){const y=pad.t+ch*(i/3);const v=mx-mx*(i/3);svg+='<line x1="'+pad.l+'" y1="'+y+'" x2="'+(w-pad.r)+'" y2="'+y+'" stroke="#dcdad2" stroke-width="0.5"/>';svg+='<text x="'+(pad.l-4)+'" y="'+(y+3)+'" text-anchor="end" fill="#1b1c17" opacity=".25" font-size="8" font-family="Inter">'+(yFmt?yFmt(v):fN(Math.round(v)))+'</text>';}
+  const bw=Math.max(cw/data.length*0.65,4);
+  data.forEach((v,i)=>{const x=pad.l+cw*((i+0.5)/data.length)-bw/2;const bh=Math.max(v/mx*ch,1);const y=pad.t+ch-bh;svg+='<rect x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+bh.toFixed(1)+'" fill="'+color+'" opacity=".65" rx="1"><title>'+labels[i]+': '+fN(v)+'</title></rect>';svg+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(h-6)+'" text-anchor="middle" fill="#1b1c17" opacity=".25" font-size="7" font-family="Inter">'+labels[i].replace(/^\d{4}-/,'')+'</text>';});
+  svg+='</svg>';return svg;
+}
+
+let acIdx=-1; // autocomplete highlight index
+// Build suburb list with counts (cached)
+let _subCache=null;
+function getSubList(){
+  if(_subCache)return _subCache;
+  const map={};
+  (R.lots||[]).forEach(l=>{if(!map[l.suburb])map[l.suburb]={name:l.suburb,state:l.state,corridor:l.corridor||'',count:0,sold:0};map[l.suburb].count++;if(l.status==='sold')map[l.suburb].sold++;});
+  _subCache=Object.values(map).sort((a,b)=>b.count-a.count);
+  return _subCache;
+}
+
+function onSearchInput(val){
+  searchTerm=val.toLowerCase();
+  if(!val.trim()){activeSub=null;renderSubBadge();hideAC();render();return;}
+  showAC();
+}
+function showAC(){
+  const val=(document.getElementById('srcIn')?.value||'').trim().toLowerCase();
+  const drop=document.getElementById('acDrop');
+  if(!drop||!val||val.length<1){hideAC();return;}
+  const subs=getSubList();
+  let matches=subs.filter(s=>s.name.toLowerCase().startsWith(val));
+  if(matches.length<8)matches=matches.concat(subs.filter(s=>!s.name.toLowerCase().startsWith(val)&&s.name.toLowerCase().includes(val)));
+  matches=matches.slice(0,12);
+  if(!matches.length){hideAC();return;}
+  acIdx=-1;
+  drop.innerHTML=matches.map((s,i)=>`<div class="ac-item flex items-center justify-between px-3 py-2 cursor-pointer hover:bg-[#f6f4eb] transition-colors text-[11px]" data-idx="${i}" data-name="${s.name}" onclick="pickAC('${s.name}')" onmouseenter="acIdx=${i};highlightAC()"><div><span class="font-semibold text-[#1b1c17]">${titleCase(s.name)}</span><span class="text-[#1b1c17]/35 ml-2 text-[9px]">${s.state} · ${s.corridor}</span></div><div class="text-[9px] text-[#1b1c17]/40">${s.count} lots${s.sold?' · '+s.sold+' sold':''}</div></div>`).join('');
+  drop.classList.remove('hidden');
+}
+function hideAC(){const d=document.getElementById('acDrop');if(d){d.classList.add('hidden');d.innerHTML='';}}
+function highlightAC(){
+  document.querySelectorAll('.ac-item').forEach((el,i)=>{el.style.background=i===acIdx?'#f0e6f6':'';});
+}
+function pickAC(name){hideAC();selectSuburb(name);go('suburb');}
+function onSearchKey(e){
+  const items=document.querySelectorAll('.ac-item');
+  if(!items.length){if(e.key==='Enter')onSearchCommit();return;}
+  if(e.key==='ArrowDown'){e.preventDefault();acIdx=Math.min(acIdx+1,items.length-1);highlightAC();}
+  else if(e.key==='ArrowUp'){e.preventDefault();acIdx=Math.max(acIdx-1,0);highlightAC();}
+  else if(e.key==='Enter'){e.preventDefault();if(acIdx>=0&&items[acIdx]){pickAC(items[acIdx].dataset.name);}else{onSearchCommit();}}
+  else if(e.key==='Escape'){hideAC();}
+}
+function onSearchCommit(){
+  hideAC();
+  const val=(document.getElementById('srcIn')?.value||'').trim();
+  if(!val){selectSuburb(null);return;}
+  const subs=getSubList();
+  const match=subs.find(s=>s.name.toLowerCase()===val.toLowerCase())||subs.find(s=>s.name.toLowerCase().includes(val.toLowerCase()));
+  if(match)selectSuburb(match.name);
+}
+// Close dropdown when clicking outside
+document.addEventListener('click',e=>{if(!document.getElementById('searchWrap')?.contains(e.target))hideAC();});
+function sortTbl(c){if(sortCol===c)sortDir=sortDir==='asc'?'desc':'asc';else{sortCol=c;sortDir='desc';}render();}
+function renderPills(){
+  const pills=['<button class="sp px-2.5 py-1 text-[8px] uppercase tracking-wider font-semibold rounded-full '+(cState===null?'ac':'bg-[#eae8e0] text-[#1b1c17]/55')+'" onclick="cState=null;renderPills();render()">All</button>'];
+  R.stateList.forEach(s=>{pills.push('<button class="sp px-2.5 py-1 text-[8px] uppercase tracking-wider font-semibold rounded-full '+(cState===s?'ac':'bg-[#eae8e0] text-[#1b1c17]/55')+'" onclick="cState=\''+s+'\';renderPills();render()">'+s+'</button>');});
+  document.getElementById('sPills').innerHTML=pills.join('');
+  // Init view toggle state
+  setView(viewMode);
+}
+
+// ──── HELPERS ────
+function sec(t,sub,infoData){
+  let h='<div class="mb-3 flex items-center gap-2"><span class="text-[10px] uppercase tracking-[0.35em] text-[#1b1c17]/40 font-bold">'+t+'</span>';
+  if(infoData) h+=info(infoData.t||t, infoData.w, infoData.m);
+  h+='</div>';
+  if(sub) h+='<p class="text-[9px] text-[#1b1c17]/30 uppercase tracking-wider -mt-1 mb-3">'+sub+'</p>';
+  return h;
+}
+function panel(inner,cls){return '<div class="border border-[#dcdad2] p-8 bg-[#fcf9f1] '+(cls||'')+'">' + inner + '</div>';}
+function panelBg(inner,cls){return '<div class="p-8 bg-[#f6f4eb] border border-[#dcdad2] '+(cls||'')+'">' + inner + '</div>';}
+function metric(label,val,sub,delta){
+  let d='';
+  if(delta) d=`<span class="text-[9px] font-semibold ${delta>0?'text-[#486456]':'text-[#61323a]'} ml-1">${delta>0?'▲':'▼'} ${Math.abs(delta)}%</span>`;
+  return '<div class="px-5"><span class="text-[9px] font-semibold tracking-widest uppercase text-[#888] mb-2 block">'+label+'</span><span class="font-sans text-4xl font-medium tracking-tighter text-[#111] block">'+val+d+'</span>'+(sub?'<span class="text-[9px] text-[#1b1c17]/35 mt-1 block">'+sub+'</span>':'')+'</div>';
+}
+
+function vBars(data,color,h){
+  if(!data||!data.length)return '<span class="text-[10px] text-[#1b1c17]/35">No data</span>';
+  const mx=Math.max(...data.map(d=>d.count));
+  const tot=data.reduce((s,d)=>s+d.count,0);
+  return '<div class="flex items-end gap-1.5" style="height:'+(h||180)+'px">'+data.map((d,i)=>{
+    const pctVal=tot>0?Math.round(d.count/tot*100):0;
+    return '<div class="flex-1 flex flex-col items-center justify-end h-full"><span class="text-[7px] font-bold text-[#513561]/60 mb-0">'+pctVal+'%</span><span class="text-[8px] font-semibold text-[#1b1c17]/45 mb-0.5">'+fN(d.count)+'</span><div class="w-full bv" style="height:'+Math.max(d.count/mx*100,2)+'%;background:'+(typeof color==='string'?color:CL[i%CL.length])+';opacity:.7;border-radius:1px 1px 0 0"></div></div>';
+  }).join('')+'</div><div class="flex gap-1.5 mt-1.5">'+data.map(d=>'<div class="flex-1 text-center text-[7px] text-[#1b1c17]/40 uppercase tracking-wider font-semibold">'+d.bracket+'</div>').join('')+'</div>';
+}
+
+function titleCase(s){return s.split(' ').map(w=>w.charAt(0).toUpperCase()+w.slice(1).toLowerCase()).join(' ');}
+function hBars(data,vk,lFn,mx){
+  if(!data||!data.length)return '';
+  const m=mx||Math.max(...data.map(d=>d[vk]));
+  return data.map((d,i)=>{
+    const name=titleCase(d.suburb);
+    const mapUrl='https://www.google.com/maps/search/'+encodeURIComponent(name+', '+(d.state||cState||'VIC')+', Australia');
+    return '<div class="flex items-center gap-2 mb-1.5"><div class="w-28 text-right text-[10px] font-medium truncate">'+name+'</div><div class="flex-1 h-4 bg-[#eae8e0] overflow-hidden"><div class="h-full bh" style="width:'+Math.max(d[vk]/m*100,2)+'%;background:'+CL[i%CL.length]+';opacity:.6"></div></div><div class="w-16 text-right text-[10px] font-semibold text-[#513561]">'+lFn(d)+'</div><a href="'+mapUrl+'" target="_blank" class="text-[#1b1c17]/20 hover:text-[#6a4c7a] transition-colors"><span class="material-symbols-outlined text-sm">map</span></a></div>';
+  }).join('');
+}
+
+function donut(data,sz){
+  if(!data||!data.length)return '';
+  const tot=data.reduce((s,d)=>s+d.total,0);let cum=0;
+  const r=sz/2,ir=sz*.32,cx=sz/2,cy=sz/2;
+  const ps=data.map((d,i)=>{const a=d.total/tot*360;const sa=cum;cum+=a;if(a>=359.9)return`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${CC[d.corridor]||CL[i%CL.length]}" opacity=".75"/><circle cx="${cx}" cy="${cy}" r="${ir}" fill="#f6f4eb"/>`;const la=a>180?1:0;const s1=Math.cos((sa-90)*Math.PI/180),c1=Math.sin((sa-90)*Math.PI/180),s2=Math.cos((sa+a-90)*Math.PI/180),c2=Math.sin((sa+a-90)*Math.PI/180);return`<path d="M${cx+ir*s1},${cy+ir*c1} L${cx+r*s1},${cy+r*c1} A${r},${r},0,${la},1,${cx+r*s2},${cy+r*c2} L${cx+ir*s2},${cy+ir*c2} A${ir},${ir},0,${la},0,${cx+ir*s1},${cy+ir*c1} Z" fill="${CC[d.corridor]||CL[i%CL.length]}" opacity=".75"/>`;});
+  const leg=data.map((d,i)=>`<div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5" style="background:${CC[d.corridor]||CL[i%CL.length]}"></span><span class="text-[9px] font-semibold text-[#1b1c17]/65">${d.corridor}</span><span class="text-[9px] text-[#1b1c17]/35 ml-0.5">${Math.round(d.total/tot*100)}%</span></div>`).join('');
+  return `<div class="flex items-center gap-8"><div class="relative" style="width:${sz}px;height:${sz}px"><svg viewBox="0 0 ${sz} ${sz}">${ps.join('')}</svg><div class="absolute inset-0 flex items-center justify-center"><div class="text-center"><span class="font-sans text-xl font-medium tracking-tight text-[#111]">${fN(tot)}</span><span class="block text-[7px] uppercase tracking-widest text-[#888] mt-0.5">lots</span></div></div></div><div class="space-y-1.5">${leg}</div></div>`;
+}
+
+// ──── SCATTER PLOT ────
+function renderScatter(){
+  const svg=document.getElementById('scatterSvg');
+  if(!svg)return;
+  const lots=filterLots(R.lots||[]);
+  let pts=cState?lots.filter(l=>l.state===cState):lots;
+  if(scatterSub)pts=pts.filter(l=>l.suburb===scatterSub);
+  
+  const pad={t:15,b:25,l:55,r:15};
+  const W=1200,H=420;
+  const cw=W-pad.l-pad.r, ch=H-pad.t-pad.b;
+  
+  // Compute ranges
+  const sizes=pts.map(p=>p.lot_size).filter(s=>s>0);
+  const prices=pts.map(p=>p.price).filter(p=>p>0);
+  if(!sizes.length||!prices.length){svg.innerHTML='<text x="600" y="210" text-anchor="middle" fill="#1b1c17" opacity=".3" font-size="14" font-family="Inter">No data</text>';return;}
+  
+  const minS=Math.min(...sizes)*0.9,maxS=Math.max(...sizes)*1.05;
+  const minP=Math.min(...prices)*0.9,maxP=Math.max(...prices)*1.05;
+  
+  let svgContent='';
+  // Grid lines
+  for(let i=0;i<=5;i++){
+    const y=pad.t+ch*(i/5);
+    const p=maxP-(maxP-minP)*(i/5);
+    svgContent+=`<line x1="${pad.l}" y1="${y}" x2="${W-pad.r}" y2="${y}" stroke="#dcdad2" stroke-width="0.5"/>`;
+    svgContent+=`<text x="${pad.l-6}" y="${y+3}" text-anchor="end" fill="#1b1c17" opacity=".3" font-size="9" font-family="Inter">${fK(Math.round(p))}</text>`;
+  }
+  for(let i=0;i<=6;i++){
+    const x=pad.l+cw*(i/6);
+    const s=minS+(maxS-minS)*(i/6);
+    svgContent+=`<text x="${x}" y="${H-4}" text-anchor="middle" fill="#1b1c17" opacity=".3" font-size="9" font-family="Inter">${Math.round(s)}m²</text>`;
+  }
+  // Axis labels
+  svgContent+=`<text x="${W/2}" y="${H-1}" text-anchor="middle" fill="#1b1c17" opacity=".2" font-size="8" font-family="Inter">Lot Size →</text>`;
+  
+  // Plot dots — sample if too many (max 3000 for performance)
+  let plotPts=pts;
+  if(plotPts.length>3000){
+    const step=Math.ceil(plotPts.length/3000);
+    plotPts=plotPts.filter((_,i)=>i%step===0);
+  }
+  
+  plotPts.forEach(lot=>{
+    const x=pad.l+((lot.lot_size-minS)/(maxS-minS))*cw;
+    const y=pad.t+ch*(1-(lot.price-minP)/(maxP-minP));
+    const cor=lot.corridor||'Unknown';
+    const col=CC[cor]||CL[0];
+    const r=lot.status==='sold'?3.5:3;
+    const op=lot.status==='sold'?0.45:0.3;
+    svgContent+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r}" fill="${col}" opacity="${op}" stroke="${col}" stroke-width="0.5" stroke-opacity=".3" class="cursor-pointer hover:opacity-100 hover:r-5 transition-opacity" data-id="${lot.id}" onclick="lotClick(${lot.id})"><title>${lot.suburb} · ${fmt(lot.price)} · ${lot.lot_size}m² · ${lot.status}</title></circle>`;
+  });
+  
+  // Count label
+  svgContent+=`<text x="${W-pad.r}" y="${pad.t+12}" text-anchor="end" fill="#1b1c17" opacity=".2" font-size="10" font-family="Inter" font-weight="600">${fN(pts.length)} lots plotted</text>`;
+  
+  svg.innerHTML=svgContent;
+}
+
+function lotClick(id){
+  highlightLot=id;
+  const lot=(R.lots||[]).find(l=>l.id===id);
+  if(lot){selectSuburb(lot.suburb);go('suburb');}
+}
+
+// ──── PAGE RENDERERS ────
+
+function renderOverview(){
+  const d=D(),t=d.totals,c=d.corridors;
+  const mockQs=['Q1 24','Q2 24','Q3 24','Q4 24','Q1 25','Q2 25','Q3 25','Q4 25'];
+  
+  // Build scatter data from lots — respects view toggle
+  const lots=filterLots(R.lots||[]);
+  const filteredLots=cState?lots.filter(l=>l.state===cState):lots;
+  const scatterSuburbs=[...new Set(filteredLots.map(l=>l.suburb))].sort();
+  
+  // AI-generated market themes based on data
+  const themes=[];
+  if(c.length>0){
+    const topCor=c[0];
+    themes.push({icon:'trending_up',text:topCor.corridor+' leads with '+fN(topCor.total)+' lots tracked — '+pct(topCor.sold,topCor.total)+' already sold at $'+topCor.avg_rate+'/m²'});
+  }
+  if(c.length>1){
+    const rates=c.map(cr=>cr.avg_rate).filter(r=>r>0);
+    const maxR=c.find(cr=>cr.avg_rate===Math.max(...rates));
+    const minR=c.find(cr=>cr.avg_rate===Math.min(...rates));
+    if(maxR&&minR) themes.push({icon:'compare_arrows',text:'$/m² spread: '+maxR.corridor+' ($'+maxR.avg_rate+') vs '+minR.corridor+' ($'+minR.avg_rate+') — '+ Math.round((maxR.avg_rate/minR.avg_rate-1)*100)+'% premium'});
+  }
+  if(t.months_stock&&t.months_stock!=='—'){
+    const ms=parseFloat(t.months_stock);
+    if(ms<3) themes.push({icon:'speed',text:'Supply tight at '+t.months_stock+' months of stock — prices likely firming. Sellers\' market conditions.'});
+    else if(ms<6) themes.push({icon:'balance',text:'Market balanced at '+t.months_stock+' months of stock. Neither oversupplied nor undersupplied.'});
+    else themes.push({icon:'inventory_2',text:'Stock elevated at '+t.months_stock+' months — supply exceeds demand. Buyer conditions prevailing.'});
+  }
+  const smallLots=filteredLots.filter(l=>l.lot_size<350).length;
+  const bigLots=filteredLots.filter(l=>l.lot_size>=500).length;
+  if(smallLots>0&&bigLots>0){
+    const pctSmall=Math.round(smallLots/filteredLots.length*100);
+    themes.push({icon:'straighten',text:pctSmall+'% of lots under 350m² — '+(pctSmall>40?'significant lot size compression indicates affordability pressure':'larger lots still dominating the mix')});
+  }
+  
+  return `<div class="fi">
+    <div class="mb-8"><span class="text-[9px] uppercase tracking-[0.35em] text-[#1b1c17]/35 font-bold">${activeSub?titleCase(activeSub)+' · ':''} ${fN(t.total)} lots tracked · ${activeSub?'':c.length+' corridors · '}${fN(t.sold)} sold · ${fN(t.listings)} listed</span></div>
+    <div class="grid grid-cols-6 border-t border-b border-[#dcdad2] py-8 mb-10">
+      ${metric('Total Lots',fN(t.total),'across '+R.stateList.join(', '))}
+      ${metric('Median Price',fK(t.med_price),'QoQ / YoY deltas pending',2.1)}
+      ${metric('Median $/m²','$'+t.med_rate,'price efficiency index',-0.5)}
+      ${metric('Median Size',t.med_size+'m²','trending down nationally',-1.8)}
+      ${metric('Active Listed',fN(t.listings),'currently on market')}
+      ${metric('Months Stock',t.months_stock,'supply indicator',null)}
+    </div>
+
+    <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb] mb-10">
+      ${sec('Every Lot Tracked','Click any dot to verify the underlying sale',{t:'Lot-Level Scatter Plot',w:'Every single lot in the database plotted as a dot. X-axis = lot size (m²), Y-axis = price ($). Colours represent growth corridors. This is the raw data — every dot is a real lot you can click to verify.',m:'Each dot is one lot from our scraped data. Clicking a dot takes you to the Registry page and highlights that exact sale with its full address, price, size, and listing source. Filter by suburb using the dropdown.'})}
+      <div class="flex items-center gap-4 mb-4">
+        <select id="scatterFilter" onchange="scatterSub=this.value;render()" class="bg-[#fcf9f1] border border-[#dcdad2] text-[10px] uppercase tracking-wider py-1.5 px-3 font-semibold text-[#1b1c17]/60 focus:ring-1 focus:ring-[#6a4c7a] w-64">
+          <option value="">All Suburbs (${fN(filteredLots.length)} lots)</option>
+          ${scatterSuburbs.map(s=>'<option value="'+s+'"'+(scatterSub===s?' selected':'')+'>'+s+' ('+filteredLots.filter(l=>l.suburb===s).length+')</option>').join('')}
+        </select>
+        <div class="flex gap-3 flex-wrap">${c.slice(0,8).map((cr,i)=>'<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full" style="background:'+(CC[cr.corridor]||CL[i%CL.length])+'"></span><span class="text-[8px] text-[#1b1c17]/45 font-semibold">'+cr.corridor+'</span>').join('')}</div>
+      </div>
+      <div class="relative bg-[#fcf9f1] border border-[#dcdad2] overflow-hidden" style="height:420px" id="scatterWrap">
+        <svg id="scatterSvg" viewBox="0 0 1200 420" class="w-full h-full" preserveAspectRatio="xMidYMid meet"></svg>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-5 gap-8 mb-10">
+      <div class="col-span-3 border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Median Price Trend','Quarterly median lot price — sold vs listed',{t:'Median Price Trend',w:'Shows how the median (middle value) lot price has moved each quarter. Sold prices show what the market actually transacted at. Listed prices show what\'s being asked today. The gap between them tells you about vendor expectations vs market reality.',m:'Every lot in the quarter is sorted by price. The middle value is taken. Sold uses sold_date, Listed uses list_date. This eliminates distortion from extreme high or low values.'})}
+        <div class="h-44">${(()=>{const ts=TS();const soldPrices=ts.sold.map(q=>q.medPrice);const listedPrices=ts.listed.map(q=>q.medPrice);const series=[{data:soldPrices,color:'#486456',label:'Sold Median'}];if(viewMode!=='sold')series.push({data:listedPrices,color:'#513561',label:'Listed Median'});if(Object.keys(ts.corridorSeries||{}).length>0){const topCor=Object.keys(ts.corridorSeries)[0];series.push({data:ts.corridorSeries[topCor].map(q=>q.medPrice),color:'#61323a',label:topCor});}return tsLineChart(600,180,series,ts.quarters);})()}</div>
+      </div>
+      <div class="col-span-2 border border-[#dcdad2] p-8 bg-[#fcf9f1]">
+        ${sec('Market Composition','Share of lots by corridor',{t:'Market Composition',w:'Shows the breakdown of total lots tracked across each growth corridor. Larger segments mean more active development in that area.',m:'Total lot count per corridor divided by total lots across all corridors, shown as a percentage.'})}
+        <div class="mt-2">${donut(c,160)}</div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-5 gap-8 mb-10">
+      <div class="col-span-3 border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Quarterly Sales Volume','Lots transacted per quarter',{t:'Quarterly Sales Volume',w:'Tracks how many lots sell each quarter across the market. Rising volume = strengthening demand. Falling = market cooling.',m:'Count of lots with a confirmed sold status, grouped by the quarter in which the sale settled or was recorded.'})}
+        <div class="h-48 pb-6">${(()=>{const ts=TS();return tsBarChart(600,200,ts.sold.map(q=>q.count),ts.quarters,'#486456');})()}</div>
+      </div>
+      <div class="col-span-2 space-y-5">
+        <div class="border-b border-[#1b1c17] pb-2 mb-4"><span class="text-[10px] uppercase tracking-[0.35em] text-[#1b1c17] font-bold">Key Market Themes</span> ${info('AI Market Themes','Automatically generated insights based on the current data. Highlights the most important trends, imbalances, and opportunities visible in the numbers.','Computed from corridor comparisons, supply ratios, lot size distributions, and price spreads. Updated each time the dashboard refreshes.')}</div>
+        ${themes.map((th,i)=>`<div class="flex items-start gap-4 mb-4"><span class="material-symbols-outlined text-lg text-[#6a4c7a]/50">${th.icon}</span><p class="text-[11px] text-[#1b1c17]/70 leading-relaxed">${th.text}</p></div>`).join('')}
+      </div>
+    </div>
+    ${!cState&&R.stateList.length>1?`<div class="mb-10">${sec('Cross-Market Snapshot','All states in database',{t:'Cross-Market Snapshot',w:'Side-by-side comparison of median lot metrics across each state.',m:'Median price, lot size, and $/m² computed independently per state.'})}<div class="grid grid-cols-${Math.min(R.stateList.length,4)} gap-4">${R.stateList.map(s=>{const sd=R.states[s].totals;return`<div class="border border-[#dcdad2] p-6 bg-[#fcf9f1]"><span class="text-lg font-serif text-[#1b1c17] block mb-3">${s}</span><span class="text-2xl font-medium tracking-tight text-[#111]">${fK(sd.med_price)}</span><span class="text-[9px] text-[#1b1c17]/40 ml-2">median</span><div class="mt-3 flex gap-4 text-[10px] text-[#1b1c17]/55"><span>$${sd.med_rate}/m²</span><span>${sd.med_size}m²</span><span>${fN(sd.total)} lots</span></div></div>`;}).join('')}</div></div>`:''}
+  </div>`;
+}
+
+function renderPricing(){
+  const d=D();
+  return `<div class="fi">
+    <div class="mb-8">${sec('Price Analysis','Distribution, efficiency and suburb rankings')}</div>
+    <div class="grid grid-cols-3 gap-8 mb-10">
+      ${panelBg(sec('Price Distribution','Lot count by $50K bands',{t:'Price Distribution',w:'Shows how lot prices are spread across $50K price brackets. Tells you where the sweet spot of the market is — the most common price point buyers are transacting at.',m:'Each lot is placed into its price bracket. The bar height shows how many lots fall in that range. Taller bars = more common price points.'})+'<div class="mt-4">'+vBars(d.priceDist,'#513561',170)+'</div>')}
+      ${panelBg(sec('Lot Size Distribution','50m² bands',{t:'Lot Size Distribution',w:'Shows the most common lot sizes being sold. When lot sizes are skewing smaller over time, it signals developers are cutting lot sizes to maintain affordability.',m:'Each lot is grouped into 50m² bands. The count per band is displayed. Compare over time to see if the market is shifting toward smaller or larger lots.'})+'<div class="mt-4">'+vBars(d.sizeDist,'#486456',170)+'</div>')}
+      ${panelBg(sec('$/m² Rate Distribution','Price efficiency',{t:'$/m² Rate Distribution',w:'Shows the range of price-per-square-metre rates across lots. Higher $/m² means you pay more per square metre of land. This is the true efficiency metric for comparing different-sized lots.',m:'Each lot\'s price is divided by its area in square metres. Results are grouped into bands. This normalises price regardless of lot size.'})+'<div class="mt-4">'+vBars(d.rateDist,'#61323a',170)+'</div>')}
+    </div>
+    <div class="grid grid-cols-2 gap-8 mb-10">
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('The Affordability Squeeze','When prices hit the ceiling, lot sizes shrink',{t:'Affordability Squeeze',w:'This is the single most important chart for understanding a land market. Developers can only raise prices so far before buyers can\'t afford the lot. When median prices approach $300-350K, developers respond by making lots smaller — maintaining the price point but giving you less land. The $/m² rate goes up, but the sticker price stays "affordable." Watch for the scissors pattern: price climbing while lot size drops.',m:'Top row: median lot price per quarter (solid purple). Bottom row: median lot size per quarter (green). Middle: the $350K affordability ceiling. When the price bar approaches the ceiling from below while the lot size bar shrinks from above, the market is in an affordability squeeze.'})}
+        <div class="mt-4">
+          <div class="flex items-center gap-4 mb-3"><span class="text-[8px] font-bold uppercase tracking-widest text-[#513561]">↑ Median Price</span><span class="text-[8px] text-[#1b1c17]/30">|</span><span class="text-[8px] font-bold uppercase tracking-widest text-[#486456]">↓ Median Lot Size</span></div>
+          <div class="relative" style="height:200px">
+            <div class="absolute left-0 right-0 border-t-2 border-dashed border-[#61323a]/30" style="top:50%"><span class="absolute right-0 -top-4 text-[8px] text-[#61323a]/50 font-semibold">$350K Affordability Ceiling</span></div>
+            <div class="flex items-center h-full gap-1">${(()=>{
+              const ts=TS();
+              if(!ts.sold||!ts.sold.length) return '<span class="text-[10px] text-[#1b1c17]/30">Building time series data...</span>';
+              const priceRange={min:200000,max:500000};
+              const sizeRange={min:250,max:700};
+              return ts.quarters.map((q,i)=>{
+                const soldData=ts.sold[i];
+                if(!soldData) return '<div class="flex-1"></div>';
+                // Price bar height (bottom up)
+                const pricePos=Math.max(0,Math.min(1,(soldData.medPrice-priceRange.min)/(priceRange.max-priceRange.min)));
+                const priceH=Math.round(pricePos*50); // % height from bottom
+                // Size bar height (top down)
+                const sizePos=Math.max(0,Math.min(1,(soldData.medSize-sizeRange.min)/(sizeRange.max-sizeRange.min)));
+                const sizeH=Math.round((1-sizePos)*45); // % height from top
+                return '<div class="flex-1 flex flex-col items-center h-full relative">'+
+                  '<div class="absolute bottom-1/2 w-full flex justify-center"><div class="w-[80%] bg-[#513561]/60" style="height:'+priceH+'%"></div></div>'+
+                  '<div class="absolute top-1/2 w-full flex justify-center"><div class="w-[80%] bg-[#486456]/50" style="height:'+sizeH+'%"></div></div>'+
+                  '<span class="absolute bottom-0 text-[7px] text-[#1b1c17]/30 font-semibold">'+q.replace(/^\d{4}-/,'')+'</span>'+
+                '</div>';
+              }).join('');
+            })()}</div>
+          </div>
+          <div class="flex justify-between mt-2 text-[9px] text-[#1b1c17]/40"><span>Purple bars rising = prices climbing</span><span>Green bars shrinking = lots getting smaller</span></div>
+        </div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Suburb $/m² Heatmap','Rate intensity across suburbs and quarters',{t:'Suburb Price Heatmap',w:'Colour-coded grid showing how $/m² rates vary by suburb and time period. Darker colours = higher rates. Lets you spot which suburbs are heating up and which are cooling.',m:'Average $/m² per suburb per quarter. Colour intensity scales from light (low rate) to dark (high rate) within each quarter.'})}
+        <div class="h-56">${(()=>{
+          const ts=TS();
+          if(!ts.sold||!ts.sold.length||!R.lots) return '<div class="h-56 flex items-center justify-center text-[10px] text-[#1b1c17]/30">Building time-series data...</div>';
+          
+          // Get top 8 suburbs by sold volume
+          const lots=filterLots(R.lots||[]).filter(l=>l.status==='sold'&&l.sd&&l.suburb);
+          if(cState) lots=lots.filter(l=>l.state===cState);
+          const subCounts={};
+          lots.forEach(l=>{subCounts[l.suburb]=(subCounts[l.suburb]||0)+1;});
+          const topSubs=Object.entries(subCounts).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([sub])=>sub);
+          
+          if(!topSubs.length) return '<div class="h-56 flex items-center justify-center text-[10px] text-[#1b1c17]/30">Insufficient data</div>';
+          
+          // Build rate data by suburb and quarter
+          const quarterData={};
+          lots.forEach(l=>{
+            if(!topSubs.includes(l.suburb)) return;
+            const q=l.sd?l.sd.slice(0,4)+'-Q'+Math.ceil(parseInt(l.sd.slice(5,7))/3):'';
+            if(!q) return;
+            if(!quarterData[q]) quarterData[q]={};
+            if(!quarterData[q][l.suburb]) quarterData[q][l.suburb]={rates:[],count:0};
+            if(l.rate>0) quarterData[q][l.suburb].rates.push(l.rate);
+            quarterData[q][l.suburb].count++;
+          });
+          
+          // Compute average rates per suburb per quarter
+          const subQuarterRates={};
+          const allRates=[];
+          Object.keys(quarterData).forEach(q=>{
+            Object.keys(quarterData[q]).forEach(sub=>{
+              const rates=quarterData[q][sub].rates;
+              if(rates.length>0){
+                const avgRate=rates.reduce((s,r)=>s+r,0)/rates.length;
+                if(!subQuarterRates[sub]) subQuarterRates[sub]={};
+                subQuarterRates[sub][q]=avgRate;
+                allRates.push(avgRate);
+              }
+            });
+          });
+          
+          if(!allRates.length) return '<div class="h-56 flex items-center justify-center text-[10px] text-[#1b1c17]/30">Insufficient data</div>';
+          
+          const minRate=Math.min(...allRates);
+          const maxRate=Math.max(...allRates);
+          const rateRange=maxRate-minRate||1;
+          
+          const w=600,h=240;
+          const quarters=ts.quarters.slice(-8); // Last 8 quarters
+          const pad={t:15,b:5,l:80,r:5};
+          const cw=(w-pad.l-pad.r)/quarters.length;
+          const rh=(h-pad.t-pad.b)/topSubs.length;
+          
+          let svg='<svg viewBox="0 0 '+w+' '+h+'" class="w-full">';
+          
+          topSubs.forEach((sub,ri)=>{
+            svg+='<text x="'+(pad.l-4)+'" y="'+(pad.t+ri*rh+rh/2+3)+'" text-anchor="end" fill="#1b1c17" opacity=".5" font-size="8" font-family="Inter">'+sub.slice(0,12)+'</text>';
+            quarters.forEach((q,qi)=>{
+              const rate=subQuarterRates[sub]&&subQuarterRates[sub][q]?subQuarterRates[sub][q]:0;
+              const intensity=rate>0?(rate-minRate)/rateRange:0;
+              const r=81+Math.round(intensity*129); // 81 to 210
+              const g=50+Math.round((1-intensity)*99); // 149 to 50
+              const b=97+Math.round((1-intensity)*103); // 200 to 97
+              const color='rgba('+r+','+g+','+b+','+(0.3+intensity*0.5)+')';
+              svg+='<rect x="'+(pad.l+qi*cw+1)+'" y="'+(pad.t+ri*rh+1)+'" width="'+(cw-2)+'" height="'+(rh-2)+'" fill="'+color+'" rx="2"><title>'+sub+' '+q+': $'+Math.round(rate)+'/m²</title></rect>';
+            });
+          });
+          
+          quarters.forEach((q,qi)=>{
+            svg+='<text x="'+(pad.l+qi*cw+cw/2)+'" y="'+(pad.t-4)+'" text-anchor="middle" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">'+q.replace(/^\d{4}-/,'')+'</text>';
+          });
+          
+          svg+='</svg>';
+          return svg;
+        })()}</div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-8 mb-10">
+      <div class="border border-[#dcdad2] p-8 bg-[#fcf9f1]">
+        ${(()=>{
+          const stdSizes={VIC:[350,400],QLD:[420,500],SA:[375,450],NSW:[400,450],WA:[375,420],TAS:[450,550],NT:[500,600],ACT:[400,500]};
+          const st=cState||'VIC';
+          const sz=stdSizes[st]||[400,450];
+          return sec('Suburb Price at Standardised Lot Size','What does a '+sz[0]+'m² lot cost in each suburb?',{t:'Standardised Lot Pricing',w:'Shows what the median lot would cost in each suburb if all lots were '+sz[0]+'m² (the typical lot size for '+st+'). Removes lot size as a variable so you can compare suburb value purely on location premium.',m:'Each lot\\\'s price is adjusted using an industry-standard lot size adjustment table. A 600m² lot selling for $400K is normalised to its equivalent at '+sz[0]+'m². The adjustment factors are: 0-10% size diff = -2.24% price, 10-20% = -5.4%, 20-30% = -12.6%, 30-40% = -17.4%, 40-50% = -24.4%.'});
+        })()}
+        <div class="mt-4 space-y-2">
+          ${(()=>{
+            const stdSizes={VIC:[350,400],QLD:[420,500],SA:[375,450],NSW:[400,450],WA:[375,420]};
+            const st=cState||'VIC';
+            const sz=stdSizes[st]||[400,450];
+            return d.suburbs.filter(s=>s.avg_rate>0).slice(0,12).map((s,i)=>{
+              const p1=Math.round(s.avg_rate*sz[0]);
+              const p2=Math.round(s.avg_rate*sz[1]);
+              const mx=600000;
+              return `<div class="flex items-center gap-2"><div class="w-28 text-right text-[10px] font-medium truncate">${s.suburb}</div><div class="flex-1 flex gap-1"><div class="h-5 bg-[#513561]/25 flex items-center px-2" style="width:${Math.min(p1/mx*100,100)}%"><span class="text-[8px] font-bold text-[#513561]">${fK(p1)}</span></div><div class="h-5 bg-[#486456]/20 flex items-center px-2" style="width:${Math.min(p2/mx*100,100)}%"><span class="text-[8px] font-bold text-[#486456]">${fK(p2)}</span></div></div><div class="flex gap-3 text-[7px] text-[#1b1c17]/40 w-24"><span>${sz[0]}m²</span><span>${sz[1]}m²</span></div></div>`;
+            }).join('');
+          })()}
+        </div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#fcf9f1]">
+        ${sec('Relative Value Position','Where suburbs sit vs peers',{t:'Relative Value Position',w:'Scatter plot showing each suburb as a bubble. X-axis = median lot price, Y-axis = $/m² rate, bubble size = number of lots. Suburbs in the bottom-left are affordable; top-right are premium. Spots where $/m² is low but price is high mean bigger lots — potentially good value.',m:'Each suburb is plotted using its median price and median $/m² rate. Bubble size represents lot volume. Colours represent growth corridors. Compare clusters to see which corridors offer better value.'})}
+        <div class="h-56">${(()=>{
+          const lots=filterLots(R.lots||[]);
+          const filteredLots=cState?lots.filter(l=>l.state===cState):lots;
+          if(!filteredLots.length) return '<div class="h-56 flex items-center justify-center text-[10px] text-[#1b1c17]/30">No data available</div>';
+          
+          // Group by suburb and compute medians
+          const suburbData={};
+          filteredLots.forEach(l=>{
+            if(!l.suburb||l.price<=0||l.rate<=0) return;
+            if(!suburbData[l.suburb]) suburbData[l.suburb]={prices:[],rates:[],count:0,corridor:l.corridor||'Unknown'};
+            suburbData[l.suburb].prices.push(l.price);
+            suburbData[l.suburb].rates.push(l.rate);
+            suburbData[l.suburb].count++;
+          });
+          
+          // Filter suburbs with >=3 lots and compute medians
+          const suburbs=Object.entries(suburbData).filter(([_,data])=>data.count>=3).map(([suburb,data])=>{
+            const sortedPrices=data.prices.sort((a,b)=>a-b);
+            const sortedRates=data.rates.sort((a,b)=>a-b);
+            return {
+              suburb,
+              medPrice:sortedPrices[Math.floor(sortedPrices.length/2)],
+              medRate:sortedRates[Math.floor(sortedRates.length/2)],
+              count:data.count,
+              corridor:data.corridor
+            };
+          });
+          
+          if(!suburbs.length) return '<div class="h-56 flex items-center justify-center text-[10px] text-[#1b1c17]/30">Insufficient data (min 3 lots per suburb)</div>';
+          
+          const w=600,h=240;
+          const pad={t:20,b:30,l:40,r:10};
+          const cw=w-pad.l-pad.r;
+          const ch=h-pad.t-pad.b;
+          
+          const minPrice=Math.min(...suburbs.map(s=>s.medPrice))*0.9;
+          const maxPrice=Math.max(...suburbs.map(s=>s.medPrice))*1.05;
+          const minRate=Math.min(...suburbs.map(s=>s.medRate))*0.9;
+          const maxRate=Math.max(...suburbs.map(s=>s.medRate))*1.05;
+          const maxCount=Math.max(...suburbs.map(s=>s.count));
+          
+          let svg='<svg viewBox="0 0 '+w+' '+h+'" class="w-full">';
+          
+          // Grid lines
+          for(let i=0;i<=4;i++){
+            const y=pad.t+ch*(i/4);
+            const rate=maxRate-(maxRate-minRate)*(i/4);
+            svg+='<line x1="'+pad.l+'" y1="'+y+'" x2="'+(w-pad.r)+'" y2="'+y+'" stroke="#dcdad2" stroke-width="0.5"/>';
+            svg+='<text x="'+(pad.l-4)+'" y="'+(y+3)+'" text-anchor="end" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">$'+Math.round(rate)+'</text>';
+          }
+          
+          // Axis labels
+          svg+='<text x="'+(pad.l)+'" y="'+(h-5)+'" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">'+fK(minPrice)+'</text>';
+          svg+='<text x="'+(w-pad.r)+'" y="'+(h-5)+'" text-anchor="end" fill="#1b1c17" opacity=".3" font-size="7" font-family="Inter">'+fK(maxPrice)+'</text>';
+          svg+='<text x="'+(w/2)+'" y="'+(h-5)+'" text-anchor="middle" fill="#1b1c17" opacity=".25" font-size="7" font-family="Inter">Median Price →</text>';
+          svg+='<text x="'+(pad.l-4)+'" y="'+(pad.t+ch/2)+'" text-anchor="end" fill="#1b1c17" opacity=".25" font-size="7" font-family="Inter" transform="rotate(-90,'+(pad.l-12)+','+(pad.t+ch/2)+')">$/m² →</text>';
+          
+          // Plot suburbs
+          suburbs.forEach(s=>{
+            const x=pad.l+((s.medPrice-minPrice)/(maxPrice-minPrice))*cw;
+            const y=pad.t+(1-(s.medRate-minRate)/(maxRate-minRate))*ch;
+            const r=3+Math.sqrt(s.count/maxCount)*8; // Bubble size 3-11
+            const color=CC[s.corridor]||CL[0];
+            svg+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+r.toFixed(1)+'" fill="'+color+'" opacity=".5" stroke="'+color+'" stroke-width="1" stroke-opacity=".7" class="cursor-pointer hover:opacity-100"><title>'+s.suburb+'\\n'+fmt(s.medPrice)+' median price\\n$'+Math.round(s.medRate)+'/m²\\n'+s.count+' lots</title></circle>';
+          });
+          
+          svg+='</svg>';
+          return svg;
+        })()}</div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-8 mb-10">
+      ${panel(sec('Premium Index','Highest $/m² suburbs (min 3 lots)',{t:'Premium Index',w:'The most expensive suburbs by price per square metre. These are the locations commanding the highest land rates — typically established suburbs with strong amenity.',m:'Average $/m² across all lots in each suburb, ranked highest to lowest. Minimum 3 lots required to qualify — prevents single-listing distortion.'})+'<div class="mt-4">'+hBars(d.topRate,'avg_rate',d=>'$'+d.avg_rate)+'</div>')}
+      ${panel(sec('Value Index','Lowest $/m² suburbs (min 3 lots)',{t:'Value Index',w:'The cheapest suburbs by price per square metre. Lower $/m² often means larger lots in outer growth areas or regional towns. Can signal opportunity or low demand — context matters.',m:'Same methodology as Premium Index but ranked lowest to highest. Low $/m² in a growing corridor could mean early-stage estate pricing.'})+'<div class="mt-4">'+hBars(d.bottomRate,'avg_rate',d=>'$'+d.avg_rate)+'</div>')}
+    </div>
+  </div>`;
+}
+
+function renderVelocity(){
+  const d=D(),c=d.corridors,ts=TS();
+  return `<div class="fi">
+    <div class="mb-8">${sec('Sales Velocity & Supply','How fast lots sell and how much stock remains')}</div>
+    <div class="grid grid-cols-2 gap-8 mb-10">
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Quarterly Sales by Corridor','Volume per corridor over time',{t:'Corridor Sales Volume',w:'Shows total sales volume each quarter by corridor. Growing corridors signal increasing development momentum.',m:'Count of sold lots per corridor per quarter from sold_date data.'})}
+        <div class="h-48">${(()=>{const cs=ts.corridorSeries||{};const series=Object.entries(cs).slice(0,4).map(([cor,data],i)=>({data:data.map(q=>q.count),color:CL[i],label:cor}));return tsLineChart(600,200,series,ts.quarters,v=>fN(Math.round(v)));})()}</div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('$/m² Trend by Corridor','Rate movement over time',{t:'Corridor $/m² Trend',w:'Tracks how the median $/m² rate moves each quarter per corridor. Rising rates = market heating. Diverging corridors = premium opening up.',m:'Median price_per_sqm per corridor per quarter from sold transactions.'})}
+        <div class="h-48">${(()=>{const cs=ts.corridorSeries||{};const series=Object.entries(cs).slice(0,4).map(([cor,data],i)=>({data:data.map(q=>q.medRate),color:CL[i],label:cor}));return tsLineChart(600,200,series,ts.quarters,v=>'$'+Math.round(v));})()}</div>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-8 mb-10">
+      <div class="border border-[#dcdad2] p-8 bg-[#fcf9f1]">
+        ${sec('Months of Trading Stock','Supply indicator per corridor',{t:'Months of Stock',w:'How many months to sell all current listings at the current sales rate. Under 3 = tight. Over 6 = oversupplied.',m:'Current listings ÷ monthly sales rate per corridor.'})}
+        <div class="space-y-3 mt-4">
+          ${c.slice(0,8).map(cr=>{
+            const mos=cr.sold>0?(cr.listings/(cr.sold/12)):0;
+            const mosStr=mos.toFixed(1);
+            const pct=Math.min(mos/8*100,100);
+            const col=mos<3?'#486456':(mos<6?'#8b5e3c':'#61323a');
+            const label=mos<3?'Tight':(mos<6?'Balanced':'Oversupplied');
+            return `<div><div class="flex justify-between text-[10px] mb-1"><span class="font-medium">${cr.corridor}</span><span class="font-semibold" style="color:${col}">${mosStr} mo · ${label}</span></div><div class="h-2.5 bg-[#eae8e0] overflow-hidden"><div class="h-full" style="width:${pct}%;background:${col};opacity:.6"></div></div></div>`;
+          }).join('')}
+        </div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#fcf9f1]">
+        ${sec('Monthly Sold Volume','Last 12 months',{t:'Monthly Sales',w:'Lot sales per month — finer granularity than quarterly. Shows seasonal patterns and momentum shifts.',m:'Count of sold lots per month from sold_date, last 12 months.'})}
+        <div class="mt-4">${(()=>{const m=ts.soldMonthly||[];return tsBarChart(400,200,m.map(x=>x.count),m.map(x=>x.m),'#513561');})()}</div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#fcf9f1]">
+        ${sec('Median Lot Size Trend','Are lots getting smaller?',{t:'Lot Size Trend',w:'Tracks median lot size over time. Falling lot sizes signal affordability pressure — developers shrink lots to keep prices "accessible".',m:'Median lot_size per quarter from sold transactions.'})}
+        <div class="mt-4">${(()=>{return tsLineChart(400,200,[{data:ts.sold.map(q=>q.medSize),color:'#486456',label:'Median m²'}],ts.quarters,v=>Math.round(v)+'m²');})()}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderCorridors(){
+  const d=D();
+  const cards=d.corridors.map(c=>{
+    const sp=Math.round(c.sold/c.total*100);
+    const subs=d.suburbs.filter(s=>s.corridor===c.corridor).slice(0,8);
+    const mos=c.sold>0?(c.listings/(c.sold/12)).toFixed(1):'—';
+    return `<div class="border border-[#dcdad2] p-8 bg-[#fcf9f1] mb-6 fi">
+      <div class="flex justify-between items-start mb-5">
+        <div><h3 class="text-xl font-serif text-[#1b1c17] mb-0.5">${c.corridor}</h3><span class="text-[9px] text-[#1b1c17]/40 uppercase tracking-wider">${fN(c.total)} lots · ${fN(d.lgas.filter(l=>l.corridor===c.corridor).length)} LGAs · ${mos} mo stock</span></div>
+        <div class="text-right"><span class="font-sans text-3xl font-medium tracking-tight text-[#111]">${fK(c.avg_price)}</span><span class="text-[8px] block uppercase tracking-widest text-[#888] mt-0.5">avg price</span></div>
+      </div>
+      <div class="h-5 bg-[#eae8e0] flex mb-5 overflow-hidden"><div class="h-full" style="width:${sp}%;background:${CC[c.corridor]||'#513561'};opacity:.8"></div><div class="h-full" style="width:${100-sp}%;background:${CC[c.corridor]||'#513561'};opacity:.25"></div></div>
+      <div class="flex gap-6 mb-5 text-[10px]">
+        <div><span class="text-[8px] uppercase tracking-widest text-[#888] block">$/m²</span><span class="text-lg font-medium">$${c.avg_rate}</span></div>
+        <div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Avg Size</span><span class="text-lg font-medium">${c.avg_size}m²</span></div>
+        <div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Sold</span><span class="text-lg font-medium text-[#486456]">${fN(c.sold)}</span></div>
+        <div><span class="text-[8px] uppercase tracking-widest text-[#888] block">Listed</span><span class="text-lg font-medium text-[#61323a]">${fN(c.listings)}</span></div>
+      </div>
+      ${subs.length?`<div class="border-t border-[#dcdad2] pt-4"><span class="text-[8px] uppercase tracking-widest text-[#888] font-bold mb-2 block">Top Suburbs</span><div class="grid grid-cols-4 gap-2">${subs.map(s=>`<div class="bg-[#f6f4eb] p-2.5"><span class="text-[10px] font-medium block">${s.suburb}</span><span class="text-[9px] text-[#513561] font-semibold">${fmt(s.avg_price)}</span><span class="text-[8px] text-[#1b1c17]/35 ml-1">$${s.avg_rate}/m²</span></div>`).join('')}</div></div>`:''}
+    </div>`;
+  }).join('');
+  return `<div class="fi"><div class="mb-8">${sec('Growth Corridor Index','Comparative analysis across corridors',{t:'Growth Corridors',w:'Each corridor represents a geographic grouping of suburbs sharing similar market dynamics. Corridors are the industry-standard way to segment land markets (used by RPM, Oliver Hume, Research4).',m:'Lots are assigned to corridors based on suburb location. All metrics are computed per corridor — median price, $/m², lot size, sold/listed counts, months of stock.'})}</div>${cards}</div>`;
+}
+
+function renderRegistry(){
+  const d=D();
+  let subs=d.suburbs;
+  if(searchTerm)subs=subs.filter(s=>s.suburb.toLowerCase().includes(searchTerm)||(s.lga||'').toLowerCase().includes(searchTerm)||(s.corridor||'').toLowerCase().includes(searchTerm));
+  if(sortCol)subs=[...subs].sort((a,b)=>sortDir==='asc'?(a[sortCol]>b[sortCol]?1:-1):(a[sortCol]<b[sortCol]?1:-1));
+  const cols=[{k:'suburb',l:'Suburb',a:'left'},{k:'lga',l:'LGA',a:'left'},{k:'corridor',l:'Corridor',a:'left'},{k:'total',l:'Lots',a:'right'},{k:'sold',l:'Sold',a:'right'},{k:'listings',l:'Listed',a:'right'},{k:'avg_price',l:'Avg Price',a:'right'},{k:'avg_size',l:'Size',a:'right'},{k:'avg_rate',l:'$/m²',a:'right'}];
+  const th=cols.map(c=>`<th class="text-${c.a} text-[9px] font-bold uppercase tracking-[0.12em] text-[#888] py-2 px-2.5 ${sortCol===c.k?(sortDir==='asc'?'sort-a':'sort-d'):''}" onclick="sortTbl('${c.k}')">${c.l}</th>`).join('');
+  // If we have a highlighted lot, show individual lots for that suburb
+  let lotRows='';
+  if(highlightLot&&searchTerm){
+    const subLots=(R.lots||[]).filter(l=>l.suburb.toLowerCase().includes(searchTerm));
+    lotRows=subLots.slice(0,100).map(l=>{
+      const hl=l.id===highlightLot?'background:#f0e6f6;':'';
+      return `<tr class="dr" style="${hl}"><td class="py-2 px-2.5 text-[11px] font-medium">${l.address||l.suburb}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${l.suburb}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${l.corridor||'-'}</td><td class="py-2 px-2.5 text-[11px] text-right font-medium">${l.lot_size}m²</td><td class="py-2 px-2.5 text-[11px] text-right text-[#486456]">${l.status}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#61323a]">${fmt(l.price)}</td><td class="py-2 px-2.5 text-[11px] text-right">${fmt(l.price)}</td><td class="py-2 px-2.5 text-[11px] text-right">${l.lot_size}m²</td><td class="py-2 px-2.5 text-[11px] text-right font-semibold text-[#513561]">$${Math.round(l.rate)}</td></tr>`;
+    }).join('');
+  }
+  const tb=highlightLot&&lotRows?lotRows:subs.slice(0,200).map(s=>`<tr class="dr"><td class="py-2 px-2.5 text-[11px] font-medium cursor-pointer hover:text-[#6a4c7a]" onclick="selectSuburb('${s.suburb}');go('overview')">${titleCase(s.suburb)}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${s.lga||'-'}</td><td class="py-2 px-2.5 text-[10px] text-[#1b1c17]/55">${s.corridor||'-'}</td><td class="py-2 px-2.5 text-[11px] text-right font-medium">${fN(s.total)}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#486456]">${fN(s.sold)}</td><td class="py-2 px-2.5 text-[11px] text-right text-[#61323a]">${fN(s.listings)}</td><td class="py-2 px-2.5 text-[11px] text-right">${fmt(s.avg_price)}</td><td class="py-2 px-2.5 text-[11px] text-right">${s.avg_size}m²</td><td class="py-2 px-2.5 text-[11px] text-right font-semibold text-[#513561]">$${s.avg_rate}</td></tr>`).join('');
+  return `<div class="fi">
+    <div class="mb-6">${sec('Parcel Ledger','Showing '+Math.min(subs.length,200)+' of '+subs.length+' suburbs',{t:'Parcel Ledger',w:'Full database of every suburb with land activity. Sortable by any column. Click a column header to sort. Use the search bar to filter by suburb, LGA, or corridor name.',m:'Aggregated from all scraped lot data. Avg Price = mean of all lot prices in that suburb. $/m² = mean of price÷area for each lot. Sold/Listed counts from listing status at time of scrape.'})}</div>
+    <div class="mb-8 p-6 bg-[#f6f4eb] border border-[#dcdad2]"><span class="text-[10px] uppercase tracking-[0.3em] font-bold text-[#1b1c17] mb-4 block">LGA Summary ${info('LGA Summary','Local Government Areas with the most land market activity. Each card shows total lots, average $/m² rate, and average lot price.','Lots grouped by LGA field. Top 8 by lot count displayed.')}</span><div class="grid grid-cols-4 gap-3">${d.lgas.slice(0,8).map(l=>`<div class="bg-[#fcf9f1] p-3 border border-[#dcdad2]"><span class="text-[11px] font-medium block mb-0.5">${l.lga}</span><span class="text-xl font-medium text-[#111]">${fN(l.total)}</span><span class="text-[9px] text-[#1b1c17]/35 ml-1">lots</span><div class="mt-1.5"><span class="text-[9px] text-[#513561] font-semibold">$${l.avg_rate}/m²</span><span class="text-[9px] text-[#1b1c17]/35 ml-2">${fK(l.avg_price)}</span></div></div>`).join('')}</div></div>
+    <div class="border border-[#dcdad2] bg-[#fcf9f1] max-h-[500px] overflow-y-auto sf mb-8"><table class="w-full"><thead class="sticky top-0 bg-[#fcf9f1] border-b border-[#dcdad2]"><tr>${th}</tr></thead><tbody>${tb}</tbody></table></div>
+  </div>`;
+}
+
+function renderHealth(){
+  return `<div class="fi">
+    <div class="mb-8">${sec('Market Cycle Intelligence','Automated health indicators derived from price, volume, supply and velocity data',{t:'Market Health Dashboard',w:'Six key indicators that together tell you where a market sits in its cycle. No single metric is reliable alone — the combination of all six gives a holistic market read. These auto-populate as time-series data accumulates from daily scraping.',m:'Each indicator is computed from underlying lot data. DOM from listing-to-sale dates. $/m² momentum from rate-of-change in quarterly median. Lot size trend from median size QoQ. Stock from listings÷monthly sales. Velocity from sold count trends. Cycle position is a composite of all five.'})}</div>
+    <div class="grid grid-cols-3 gap-6 mb-10">
+      <div class="border border-[#dcdad2] p-6 bg-[#f6f4eb] text-center">
+        ${sec('Days on Market','',{t:'DOM Trend',w:'Are lots selling faster or slower than last quarter? Falling DOM is one of the earliest signs of recovery — demand picks up before prices move.',m:'Average days between listing date and sold date, compared QoQ. Green = falling (improving). Red = rising (softening).'})}
+        <div class="h-32">${(()=>{
+          const lots=filterLots(R.lots||[]).filter(l=>l.status==='sold'&&l.ld&&l.sd);
+          if(cState) lots=lots.filter(l=>l.state===cState);
+          if(!lots.length) return mockGauge(200,140,0,'N/A','#888');
+          
+          let totalDays=0,count=0;
+          lots.forEach(l=>{
+            const listDate=new Date(l.ld);
+            const soldDate=new Date(l.sd);
+            if(!isNaN(listDate.getTime())&&!isNaN(soldDate.getTime())&&soldDate>listDate){
+              totalDays+=(soldDate-listDate)/(1000*60*60*24);
+              count++;
+            }
+          });
+          
+          if(count<5) return mockGauge(200,140,0,'Insufficient data','#888');
+          const avgDays=Math.round(totalDays/count);
+          const val=Math.max(0,Math.min(1,1-(avgDays-30)/120)); // 30-150 days range
+          const color=val>0.6?'#486456':(val>0.4?'#8b5e3c':'#61323a');
+          const trend=val>0.5?'▼ Fast':'▲ Slow';
+          return mockGauge(200,140,val,avgDays+' days',color);
+        })()}</div>
+        <span class="text-[9px] font-semibold">${(()=>{
+          const lots=filterLots(R.lots||[]).filter(l=>l.status==='sold'&&l.ld&&l.sd);
+          if(cState) lots=lots.filter(l=>l.state===cState);
+          if(!lots.length) return '';
+          let totalDays=0,count=0;
+          lots.forEach(l=>{
+            const listDate=new Date(l.ld);
+            const soldDate=new Date(l.sd);
+            if(!isNaN(listDate.getTime())&&!isNaN(soldDate.getTime())&&soldDate>listDate){
+              totalDays+=(soldDate-listDate)/(1000*60*60*24);
+              count++;
+            }
+          });
+          if(count<5) return 'Insufficient data';
+          const avgDays=Math.round(totalDays/count);
+          return avgDays<60?'▼ Fast':avgDays<90?'Steady':'▲ Slow';
+        })()}</span>
+      </div>
+      <div class="border border-[#dcdad2] p-6 bg-[#f6f4eb] text-center">
+        ${sec('$/m² Momentum','',{t:'Price Momentum',w:'Is the $/m² rate accelerating, steady, or decelerating? Rising $/m² with steady lot sizes = genuine price growth. Rising $/m² with shrinking lots = affordability squeeze.',m:'Quarter-on-quarter change in median $/m² rate. Positive and increasing = accelerating. Positive but decreasing = decelerating. Negative = declining.'})}
+        <div class="h-32">${(()=>{
+          const ts=TS();
+          if(!ts.sold||ts.sold.length<2) return mockGauge(200,140,0,'N/A','#888');
+          
+          const recent=ts.sold[ts.sold.length-1];
+          const prior=ts.sold[ts.sold.length-2];
+          
+          if(!recent||!prior||!recent.medRate||!prior.medRate) return mockGauge(200,140,0,'N/A','#888');
+          
+          const change=(recent.medRate-prior.medRate)/prior.medRate;
+          const pct=Math.round(change*100*10)/10; // 1 decimal place
+          const val=0.5+(change*2.5); // -20% to +20% maps to 0-1
+          const normalizedVal=Math.max(0,Math.min(1,val));
+          
+          const color=change>0.02?'#486456':(change>-0.02?'#513561':'#61323a');
+          const sign=pct>0?'+':'';
+          
+          return mockGauge(200,140,normalizedVal,sign+pct+'%',color);
+        })()}</div>
+        <span class="text-[9px] font-semibold">${(()=>{
+          const ts=TS();
+          if(!ts.sold||ts.sold.length<2) return 'Building data...';
+          
+          const recent=ts.sold[ts.sold.length-1];
+          const prior=ts.sold[ts.sold.length-2];
+          
+          if(!recent||!prior||!recent.medRate||!prior.medRate) return 'Insufficient data';
+          
+          const change=(recent.medRate-prior.medRate)/prior.medRate;
+          
+          if(change>0.02) return 'Accelerating';
+          if(change>-0.02) return 'Steady';
+          return 'Declining';
+        })()}</span>
+      </div>
+      <div class="border border-[#dcdad2] p-6 bg-[#f6f4eb] text-center">
+        ${sec('Lot Size Trend','',{t:'Lot Size Trend',w:'Are developers cutting lot sizes? Shrinking lots signal that prices have hit the affordability ceiling and developers are reducing land area to maintain price points.',m:'Quarter-on-quarter change in median lot size. Negative = lots shrinking. Persistently shrinking lots = market under affordability pressure.'})}
+        <div class="h-32">${(()=>{
+          const ts=TS();
+          if(!ts.sold||ts.sold.length<2) return mockGauge(200,140,0,'N/A','#888');
+          
+          const recent=ts.sold[ts.sold.length-1];
+          const prior=ts.sold[ts.sold.length-2];
+          
+          if(!recent||!prior||!recent.medSize||!prior.medSize) return mockGauge(200,140,0,'N/A','#888');
+          
+          const sizeDiff=recent.medSize-prior.medSize;
+          const sign=sizeDiff>0?'+':'';
+          const val=0.5+(sizeDiff/100); // ±50m² maps to 0-1
+          const normalizedVal=Math.max(0,Math.min(1,val));
+          
+          const color=sizeDiff<-10?'#61323a':(sizeDiff<10?'#8b5e3c':'#486456');
+          
+          return mockGauge(200,140,normalizedVal,sign+Math.round(sizeDiff)+'m²',color);
+        })()}</div>
+        <span class="text-[9px] font-semibold">${(()=>{
+          const ts=TS();
+          if(!ts.sold||ts.sold.length<2) return 'Building data...';
+          
+          const recent=ts.sold[ts.sold.length-1];
+          const prior=ts.sold[ts.sold.length-2];
+          
+          if(!recent||!prior||!recent.medSize||!prior.medSize) return 'Insufficient data';
+          
+          const sizeDiff=recent.medSize-prior.medSize;
+          
+          if(sizeDiff<-10) return '▼ Shrinking';
+          if(sizeDiff>10) return '▲ Growing';
+          return 'Stable';
+        })()}</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-6 mb-10">
+      <div class="border border-[#dcdad2] p-6 bg-[#f6f4eb] text-center">
+        ${sec('Supply Level','',{t:'Supply Level',w:'How many months of stock are on the market. Under 3 months = tight supply, favours sellers, prices likely rising. 3-6 months = balanced. Over 6 months = oversupplied, favours buyers.',m:'Current active listings ÷ (total sold lots ÷ number of months of data). E.g. 500 listings ÷ (3000 sold ÷ 12 months) = 2.0 months.'})}
+        <div class="h-32">${(()=>{
+          const d=D();
+          if(!d.totals||!d.totals.months_stock||d.totals.months_stock==='—') return mockGauge(200,140,0,'N/A','#888');
+          
+          const mos=parseFloat(d.totals.months_stock);
+          const val=Math.max(0,Math.min(1,mos/8)); // 0-8 months range
+          
+          const color=mos<3?'#486456':(mos<6?'#8b5e3c':'#61323a');
+          
+          return mockGauge(200,140,val,mos.toFixed(1)+' mo',color);
+        })()}</div>
+        <span class="text-[9px] font-semibold">${(()=>{
+          const d=D();
+          if(!d.totals||!d.totals.months_stock||d.totals.months_stock==='—') return 'No data';
+          
+          const mos=parseFloat(d.totals.months_stock);
+          
+          if(mos<3) return 'Tight Supply';
+          if(mos<6) return 'Balanced';
+          return 'Oversupplied';
+        })()}</span>
+      </div>
+      <div class="border border-[#dcdad2] p-6 bg-[#f6f4eb] text-center">
+        ${sec('Sales Velocity','',{t:'Sales Velocity',w:'Is the number of lots selling each quarter going up or down? Rising velocity = growing demand. Falling velocity = demand weakening. Combined with price direction, tells you if growth is real or artificial.',m:'Count of sold lots per quarter, compared to prior quarter and prior year. QoQ and YoY percentage change.'})}
+        <div class="h-32">${(()=>{
+          const ts=TS();
+          if(!ts.sold||ts.sold.length<2) return mockGauge(200,140,0,'N/A','#888');
+          
+          const recent=ts.sold[ts.sold.length-1];
+          const prior=ts.sold[ts.sold.length-2];
+          
+          if(!recent||!prior||!recent.count||!prior.count) return mockGauge(200,140,0,'N/A','#888');
+          
+          const change=(recent.count-prior.count)/prior.count;
+          const pct=Math.round(change*100);
+          const val=0.5+(change*2); // -50% to +50% maps to 0-1
+          const normalizedVal=Math.max(0,Math.min(1,val));
+          
+          const color=change>0.1?'#486456':(change>-0.1?'#8b5e3c':'#61323a');
+          const sign=pct>0?'+':'';
+          
+          return mockGauge(200,140,normalizedVal,sign+pct+'%',color);
+        })()}</div>
+        <span class="text-[9px] font-semibold">${(()=>{
+          const ts=TS();
+          if(!ts.sold||ts.sold.length<2) return 'Building data...';
+          
+          const recent=ts.sold[ts.sold.length-1];
+          const prior=ts.sold[ts.sold.length-2];
+          
+          if(!recent||!prior||!recent.count||!prior.count) return 'Insufficient data';
+          
+          const change=(recent.count-prior.count)/prior.count;
+          
+          if(change>0.1) return '▲ Accelerating';
+          if(change>-0.1) return 'Steady';
+          return '▼ Declining';
+        })()}</span>
+      </div>
+      <div class="border border-[#dcdad2] p-6 bg-[#f6f4eb] text-center">
+        ${sec('Cycle Position','',{t:'Market Cycle Position',w:'Where this market sits in the property cycle: Rising → Peak → Flattening → Declining → Bottom → Recovering. Combines all five indicators above into a single assessment.',m:'Composite score from DOM trend (20%), $/m² momentum (25%), lot size trend (15%), supply level (20%), sales velocity (20%). Each scored 0-100, weighted, mapped to cycle phase.'})}
+        <div class="h-32">${(()=>{
+          const ts=TS();
+          const d=D();
+          if(!ts.sold||ts.sold.length<2) return mockGauge(200,140,0,'Building','#888');
+          
+          let score=0,factors=0;
+          
+          // $/m² momentum (25%)
+          const recent=ts.sold[ts.sold.length-1];
+          const prior=ts.sold[ts.sold.length-2];
+          if(recent&&prior&&recent.medRate&&prior.medRate){
+            const rateMomentum=(recent.medRate-prior.medRate)/prior.medRate;
+            score+=Math.max(0,Math.min(1,0.5+rateMomentum*2.5))*0.25;
+            factors++;
+          }
+          
+          // Sales velocity (20%)
+          if(recent&&prior&&recent.count&&prior.count){
+            const velocityChange=(recent.count-prior.count)/prior.count;
+            score+=Math.max(0,Math.min(1,0.5+velocityChange*2))*0.2;
+            factors++;
+          }
+          
+          // Supply level (20%) - inverted (low stock = high score)
+          if(d.totals&&d.totals.months_stock&&d.totals.months_stock!=='—'){
+            const mos=parseFloat(d.totals.months_stock);
+            score+=Math.max(0,Math.min(1,1-mos/8))*0.2;
+            factors++;
+          }
+          
+          // Lot size trend (15%) - inverted (shrinking = higher score for tightening market)
+          if(recent&&prior&&recent.medSize&&prior.medSize){
+            const sizeChange=(recent.medSize-prior.medSize)/prior.medSize;
+            score+=Math.max(0,Math.min(1,0.5-sizeChange*5))*0.15;
+            factors++;
+          }
+          
+          if(factors===0) return mockGauge(200,140,0,'N/A','#888');
+          
+          // Normalize by actual factors counted
+          score=score*4/factors; // Assuming 4 total factors, scale up
+          score=Math.max(0,Math.min(1,score));
+          
+          let phase,color;
+          if(score<0.2){phase='Declining';color='#61323a';}
+          else if(score<0.4){phase='Bottom';color='#7c4951';}
+          else if(score<0.6){phase='Recovering';color='#8b5e3c';}
+          else if(score<0.8){phase='Rising';color='#513561';}
+          else{phase='Peak';color='#486456';}
+          
+          return mockGauge(200,140,score,phase,color);
+        })()}</div>
+        <span class="text-[9px] font-semibold">${(()=>{
+          const ts=TS();
+          const d=D();
+          if(!ts.sold||ts.sold.length<2) return 'Insufficient data';
+          
+          let score=0,factors=0;
+          
+          // Calculate same composite score as above
+          const recent=ts.sold[ts.sold.length-1];
+          const prior=ts.sold[ts.sold.length-2];
+          if(recent&&prior&&recent.medRate&&prior.medRate){
+            const rateMomentum=(recent.medRate-prior.medRate)/prior.medRate;
+            score+=Math.max(0,Math.min(1,0.5+rateMomentum*2.5))*0.25;
+            factors++;
+          }
+          if(recent&&prior&&recent.count&&prior.count){
+            const velocityChange=(recent.count-prior.count)/prior.count;
+            score+=Math.max(0,Math.min(1,0.5+velocityChange*2))*0.2;
+            factors++;
+          }
+          if(d.totals&&d.totals.months_stock&&d.totals.months_stock!=='—'){
+            const mos=parseFloat(d.totals.months_stock);
+            score+=Math.max(0,Math.min(1,1-mos/8))*0.2;
+            factors++;
+          }
+          if(recent&&prior&&recent.medSize&&prior.medSize){
+            const sizeChange=(recent.medSize-prior.medSize)/prior.medSize;
+            score+=Math.max(0,Math.min(1,0.5-sizeChange*5))*0.15;
+            factors++;
+          }
+          
+          if(factors===0) return 'Building data...';
+          
+          score=score*4/factors;
+          score=Math.max(0,Math.min(1,score));
+          
+          if(score<0.2) return 'Market Declining';
+          if(score<0.4) return 'Market Bottom';
+          if(score<0.6) return 'Early Recovery';
+          if(score<0.8) return 'Growth Phase';
+          return 'Peak Conditions';
+        })()}</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-8 mb-10">
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Historical Context','Current prices vs long-term averages',{t:'Historical Context',w:'Shows whether current prices are above or below the long-term average. Markets trading significantly above average may be peaking. Markets below average may be undervalued or recovering.',m:'Current median price and $/m² compared to the average of all available historical data (up to 5 years). Expressed as % above or below the mean.'})}
+        <div class="h-44">${(()=>{
+          const ts=TS();
+          if(!ts.sold||!ts.sold.length) return '<div class="h-44 flex items-center justify-center text-[10px] text-[#1b1c17]/30">Building time-series data...</div>';
+          
+          const rates=ts.sold.map(q=>q.medRate).filter(r=>r>0);
+          if(!rates.length) return '<div class="h-44 flex items-center justify-center text-[10px] text-[#1b1c17]/30">Insufficient rate data</div>';
+          
+          const longTermAvg=rates.reduce((s,r)=>s+r,0)/rates.length;
+          const avgData=ts.quarters.map(_=>longTermAvg);
+          
+          return tsLineChart(500,180,[
+            {data:rates,color:'#513561',label:'Quarterly $/m²'},
+            {data:avgData,color:'#8b5e3c',label:'Long-term Avg'}
+          ],ts.quarters,v=>'$'+Math.round(v));
+        })()}</div>
+        <div class="mt-2 text-center"><span class="text-[10px] font-semibold">${(()=>{
+          const ts=TS();
+          if(!ts.sold||!ts.sold.length) return '';
+          
+          const rates=ts.sold.map(q=>q.medRate).filter(r=>r>0);
+          if(!rates.length) return '';
+          
+          const longTermAvg=rates.reduce((s,r)=>s+r,0)/rates.length;
+          const currentRate=rates[rates.length-1];
+          const diff=(currentRate-longTermAvg)/longTermAvg;
+          const pct=Math.round(diff*100);
+          
+          const color=diff>0?'#513561':'#61323a';
+          const text=diff>0?pct+'% above':Math.abs(pct)+'% below';
+          
+          return '<span style="color:'+color+'">Currently '+text+' long-term average</span>';
+        })()}</span></div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Neighbour Comparison','Suburb relative positioning',{t:'Neighbour Comparison',w:'Select a suburb and instantly see how its pricing compares to the 5 closest suburbs. Reveals whether you\'re paying a premium or getting a discount relative to the local market.',m:'The selected suburb\'s median price and $/m² are compared to the 5 suburbs with the closest postcodes (geographic proximity). Difference shown as % premium or discount.'})}
+        <div class="mt-4 space-y-2">
+          ${(()=>{
+            const d=D();
+            if(!d.suburbs||!d.suburbs.length) return '<div class="text-[10px] text-[#1b1c17]/30">No suburb data</div>';
+            
+            // Find top suburb by lot count as target
+            const target=d.suburbs.filter(s=>s.total>=3).sort((a,b)=>b.total-a.total)[0];
+            if(!target) return '<div class="text-[10px] text-[#1b1c17]/30">Insufficient data</div>';
+            
+            // Find 5 nearest suburbs by $/m² rate
+            const neighbours=d.suburbs.filter(s=>s.suburb!==target.suburb&&s.total>=3&&s.avg_rate>0)
+              .sort((a,b)=>Math.abs(a.avg_rate-target.avg_rate)-Math.abs(b.avg_rate-target.avg_rate))
+              .slice(0,5);
+            
+            const maxRate=Math.max(target.avg_rate,...neighbours.map(n=>n.avg_rate));
+            
+            let rows=[];
+            
+            // Target suburb
+            rows.push('<div class="flex items-center gap-2 border-b border-[#dcdad2] pb-1 mb-2"><div class="w-32 text-right text-[10px] font-bold text-[#513561]">'+target.suburb+'</div><div class="h-5 flex-1 bg-[#eae8e0] overflow-hidden"><div class="h-full bg-[#513561] opacity-60" style="width:'+(target.avg_rate/maxRate*100)+'%"></div></div><div class="w-16 text-right text-[8px] font-bold text-[#513561]">$'+target.avg_rate+'/m²</div></div>');
+            
+            // Neighbours
+            neighbours.forEach((n,i)=>{
+              const diff=Math.round((n.avg_rate/target.avg_rate-1)*100);
+              const color=diff>0?'#61323a':'#486456';
+              const sign=diff>0?'+':'';
+              
+              rows.push('<div class="flex items-center gap-2"><div class="w-32 text-right text-[10px] font-medium">'+n.suburb+'</div><div class="h-4 flex-1 bg-[#eae8e0] overflow-hidden"><div class="h-full" style="width:'+(n.avg_rate/maxRate*100)+'%;background:'+color+';opacity:.4"></div></div><div class="w-16 text-right text-[8px] font-semibold" style="color:'+color+'">'+sign+diff+'%</div></div>');
+            });
+            
+            return rows.join('');
+          })()}
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+
+
+function renderSuburb(){
+  const d=D();
+  const subs=d.suburbs.filter(s=>s.total>=3);
+  const sel=searchTerm?subs.find(s=>s.suburb.toLowerCase().includes(searchTerm)):null;
+  const current=sel||subs[0];
+  if(!current) return '<div class="fi"><p class="text-[11px] text-[#1b1c17]/40">No suburb data available</p></div>';
+  
+  // Get individual lots for this suburb — respects view toggle
+  const subLots=filterLots((R.lots||[]).filter(l=>l.suburb===current.suburb));
+  const neighbours=subs.filter(s=>s.suburb!==current.suburb).sort((a,b)=>Math.abs(a.avg_rate-current.avg_rate)-Math.abs(b.avg_rate-current.avg_rate)).slice(0,5);
+  const mapUrl='https://www.google.com/maps/search/'+encodeURIComponent(titleCase(current.suburb)+', '+(current.state||cState||'VIC')+', Australia');
+  const medPrice=subLots.length?subLots.map(l=>l.price).sort((a,b)=>a-b)[Math.floor(subLots.length/2)]:current.avg_price;
+  const medSize=subLots.length?subLots.map(l=>l.lot_size).sort((a,b)=>a-b)[Math.floor(subLots.length/2)]:current.avg_size;
+  const medRate=subLots.length?subLots.map(l=>l.rate).sort((a,b)=>a-b)[Math.floor(subLots.length/2)]:current.avg_rate;
+  
+  return `<div class="fi">
+    <div class="mb-6 flex items-center gap-4">
+      <select onchange="selectSuburb(this.options[this.selectedIndex].dataset.name)" class="bg-[#fcf9f1] border border-[#dcdad2] text-[12px] uppercase tracking-wider py-2 px-4 font-bold text-[#1b1c17] focus:ring-1 focus:ring-[#6a4c7a] w-72">
+        ${subs.map(s=>'<option value="'+s.suburb.toLowerCase()+'" data-name="'+s.suburb+'"'+(s.suburb===current.suburb?' selected':'')+'>'+titleCase(s.suburb)+' ('+s.total+' lots)</option>').join('')}
+      </select>
+      <a href="${mapUrl}" target="_blank" class="flex items-center gap-1 text-[10px] text-[#6a4c7a] hover:text-[#513561] font-semibold"><span class="material-symbols-outlined text-sm">map</span>View on Google Maps</a>
+      <span class="text-[9px] text-[#1b1c17]/30 uppercase tracking-wider">${current.corridor||''} · ${current.lga||''} · ${current.state||''}</span>
+    </div>
+    
+    <div class="grid grid-cols-5 border-t border-b border-[#dcdad2] py-6 mb-8">
+      ${metric('Total Lots',fN(current.total))}
+      ${metric('Median Price',fK(medPrice))}
+      ${metric('Median $/m²','$'+Math.round(medRate))}
+      ${metric('Median Size',Math.round(medSize)+'m²')}
+      ${metric('Sold / Listed',fN(current.sold)+' / '+fN(current.listings))}
+    </div>
+    
+    <div class="grid grid-cols-2 gap-8 mb-8">
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Lot Distribution','Price vs size for every lot in '+titleCase(current.suburb),{t:'Suburb Scatter',w:'Every lot in this suburb plotted by size (x) and price (y). Sold lots are solid, listings are hollow. Gives you the full picture of what this suburb looks like.',m:'Individual lot data from Domain and REA scrapes. Each dot = one lot.'})}
+        <div class="relative bg-[#fcf9f1] border border-[#dcdad2]" style="height:250px">
+          <svg viewBox="0 0 500 250" class="w-full h-full">${(()=>{
+            if(!subLots.length) return '<text x="250" y="125" text-anchor="middle" fill="#1b1c17" opacity=".3" font-size="12">No individual lot data</text>';
+            const mnS=Math.min(...subLots.map(l=>l.lot_size))*0.9,mxS=Math.max(...subLots.map(l=>l.lot_size))*1.05;
+            const mnP=Math.min(...subLots.map(l=>l.price))*0.9,mxP=Math.max(...subLots.map(l=>l.price))*1.05;
+            return subLots.map(l=>{
+              const x=20+((l.lot_size-mnS)/(mxS-mnS))*460;
+              const y=15+(1-(l.price-mnP)/(mxP-mnP))*210;
+              const col=l.status==='sold'?'#486456':'#513561';
+              return '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="4" fill="'+col+'" opacity="'+(l.status==='sold'?.6:.35)+'" stroke="'+col+'" stroke-width="0.8"><title>'+fmt(l.price)+' · '+l.lot_size+'m² · '+l.status+'</title></circle>';
+            }).join('');
+          })()}</svg>
+        </div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Neighbour Comparison','How does '+titleCase(current.suburb)+' compare to nearby suburbs?',{t:'Neighbour Pricing',w:'The 5 closest suburbs by $/m² rate. Shows whether this suburb is a premium or discount relative to its neighbours.',m:'Suburbs ranked by similarity in $/m² rate. Difference shown as % above or below the selected suburb.'})}
+        <div class="mt-4 space-y-3">
+          <div class="flex items-center gap-2 border-b border-[#dcdad2] pb-2"><div class="w-32 text-right text-[11px] font-bold text-[#513561]">${titleCase(current.suburb)}</div><div class="flex-1 h-5 bg-[#513561]/30"><div class="h-full bg-[#513561]/60" style="width:100%"></div></div><div class="w-20 text-right text-[10px] font-bold text-[#513561]">$${Math.round(current.avg_rate)}/m²</div></div>
+          ${neighbours.map(n=>{
+            const diff=Math.round((n.avg_rate/current.avg_rate-1)*100);
+            const col=diff>0?'#61323a':'#486456';
+            return '<div class="flex items-center gap-2"><div class="w-32 text-right text-[10px] font-medium">'+titleCase(n.suburb)+'</div><div class="flex-1 h-4 bg-[#eae8e0] overflow-hidden"><div class="h-full" style="width:'+Math.min(n.avg_rate/current.avg_rate*100,120)+'%;background:'+col+';opacity:.4"></div></div><div class="w-20 text-right text-[10px] font-semibold" style="color:'+col+'">'+(diff>0?'+':'')+diff+'%</div></div>';
+          }).join('')}
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-2 gap-8 mb-8">
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Price Trend','Median price over time for '+titleCase(current.suburb),{t:'Suburb Price Trend',w:'Quarterly median price trend for this specific suburb from actual sold data.',m:'Sold lots in this suburb grouped by quarter, median price taken per quarter.'})}
+        <div class="h-40">${(()=>{const ts=TS();const ss=ts.suburbSeries&&ts.suburbSeries[current.suburb];if(!ss)return '<div class="flex items-center justify-center h-full text-[10px] text-[#1b1c17]/30 uppercase tracking-wider">Building — data populates with daily scrapes</div>';return tsLineChart(450,160,[{data:ss.map(q=>q.medPrice),color:'#513561',label:titleCase(current.suburb)}],ts.quarters);})()}</div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Size & Price Distributions','',{t:'Suburb Distributions',w:'How lots in this suburb are distributed by price and size.',m:'Individual lot counts grouped into bands.'})}
+        <div class="grid grid-cols-2 gap-4">
+          <div><span class="text-[8px] uppercase tracking-widest text-[#888] font-bold block mb-2">Price Bands</span>
+          ${(()=>{const bands={'<$200k':0,'$200-300k':0,'$300-400k':0,'$400-500k':0,'$500k+':0};subLots.forEach(l=>{if(l.price<200000)bands['<$200k']++;else if(l.price<300000)bands['$200-300k']++;else if(l.price<400000)bands['$300-400k']++;else if(l.price<500000)bands['$400-500k']++;else bands['$500k+']++;});const mx=Math.max(...Object.values(bands),1);return Object.entries(bands).map(([k,v])=>'<div class="flex items-center gap-1 mb-1"><span class="text-[8px] w-16 text-right text-[#1b1c17]/40">'+k+'</span><div class="flex-1 h-3 bg-[#eae8e0]"><div class="h-full bg-[#513561]/50" style="width:'+Math.max(v/mx*100,2)+'%"></div></div><span class="text-[8px] font-semibold text-[#1b1c17]/50 w-6 text-right">'+v+'</span></div>').join('');})()}
+          </div>
+          <div><span class="text-[8px] uppercase tracking-widest text-[#888] font-bold block mb-2">Size Bands</span>
+          ${(()=>{const bands={'<300m²':0,'300-400':0,'400-500':0,'500-600':0,'600m²+':0};subLots.forEach(l=>{if(l.lot_size<300)bands['<300m²']++;else if(l.lot_size<400)bands['300-400']++;else if(l.lot_size<500)bands['400-500']++;else if(l.lot_size<600)bands['500-600']++;else bands['600m²+']++;});const mx=Math.max(...Object.values(bands),1);return Object.entries(bands).map(([k,v])=>'<div class="flex items-center gap-1 mb-1"><span class="text-[8px] w-16 text-right text-[#1b1c17]/40">'+k+'</span><div class="flex-1 h-3 bg-[#eae8e0]"><div class="h-full bg-[#486456]/50" style="width:'+Math.max(v/mx*100,2)+'%"></div></div><span class="text-[8px] font-semibold text-[#1b1c17]/50 w-6 text-right">'+v+'</span></div>').join('');})()}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    ${subLots.length?`<div class="border border-[#dcdad2] bg-[#fcf9f1] max-h-[400px] overflow-y-auto sf"><table class="w-full"><thead class="sticky top-0 bg-[#fcf9f1] border-b border-[#dcdad2]"><tr><th class="text-left text-[9px] font-bold uppercase tracking-[0.12em] text-[#888] py-2 px-2.5">Address</th><th class="text-right text-[9px] font-bold uppercase tracking-[0.12em] text-[#888] py-2 px-2.5">Price</th><th class="text-right text-[9px] font-bold uppercase tracking-[0.12em] text-[#888] py-2 px-2.5">Size</th><th class="text-right text-[9px] font-bold uppercase tracking-[0.12em] text-[#888] py-2 px-2.5">$/m²</th><th class="text-center text-[9px] font-bold uppercase tracking-[0.12em] text-[#888] py-2 px-2.5">Status</th></tr></thead><tbody>${subLots.map(l=>`<tr class="dr"><td class="py-2 px-2.5 text-[11px] font-medium">${l.address||titleCase(l.suburb)}</td><td class="py-2 px-2.5 text-[11px] text-right">${fmt(l.price)}</td><td class="py-2 px-2.5 text-[11px] text-right">${l.lot_size}m²</td><td class="py-2 px-2.5 text-[11px] text-right font-semibold text-[#513561]">$${Math.round(l.rate)}</td><td class="py-2 px-2.5 text-[10px] text-center"><span class="px-2 py-0.5 text-[8px] uppercase tracking-wider font-bold ${l.status==='sold'?'text-[#486456] bg-[#486456]/10':'text-[#61323a] bg-[#61323a]/10'}">${l.status}</span></td></tr>`).join('')}</tbody></table></div>`:''}
+  </div>`;
+}
+
+function renderCompare(){
+  const sl=R.stateList;
+  const allCorridors=R.all.corridors.map(c=>c.corridor);
+  const mockQs=['2020','2021','2022','2023','2024','2025'];
+  return `<div class="fi">
+    <div class="mb-6">${sec('Market Comparison Tool','Select two markets to compare side by side',{t:'Dual Comparison',w:'Choose any two states, corridors, or suburbs and see their metrics side by side. Reveals relative value, growth differentials, and convergence trends.',m:'Each panel independently computes median price, $/m², lot size, sold/listed counts, and months of stock for the selected market.'})}</div>
+    <div class="grid grid-cols-2 gap-6 mb-8">
+      <div class="bg-[#f6f4eb] border border-[#dcdad2] p-4">
+        <select id="cmpL" onchange="updateCompare('L')" class="w-full bg-[#fcf9f1] border border-[#dcdad2] text-[10px] uppercase tracking-wider py-2 px-3 font-bold mb-4">
+          <option value="">Select Left Market</option>
+          <optgroup label="States">${sl.map(s=>'<option value="state:'+s+'">'+s+'</option>').join('')}</optgroup>
+          <optgroup label="Corridors">${allCorridors.map(c=>'<option value="cor:'+c+'">'+c+'</option>').join('')}</optgroup>
+        </select>
+<div id="cmpL_data" class="text-center py-12"><span class="material-symbols-outlined text-4xl text-[#1b1c17]/10 mb-2 block">analytics</span><span class="text-[10px] text-[#1b1c17]/30 uppercase tracking-wider">Select a market above</span></div>
+      </div>
+      <div class="bg-[#f6f4eb] border border-[#dcdad2] p-4">
+        <select id="cmpR" onchange="updateCompare('R')" class="w-full bg-[#fcf9f1] border border-[#dcdad2] text-[10px] uppercase tracking-wider py-2 px-3 font-bold mb-4">
+          <option value="">Select Right Market</option>
+          <optgroup label="States">${sl.map(s=>'<option value="state:'+s+'">'+s+'</option>').join('')}</optgroup>
+          <optgroup label="Corridors">${allCorridors.map(c=>'<option value="cor:'+c+'">'+c+'</option>').join('')}</optgroup>
+        </select>
+<div id="cmpR_data" class="text-center py-12"><span class="material-symbols-outlined text-4xl text-[#1b1c17]/10 mb-2 block">analytics</span><span class="text-[10px] text-[#1b1c17]/30 uppercase tracking-wider">Select a market above</span></div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-8 mb-10">
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Price Convergence','How state medians move over time',{t:'Price Convergence',w:'Tracks whether cheaper markets are catching up to expensive ones. Narrowing gaps = convergence.',m:'Median lot price per state plotted over time from actual sold data.'})}
+        <div class="h-48">${(()=>{const series=sl.filter(s=>R.stateTS[s]).map((s,i)=>({data:R.stateTS[s].sold.map(q=>q.medPrice),color:CL[i],label:s}));return tsLineChart(500,200,series,R.ts.quarters);})()}</div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Affordability Ranking','Median $/m² by state',{t:'Affordability Ranking',w:'States ranked by price per square metre — lower = more affordable.',m:'Median $/m² per state from actual data.'})}
+        <div class="mt-4">${(()=>{const data=sl.filter(s=>R.states[s]).map(s=>({label:s,value:R.states[s].totals.med_rate||0})).sort((a,b)=>a.value-b.value);return tsBarChart(500,180,data.map(d=>d.value),data.map(d=>d.label),'#513561',v=>'$'+Math.round(v));})()}</div>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-8">
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Sold Volume by State','Quarterly transaction volume per state',{t:'State Volume',w:'How sales volume trends differ across states.',m:'Sold lots per quarter per state from sold_date data.'})}
+        <div class="h-48">${(()=>{const series=sl.filter(s=>R.stateTS[s]).map((s,i)=>({data:R.stateTS[s].sold.map(q=>q.count),color:CL[i],label:s}));return tsLineChart(500,200,series,R.ts.quarters,v=>fN(Math.round(v)));})()}</div>
+      </div>
+      <div class="border border-[#dcdad2] p-8 bg-[#f6f4eb]">
+        ${sec('Supply vs Demand','Months of stock per state',{t:'National Supply',w:'Months of trading stock per market. Under 3 = tight, prices rising. Over 6 = oversupplied.',m:'Current listings ÷ monthly sales rate per state.'})}
+        <div class="space-y-4 mt-4">
+          ${sl.filter(s=>R.states[s]).map(s=>{const t=R.states[s].totals;const mos=t.sold>0?(t.listings/(t.sold/12)):0;const col=mos<3?'#486456':(mos<6?'#8b5e3c':'#61323a');const label=mos<3?'Tight':(mos<6?'Balanced':'Oversupplied');return '<div><div class="flex justify-between text-[11px] mb-1"><span class="font-bold">'+s+'</span><span class="font-semibold" style="color:'+col+'">'+mos.toFixed(1)+' mo · '+label+'</span></div><div class="h-3 bg-[#eae8e0] overflow-hidden"><div class="h-full" style="width:'+Math.min(mos/8*100,100)+'%;background:'+col+';opacity:.6"></div></div></div>';}).join('')}
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ──── COMPARE FUNCTION ────
+function updateCompare(side) {
+  const select = document.getElementById('cmp' + side);
+  const dataDiv = document.getElementById('cmp' + side + '_data');
+  
+  if (!select || !dataDiv) return;
+  
+  const sel = select.value;
+  
+  if (!sel) {
+    dataDiv.innerHTML = '<div class="text-center py-12"><span class="material-symbols-outlined text-4xl text-[#1b1c17]/10 mb-2 block">analytics</span><span class="text-[10px] text-[#1b1c17]/30 uppercase tracking-wider">Select a market above</span></div>';
+    return;
+  }
+  
+  const [type, name] = sel.split(':');
+  let data;
+  
+  if (type === 'state' && R.states[name]) {
+    data = R.states[name].totals;
+  } else if (type === 'cor') {
+    const corridor = R.all.corridors.find(c => c.corridor === name);
+    if (corridor) {
+      data = {
+        med_price: corridor.avg_price,
+        med_rate: corridor.avg_rate,
+        med_size: corridor.avg_size,
+        total: corridor.total,
+        sold: corridor.sold,
+        listings: corridor.listings,
+        months_stock: corridor.sold > 0 ? (corridor.listings / (corridor.sold / 12)).toFixed(1) : '—'
+      };
+    }
+  }
+  
+  if (!data) {
+    dataDiv.innerHTML = '<div class="text-center py-12"><span class="text-[10px] text-[#1b1c17]/30">Data not available</span></div>';
+    return;
+  }
+  
+  dataDiv.innerHTML = `
+    <div class="bg-[#fcf9f1] p-6 border border-[#dcdad2]">
+      <div class="text-center mb-4">
+        <span class="text-lg font-serif text-[#1b1c17]">${name}</span>
+      </div>
+      <div class="grid grid-cols-2 gap-4 text-center">
+        <div>
+          <span class="text-2xl font-medium tracking-tight text-[#111] block">${fK(data.med_price)}</span>
+          <span class="text-[8px] uppercase tracking-widest text-[#888]">median price</span>
+        </div>
+        <div>
+          <span class="text-2xl font-medium tracking-tight text-[#111] block">$${data.med_rate}</span>
+          <span class="text-[8px] uppercase tracking-widest text-[#888]">$/m²</span>
+        </div>
+        <div>
+          <span class="text-2xl font-medium tracking-tight text-[#111] block">${data.med_size}m²</span>
+          <span class="text-[8px] uppercase tracking-widest text-[#888]">median size</span>
+        </div>
+        <div>
+          <span class="text-2xl font-medium tracking-tight text-[#111] block">${fN(data.total)}</span>
+          <span class="text-[8px] uppercase tracking-widest text-[#888]">lots tracked</span>
+        </div>
+        <div>
+          <span class="text-2xl font-medium tracking-tight text-[#111] block">${fN(data.sold)}/${fN(data.listings)}</span>
+          <span class="text-[8px] uppercase tracking-widest text-[#888]">sold/listed</span>
+        </div>
+        <div>
+          <span class="text-2xl font-medium tracking-tight text-[#111] block">${data.months_stock}</span>
+          <span class="text-[8px] uppercase tracking-widest text-[#888]">months stock</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ──── RENDER ────
+function render(){
+  document.getElementById('upd').textContent='Updated '+new Date().toLocaleDateString('en-AU',{day:'numeric',month:'short',year:'numeric'});
+  const P={overview:renderOverview,pricing:renderPricing,velocity:renderVelocity,corridors:renderCorridors,suburb:renderSuburb,registry:renderRegistry,health:renderHealth,compare:renderCompare};
+  document.getElementById('content').innerHTML=P[pg]();
+  if(pg==='overview') setTimeout(renderScatter,50);
+}
+
+renderPills();render();
+</script>
+</body></html>

@@ -1,0 +1,3 @@
+@echo off
+echo Running smoke test: 3 suburbs with fresh start...
+node engine/run-bulk-ingest.js --limit 3 --fresh

@@ -1,0 +1,5888 @@
+[
+  {
+    "suburb": "LEPPINGTON",
+    "postcode": "2179",
+    "state": "NSW",
+    "listings": 220
+  },
+  {
+    "suburb": "AUSTRAL",
+    "postcode": "2179",
+    "state": "NSW",
+    "listings": 219
+  },
+  {
+    "suburb": "OAKVILLE",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 200
+  },
+  {
+    "suburb": "BOX HILL",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 198
+  },
+  {
+    "suburb": "COFFS HARBOUR",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 197
+  },
+  {
+    "suburb": "GRANTHAM FARM",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 195
+  },
+  {
+    "suburb": "THE PONDS",
+    "postcode": "2769",
+    "state": "NSW",
+    "listings": 194
+  },
+  {
+    "suburb": "MARSDEN PARK",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 192
+  },
+  {
+    "suburb": "ROUSE HILL",
+    "postcode": "2155",
+    "state": "NSW",
+    "listings": 191
+  },
+  {
+    "suburb": "VINEYARD",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 190
+  },
+  {
+    "suburb": "TAHMOOR",
+    "postcode": "2573",
+    "state": "NSW",
+    "listings": 187
+  },
+  {
+    "suburb": "THIRLMERE",
+    "postcode": "2572",
+    "state": "NSW",
+    "listings": 185
+  },
+  {
+    "suburb": "MITTAGONG",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 185
+  },
+  {
+    "suburb": "DUBBO",
+    "postcode": "2830",
+    "state": "NSW",
+    "listings": 185
+  },
+  {
+    "suburb": "ESCHOL",
+    "postcode": "2830",
+    "state": "NSW",
+    "listings": 185
+  },
+  {
+    "suburb": "SPRING FARM",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 179
+  },
+  {
+    "suburb": "ORANGE",
+    "postcode": "2800",
+    "state": "NSW",
+    "listings": 179
+  },
+  {
+    "suburb": "TAMWORTH",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 177
+  },
+  {
+    "suburb": "NAMBUCCA HEADS",
+    "postcode": "2448",
+    "state": "NSW",
+    "listings": 177
+  },
+  {
+    "suburb": "ANGUS",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 177
+  },
+  {
+    "suburb": "SINGLETON",
+    "postcode": "2330",
+    "state": "NSW",
+    "listings": 174
+  },
+  {
+    "suburb": "PINDIMAR",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 173
+  },
+  {
+    "suburb": "TALLAWONG",
+    "postcode": "2762",
+    "state": "NSW",
+    "listings": 173
+  },
+  {
+    "suburb": "NORTH ARM COVE",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 170
+  },
+  {
+    "suburb": "WILTON",
+    "postcode": "2571",
+    "state": "NSW",
+    "listings": 168
+  },
+  {
+    "suburb": "WARNERVALE",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 166
+  },
+  {
+    "suburb": "KELSO",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 165
+  },
+  {
+    "suburb": "BENI",
+    "postcode": "2830",
+    "state": "NSW",
+    "listings": 165
+  },
+  {
+    "suburb": "BOOTHENBA",
+    "postcode": "2830",
+    "state": "NSW",
+    "listings": 165
+  },
+  {
+    "suburb": "EULOMOGO",
+    "postcode": "2830",
+    "state": "NSW",
+    "listings": 165
+  },
+  {
+    "suburb": "RIVERSTONE",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 161
+  },
+  {
+    "suburb": "LIGHTHOUSE BEACH",
+    "postcode": "2444",
+    "state": "NSW",
+    "listings": 160
+  },
+  {
+    "suburb": "PORT MACQUARIE",
+    "postcode": "2444",
+    "state": "NSW",
+    "listings": 160
+  },
+  {
+    "suburb": "MENANGLE PARK",
+    "postcode": "2563",
+    "state": "NSW",
+    "listings": 158
+  },
+  {
+    "suburb": "GILEAD",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 153
+  },
+  {
+    "suburb": "TUMBARUMBA",
+    "postcode": "2653",
+    "state": "NSW",
+    "listings": 153
+  },
+  {
+    "suburb": "GLENFIELD",
+    "postcode": "2167",
+    "state": "NSW",
+    "listings": 150
+  },
+  {
+    "suburb": "BLACKTOWN",
+    "postcode": "2148",
+    "state": "NSW",
+    "listings": 149
+  },
+  {
+    "suburb": "BATHURST",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 147
+  },
+  {
+    "suburb": "BELLINGEN",
+    "postcode": "2454",
+    "state": "NSW",
+    "listings": 145
+  },
+  {
+    "suburb": "ORAN PARK",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 144
+  },
+  {
+    "suburb": "LOCHINVAR",
+    "postcode": "2321",
+    "state": "NSW",
+    "listings": 132
+  },
+  {
+    "suburb": "MUSWELLBROOK",
+    "postcode": "2333",
+    "state": "NSW",
+    "listings": 127
+  },
+  {
+    "suburb": "NORTH KELLYVILLE",
+    "postcode": "2155",
+    "state": "NSW",
+    "listings": 120
+  },
+  {
+    "suburb": "SCOTTS HEAD",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 117
+  },
+  {
+    "suburb": "LAKE ALBERT",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 117
+  },
+  {
+    "suburb": "BLAYNEY",
+    "postcode": "2799",
+    "state": "NSW",
+    "listings": 116
+  },
+  {
+    "suburb": "APPIN",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 115
+  },
+  {
+    "suburb": "URUNGA",
+    "postcode": "2455",
+    "state": "NSW",
+    "listings": 109
+  },
+  {
+    "suburb": "WINDRADYNE",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 105
+  },
+  {
+    "suburb": "WOOLGOOLGA",
+    "postcode": "2456",
+    "state": "NSW",
+    "listings": 102
+  },
+  {
+    "suburb": "SCHOFIELDS",
+    "postcode": "2762",
+    "state": "NSW",
+    "listings": 101
+  },
+  {
+    "suburb": "LAKE CATHIE",
+    "postcode": "2445",
+    "state": "NSW",
+    "listings": 99
+  },
+  {
+    "suburb": "JORDAN SPRINGS",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 98
+  },
+  {
+    "suburb": "MERRIWA",
+    "postcode": "2329",
+    "state": "NSW",
+    "listings": 97
+  },
+  {
+    "suburb": "DORA CREEK",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 96
+  },
+  {
+    "suburb": "SAFETY BEACH",
+    "postcode": "2456",
+    "state": "NSW",
+    "listings": 94
+  },
+  {
+    "suburb": "VALLA BEACH",
+    "postcode": "2448",
+    "state": "NSW",
+    "listings": 90
+  },
+  {
+    "suburb": "MORISSET PARK",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 89
+  },
+  {
+    "suburb": "CATHERINE FIELD",
+    "postcode": "2557",
+    "state": "NSW",
+    "listings": 89
+  },
+  {
+    "suburb": "DENMAN",
+    "postcode": "2328",
+    "state": "NSW",
+    "listings": 87
+  },
+  {
+    "suburb": "DORRIGO",
+    "postcode": "2453",
+    "state": "NSW",
+    "listings": 87
+  },
+  {
+    "suburb": "BERRY",
+    "postcode": "2535",
+    "state": "NSW",
+    "listings": 87
+  },
+  {
+    "suburb": "SPRINGVALE",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 87
+  },
+  {
+    "suburb": "KURRAJONG",
+    "postcode": "2758",
+    "state": "NSW",
+    "listings": 87
+  },
+  {
+    "suburb": "WYEE",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 85
+  },
+  {
+    "suburb": "COLEBEE",
+    "postcode": "2761",
+    "state": "NSW",
+    "listings": 83
+  },
+  {
+    "suburb": "MORISSET",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 81
+  },
+  {
+    "suburb": "HEATHERBRAE",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 81
+  },
+  {
+    "suburb": "BONVILLE",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 80
+  },
+  {
+    "suburb": "TULLIMBAR",
+    "postcode": "2527",
+    "state": "NSW",
+    "listings": 80
+  },
+  {
+    "suburb": "THE ROCK",
+    "postcode": "2655",
+    "state": "NSW",
+    "listings": 80
+  },
+  {
+    "suburb": "MURRAYS BEACH",
+    "postcode": "2281",
+    "state": "NSW",
+    "listings": 78
+  },
+  {
+    "suburb": "FARLEY",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 78
+  },
+  {
+    "suburb": "BONNY HILLS",
+    "postcode": "2445",
+    "state": "NSW",
+    "listings": 78
+  },
+  {
+    "suburb": "KARUAH",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 76
+  },
+  {
+    "suburb": "KENTHURST",
+    "postcode": "2156",
+    "state": "NSW",
+    "listings": 73
+  },
+  {
+    "suburb": "NORTH MACQUARIE",
+    "postcode": "2527",
+    "state": "NSW",
+    "listings": 73
+  },
+  {
+    "suburb": "GREGORY HILLS",
+    "postcode": "2557",
+    "state": "NSW",
+    "listings": 73
+  },
+  {
+    "suburb": "BEROWRA",
+    "postcode": "2081",
+    "state": "NSW",
+    "listings": 72
+  },
+  {
+    "suburb": "BUTTABA",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 72
+  },
+  {
+    "suburb": "SPEERS POINT",
+    "postcode": "2284",
+    "state": "NSW",
+    "listings": 72
+  },
+  {
+    "suburb": "POKOLBIN",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 72
+  },
+  {
+    "suburb": "PICTON",
+    "postcode": "2571",
+    "state": "NSW",
+    "listings": 72
+  },
+  {
+    "suburb": "FOREST HILL",
+    "postcode": "2651",
+    "state": "NSW",
+    "listings": 72
+  },
+  {
+    "suburb": "BOWEN MOUNTAIN",
+    "postcode": "2753",
+    "state": "NSW",
+    "listings": 72
+  },
+  {
+    "suburb": "CARGO",
+    "postcode": "2800",
+    "state": "NSW",
+    "listings": 71
+  },
+  {
+    "suburb": "THORNTON",
+    "postcode": "2322",
+    "state": "NSW",
+    "listings": 70
+  },
+  {
+    "suburb": "CLAREMONT MEADOWS",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 70
+  },
+  {
+    "suburb": "SCONE",
+    "postcode": "2337",
+    "state": "NSW",
+    "listings": 69
+  },
+  {
+    "suburb": "KELLYVILLE",
+    "postcode": "2155",
+    "state": "NSW",
+    "listings": 68
+  },
+  {
+    "suburb": "MACKSVILLE",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 68
+  },
+  {
+    "suburb": "GABLES",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 68
+  },
+  {
+    "suburb": "CALDERWOOD",
+    "postcode": "2527",
+    "state": "NSW",
+    "listings": 67
+  },
+  {
+    "suburb": "LLOYD",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 67
+  },
+  {
+    "suburb": "NORDS WHARF",
+    "postcode": "2281",
+    "state": "NSW",
+    "listings": 66
+  },
+  {
+    "suburb": "HAWKS NEST",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 66
+  },
+  {
+    "suburb": "MURRURUNDI",
+    "postcode": "2338",
+    "state": "NSW",
+    "listings": 66
+  },
+  {
+    "suburb": "QUIRINDI",
+    "postcode": "2343",
+    "state": "NSW",
+    "listings": 66
+  },
+  {
+    "suburb": "CORDEAUX HEIGHTS",
+    "postcode": "2526",
+    "state": "NSW",
+    "listings": 66
+  },
+  {
+    "suburb": "BOOROOMA",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 66
+  },
+  {
+    "suburb": "BELLBIRD",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 65
+  },
+  {
+    "suburb": "KIAMA",
+    "postcode": "2533",
+    "state": "NSW",
+    "listings": 65
+  },
+  {
+    "suburb": "NORWEST",
+    "postcode": "2153",
+    "state": "NSW",
+    "listings": 64
+  },
+  {
+    "suburb": "AUSTINMER",
+    "postcode": "2515",
+    "state": "NSW",
+    "listings": 64
+  },
+  {
+    "suburb": "INGLEBURN",
+    "postcode": "2565",
+    "state": "NSW",
+    "listings": 64
+  },
+  {
+    "suburb": "NELSON BAY",
+    "postcode": "2315",
+    "state": "NSW",
+    "listings": 62
+  },
+  {
+    "suburb": "HEDDON GRETA",
+    "postcode": "2321",
+    "state": "NSW",
+    "listings": 62
+  },
+  {
+    "suburb": "BUCHANAN",
+    "postcode": "2323",
+    "state": "NSW",
+    "listings": 62
+  },
+  {
+    "suburb": "THRUMSTER",
+    "postcode": "2444",
+    "state": "NSW",
+    "listings": 62
+  },
+  {
+    "suburb": "EDGEWORTH",
+    "postcode": "2285",
+    "state": "NSW",
+    "listings": 61
+  },
+  {
+    "suburb": "SHELL COVE",
+    "postcode": "2529",
+    "state": "NSW",
+    "listings": 61
+  },
+  {
+    "suburb": "GRETA",
+    "postcode": "2334",
+    "state": "NSW",
+    "listings": 60
+  },
+  {
+    "suburb": "NORTH RICHMOND",
+    "postcode": "2754",
+    "state": "NSW",
+    "listings": 60
+  },
+  {
+    "suburb": "GILLIESTON HEIGHTS",
+    "postcode": "2321",
+    "state": "NSW",
+    "listings": 59
+  },
+  {
+    "suburb": "CHISHOLM",
+    "postcode": "2322",
+    "state": "NSW",
+    "listings": 59
+  },
+  {
+    "suburb": "MILLFIELD",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 59
+  },
+  {
+    "suburb": "NORTH MACKSVILLE",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 59
+  },
+  {
+    "suburb": "DAPTO",
+    "postcode": "2530",
+    "state": "NSW",
+    "listings": 59
+  },
+  {
+    "suburb": "COBBITTY",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 59
+  },
+  {
+    "suburb": "LYNDHURST",
+    "postcode": "2797",
+    "state": "NSW",
+    "listings": 59
+  },
+  {
+    "suburb": "CESSNOCK",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 58
+  },
+  {
+    "suburb": "CAMPBELLTOWN",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 58
+  },
+  {
+    "suburb": "BRAEMAR",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 58
+  },
+  {
+    "suburb": "WILBERFORCE",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 58
+  },
+  {
+    "suburb": "ABERCROMBIE",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 58
+  },
+  {
+    "suburb": "FLETCHER",
+    "postcode": "2287",
+    "state": "NSW",
+    "listings": 57
+  },
+  {
+    "suburb": "MINMI",
+    "postcode": "2287",
+    "state": "NSW",
+    "listings": 57
+  },
+  {
+    "suburb": "COBAR",
+    "postcode": "2835",
+    "state": "NSW",
+    "listings": 57
+  },
+  {
+    "suburb": "WEST PENNANT HILLS",
+    "postcode": "2125",
+    "state": "NSW",
+    "listings": 56
+  },
+  {
+    "suburb": "PRESTONS",
+    "postcode": "2170",
+    "state": "NSW",
+    "listings": 56
+  },
+  {
+    "suburb": "MAITLAND",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 56
+  },
+  {
+    "suburb": "NEWEE CREEK",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 56
+  },
+  {
+    "suburb": "SOUTH MAROOTA",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 56
+  },
+  {
+    "suburb": "COORANBONG",
+    "postcode": "2265",
+    "state": "NSW",
+    "listings": 55
+  },
+  {
+    "suburb": "RICHMOND",
+    "postcode": "2753",
+    "state": "NSW",
+    "listings": 55
+  },
+  {
+    "suburb": "CASTLE HILL",
+    "postcode": "2154",
+    "state": "NSW",
+    "listings": 53
+  },
+  {
+    "suburb": "BARDEN RIDGE",
+    "postcode": "2234",
+    "state": "NSW",
+    "listings": 53
+  },
+  {
+    "suburb": "RAYMOND TERRACE",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 53
+  },
+  {
+    "suburb": "FIGTREE",
+    "postcode": "2525",
+    "state": "NSW",
+    "listings": 53
+  },
+  {
+    "suburb": "LIVERPOOL",
+    "postcode": "2170",
+    "state": "NSW",
+    "listings": 52
+  },
+  {
+    "suburb": "EDMONDSON PARK",
+    "postcode": "2174",
+    "state": "NSW",
+    "listings": 52
+  },
+  {
+    "suburb": "OURIMBAH",
+    "postcode": "2258",
+    "state": "NSW",
+    "listings": 52
+  },
+  {
+    "suburb": "SUMMERLAND POINT",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 52
+  },
+  {
+    "suburb": "MALLABULA",
+    "postcode": "2319",
+    "state": "NSW",
+    "listings": 52
+  },
+  {
+    "suburb": "SAPPHIRE BEACH",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 52
+  },
+  {
+    "suburb": "LUDDENHAM",
+    "postcode": "2745",
+    "state": "NSW",
+    "listings": 52
+  },
+  {
+    "suburb": "LOWER PORTLAND",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 52
+  },
+  {
+    "suburb": "CAMERON PARK",
+    "postcode": "2285",
+    "state": "NSW",
+    "listings": 51
+  },
+  {
+    "suburb": "CONGARINNI",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 51
+  },
+  {
+    "suburb": "MENANGLE",
+    "postcode": "2568",
+    "state": "NSW",
+    "listings": 51
+  },
+  {
+    "suburb": "UMINA BEACH",
+    "postcode": "2257",
+    "state": "NSW",
+    "listings": 49
+  },
+  {
+    "suburb": "HAMLYN TERRACE",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 49
+  },
+  {
+    "suburb": "SANCROX",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 49
+  },
+  {
+    "suburb": "MOONEE BEACH",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 49
+  },
+  {
+    "suburb": "DENHAM COURT",
+    "postcode": "2565",
+    "state": "NSW",
+    "listings": 49
+  },
+  {
+    "suburb": "CRANEBROOK",
+    "postcode": "2749",
+    "state": "NSW",
+    "listings": 49
+  },
+  {
+    "suburb": "CATTAI",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 49
+  },
+  {
+    "suburb": "QUAKERS HILL",
+    "postcode": "2763",
+    "state": "NSW",
+    "listings": 49
+  },
+  {
+    "suburb": "GLENORIE",
+    "postcode": "2157",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "WOONGARRAH",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "WALLALONG",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "TEA GARDENS",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "LOWER BELFORD",
+    "postcode": "2335",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "VALLA",
+    "postcode": "2448",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "LAKE HEIGHTS",
+    "postcode": "2502",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "HELENSBURGH",
+    "postcode": "2508",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "HORSLEY",
+    "postcode": "2530",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "HILL TOP",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "TATTON",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "KURRAJONG HEIGHTS",
+    "postcode": "2758",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "ROCKLEY",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "WESTELLA",
+    "postcode": "2831",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "WONGARBON",
+    "postcode": "2831",
+    "state": "NSW",
+    "listings": 48
+  },
+  {
+    "suburb": "SALAMANDER BAY",
+    "postcode": "2317",
+    "state": "NSW",
+    "listings": 47
+  },
+  {
+    "suburb": "WELBY",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 47
+  },
+  {
+    "suburb": "WAGGA WAGGA",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 47
+  },
+  {
+    "suburb": "CHURCH POINT",
+    "postcode": "2105",
+    "state": "NSW",
+    "listings": 46
+  },
+  {
+    "suburb": "SCOTLAND ISLAND",
+    "postcode": "2105",
+    "state": "NSW",
+    "listings": 46
+  },
+  {
+    "suburb": "FISHING POINT",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 46
+  },
+  {
+    "suburb": "NORTH ROTHBURY",
+    "postcode": "2335",
+    "state": "NSW",
+    "listings": 46
+  },
+  {
+    "suburb": "LLANDILO",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 46
+  },
+  {
+    "suburb": "ST IVES",
+    "postcode": "2075",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "HORSLEY PARK",
+    "postcode": "2175",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "GYMEA BAY",
+    "postcode": "2227",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "WYONG",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "WARNERS BAY",
+    "postcode": "2282",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "CLARENCE TOWN",
+    "postcode": "2321",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "NULKABA",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "MOORE CREEK",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "BOAMBEE EAST",
+    "postcode": "2452",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "WOLLONGONG",
+    "postcode": "2500",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "OTFORD",
+    "postcode": "2508",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "JASPERS BRUSH",
+    "postcode": "2535",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "GLEDSWOOD HILLS",
+    "postcode": "2557",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "WILLOW VALE",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "LLANARTH",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "PERTHVILLE",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "BALLADORAN",
+    "postcode": "2831",
+    "state": "NSW",
+    "listings": 45
+  },
+  {
+    "suburb": "TOONGABBIE",
+    "postcode": "2146",
+    "state": "NSW",
+    "listings": 44
+  },
+  {
+    "suburb": "BOOLAROO",
+    "postcode": "2284",
+    "state": "NSW",
+    "listings": 44
+  },
+  {
+    "suburb": "PUTTY",
+    "postcode": "2330",
+    "state": "NSW",
+    "listings": 44
+  },
+  {
+    "suburb": "BELMONT NORTH",
+    "postcode": "2280",
+    "state": "NSW",
+    "listings": 43
+  },
+  {
+    "suburb": "ELLALONG",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 42
+  },
+  {
+    "suburb": "JAMBEROO",
+    "postcode": "2533",
+    "state": "NSW",
+    "listings": 42
+  },
+  {
+    "suburb": "LEUMEAH",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 42
+  },
+  {
+    "suburb": "CAMDEN",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 42
+  },
+  {
+    "suburb": "NEWBRIDGE",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 42
+  },
+  {
+    "suburb": "WARRAWEE",
+    "postcode": "2074",
+    "state": "NSW",
+    "listings": 41
+  },
+  {
+    "suburb": "WAHROONGA",
+    "postcode": "2076",
+    "state": "NSW",
+    "listings": 41
+  },
+  {
+    "suburb": "BAR POINT",
+    "postcode": "2083",
+    "state": "NSW",
+    "listings": 41
+  },
+  {
+    "suburb": "ARCADIA",
+    "postcode": "2159",
+    "state": "NSW",
+    "listings": 41
+  },
+  {
+    "suburb": "GLENDALE",
+    "postcode": "2285",
+    "state": "NSW",
+    "listings": 41
+  },
+  {
+    "suburb": "WAUCHOPE",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 41
+  },
+  {
+    "suburb": "AVALON BEACH",
+    "postcode": "2107",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "THORNLEIGH",
+    "postcode": "2120",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "GUILDFORD",
+    "postcode": "2161",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "CASULA",
+    "postcode": "2170",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "BUNDEENA",
+    "postcode": "2230",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "SOMERSBY",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "DAVISTOWN",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "MACMASTERS BEACH",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "WAMBERAL",
+    "postcode": "2260",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "BERKELEY VALE",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "SUNSHINE",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "ELEEBANA",
+    "postcode": "2282",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "CAREY BAY",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "BROADMEADOW",
+    "postcode": "2292",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "LEMON TREE PASSAGE",
+    "postcode": "2319",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "KEARSLEY",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "ABERMAIN",
+    "postcode": "2326",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "ABERDEEN",
+    "postcode": "2336",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "HANGING ROCK",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "BEECHWOOD",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "GLENREAGH",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "EMERALD BEACH",
+    "postcode": "2456",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "STANWELL PARK",
+    "postcode": "2508",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "THIRROUL",
+    "postcode": "2515",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "CAMDEN PARK",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "MAROOTA",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "MELONBA",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 40
+  },
+  {
+    "suburb": "RYDE",
+    "postcode": "2112",
+    "state": "NSW",
+    "listings": 39
+  },
+  {
+    "suburb": "MATCHAM",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 39
+  },
+  {
+    "suburb": "WHITEBRIDGE",
+    "postcode": "2290",
+    "state": "NSW",
+    "listings": 39
+  },
+  {
+    "suburb": "CLIFTLEIGH",
+    "postcode": "2321",
+    "state": "NSW",
+    "listings": 39
+  },
+  {
+    "suburb": "GROSE VALE",
+    "postcode": "2753",
+    "state": "NSW",
+    "listings": 39
+  },
+  {
+    "suburb": "WATTLE FLAT",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 39
+  },
+  {
+    "suburb": "NORMANHURST",
+    "postcode": "2076",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "PLEASURE POINT",
+    "postcode": "2172",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "CECIL PARK",
+    "postcode": "2178",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "LUGARNO",
+    "postcode": "2210",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "AVOCA BEACH",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "WOY WOY",
+    "postcode": "2256",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "KILLCARE",
+    "postcode": "2257",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "JILLIBY",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "GLENNING VALLEY",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "BRIGHTWATERS",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "CATHERINE HILL BAY",
+    "postcode": "2281",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "WALLSEND",
+    "postcode": "2287",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "ISLINGTON",
+    "postcode": "2296",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "TANILBA BAY",
+    "postcode": "2319",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "ANAMBAH",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "BOLWARRA",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "BUNDABAH",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "WERRIS CREEK",
+    "postcode": "2341",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "CONGARINNI NORTH",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "WARRELL CREEK",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "KORORA",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "LOWANNA",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "TOORMINA",
+    "postcode": "2452",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "SHELLHARBOUR",
+    "postcode": "2529",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "EAGLE VALE",
+    "postcode": "2558",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "AIRDS",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "WEDDERBURN",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "BALACLAVA",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "COLO VALE",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "ESTELLA",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "FREEMANS REACH",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "BILPIN",
+    "postcode": "2758",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "ROOTY HILL",
+    "postcode": "2766",
+    "state": "NSW",
+    "listings": 38
+  },
+  {
+    "suburb": "BEROWRA WATERS",
+    "postcode": "2082",
+    "state": "NSW",
+    "listings": 37
+  },
+  {
+    "suburb": "WYEE POINT",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 37
+  },
+  {
+    "suburb": "TORONTO",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 37
+  },
+  {
+    "suburb": "SANDY BEACH",
+    "postcode": "2456",
+    "state": "NSW",
+    "listings": 37
+  },
+  {
+    "suburb": "OAKDALE",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 37
+  },
+  {
+    "suburb": "BARGO",
+    "postcode": "2574",
+    "state": "NSW",
+    "listings": 37
+  },
+  {
+    "suburb": "EGLINTON",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 37
+  },
+  {
+    "suburb": "SEVEN HILLS",
+    "postcode": "2147",
+    "state": "NSW",
+    "listings": 34
+  },
+  {
+    "suburb": "MOUNT HUTTON",
+    "postcode": "2290",
+    "state": "NSW",
+    "listings": 34
+  },
+  {
+    "suburb": "POTTS HILL",
+    "postcode": "2143",
+    "state": "NSW",
+    "listings": 33
+  },
+  {
+    "suburb": "KELLYVILLE RIDGE",
+    "postcode": "2155",
+    "state": "NSW",
+    "listings": 33
+  },
+  {
+    "suburb": "GALSTON",
+    "postcode": "2159",
+    "state": "NSW",
+    "listings": 33
+  },
+  {
+    "suburb": "DUDLEY",
+    "postcode": "2290",
+    "state": "NSW",
+    "listings": 33
+  },
+  {
+    "suburb": "WOOLOMIN",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 33
+  },
+  {
+    "suburb": "NORTH WAGGA WAGGA",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 33
+  },
+  {
+    "suburb": "BERKSHIRE PARK",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 33
+  },
+  {
+    "suburb": "NEWTOWN",
+    "postcode": "2042",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "LANE COVE",
+    "postcode": "2066",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "PYMBLE",
+    "postcode": "2073",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CHEERO POINT",
+    "postcode": "2083",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "NORTH NARRABEEN",
+    "postcode": "2101",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "WARRIEWOOD",
+    "postcode": "2102",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BILGOLA",
+    "postcode": "2107",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BILGOLA PLATEAU",
+    "postcode": "2107",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "HUNTERS HILL",
+    "postcode": "2110",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "GLADESVILLE",
+    "postcode": "2111",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "ERMINGTON",
+    "postcode": "2115",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "DUNDAS",
+    "postcode": "2117",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "WENTWORTHVILLE",
+    "postcode": "2145",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "NORTH PARRAMATTA",
+    "postcode": "2151",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BELLA VISTA",
+    "postcode": "2153",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "DURAL",
+    "postcode": "2158",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "VILLAWOOD",
+    "postcode": "2163",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "FAIRFIELD WEST",
+    "postcode": "2165",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CECIL HILLS",
+    "postcode": "2171",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "ST JOHNS PARK",
+    "postcode": "2176",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BONNYRIGG",
+    "postcode": "2177",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "PUNCHBOWL",
+    "postcode": "2196",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "OYSTER BAY",
+    "postcode": "2225",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "LISAROW",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "WENDOREE PARK",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "WEST GOSFORD",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "YATTALUNGA",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "PHEGANS BAY",
+    "postcode": "2256",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "PRETTY BEACH",
+    "postcode": "2257",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CRANGAN BAY",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "TERRIGAL",
+    "postcode": "2260",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CHITTAWAY BAY",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CHITTAWAY POINT",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BELMONT",
+    "postcode": "2280",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BLACKSMITHS",
+    "postcode": "2281",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "ARCADIA VALE",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "RATHMINES",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CARDIFF",
+    "postcode": "2285",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "ELERMORE VALE",
+    "postcode": "2287",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "LAMBTON",
+    "postcode": "2299",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "MAYFIELD",
+    "postcode": "2304",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "SHORTLAND",
+    "postcode": "2307",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "MEDOWIE",
+    "postcode": "2318",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "SALT ASH",
+    "postcode": "2318",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BOLWARRA HEIGHTS",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "ROTHBURY",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "EAST SEAHAM",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BUNNAN",
+    "postcode": "2337",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "WILLOW TREE",
+    "postcode": "2339",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "EAST TAMWORTH",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "NORTH TAMWORTH",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "NUNDLE",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "YARRANBELLA",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "NANA GLEN",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CORINDI BEACH",
+    "postcode": "2456",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BULLI",
+    "postcode": "2516",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CORRIMAL",
+    "postcode": "2518",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "HUNTLEY",
+    "postcode": "2530",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "KANAHOOKA",
+    "postcode": "2530",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "WONGAWILLI",
+    "postcode": "2530",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "KIAMA DOWNS",
+    "postcode": "2533",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "GERRINGONG",
+    "postcode": "2534",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "GERROA",
+    "postcode": "2534",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "SHOALHAVEN HEADS",
+    "postcode": "2535",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "GLEN ALPINE",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "ROSEMEADOW",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CURRANS HILL",
+    "postcode": "2567",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "DOUGLAS PARK",
+    "postcode": "2569",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "MOUNT HUNTER",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "RAZORBACK",
+    "postcode": "2571",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "PHEASANTS NEST",
+    "postcode": "2574",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "RENWICK",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "GREGADOO",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "MOUNT AUSTIN",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "GRONG GRONG",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "LADYSMITH",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "MARRAR",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "GLENMORE PARK",
+    "postcode": "2745",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "MULGOA",
+    "postcode": "2745",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "WALLACIA",
+    "postcode": "2745",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CADDENS",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "CORNWALLIS",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "PITT TOWN",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "BLAXLANDS RIDGE",
+    "postcode": "2758",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "KURRAJONG HILLS",
+    "postcode": "2758",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "EUMUNGERIE",
+    "postcode": "2831",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "LIGHTNING RIDGE",
+    "postcode": "2834",
+    "state": "NSW",
+    "listings": 32
+  },
+  {
+    "suburb": "INGLESIDE",
+    "postcode": "2101",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "NARRABEEN",
+    "postcode": "2101",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "NEWPORT",
+    "postcode": "2106",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BORONIA PARK",
+    "postcode": "2111",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "CARLINGFORD",
+    "postcode": "2118",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BEECROFT",
+    "postcode": "2119",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "PENNANT HILLS",
+    "postcode": "2120",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "NORTH EPPING",
+    "postcode": "2121",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "STRATHFIELD",
+    "postcode": "2135",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "GRANVILLE",
+    "postcode": "2142",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "PARRAMATTA",
+    "postcode": "2150",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BAULKHAM HILLS",
+    "postcode": "2153",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "MIDDLE DURAL",
+    "postcode": "2158",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "FAIRFIELD",
+    "postcode": "2165",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "LANSVALE",
+    "postcode": "2166",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "HINCHINBROOK",
+    "postcode": "2168",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "SANDY POINT",
+    "postcode": "2172",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ILLAWONG",
+    "postcode": "2234",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "NIAGARA PARK",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BENSVILLE",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BLACKWALL",
+    "postcode": "2256",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "DALEYS POINT",
+    "postcode": "2257",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "KILLCARE HEIGHTS",
+    "postcode": "2257",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "CEDAR BRUSH CREEK",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "GWANDALAN",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "MANNERING PARK",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "WATANOBBI",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "THE ENTRANCE",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "TOOWOON BAY",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BONNELLS BAY",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "MIRRABOOKA",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "SILVERWATER",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "VALENTINE",
+    "postcode": "2280",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "CAVES BEACH",
+    "postcode": "2281",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BOLTON POINT",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "TERALBA",
+    "postcode": "2284",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "RANKIN PARK",
+    "postcode": "2287",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "WICKHAM",
+    "postcode": "2293",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "NORTH LAMBTON",
+    "postcode": "2299",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "NEW LAMBTON",
+    "postcode": "2305",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "EAST GRESFORD",
+    "postcode": "2311",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "GRESFORD",
+    "postcode": "2311",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ANNA BAY",
+    "postcode": "2316",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ABERGLASSLYN",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "RUTHERFORD",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "MORPETH",
+    "postcode": "2321",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "HEXHAM",
+    "postcode": "2322",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "PAXTON",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "JERRYS PLAINS",
+    "postcode": "2330",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "SANDY HOLLOW",
+    "postcode": "2333",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BRANXTON",
+    "postcode": "2335",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "WAY WAY",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "HYLAND PARK",
+    "postcode": "2448",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BOAMBEE",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "MULLAWAY",
+    "postcode": "2456",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "CRINGILA",
+    "postcode": "2502",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "WOMBARRA",
+    "postcode": "2515",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BALGOWNIE",
+    "postcode": "2519",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ALBION PARK",
+    "postcode": "2527",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "WERRI BEACH",
+    "postcode": "2534",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BARDIA",
+    "postcode": "2565",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "MINTO",
+    "postcode": "2566",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ELDERSLIE",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "KIRKHAM",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "THE OAKS",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "BUXTON",
+    "postcode": "2571",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "YANDERRA",
+    "postcode": "2574",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "YERRINBOOL",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ASHMONT",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "GOBBAGOMBALIN",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ROWAN",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "TURVEY PARK",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "TARCUTTA",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "URANQUINTY",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "WERRINGTON",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ORCHARD HILLS",
+    "postcode": "2748",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "SACKVILLE NORTH",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "KURMOND",
+    "postcode": "2757",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ROPES CROSSING",
+    "postcode": "2760",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "ST MARYS",
+    "postcode": "2760",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "PLUMPTON",
+    "postcode": "2761",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "MARAYLYA",
+    "postcode": "2765",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "MEADOW FLAT",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "THE LAGOON",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 31
+  },
+  {
+    "suburb": "MOOREBANK",
+    "postcode": "2170",
+    "state": "NSW",
+    "listings": 30
+  },
+  {
+    "suburb": "MAITLAND VALE",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 30
+  },
+  {
+    "suburb": "EAST MAITLAND",
+    "postcode": "2323",
+    "state": "NSW",
+    "listings": 30
+  },
+  {
+    "suburb": "KURRI KURRI",
+    "postcode": "2327",
+    "state": "NSW",
+    "listings": 30
+  },
+  {
+    "suburb": "CALALA",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 30
+  },
+  {
+    "suburb": "GUMMA",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 30
+  },
+  {
+    "suburb": "WIRRIMBI",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 30
+  },
+  {
+    "suburb": "SAWTELL",
+    "postcode": "2452",
+    "state": "NSW",
+    "listings": 30
+  },
+  {
+    "suburb": "NEVILLE",
+    "postcode": "2799",
+    "state": "NSW",
+    "listings": 30
+  },
+  {
+    "suburb": "OATLEY",
+    "postcode": "2223",
+    "state": "NSW",
+    "listings": 29
+  },
+  {
+    "suburb": "BOTANY",
+    "postcode": "2019",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MAROUBRA",
+    "postcode": "2035",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ROZELLE",
+    "postcode": "2039",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LEICHHARDT",
+    "postcode": "2040",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LILYFIELD",
+    "postcode": "2040",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BALMAIN",
+    "postcode": "2041",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HABERFIELD",
+    "postcode": "2045",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LEWISHAM",
+    "postcode": "2049",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CASTLECRAG",
+    "postcode": "2068",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WILLOUGHBY",
+    "postcode": "2068",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LINDFIELD",
+    "postcode": "2070",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KILLARA",
+    "postcode": "2071",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST PYMBLE",
+    "postcode": "2073",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TURRAMURRA",
+    "postcode": "2074",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ASQUITH",
+    "postcode": "2077",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HORNSBY",
+    "postcode": "2077",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HORNSBY HEIGHTS",
+    "postcode": "2077",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT COLAH",
+    "postcode": "2079",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT KURING-GAI",
+    "postcode": "2080",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BEROWRA HEIGHTS",
+    "postcode": "2082",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BROOKLYN",
+    "postcode": "2083",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "COGRA BAY",
+    "postcode": "2083",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "DANGAR ISLAND",
+    "postcode": "2083",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOONEY MOONEY",
+    "postcode": "2083",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BELROSE",
+    "postcode": "2085",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FRENCHS FOREST",
+    "postcode": "2086",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FORESTVILLE",
+    "postcode": "2087",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOSMAN",
+    "postcode": "2088",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SPIT JUNCTION",
+    "postcode": "2088",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SEAFORTH",
+    "postcode": "2092",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FRESHWATER",
+    "postcode": "2096",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "COLLAROY PLATEAU",
+    "postcode": "2097",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CROMER",
+    "postcode": "2099",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "DEE WHY",
+    "postcode": "2099",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BEACON HILL",
+    "postcode": "2100",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ELANORA HEIGHTS",
+    "postcode": "2101",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MONA VALE",
+    "postcode": "2103",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BAYVIEW",
+    "postcode": "2104",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PALM BEACH",
+    "postcode": "2108",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PUTNEY",
+    "postcode": "2112",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST RYDE",
+    "postcode": "2114",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TELOPEA",
+    "postcode": "2117",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WESTLEIGH",
+    "postcode": "2120",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EPPING",
+    "postcode": "2121",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EASTWOOD",
+    "postcode": "2122",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MARSFIELD",
+    "postcode": "2122",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CHERRYBROOK",
+    "postcode": "2126",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SUMMER HILL",
+    "postcode": "2130",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ASHFIELD",
+    "postcode": "2131",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CROYDON PARK",
+    "postcode": "2133",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CONCORD",
+    "postcode": "2137",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CONCORD WEST",
+    "postcode": "2138",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HOMEBUSH",
+    "postcode": "2140",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LIDCOMBE",
+    "postcode": "2141",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH GRANVILLE",
+    "postcode": "2142",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BIRRONG",
+    "postcode": "2143",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "AUBURN",
+    "postcode": "2144",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GREYSTANES",
+    "postcode": "2145",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PEMULWUY",
+    "postcode": "2145",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH WENTWORTHVILLE",
+    "postcode": "2145",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LALOR PARK",
+    "postcode": "2147",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MARAYONG",
+    "postcode": "2148",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PROSPECT",
+    "postcode": "2148",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH ROCKS",
+    "postcode": "2151",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTHMEAD",
+    "postcode": "2152",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WINSTON HILLS",
+    "postcode": "2153",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BEAUMONT HILLS",
+    "postcode": "2155",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ANNANGROVE",
+    "postcode": "2156",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GLENHAVEN",
+    "postcode": "2156",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MERRYLANDS",
+    "postcode": "2160",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CHESTER HILL",
+    "postcode": "2162",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CARRAMAR",
+    "postcode": "2163",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SMITHFIELD",
+    "postcode": "2164",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WETHERILL PARK",
+    "postcode": "2164",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FAIRFIELD HEIGHTS",
+    "postcode": "2165",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CABRAMATTA",
+    "postcode": "2166",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CABRAMATTA WEST",
+    "postcode": "2166",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CANLEY HEIGHTS",
+    "postcode": "2166",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CANLEY VALE",
+    "postcode": "2166",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GREEN VALLEY",
+    "postcode": "2168",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MILLER",
+    "postcode": "2168",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CHIPPING NORTON",
+    "postcode": "2170",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HAMMONDVILLE",
+    "postcode": "2170",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LURNEA",
+    "postcode": "2170",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT PRITCHARD",
+    "postcode": "2170",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CARNES HILL",
+    "postcode": "2171",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ELIZABETH HILLS",
+    "postcode": "2171",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HOXTON PARK",
+    "postcode": "2171",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MIDDLETON GRANGE",
+    "postcode": "2171",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST HOXTON",
+    "postcode": "2171",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ABBOTSBURY",
+    "postcode": "2176",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BOSSLEY PARK",
+    "postcode": "2176",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EDENSOR PARK",
+    "postcode": "2176",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GREENFIELD PARK",
+    "postcode": "2176",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WAKELEY",
+    "postcode": "2176",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BONNYRIGG HEIGHTS",
+    "postcode": "2177",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT VERNON",
+    "postcode": "2178",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GREENACRE",
+    "postcode": "2190",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BELFIELD",
+    "postcode": "2191",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GEORGES HALL",
+    "postcode": "2198",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BANKSTOWN",
+    "postcode": "2200",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MARRICKVILLE",
+    "postcode": "2204",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EARLWOOD",
+    "postcode": "2206",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KINGSGROVE",
+    "postcode": "2208",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BEVERLY HILLS",
+    "postcode": "2209",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PEAKHURST",
+    "postcode": "2210",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "RIVERWOOD",
+    "postcode": "2210",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PADSTOW",
+    "postcode": "2211",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PADSTOW HEIGHTS",
+    "postcode": "2211",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "REVESBY",
+    "postcode": "2212",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PICNIC POINT",
+    "postcode": "2213",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SANS SOUCI",
+    "postcode": "2219",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BLAKEHURST",
+    "postcode": "2221",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SYLVANIA",
+    "postcode": "2224",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "COMO",
+    "postcode": "2226",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "JANNALI",
+    "postcode": "2226",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MIRANDA",
+    "postcode": "2228",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GREENHILLS BEACH",
+    "postcode": "2230",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MAIANBAR",
+    "postcode": "2230",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GRAYS POINT",
+    "postcode": "2232",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KIRRAWEE",
+    "postcode": "2232",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WORONORA",
+    "postcode": "2232",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BANGOR",
+    "postcode": "2234",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MENAI",
+    "postcode": "2234",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BUCKETTY",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EAST GOSFORD",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ERINA",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HOLGATE",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KARIONG",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KULNURA",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NARARA",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH GOSFORD",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "POINT CLARE",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "POINT FREDERICK",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SPRINGFIELD",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TASCOTT",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WYOMING",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "COPACABANA",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GREEN POINT",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KINCUMBER",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KINCUMBER SOUTH",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PICKETTS VALLEY",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SARATOGA",
+    "postcode": "2251",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HORSFIELD BAY",
+    "postcode": "2256",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KOOLEWONG",
+    "postcode": "2256",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PATONGA",
+    "postcode": "2256",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PEARL BEACH",
+    "postcode": "2256",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WOY WOY BAY",
+    "postcode": "2256",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EMPIRE BAY",
+    "postcode": "2257",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ETTALONG BEACH",
+    "postcode": "2257",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WAGSTAFFE",
+    "postcode": "2257",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FOUNTAINDALE",
+    "postcode": "2258",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KANGY ANGY",
+    "postcode": "2258",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CHAIN VALLEY BAY",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "DOORALONG",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KANWAL",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LAKE MUNMORAH",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MARDI",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TUGGERAWONG",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WADALBA",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WALLARAH",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WYONG CREEK",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WYONGAH",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "YARRAMALONG",
+    "postcode": "2259",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ERINA HEIGHTS",
+    "postcode": "2260",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FORRESTERS BEACH",
+    "postcode": "2260",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH AVOCA",
+    "postcode": "2260",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BATEAU BAY",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KILLARNEY VALE",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LONG JETTY",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "THE ENTRANCE NORTH",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TUMBI UMBI",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BUDGEWOI",
+    "postcode": "2262",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BUFF POINT",
+    "postcode": "2262",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SAN REMO",
+    "postcode": "2262",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CHARMHAVEN",
+    "postcode": "2263",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GOROKAN",
+    "postcode": "2263",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LAKE HAVEN",
+    "postcode": "2263",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NORAVILLE",
+    "postcode": "2263",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TOUKLEY",
+    "postcode": "2263",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BALCOLYN",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ERARING",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "YARRAWONGA PARK",
+    "postcode": "2264",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CROUDACE BAY",
+    "postcode": "2280",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FLORAVILLE",
+    "postcode": "2280",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CAMS WHARF",
+    "postcode": "2281",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SWANSEA",
+    "postcode": "2281",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SWANSEA HEADS",
+    "postcode": "2281",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "AWABA",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BALMORAL",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BLACKALLS PARK",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "COAL POINT",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FASSIFERN",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FENNELL BAY",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KILABEN BAY",
+    "postcode": "2283",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BOORAGUL",
+    "postcode": "2284",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MARMONG POINT",
+    "postcode": "2284",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODRISING",
+    "postcode": "2284",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CARDIFF SOUTH",
+    "postcode": "2285",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MACQUARIE HILLS",
+    "postcode": "2285",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HOLMESVILLE",
+    "postcode": "2286",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST WALLSEND",
+    "postcode": "2286",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MARYLAND",
+    "postcode": "2287",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ADAMSTOWN",
+    "postcode": "2289",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ADAMSTOWN HEIGHTS",
+    "postcode": "2289",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GARDEN SUBURB",
+    "postcode": "2289",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KOTARA",
+    "postcode": "2289",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KOTARA SOUTH",
+    "postcode": "2289",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CHARLESTOWN",
+    "postcode": "2290",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KAHIBAH",
+    "postcode": "2290",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "REDHEAD",
+    "postcode": "2290",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TINGIRA HEIGHTS",
+    "postcode": "2290",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MEREWETHER",
+    "postcode": "2291",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CARRINGTON",
+    "postcode": "2294",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FERN BAY",
+    "postcode": "2295",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "STOCKTON",
+    "postcode": "2295",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TIGHES HILL",
+    "postcode": "2297",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WARATAH",
+    "postcode": "2298",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WARATAH WEST",
+    "postcode": "2298",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "JESMOND",
+    "postcode": "2299",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BAR BEACH",
+    "postcode": "2300",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "COOKS HILL",
+    "postcode": "2300",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HAMILTON",
+    "postcode": "2303",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NEW LAMBTON HEIGHTS",
+    "postcode": "2305",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WINDALE",
+    "postcode": "2306",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CORLETTE",
+    "postcode": "2315",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FINGAL BAY",
+    "postcode": "2315",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SHOAL BAY",
+    "postcode": "2315",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BOAT HARBOUR",
+    "postcode": "2316",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BOBS FARM",
+    "postcode": "2316",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ONE MILE",
+    "postcode": "2316",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TAYLORS BEACH",
+    "postcode": "2316",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SOLDIERS POINT",
+    "postcode": "2317",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FULLERTON COVE",
+    "postcode": "2318",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "OYSTER COVE",
+    "postcode": "2318",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WILLIAMTOWN",
+    "postcode": "2318",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GLEN OAK",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HORSESHOE BEND",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LARGS",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LORN",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LOUTH PARK",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TELARAH",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WINDELLA",
+    "postcode": "2320",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "DUNS CREEK",
+    "postcode": "2321",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HINTON",
+    "postcode": "2321",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "RAWORTH",
+    "postcode": "2321",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BLACK HILL",
+    "postcode": "2322",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TARRO",
+    "postcode": "2322",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODBERRY",
+    "postcode": "2322",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ASHTONFIELD",
+    "postcode": "2323",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FOUR MILE CREEK",
+    "postcode": "2323",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "METFORD",
+    "postcode": "2323",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MULBRING",
+    "postcode": "2323",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TENAMBIT",
+    "postcode": "2323",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CARRINGTON",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EAGLETON",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SEAHAM",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SWAN BAY",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ABERDARE",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ABERNETHY",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BELLBIRD HEIGHTS",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KITCHENER",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LAGUNA",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MILSONS ARM",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NARONE CREEK",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "QUORROBOLONG",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WOLLOMBI",
+    "postcode": "2325",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WESTON",
+    "postcode": "2326",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PELAW MAIN",
+    "postcode": "2327",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CASSILIS",
+    "postcode": "2329",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BROKE",
+    "postcode": "2330",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MCCULLYS GAP",
+    "postcode": "2333",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MUSCLE CREEK",
+    "postcode": "2333",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EAST BRANXTON",
+    "postcode": "2335",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GUNDY",
+    "postcode": "2337",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOONAN FLAT",
+    "postcode": "2337",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NEMINGHA",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "OXLEY VALE",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SOMERTON",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST TAMWORTH",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WESTDALE",
+    "postcode": "2340",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "QUIPOLLY",
+    "postcode": "2343",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WALLABADAH",
+    "postcode": "2343",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "DURI",
+    "postcode": "2344",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ATTUNGA",
+    "postcode": "2345",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH SHORE",
+    "postcode": "2444",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "RIVERSIDE",
+    "postcode": "2444",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ELLENBOROUGH",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KING CREEK",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LAKE INNES",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "UTUNGUN",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CORAMBA",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH BOAMBEE VALLEY",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ULONG",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "DUNDURRABIN",
+    "postcode": "2453",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EBOR",
+    "postcode": "2453",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BRIERFIELD",
+    "postcode": "2454",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FERNMOUNT",
+    "postcode": "2454",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "RALEIGH",
+    "postcode": "2454",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "REPTON",
+    "postcode": "2454",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ARRAWARRA HEADLAND",
+    "postcode": "2456",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "RED ROCK",
+    "postcode": "2456",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GWYNNEVILLE",
+    "postcode": "2500",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KEIRAVILLE",
+    "postcode": "2500",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MANGERTON",
+    "postcode": "2500",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT KEIRA",
+    "postcode": "2500",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST WOLLONGONG",
+    "postcode": "2500",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PRIMBEE",
+    "postcode": "2502",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WARRAWONG",
+    "postcode": "2502",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PORT KEMBLA",
+    "postcode": "2505",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BERKELEY",
+    "postcode": "2506",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "COLEDALE",
+    "postcode": "2515",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "RUSSELL VALE",
+    "postcode": "2517",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WOONONA",
+    "postcode": "2517",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TOWRADGI",
+    "postcode": "2518",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT PLEASANT",
+    "postcode": "2519",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FARMBOROUGH HEIGHTS",
+    "postcode": "2526",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KEMBLA GRANGE",
+    "postcode": "2526",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT KEMBLA",
+    "postcode": "2526",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "UNANDERRA",
+    "postcode": "2526",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ALBION PARK RAIL",
+    "postcode": "2527",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BARRACK HEIGHTS",
+    "postcode": "2528",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WARILLA",
+    "postcode": "2528",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BLACKBUTT",
+    "postcode": "2529",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "DUNMORE",
+    "postcode": "2529",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FLINDERS",
+    "postcode": "2529",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "OAK FLATS",
+    "postcode": "2529",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "AVONDALE",
+    "postcode": "2530",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HAYWARDS BAY",
+    "postcode": "2530",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KOONAWARRA",
+    "postcode": "2530",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KIAMA HEIGHTS",
+    "postcode": "2533",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MINNAMURRA",
+    "postcode": "2533",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BUNDEWALLAH",
+    "postcode": "2535",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BRINGELLY",
+    "postcode": "2556",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ROSSMORE",
+    "postcode": "2557",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KEARNS",
+    "postcode": "2558",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CLAYMORE",
+    "postcode": "2559",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "AMBARVALE",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BLAIR ATHOL",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BRADBURY",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ST HELENS PARK",
+    "postcode": "2560",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MACQUARIE FIELDS",
+    "postcode": "2564",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MACQUARIE LINKS",
+    "postcode": "2565",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BOW BOWING",
+    "postcode": "2566",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ST ANDREWS",
+    "postcode": "2566",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HARRINGTON PARK",
+    "postcode": "2567",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT ANNAN",
+    "postcode": "2567",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NARELLAN",
+    "postcode": "2567",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NARELLAN VALE",
+    "postcode": "2567",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CAMDEN SOUTH",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ELLIS LANE",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GRASMERE",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "NATTAI",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ORANGEVILLE",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "THERESA PARK",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WEROMBI",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HIGH RANGE",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BOURKELANDS",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "COLLINGULLIE",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CURRAWARNA",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KOORINGAL",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TOLLAND",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WANTABADGERY",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BOREE CREEK",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GUMLY GUMLY",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MANGOPLAH",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MATONG",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "OLD JUNEE",
+    "postcode": "2652",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GREENDALE",
+    "postcode": "2745",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "REGENTVILLE",
+    "postcode": "2745",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CAMBRIDGE PARK",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "KINGSWOOD",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "CASTLEREAGH",
+    "postcode": "2749",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EMU HEIGHTS",
+    "postcode": "2750",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EMU PLAINS",
+    "postcode": "2750",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LEONAY",
+    "postcode": "2750",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PENRITH",
+    "postcode": "2750",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH PENRITH",
+    "postcode": "2750",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SILVERDALE",
+    "postcode": "2752",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "AGNES BANKS",
+    "postcode": "2753",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GROSE WOLD",
+    "postcode": "2753",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "LONDONDERRY",
+    "postcode": "2753",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "YARRAMUNDI",
+    "postcode": "2753",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "THE SLOPES",
+    "postcode": "2754",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GLOSSODIA",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH WINDSOR",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "UPPER COLO",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WINDSOR",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "EAST KURRAJONG",
+    "postcode": "2758",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ERSKINE PARK",
+    "postcode": "2759",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ST CLAIR",
+    "postcode": "2759",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "COLYTON",
+    "postcode": "2760",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "OXLEY PARK",
+    "postcode": "2760",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GLENDENNING",
+    "postcode": "2761",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "OAKHURST",
+    "postcode": "2761",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BUNGARRIBEE",
+    "postcode": "2767",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "DOONSIDE",
+    "postcode": "2767",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GLENWOOD",
+    "postcode": "2768",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "STANHOPE GARDENS",
+    "postcode": "2768",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "HEBERSHAM",
+    "postcode": "2770",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MINCHINBURY",
+    "postcode": "2770",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT DRUITT",
+    "postcode": "2770",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "TREGEAR",
+    "postcode": "2770",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WHALAN",
+    "postcode": "2770",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WILLMOT",
+    "postcode": "2770",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "GORMANS HILL",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT DAVID",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "PEEL",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "RAGLAN",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST BATHURST",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "WHITE ROCK",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "YETHOLME",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "FOREST REEFS",
+    "postcode": "2798",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MILLTHORPE",
+    "postcode": "2798",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "MULLION CREEK",
+    "postcode": "2800",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "SPRING HILL",
+    "postcode": "2800",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BALLIMORE",
+    "postcode": "2830",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "BARBIGAL",
+    "postcode": "2830",
+    "state": "NSW",
+    "listings": 24
+  },
+  {
+    "suburb": "ST PETERS",
+    "postcode": "2044",
+    "state": "NSW",
+    "listings": 23
+  },
+  {
+    "suburb": "VOYAGER POINT",
+    "postcode": "2172",
+    "state": "NSW",
+    "listings": 23
+  },
+  {
+    "suburb": "CARDIFF HEIGHTS",
+    "postcode": "2285",
+    "state": "NSW",
+    "listings": 23
+  },
+  {
+    "suburb": "MCGRATHS HILL",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 23
+  },
+  {
+    "suburb": "BLUE HAVEN",
+    "postcode": "2262",
+    "state": "NSW",
+    "listings": 22
+  },
+  {
+    "suburb": "GOSFORD",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 16
+  },
+  {
+    "suburb": "MAGENTA",
+    "postcode": "2261",
+    "state": "NSW",
+    "listings": 16
+  },
+  {
+    "suburb": "KINGS LANGLEY",
+    "postcode": "2147",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "HORNINGSEA PARK",
+    "postcode": "2171",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "KURNELL",
+    "postcode": "2231",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "NABIAC",
+    "postcode": "2312",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "MILLERS FOREST",
+    "postcode": "2324",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "BULGA",
+    "postcode": "2330",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "CAROONA",
+    "postcode": "2343",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "STREAM HILL",
+    "postcode": "2526",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "MANDEMAR",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "SHANES PARK",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 14
+  },
+  {
+    "suburb": "ALLAMBIE HEIGHTS",
+    "postcode": "2100",
+    "state": "NSW",
+    "listings": 10
+  },
+  {
+    "suburb": "BELLEVUE HILL",
+    "postcode": "2023",
+    "state": "NSW",
+    "listings": 9
+  },
+  {
+    "suburb": "DOUBLE BAY",
+    "postcode": "2028",
+    "state": "NSW",
+    "listings": 9
+  },
+  {
+    "suburb": "MANLY",
+    "postcode": "2095",
+    "state": "NSW",
+    "listings": 9
+  },
+  {
+    "suburb": "OATLANDS",
+    "postcode": "2117",
+    "state": "NSW",
+    "listings": 9
+  },
+  {
+    "suburb": "RICHMOND LOWLANDS",
+    "postcode": "2753",
+    "state": "NSW",
+    "listings": 9
+  },
+  {
+    "suburb": "TURONDALE",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 9
+  },
+  {
+    "suburb": "WOOLLAHRA",
+    "postcode": "2025",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "ROSEVILLE",
+    "postcode": "2069",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "COWAN",
+    "postcode": "2081",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "GREAT MACKEREL BEACH",
+    "postcode": "2108",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "CAMPSIE",
+    "postcode": "2194",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "CONNELLS POINT",
+    "postcode": "2221",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "GYMEA",
+    "postcode": "2227",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "BURRANEER",
+    "postcode": "2230",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "CRONULLA",
+    "postcode": "2230",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "BOOKER BAY",
+    "postcode": "2257",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "HALEKULANI",
+    "postcode": "2262",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "CURRABUBULA",
+    "postcode": "2342",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "REDBANK",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "THORA",
+    "postcode": "2454",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "SCARBOROUGH",
+    "postcode": "2515",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "FAIRY MEADOW",
+    "postcode": "2519",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "MINTO HEIGHTS",
+    "postcode": "2566",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "VARROVILLE",
+    "postcode": "2566",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "BROWNLOW HILL",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "CAWDOR",
+    "postcode": "2570",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "BALMORAL VILLAGE",
+    "postcode": "2571",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "LAKESLAND",
+    "postcode": "2572",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "BULLIO",
+    "postcode": "2575",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "ALFREDTOWN",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "MOORONG",
+    "postcode": "2650",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "JAMISONTOWN",
+    "postcode": "2750",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "WARRAGAMBA",
+    "postcode": "2752",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "SACKVILLE",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "SOFALA",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "MINORE",
+    "postcode": "2830",
+    "state": "NSW",
+    "listings": 8
+  },
+  {
+    "suburb": "CONSTITUTION HILL",
+    "postcode": "2145",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "CANOELANDS",
+    "postcode": "2157",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "CARINGBAH SOUTH",
+    "postcode": "2229",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "CALGA",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "GLENWORTH VALLEY",
+    "postcode": "2250",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "LITTLE WOBBY",
+    "postcode": "2256",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "SAWYERS GULLY",
+    "postcode": "2326",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "GOORANGOOLA",
+    "postcode": "2330",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "HOLLISDALE",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "MOUNT SEAVIEW",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "RAWDON ISLAND",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "UPPER PAPPINBARRA",
+    "postcode": "2446",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "UPPER ORARA",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "FOXGROUND",
+    "postcode": "2534",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "BELLAWONGARAH",
+    "postcode": "2535",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "BRADFIELD",
+    "postcode": "2556",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "BALMORAL",
+    "postcode": "2571",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "CAMBRIDGE GARDENS",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "WERRINGTON DOWNS",
+    "postcode": "2747",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "CUMBERLAND REACH",
+    "postcode": "2756",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "NEVERTIRE",
+    "postcode": "2831",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "NYMAGEE",
+    "postcode": "2831",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "WALGETT",
+    "postcode": "2832",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "COLLARENEBRI",
+    "postcode": "2833",
+    "state": "NSW",
+    "listings": 7
+  },
+  {
+    "suburb": "SYDNEY",
+    "postcode": "2000",
+    "state": "NSW",
+    "listings": 6
+  },
+  {
+    "suburb": "MATRAVILLE",
+    "postcode": "2036",
+    "state": "NSW",
+    "listings": 6
+  },
+  {
+    "suburb": "COLLY BLUE",
+    "postcode": "2343",
+    "state": "NSW",
+    "listings": 6
+  },
+  {
+    "suburb": "TAYLORS ARM",
+    "postcode": "2447",
+    "state": "NSW",
+    "listings": 6
+  },
+  {
+    "suburb": "SHERWOOD",
+    "postcode": "2450",
+    "state": "NSW",
+    "listings": 6
+  },
+  {
+    "suburb": "NIRIMBA FIELDS",
+    "postcode": "2763",
+    "state": "NSW",
+    "listings": 6
+  },
+  {
+    "suburb": "ABERCROMBIE RIVER",
+    "postcode": "2795",
+    "state": "NSW",
+    "listings": 6
+  },
+  {
+    "suburb": "HERMIDALE",
+    "postcode": "2831",
+    "state": "NSW",
+    "listings": 6
+  }
+]

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grange Land Intelligence — Victoria Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#fcf9f1","surface":"#fcf9f1","surface-container-low":"#f6f4eb","surface-container":"#f0eee6","surface-container-high":"#eae8e0","surface-container-highest":"#e4e2da","surface-container-lowest":"#ffffff","surface-dim":"#dcdad2","on-surface":"#1b1c17","on-surface-variant":"#4b444d","outline":"#7d747e","outline-variant":"#cec3ce","primary":"#513561","primary-container":"#6a4c7a","on-primary":"#ffffff","secondary":"#486456","secondary-container":"#caead8","tertiary":"#61323a","tertiary-container":"#7c4951","error":"#ba1a1a","error-container":"#ffdad6"},fontFamily:{"serif":["Playfair Display","serif"],"sans":["Inter","sans-serif"]}}}}
+</script>
+<style>
+body{font-family:'Inter',sans-serif;background:#fcf9f1;color:#1b1c17}
+.archival-grain{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.03;pointer-events:none}
+.sf::-webkit-scrollbar{width:4px}.sf::-webkit-scrollbar-track{background:transparent}.sf::-webkit-scrollbar-thumb{background:#dcdad2;border-radius:4px}
+tr.dr:hover td{background:#f6f4eb}
+.pf{transition:all .2s}.pf:hover{background:#eae8e0;color:#1b1c17}.pf.ac{background:#6a4c7a;color:#fff}
+.cb{transition:width .8s cubic-bezier(.4,0,.2,1)}
+.bar-v{transition:height .6s cubic-bezier(.4,0,.2,1)}
+</style>
+</head>
+<body class="h-screen overflow-hidden relative">
+<div class="absolute inset-0 archival-grain"></div>
+
+<!-- Sidebar -->
+<aside class="fixed left-0 top-0 h-full flex flex-col py-8 w-64 border-r border-[#dcdad2] bg-[#fcf9f1] z-20">
+  <div class="px-8 mb-12">
+    <div class="text-2xl tracking-[0.3em] font-light text-[#1b1c17] uppercase">Grange</div>
+    <div class="text-[9px] tracking-[0.2em] text-[#1b1c17]/40 uppercase mt-1">Land Intelligence</div>
+  </div>
+  <nav class="flex-1 space-y-1" id="sideNav">
+    <a class="flex items-center text-[#6a4c7a] font-bold border-l-2 border-[#6a4c7a] pl-6 py-3 bg-[#f6f4eb]" href="#" data-nav="overview">
+      <span class="material-symbols-outlined mr-4" style="font-variation-settings:'FILL' 1;">dashboard</span>
+      <span class="text-xs uppercase tracking-[1.2px]">Overview</span>
+    </a>
+    <a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb]" href="#" data-nav="pricing">
+      <span class="material-symbols-outlined mr-4">trending_up</span>
+      <span class="text-xs uppercase tracking-[1.2px]">Pricing</span>
+    </a>
+    <a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb]" href="#" data-nav="corridors">
+      <span class="material-symbols-outlined mr-4">map</span>
+      <span class="text-xs uppercase tracking-[1.2px]">Corridors</span>
+    </a>
+    <a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb]" href="#" data-nav="registry">
+      <span class="material-symbols-outlined mr-4">analytics</span>
+      <span class="text-xs uppercase tracking-[1.2px]">Registry</span>
+    </a>
+  </nav>
+  <div class="px-6 pt-8 border-t border-[#dcdad2]">
+    <div class="text-[9px] text-[#1b1c17]/30 uppercase tracking-wider">v1.0 · Real-time data</div>
+  </div>
+</aside>
+
+<!-- Main -->
+<main class="ml-64 h-screen overflow-y-auto sf bg-[#fcf9f1]" id="mainContent">
+  <!-- Top Bar -->
+  <header class="flex justify-between items-center w-full px-12 h-16 border-b border-[#dcdad2] bg-[#fcf9f1] sticky top-0 z-10">
+    <nav class="flex gap-6">
+      <span class="text-[#1b1c17] uppercase tracking-[0.2em] text-[10px] font-semibold">Archive Explorer</span>
+    </nav>
+    <div class="flex items-center gap-8">
+      <div class="flex items-center gap-3 cursor-pointer" onclick="toggleSold()">
+        <span class="text-[10px] uppercase tracking-[0.15em] font-semibold text-[#1b1c17]/50">Sold Only</span>
+        <div class="w-10 h-5 rounded-full bg-[#dcdad2] relative transition-colors" id="soldToggle">
+          <div class="w-4 h-4 rounded-full bg-white absolute top-0.5 left-0.5 transition-all shadow-sm" id="soldDot"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="w-full max-w-[1400px] mx-auto px-12 py-10">
+    <!-- Hero -->
+    <div class="mb-10">
+      <p class="text-[10px] uppercase tracking-[0.4em] text-[#1b1c17]/40 font-bold mb-2">Victorian Land Market Registry</p>
+      <p class="text-[11px] text-[#1b1c17]/40 uppercase tracking-wider" id="heroSub"></p>
+    </div>
+
+    <!-- Metric Row -->
+    <div class="grid grid-cols-6 border-t border-b border-[#dcdad2] py-8 mb-10" id="metricsRow"></div>
+
+    <!-- VISUALISATION ROW 1: Price Distribution + Size Distribution -->
+    <div class="grid grid-cols-2 gap-10 mb-10">
+      <!-- Price Distribution -->
+      <div class="p-10 bg-[#f6f4eb]">
+        <h3 class="text-[11px] uppercase tracking-[0.4em] font-bold text-[#1b1c17] mb-1">Price Distribution</h3>
+        <p class="text-[10px] text-[#1b1c17]/40 uppercase tracking-wider mb-8">Lot count per price bracket</p>
+        <div class="flex items-end gap-2 h-48" id="priceDistChart"></div>
+        <div class="flex gap-2 mt-2" id="priceDistLabels"></div>
+      </div>
+
+      <!-- Size Distribution -->
+      <div class="p-10 bg-[#f6f4eb]">
+        <h3 class="text-[11px] uppercase tracking-[0.4em] font-bold text-[#1b1c17] mb-1">Lot Size Distribution</h3>
+        <p class="text-[10px] text-[#1b1c17]/40 uppercase tracking-wider mb-8">Square metre allocation profile</p>
+        <div class="flex items-end gap-2 h-48" id="sizeDistChart"></div>
+        <div class="flex gap-2 mt-2" id="sizeDistLabels"></div>
+      </div>
+    </div>
+
+    <!-- VISUALISATION ROW 2: Rate Distribution + Corridor Donut -->
+    <div class="grid grid-cols-5 gap-10 mb-10">
+      <!-- Rate Distribution (wider) -->
+      <div class="col-span-3 p-10 bg-[#f6f4eb]">
+        <h3 class="text-[11px] uppercase tracking-[0.4em] font-bold text-[#1b1c17] mb-1">$/m² Rate Distribution</h3>
+        <p class="text-[10px] text-[#1b1c17]/40 uppercase tracking-wider mb-8">Price efficiency across all lots</p>
+        <div class="flex items-end gap-3 h-48" id="rateDistChart"></div>
+        <div class="flex gap-3 mt-2" id="rateDistLabels"></div>
+      </div>
+
+      <!-- Corridor Donut -->
+      <div class="col-span-2 p-10 bg-[#f6f4eb] flex flex-col items-center">
+        <h3 class="text-[11px] uppercase tracking-[0.4em] font-bold text-[#1b1c17] mb-1 self-start">Market Composition</h3>
+        <p class="text-[10px] text-[#1b1c17]/40 uppercase tracking-wider mb-6 self-start">Corridor share by volume</p>
+        <div class="relative" style="width:200px;height:200px;">
+          <svg viewBox="0 0 200 200" id="donutChart"></svg>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center">
+              <span class="font-sans text-3xl font-medium tracking-tight text-[#111]" id="donutTotal"></span>
+              <span class="block text-[9px] uppercase tracking-widest text-[#888] mt-1">Total Lots</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 space-y-2 self-start" id="donutLegend"></div>
+      </div>
+    </div>
+
+    <!-- VISUALISATION ROW 3: Corridor Bars -->
+    <div class="mb-10 p-10 bg-[#f6f4eb]">
+      <div class="flex justify-between items-start mb-8">
+        <div>
+          <h3 class="text-[11px] uppercase tracking-[0.4em] font-bold text-[#1b1c17] mb-1">Growth Corridor Index</h3>
+          <p class="text-[10px] text-[#1b1c17]/40 uppercase tracking-wider">Comparative analysis with sold/listed composition</p>
+        </div>
+      </div>
+      <div id="corridorBars" class="space-y-5"></div>
+    </div>
+
+    <!-- ROW 4: Top/Bottom Rate Suburbs -->
+    <div class="grid grid-cols-2 gap-10 mb-10">
+      <!-- Most Expensive -->
+      <div class="border border-[#dcdad2] p-10 bg-[#fcf9f1]">
+        <h4 class="text-[10px] uppercase tracking-[0.3em] text-[#1b1c17]/50 mb-2 font-bold">Premium Index</h4>
+        <span class="text-xl font-serif text-[#1b1c17] block mb-6">Highest $/m² Suburbs</span>
+        <div id="topRateChart" class="space-y-3"></div>
+      </div>
+      <!-- Most Affordable -->
+      <div class="border border-[#dcdad2] p-10 bg-[#fcf9f1]">
+        <h4 class="text-[10px] uppercase tracking-[0.3em] text-[#1b1c17]/50 mb-2 font-bold">Value Index</h4>
+        <span class="text-xl font-serif text-[#1b1c17] block mb-6">Lowest $/m² Suburbs</span>
+        <div id="bottomRateChart" class="space-y-3"></div>
+      </div>
+    </div>
+
+    <!-- ROW 5: LGA + Discovery (compact) -->
+    <div class="grid grid-cols-5 gap-10 mb-10">
+      <div class="col-span-3 border border-[#dcdad2] p-8 bg-[#fcf9f1]">
+        <h4 class="text-[10px] uppercase tracking-[0.3em] text-[#1b1c17]/50 mb-2 font-bold">Municipal Registry</h4>
+        <span class="text-xl font-serif text-[#1b1c17] block mb-4">LGA Performance</span>
+        <div class="max-h-[360px] overflow-y-auto sf" id="lgaTableWrap"></div>
+      </div>
+      <div class="col-span-2">
+        <h4 class="text-[11px] uppercase tracking-[0.4em] text-[#1b1c17] font-bold border-b border-[#1b1c17] pb-3 mb-4">Discovery Index</h4>
+        <div class="flex items-start gap-4 mb-4">
+          <span class="font-sans text-4xl font-medium tracking-tight text-[#1A1A1A]" id="discoveryCount"></span>
+          <div class="pt-1">
+            <p class="font-bold text-[11px] uppercase tracking-widest text-[#1b1c17] mb-1">Active Suburbs</p>
+            <p class="text-[10px] text-[#1b1c17]/60 uppercase tracking-tight font-medium">Full VIC scan complete</p>
+          </div>
+        </div>
+        <div class="max-h-[300px] overflow-y-auto sf space-y-0.5" id="discoveryList"></div>
+      </div>
+    </div>
+
+    <!-- ROW 6: Suburb Registry -->
+    <div class="mb-10">
+      <div class="flex justify-between items-end mb-4">
+        <div>
+          <h4 class="text-[10px] uppercase tracking-[0.3em] text-[#1b1c17]/50 mb-2 font-bold">Parcel Ledger</h4>
+          <span class="text-xl font-serif text-[#1b1c17]">Suburb Detail Registry</span>
+        </div>
+        <span class="text-[10px] text-[#1b1c17]/40 uppercase tracking-wider" id="suburbCount"></span>
+      </div>
+      <div class="flex gap-2 mb-4 flex-wrap" id="corridorPills"></div>
+      <div class="border border-[#dcdad2] bg-[#fcf9f1] max-h-[500px] overflow-y-auto sf" id="suburbTableWrap"></div>
+    </div>
+  </div>
+
+  <footer class="w-full max-w-[1400px] mx-auto px-12 pb-10 flex justify-between text-[9px] uppercase tracking-[0.4em] font-bold text-[#1b1c17]/30">
+    <div>© 2026 Grange Land Intelligence</div>
+    <div id="lastUpdated"></div>
+  </footer>
+</main>
+
+<script>
+const DATA=__DATA__;
+const ACTIVE=__ACTIVE__;
+const VIZ=__VIZ__;
+let soldOnly=false;
+const CLR={Western:'#513561',Northern:'#486456','South Eastern':'#61323a','North East':'#7c4951',Ballarat:'#6a4c7a',Geelong:'#314c3f',Bendigo:'#583b68',Shepparton:'#486456','Latrobe Valley':'#61323a','Murray Bridge':'#7c4951'};
+const CLRA=['#513561','#486456','#61323a','#7c4951','#6a4c7a','#314c3f','#583b68','#8b5e3c'];
+
+function fmt(n){return n?'$'+Math.round(n).toLocaleString():'-'}
+function fmtK(n){if(!n)return'-';return n>=1e6?'$'+(n/1e6).toFixed(1)+'m':n>=1e3?'$'+Math.round(n/1e3)+'k':fmt(n)}
+function fmtN(n){return n?n.toLocaleString():'0'}
+
+function toggleSold(){
+  soldOnly=!soldOnly;
+  document.getElementById('soldToggle').style.background=soldOnly?'#6a4c7a':'#dcdad2';
+  document.getElementById('soldDot').style.left=soldOnly?'22px':'2px';
+  render();
+}
+
+function barChart(containerId, labelId, data, color){
+  const max=Math.max(...data.map(d=>d.count));
+  document.getElementById(containerId).innerHTML=data.map((d,i)=>`
+    <div class="flex-1 flex flex-col items-center justify-end h-full">
+      <span class="text-[10px] font-semibold text-[#1b1c17]/70 mb-1">${fmtN(d.count)}</span>
+      <div class="w-full bar-v" style="height:${Math.max((d.count/max*100),2)}%;background:${typeof color==='string'?color:CLRA[i%CLRA.length]};opacity:0.75;border-radius:2px 2px 0 0;"></div>
+    </div>
+  `).join('');
+  document.getElementById(labelId).innerHTML=data.map(d=>`
+    <div class="flex-1 text-center text-[9px] text-[#1b1c17]/50 uppercase tracking-wider font-semibold">${d.bracket}</div>
+  `).join('');
+}
+
+function donutChart(data, totalVal){
+  const total=data.reduce((s,d)=>s+d.total,0);
+  let cumAngle=0;
+  const paths=data.map((d,i)=>{
+    const angle=(d.total/total)*360;
+    const startAngle=cumAngle;
+    cumAngle+=angle;
+    const large=angle>180?1:0;
+    const r=90,ir=60,cx=100,cy=100;
+    const s1=Math.cos((startAngle-90)*Math.PI/180);
+    const c1=Math.sin((startAngle-90)*Math.PI/180);
+    const s2=Math.cos((startAngle+angle-90)*Math.PI/180);
+    const c2=Math.sin((startAngle+angle-90)*Math.PI/180);
+    return `<path d="M${cx+ir*s1},${cy+ir*c1} L${cx+r*s1},${cy+r*c1} A${r},${r},0,${large},1,${cx+r*s2},${cy+r*c2} L${cx+ir*s2},${cy+ir*c2} A${ir},${ir},0,${large},0,${cx+ir*s1},${cy+ir*c1} Z" fill="${CLR[d.corridor]||CLRA[i%CLRA.length]}" opacity="0.8"/>`;
+  });
+  document.getElementById('donutChart').innerHTML=paths.join('');
+  document.getElementById('donutTotal').textContent=fmtN(totalVal||total);
+  document.getElementById('donutLegend').innerHTML=data.map((d,i)=>`
+    <div class="flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full" style="background:${CLR[d.corridor]||CLRA[i%CLRA.length]}"></span>
+      <span class="text-[10px] font-semibold text-[#1b1c17]/70">${d.corridor}</span>
+      <span class="text-[10px] text-[#1b1c17]/40 ml-1">${Math.round(d.total/total*100)}%</span>
+    </div>
+  `).join('');
+}
+
+function horizontalBars(containerId, data, maxVal, valueKey, labelFn){
+  document.getElementById(containerId).innerHTML=data.map((d,i)=>`
+    <div class="flex items-center gap-3">
+      <div class="w-32 text-right text-[11px] font-medium text-[#1b1c17] truncate">${d.suburb}</div>
+      <div class="flex-1 h-6 bg-[#eae8e0] relative overflow-hidden">
+        <div class="h-full cb" style="width:${(d[valueKey]/maxVal*100)}%;background:${CLRA[i%CLRA.length]};opacity:0.65"></div>
+      </div>
+      <div class="w-20 text-right text-[11px] font-semibold text-[#513561]">${labelFn(d)}</div>
+    </div>
+  `).join('');
+}
+
+function render(){
+  const t=DATA.totals;
+  document.getElementById('heroSub').textContent=`${fmtN(t.total)} lots · ${DATA.lgas.length} LGAs · ${DATA.suburbs.length} suburbs in database · ${ACTIVE.length} suburbs discovered`;
+  document.getElementById('lastUpdated').textContent='Updated '+new Date().toLocaleDateString('en-AU',{day:'numeric',month:'short',year:'numeric'});
+
+  // Metrics
+  document.getElementById('metricsRow').innerHTML=[
+    ['Total Tracked',fmtN(t.total)],['Avg Price',fmtK(t.avg_price)],['$/m²','$'+t.avg_rate],
+    ['Avg Lot Size',t.avg_size+'m²'],['Sold',fmtN(t.sold)],['Active Listings',fmtN(t.listings)],
+  ].map((m,i)=>`
+    <div class="px-5 ${i<5?'border-r border-[#dcdad2]':''}">
+      <span class="font-sans text-[10px] font-semibold tracking-widest uppercase text-[#888] mb-2 block">${m[0]}</span>
+      <span class="font-sans text-3xl font-medium tracking-tighter text-[#111] block">${m[1]}</span>
+    </div>
+  `).join('');
+
+  // Bar charts
+  barChart('priceDistChart','priceDistLabels',VIZ.priceDist,'#513561');
+  barChart('sizeDistChart','sizeDistLabels',VIZ.sizeDist,'#486456');
+  barChart('rateDistChart','rateDistLabels',VIZ.rateDist,'#61323a');
+
+  // Donut
+  donutChart(VIZ.corridorSplit, t.total);
+
+  // Corridor bars
+  const maxLots=Math.max(...DATA.corridors.map(c=>c.total));
+  document.getElementById('corridorBars').innerHTML=DATA.corridors.map(c=>{
+    const soldPct=Math.round(c.sold/c.total*100);
+    return `
+    <div class="flex items-center gap-5">
+      <div class="w-24 text-right"><span class="text-[11px] font-semibold uppercase tracking-wider">${c.corridor}</span></div>
+      <div class="flex-1 h-7 bg-[#eae8e0] relative overflow-hidden flex">
+        <div class="h-full" style="width:${soldPct}%;background:${CLR[c.corridor]||'#513561'};opacity:0.8"></div>
+        <div class="h-full" style="width:${100-soldPct}%;background:${CLR[c.corridor]||'#513561'};opacity:0.35"></div>
+        <div class="absolute right-3 top-1 text-[10px] font-semibold text-[#1b1c17]/60">${fmtN(c.total)}</div>
+      </div>
+      <div class="flex gap-5 min-w-[260px] text-[11px]">
+        <span class="text-[#1b1c17]/60">${fmt(c.avg_price)}</span>
+        <span class="text-[#1b1c17]/60">${c.avg_size}m²</span>
+        <span class="font-semibold text-[#513561]">$${c.avg_rate}/m²</span>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Top/Bottom rate bars
+  const maxTopRate=Math.max(...VIZ.topRate.map(d=>d.avg_rate));
+  const maxBotRate=Math.max(...VIZ.bottomRate.map(d=>d.avg_rate));
+  horizontalBars('topRateChart',VIZ.topRate,maxTopRate,'avg_rate',d=>'$'+d.avg_rate+'/m²');
+  horizontalBars('bottomRateChart',VIZ.bottomRate,maxBotRate,'avg_rate',d=>'$'+d.avg_rate+'/m²');
+
+  // LGA Table
+  document.getElementById('lgaTableWrap').innerHTML=`<table class="w-full">
+    <thead><tr>
+      <th class="text-left text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">LGA</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">Lots</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">Avg Price</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">$/m²</th>
+    </tr></thead>
+    <tbody>${DATA.lgas.map(l=>`<tr class="dr">
+      <td class="py-2 px-3 text-[12px] font-medium">${l.lga}<span class="text-[10px] text-[#1b1c17]/40 ml-2">${l.corridor||''}</span></td>
+      <td class="py-2 px-3 text-[12px] text-right">${fmtN(l.total)}</td>
+      <td class="py-2 px-3 text-[12px] text-right">${fmt(l.avg_price)}</td>
+      <td class="py-2 px-3 text-[12px] text-right font-semibold text-[#513561]">$${l.avg_rate}</td>
+    </tr>`).join('')}</tbody></table>`;
+
+  // Discovery
+  document.getElementById('discoveryCount').textContent=ACTIVE.length;
+  document.getElementById('discoveryList').innerHTML=ACTIVE.slice(0,80).map(a=>`
+    <div class="flex justify-between py-1.5 px-3 hover:bg-[#f6f4eb]">
+      <span class="text-[11px] font-medium">${a.suburb}</span>
+      <span class="text-[11px] font-semibold text-[#513561]">${a.listings}</span>
+    </div>
+  `).join('');
+
+  // Suburb pills + table
+  const corridors=[...new Set(DATA.suburbs.map(s=>s.corridor).filter(Boolean))];
+  document.getElementById('corridorPills').innerHTML=`
+    <button class="pf ac px-4 py-1.5 text-[10px] uppercase tracking-[0.15em] font-semibold rounded-full" onclick="filterSubs(null,this)">All</button>
+    ${corridors.map(c=>`<button class="pf px-4 py-1.5 text-[10px] uppercase tracking-[0.15em] font-semibold rounded-full bg-[#eae8e0] text-[#1b1c17]/60" onclick="filterSubs('${c}',this)">${c}</button>`).join('')}
+  `;
+  renderSubs(null);
+}
+
+function filterSubs(c,el){
+  document.querySelectorAll('.pf').forEach(p=>{p.classList.remove('ac');p.style.background='#eae8e0';p.style.color='rgba(27,28,23,0.6)';});
+  if(el){el.classList.add('ac');el.style.background='#6a4c7a';el.style.color='#fff';}
+  renderSubs(c);
+}
+
+function renderSubs(corridor){
+  let subs=DATA.suburbs;
+  if(corridor)subs=subs.filter(s=>s.corridor===corridor);
+  document.getElementById('suburbCount').textContent=subs.length+' suburbs';
+  document.getElementById('suburbTableWrap').innerHTML=`<table class="w-full">
+    <thead class="sticky top-0 bg-[#fcf9f1]"><tr>
+      <th class="text-left text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">Suburb</th>
+      <th class="text-left text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">LGA</th>
+      <th class="text-left text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">Corridor</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">Lots</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">Sold</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">Listed</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">Avg Price</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">Size</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-2 px-3">$/m²</th>
+    </tr></thead>
+    <tbody>${subs.map(s=>`<tr class="dr">
+      <td class="py-2 px-3 text-[12px] font-medium">${s.suburb}</td>
+      <td class="py-2 px-3 text-[11px] text-[#1b1c17]/60">${s.lga}</td>
+      <td class="py-2 px-3 text-[11px] text-[#1b1c17]/60">${s.corridor||'-'}</td>
+      <td class="py-2 px-3 text-[12px] text-right font-medium">${fmtN(s.total)}</td>
+      <td class="py-2 px-3 text-[12px] text-right text-[#486456]">${fmtN(s.sold)}</td>
+      <td class="py-2 px-3 text-[12px] text-right text-[#61323a]">${fmtN(s.listings)}</td>
+      <td class="py-2 px-3 text-[12px] text-right">${fmt(s.avg_price)}</td>
+      <td class="py-2 px-3 text-[12px] text-right">${s.avg_size}m²</td>
+      <td class="py-2 px-3 text-[12px] text-right font-semibold text-[#513561]">$${s.avg_rate}</td>
+    </tr>`).join('')}</tbody></table>`;
+}
+
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Market Benchmarks - Grange Land Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#a6eff3",
+              "tertiary-fixed-dim": "#66d9cc",
+              "surface-tint": "#495e8a",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f0f1f3",
+              "secondary-container": "#a3ecf0",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "primary": "#00020a",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "tertiary": "#000202",
+              "surface-container-high": "#e7e8ea",
+              "on-primary": "#ffffff",
+              "on-background": "#191c1e",
+              "on-tertiary-container": "#009589",
+              "surface-dim": "#d9dadc",
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#f8f9fb",
+              "tertiary-container": "#00211e",
+              "on-surface-variant": "#44474f",
+              "inverse-primary": "#b1c6f9",
+              "secondary-fixed-dim": "#8ad3d7",
+              "surface-container-highest": "#e1e2e4",
+              "secondary": "#14696d",
+              "on-primary-container": "#7084b3",
+              "surface": "#f8f9fb",
+              "on-secondary-fixed-variant": "#004f53",
+              "error": "#ba1a1a",
+              "outline-variant": "#c5c6d0",
+              "on-tertiary-fixed": "#00201d",
+              "primary-fixed-dim": "#b1c6f9",
+              "outline": "#75777f",
+              "primary-fixed": "#d8e2ff",
+              "primary-container": "#001b44",
+              "surface-variant": "#e1e2e4",
+              "on-tertiary-fixed-variant": "#005049",
+              "on-secondary-fixed": "#002021",
+              "on-surface": "#191c1e",
+              "surface-container": "#edeef0",
+              "surface-container-low": "#f2f4f6",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#314671",
+              "on-secondary-container": "#1b6d71",
+              "background": "#f8f9fb",
+              "tertiary-fixed": "#84f5e8",
+              "on-primary-fixed": "#001a42"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8f9fb;
+      }
+      h1, h2, h3, .font-headline {
+        font-family: 'Manrope', sans-serif;
+      }
+      .custom-scroll::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scroll::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scroll::-webkit-scrollbar-thumb {
+        background: #c5c6d0;
+        border-radius: 10px;
+      }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- SideNavBar Component -->
+<aside class="fixed left-0 top-0 h-full flex flex-col py-6 bg-[#001b44] dark:bg-[#00020a] w-64 shadow-[0_12px_32px_-4px_rgba(0,27,68,0.08)] z-50">
+<div class="px-6 mb-10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-[#a3ecf0] rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-[#001b44]" style="font-variation-settings: 'FILL' 1;">domain</span>
+</div>
+<div>
+<h1 class="text-xl font-extrabold text-white tracking-tight uppercase leading-tight">Grange Land</h1>
+<p class="text-[10px] font-manrope font-extrabold uppercase tracking-wider text-[#a3ecf0]">Intelligence</p>
+</div>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="text-slate-300 hover:text-white px-4 py-3 mx-2 transition-colors flex items-center gap-3 font-manrope font-extrabold uppercase tracking-wider text-sm" href="#">
+<span class="material-symbols-outlined">domain</span>
+<span>Portfolio</span>
+</a>
+<a class="bg-[#14696d] text-white rounded-md mx-2 px-4 py-3 flex items-center gap-3 font-manrope font-extrabold uppercase tracking-wider text-sm" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span>Market Benchmarks</span>
+</a>
+<a class="text-slate-300 hover:text-white px-4 py-3 mx-2 transition-colors flex items-center gap-3 font-manrope font-extrabold uppercase tracking-wider text-sm" href="#">
+<span class="material-symbols-outlined">how_to_reg</span>
+<span>Land Registry</span>
+</a>
+<a class="text-slate-300 hover:text-white px-4 py-3 mx-2 transition-colors flex items-center gap-3 font-manrope font-extrabold uppercase tracking-wider text-sm" href="#">
+<span class="material-symbols-outlined">insert_chart</span>
+<span>Analytics</span>
+</a>
+<a class="text-slate-300 hover:text-white px-4 py-3 mx-2 transition-colors flex items-center gap-3 font-manrope font-extrabold uppercase tracking-wider text-sm" href="#">
+<span class="material-symbols-outlined">description</span>
+<span>Reports</span>
+</a>
+</nav>
+<div class="mt-auto px-6 border-t border-white/10 pt-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-slate-500 overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="professional corporate headshot of a male real estate analyst in a dark suit with clean lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATCZHz_Pq0Pz740qpu0C3dvR5gBduP6wM8zfO6ensN1I54SJn4XrlNg1PTcxipEuFBMDSxh18M0aUKgUAO7QgyvfLAOeOA80KvrjtdYhx4ohp9w8gGYJCRA5FM0dBQuLv0zoc1h4KMflIPJPn95tyd4PMcwGPva5xDFkrX793l67TNCuBjhUQdXJcIHmsSz8Q9CsEQ-eRuJ7k9IANenQGc1FhNNoVrstfNbfSk44Xq0Zjy6TzworYm4ldAfn0LXVqST89VTeuunqgk"/>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-white">James Sterling</span>
+<span class="text-[10px] text-slate-400">Senior Analyst</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-64 min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<header class="flex justify-between items-center h-16 px-8 bg-[#f8f9fb] dark:bg-[#00020a] sticky top-0 z-40">
+<div class="flex items-center gap-4">
+<h2 class="font-manrope font-bold text-lg text-[#001b44] dark:text-[#f8f9fb]">Market Benchmarks</h2>
+<div class="h-4 w-[1px] bg-outline-variant/30"></div>
+<span class="text-sm font-label tracking-tight text-on-surface-variant uppercase">Greenfield Real Estate Insights</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative w-72">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline scale-75">search</span>
+<input class="w-full bg-surface-container-low border-none focus:ring-0 focus:border-b-2 focus:border-secondary text-sm pl-10 rounded-md py-1.5" placeholder="Search corridors or metrics..." type="text"/>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#001b44] opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-[#001b44] opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Dashboard Canvas -->
+<div class="p-8 space-y-8">
+<!-- Alert Bars -->
+<div class="space-y-3">
+<div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl flex items-start gap-4 shadow-sm">
+<span class="material-symbols-outlined text-amber-600 mt-0.5" style="font-variation-settings: 'FILL' 1;">warning</span>
+<p class="text-amber-900 text-sm font-medium leading-relaxed">
+                        Rebate levels remain elevated above historical averages, impacting true net realizations across major corridors.
+                    </p>
+</div>
+<div class="bg-secondary-container/30 border-l-4 border-secondary p-4 rounded-r-xl flex items-start gap-4 shadow-sm">
+<span class="material-symbols-outlined text-secondary mt-0.5" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="text-on-secondary-container text-sm font-medium leading-relaxed">
+                        Supply squeeze projected for inner-northern corridors starting Q1 2026; price escalation anticipated.
+                    </p>
+</div>
+</div>
+<!-- Land Index Score Cards -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+<!-- Melbourne -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)] overflow-hidden transition-transform duration-150 hover:scale-[1.02]">
+<div class="h-1.5 bg-primary-container"></div>
+<div class="p-6">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.1em] mb-1">Melbourne</p>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-headline font-extrabold text-on-surface">4.2</span>
+<span class="text-primary-container text-xs font-bold uppercase tracking-tighter">IDX</span>
+</div>
+<div class="mt-4 flex items-center text-xs text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span class="ml-1">+0.4% MoM</span>
+</div>
+</div>
+</div>
+<!-- Sydney -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)] overflow-hidden transition-transform duration-150 hover:scale-[1.02]">
+<div class="h-1.5 bg-secondary"></div>
+<div class="p-6">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.1em] mb-1">Sydney</p>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-headline font-extrabold text-on-surface">5.4</span>
+<span class="text-secondary text-xs font-bold uppercase tracking-tighter">IDX</span>
+</div>
+<div class="mt-4 flex items-center text-xs text-error font-semibold">
+<span class="material-symbols-outlined text-sm">trending_down</span>
+<span class="ml-1">-0.2% MoM</span>
+</div>
+</div>
+</div>
+<!-- SEQ -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)] overflow-hidden transition-transform duration-150 hover:scale-[1.02]">
+<div class="h-1.5 bg-amber-500"></div>
+<div class="p-6">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.1em] mb-1">SEQ</p>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-headline font-extrabold text-on-surface">7.1</span>
+<span class="text-amber-600 text-xs font-bold uppercase tracking-tighter">IDX</span>
+</div>
+<div class="mt-4 flex items-center text-xs text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span class="ml-1">+1.1% MoM</span>
+</div>
+</div>
+</div>
+<!-- Perth -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)] overflow-hidden transition-transform duration-150 hover:scale-[1.02]">
+<div class="h-1.5 bg-orange-500"></div>
+<div class="p-6">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.1em] mb-1">Perth</p>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-headline font-extrabold text-on-surface">7.8</span>
+<span class="text-orange-600 text-xs font-bold uppercase tracking-tighter">IDX</span>
+</div>
+<div class="mt-4 flex items-center text-xs text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span class="ml-1">+2.4% MoM</span>
+</div>
+</div>
+</div>
+<!-- Adelaide -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_12px_32px_-4px_rgba(0,27,68,0.04)] overflow-hidden transition-transform duration-150 hover:scale-[1.02]">
+<div class="h-1.5 bg-purple-500"></div>
+<div class="p-6">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.1em] mb-1">Adelaide</p>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-headline font-extrabold text-on-surface">6.5</span>
+<span class="text-purple-600 text-xs font-bold uppercase tracking-tighter">IDX</span>
+</div>
+<div class="mt-4 flex items-center text-xs text-on-surface-variant font-semibold">
+<span class="material-symbols-outlined text-sm">remove</span>
+<span class="ml-1">0.0% MoM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RPM Data Panel: Victorian Greenfield Market -->
+<div class="space-y-6">
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+<div>
+<h3 class="text-2xl font-headline font-extrabold text-primary-container">Victorian Greenfield Market</h3>
+<p class="text-sm text-outline font-medium tracking-tight mt-1 uppercase">Institutional Performance Metrics • Q3 2024</p>
+</div>
+<button class="bg-primary-container text-white px-4 py-2 rounded-md text-xs font-bold flex items-center gap-2 transition-all hover:bg-primary">
+<span class="material-symbols-outlined scale-75">download</span>
+                        Export RPM Report
+                    </button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-0.5 bg-outline-variant/10 rounded-xl overflow-hidden border border-outline-variant/15 shadow-sm">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Median Lot Price</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">$399k</div>
+<p class="text-[10px] text-secondary font-bold mt-1">▲ 3.2% YoY</p>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Effective Price</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">~$369k</div>
+<p class="text-[10px] text-on-surface-variant font-medium mt-1">Incl. Rebates</p>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Median Lot Size</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">355m²</div>
+<p class="text-[10px] text-on-surface-variant font-medium mt-1">Stable vs Q2</p>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Quarterly Sales</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">3,649</div>
+<p class="text-[10px] text-error font-bold mt-1">▼ 12% vs Hist.</p>
+</div>
+<!-- Metric 5 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Months of Supply</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">14.2</div>
+<p class="text-[10px] text-on-surface-variant font-medium mt-1">Neutral Range</p>
+</div>
+<!-- Metric 6 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Gross Realization</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">$1.12b</div>
+<p class="text-[10px] text-secondary font-bold mt-1">▲ 0.8% Qoq</p>
+</div>
+<!-- Metric 7 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Days on Market</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">88</div>
+<p class="text-[10px] text-error font-bold mt-1">▲ 14 Days</p>
+</div>
+<!-- Metric 8 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Land Rate $/m²</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">$1,124</div>
+<p class="text-[10px] text-secondary font-bold mt-1">Peak Levels</p>
+</div>
+<!-- Metric 9 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Stock Levels</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">18,400</div>
+<p class="text-[10px] text-on-surface-variant font-medium mt-1">Total Pipeline</p>
+</div>
+<!-- Metric 10 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Yield per Ha</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">18.4</div>
+<p class="text-[10px] text-on-surface-variant font-medium mt-1">Average Density</p>
+</div>
+<!-- Metric 11 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Approval Time</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">14.1m</div>
+<p class="text-[10px] text-error font-bold mt-1">Reg. Slowdown</p>
+</div>
+<!-- Metric 12 -->
+<div class="bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors group">
+<p class="text-[10px] font-bold text-outline uppercase tracking-[0.05em] group-hover:text-secondary">Investor Share</p>
+<div class="mt-2 text-2xl font-headline font-extrabold text-on-surface">12%</div>
+<p class="text-[10px] text-on-surface-variant font-medium mt-1">Historic Lows</p>
+</div>
+</div>
+</div>
+<!-- Asymmetric Data Visualization Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Spatial Heatmap Preview -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl shadow-lg overflow-hidden border border-outline-variant/10 relative h-[400px]">
+<div class="absolute inset-0 grayscale opacity-40">
+<img alt="Market Map" class="w-full h-full object-cover" data-alt="high contrast architectural satellite view of masterplanned suburban development with geometric street patterns and water bodies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsp73RxbtLFnBrgvNqO8ZhW7g724H8O7fu6_bG4EGakfA_mskOf1_EG_kyMxpsLk7zZK557oB7WyndCL1ccZJLIGjA_c_67U4LVPaXA5tBbOsh6lEBQqDUZCzRDcs_bHv6YJDzQgLE3enRTHsWYRilAiNSpGWj5hh_W2-rLpeNIBG9wjy87nP09XYx7IAazDKLqhNO8obW2kbyRoiXy83Dpb_REyvP3izqLl7_FSmIZUJU0eCZl6CqqEINOQ5sqw8Nmt_WexdxyqAJ"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/40 to-transparent"></div>
+<div class="relative p-8 flex flex-col h-full justify-between">
+<div>
+<span class="inline-block bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">Live Corridor Pulse</span>
+<h4 class="text-3xl font-headline font-extrabold text-on-surface">Spatial Pricing Velocity</h4>
+</div>
+<div class="bg-white/90 backdrop-blur-md p-6 rounded-lg w-72 shadow-xl border border-white/40">
+<h5 class="text-xs font-bold text-outline uppercase mb-3">Top Performing Precinct</h5>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between text-sm mb-1">
+<span class="font-bold">West Corridor</span>
+<span class="text-secondary font-bold">78% Sold</span>
+</div>
+<div class="h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[78%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm mb-1">
+<span class="font-bold">North Corridor</span>
+<span class="text-secondary font-bold">54% Sold</span>
+</div>
+<div class="h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[54%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Benchmarking Ledger Table -->
+<div class="bg-primary-container text-white rounded-xl p-8 flex flex-col shadow-2xl overflow-hidden relative">
+<div class="absolute -right-8 -top-8 w-40 h-40 bg-secondary/20 rounded-full blur-3xl"></div>
+<h4 class="text-xl font-headline font-extrabold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">analytics</span>
+                        Yield Sensitivity
+                    </h4>
+<div class="flex-1 space-y-6">
+<div class="flex justify-between items-center pb-4 border-b border-white/10">
+<span class="text-xs font-medium text-slate-400">Benchmark Basis</span>
+<span class="text-sm font-bold">5.25% CAP Rate</span>
+</div>
+<div class="flex justify-between items-center pb-4 border-b border-white/10">
+<span class="text-xs font-medium text-slate-400">Construction Index</span>
+<span class="text-sm font-bold text-tertiary-fixed-dim">+12.4% Est.</span>
+</div>
+<div class="flex justify-between items-center pb-4 border-b border-white/10">
+<span class="text-xs font-medium text-slate-400">Incentive Exposure</span>
+<span class="text-sm font-bold text-amber-400">Moderate Risk</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-xs font-medium text-slate-400">Absorbtion Window</span>
+<span class="text-sm font-bold">18-24 Months</span>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-white/10">
+<p class="text-[10px] text-slate-500 font-medium leading-relaxed italic">
+                            *This ledger represents internal Grange Land Intelligence proprietary modeling based on real-time settlement data.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer / Signature -->
+<footer class="mt-auto p-8 flex justify-between items-center opacity-60">
+<p class="text-xs font-medium text-outline">© 2024 Grange Land Intelligence. Institutional Use Only.</p>
+<div class="flex gap-4">
+<span class="text-[10px] font-bold tracking-widest uppercase text-outline">Terminal ID: GR-AUS-882</span>
+<span class="text-[10px] font-bold tracking-widest uppercase text-outline">Data Feed: 14:32 AEDT</span>
+</div>
+</footer>
+</main>
+</body></html>

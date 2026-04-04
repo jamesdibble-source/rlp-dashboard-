@@ -1,0 +1,702 @@
+suburb,state,postcode,lga,corridor
+Sunbury,VIC,3429,Hume,Melbourne Northwest
+Diggers Rest,VIC,3427,Melton,Melbourne Northwest
+Rockbank,VIC,3335,Melton,Melbourne Northwest
+Melton,VIC,3337,Melton,Melbourne Northwest
+Melton South,VIC,3338,Melton,Melbourne Northwest
+Melton West,VIC,3337,Melton,Melbourne Northwest
+Cobblebank,VIC,3338,Melton,Melbourne Northwest
+Strathtulloh,VIC,3338,Melton,Melbourne Northwest
+Toolern Vale,VIC,3337,Melton,Melbourne Northwest
+Tarneit,VIC,3029,Wyndham,Melbourne West
+Truganina,VIC,3029,Wyndham,Melbourne West
+Hoppers Crossing,VIC,3029,Wyndham,Melbourne West
+Wyndham Vale,VIC,3024,Wyndham,Melbourne West
+Manor Lakes,VIC,3024,Wyndham,Melbourne West
+Werribee,VIC,3030,Wyndham,Melbourne West
+Point Cook,VIC,3030,Wyndham,Melbourne West
+Williams Landing,VIC,3027,Wyndham,Melbourne West
+Sanctuary Lakes,VIC,3030,Wyndham,Melbourne West
+Craigieburn,VIC,3064,Hume,Melbourne North
+Mickleham,VIC,3064,Hume,Melbourne North
+Donnybrook,VIC,3064,Whittlesea,Melbourne North
+Kalkallo,VIC,3064,Hume,Melbourne North
+Wollert,VIC,3750,Whittlesea,Melbourne North
+Epping,VIC,3076,Whittlesea,Melbourne North
+South Morang,VIC,3752,Whittlesea,Melbourne North
+Mernda,VIC,3754,Whittlesea,Melbourne North
+Doreen,VIC,3754,Whittlesea,Melbourne North
+Whittlesea,VIC,3757,Whittlesea,Melbourne North
+Beveridge,VIC,3753,Mitchell,Melbourne North
+Clyde,VIC,3978,Casey,Melbourne Southeast
+Clyde North,VIC,3978,Casey,Melbourne Southeast
+Cranbourne East,VIC,3977,Casey,Melbourne Southeast
+Cranbourne North,VIC,3977,Casey,Melbourne Southeast
+Officer,VIC,3809,Cardinia,Melbourne Southeast
+Officer South,VIC,3809,Cardinia,Melbourne Southeast
+Pakenham,VIC,3810,Cardinia,Melbourne Southeast
+Pakenham South,VIC,3810,Cardinia,Melbourne Southeast
+Berwick,VIC,3806,Casey,Melbourne Southeast
+Beaconsfield,VIC,3807,Cardinia,Melbourne Southeast
+Botanic Ridge,VIC,3977,Casey,Melbourne Southeast
+Ringwood,VIC,3134,Maroondah,Melbourne East
+Lilydale,VIC,3140,Yarra Ranges,Melbourne East
+Chirnside Park,VIC,3116,Yarra Ranges,Melbourne East
+Coldstream,VIC,3770,Yarra Ranges,Melbourne East
+Lara,VIC,3212,Greater Geelong,Geelong Corridor
+Corio,VIC,3214,Greater Geelong,Geelong Corridor
+Norlane,VIC,3214,Greater Geelong,Geelong Corridor
+Lovely Banks,VIC,3213,Greater Geelong,Geelong Corridor
+Armstrong Creek,VIC,3217,Greater Geelong,Geelong Corridor
+Charlemont,VIC,3217,Greater Geelong,Geelong Corridor
+Belmont,VIC,3216,Greater Geelong,Geelong Corridor
+Grovedale,VIC,3216,Greater Geelong,Geelong Corridor
+Mount Duneed,VIC,3217,Greater Geelong,Geelong Corridor
+Torquay,VIC,3228,Surf Coast,Geelong Corridor
+Leppington,NSW,2179,Liverpool,Sydney Southwest
+Oran Park,NSW,2570,Camden,Sydney Southwest
+Gledswood Hills,NSW,2557,Camden,Sydney Southwest
+Gregory Hills,NSW,2557,Camden,Sydney Southwest
+Harrington Park,NSW,2567,Camden,Sydney Southwest
+Catherine Field,NSW,2557,Camden,Sydney Southwest
+Cobbitty,NSW,2570,Camden,Sydney Southwest
+Appin,NSW,2560,Wollondilly,Sydney Southwest
+Wilton,NSW,2571,Wollondilly,Sydney Southwest
+Douglas Park,NSW,2569,Wollondilly,Sydney Southwest
+Campbelltown,NSW,2560,Campbelltown,Sydney Southwest
+Denham Court,NSW,2565,Liverpool,Sydney Southwest
+Box Hill,NSW,2765,The Hills,Sydney Northwest
+Marsden Park,NSW,2765,Blacktown,Sydney Northwest
+Riverstone,NSW,2765,Blacktown,Sydney Northwest
+Schofields,NSW,2762,Blacktown,Sydney Northwest
+Tallawong,NSW,2762,Blacktown,Sydney Northwest
+Rouse Hill,NSW,2155,The Hills,Sydney Northwest
+The Ponds,NSW,2769,Blacktown,Sydney Northwest
+Kellyville Ridge,NSW,2155,Blacktown,Sydney Northwest
+Gables,NSW,2765,The Hills,Sydney Northwest
+Vineyard,NSW,2765,Hawkesbury,Sydney Northwest
+Maraylya,NSW,2765,The Hills,Sydney Northwest
+Jordan Springs,NSW,2747,Penrith,Sydney West
+Caddens,NSW,2747,Penrith,Sydney West
+Penrith,NSW,2750,Penrith,Sydney West
+Kingswood,NSW,2747,Penrith,Sydney West
+Claremont Meadows,NSW,2747,Penrith,Sydney West
+Narellan,NSW,2567,Camden,Sydney Southwest
+Narellan Vale,NSW,2567,Camden,Sydney Southwest
+Mount Annan,NSW,2567,Camden,Sydney Southwest
+Currans Hill,NSW,2567,Camden,Sydney Southwest
+Narangba,QLD,4504,Moreton Bay,Brisbane North
+Burpengary,QLD,4505,Moreton Bay,Brisbane North
+Burpengary East,QLD,4505,Moreton Bay,Brisbane North
+Morayfield,QLD,4506,Moreton Bay,Brisbane North
+Caboolture,QLD,4510,Moreton Bay,Brisbane North
+Caboolture South,QLD,4510,Moreton Bay,Brisbane North
+Ningi,QLD,4511,Moreton Bay,Brisbane North
+Elimbah,QLD,4516,Moreton Bay,Brisbane North
+Springfield,QLD,4300,Ipswich,Brisbane South
+Springfield Lakes,QLD,4300,Ipswich,Brisbane South
+Augustine Heights,QLD,4300,Ipswich,Brisbane South
+Redbank Plains,QLD,4301,Ipswich,Brisbane South
+Ripley,QLD,4306,Ipswich,Brisbane South
+Yamanto,QLD,4305,Ipswich,Brisbane South
+Walloon,QLD,4306,Ipswich,Brisbane South
+Rosewood,QLD,4340,Ipswich,Brisbane South
+Leichhardt,QLD,4305,Ipswich,Brisbane South
+Brassall,QLD,4305,Ipswich,Brisbane South
+Collingwood Park,QLD,4301,Ipswich,Brisbane South
+Logan Reserve,QLD,4133,Logan,Brisbane Southeast
+Flagstone,QLD,4280,Logan,Brisbane Southeast
+Jimboomba,QLD,4280,Logan,Brisbane Southeast
+Yarrabilba,QLD,4207,Logan,Brisbane Southeast
+Greenbank,QLD,4124,Logan,Brisbane Southeast
+Park Ridge,QLD,4125,Logan,Brisbane Southeast
+Boronia Heights,QLD,4124,Logan,Brisbane Southeast
+Pimpama,QLD,4209,Gold Coast,Gold Coast North
+Coomera,QLD,4209,Gold Coast,Gold Coast North
+Upper Coomera,QLD,4209,Gold Coast,Gold Coast North
+Ormeau,QLD,4208,Gold Coast,Gold Coast North
+Jacobs Well,QLD,4208,Gold Coast,Gold Coast North
+Hope Island,QLD,4212,Gold Coast,Gold Coast North
+Helensvale,QLD,4212,Gold Coast,Gold Coast North
+Caloundra West,QLD,4551,Sunshine Coast,Sunshine Coast
+Pelican Waters,QLD,4551,Sunshine Coast,Sunshine Coast
+Little Mountain,QLD,4551,Sunshine Coast,Sunshine Coast
+Palmview,QLD,4553,Sunshine Coast,Sunshine Coast
+Aura,QLD,4551,Sunshine Coast,Sunshine Coast
+Bokarina,QLD,4575,Sunshine Coast,Sunshine Coast
+Birtinya,QLD,4575,Sunshine Coast,Sunshine Coast
+Baringa,QLD,4551,Sunshine Coast,Sunshine Coast
+Nirimba,QLD,4551,Sunshine Coast,Sunshine Coast
+Angle Vale,SA,5117,Playford,Adelaide North
+Two Wells,SA,5501,Adelaide Plains,Adelaide North
+Virginia,SA,5120,Playford,Adelaide North
+Gawler,SA,5118,Town of Gawler,Adelaide North
+Gawler East,SA,5118,Barossa,Adelaide North
+Gawler Belt,SA,5118,Town of Gawler,Adelaide North
+Concordia,SA,5118,Barossa,Adelaide North
+Roseworthy,SA,5371,Light,Adelaide North
+Hewett,SA,5118,Barossa,Adelaide North
+Evanston,SA,5116,Town of Gawler,Adelaide North
+Munno Para,SA,5115,Playford,Adelaide North
+Smithfield,SA,5114,Playford,Adelaide North
+Elizabeth,SA,5112,Playford,Adelaide North
+Seaford,SA,5169,Onkaparinga,Adelaide South
+Seaford Meadows,SA,5169,Onkaparinga,Adelaide South
+Seaford Heights,SA,5169,Onkaparinga,Adelaide South
+Aldinga,SA,5173,Onkaparinga,Adelaide South
+Aldinga Beach,SA,5173,Onkaparinga,Adelaide South
+Sellicks Beach,SA,5174,Onkaparinga,Adelaide South
+Willunga,SA,5172,Onkaparinga,Adelaide South
+Old Noarlunga,SA,5168,Onkaparinga,Adelaide South
+Morphett Vale,SA,5162,Onkaparinga,Adelaide South
+Hackham,SA,5163,Onkaparinga,Adelaide South
+Mount Barker,SA,5251,Mount Barker,Adelaide East
+Nairne,SA,5252,Mount Barker,Adelaide East
+Littlehampton,SA,5250,Mount Barker,Adelaide East
+Hahndorf,SA,5245,Mount Barker,Adelaide East
+Verdun,SA,5245,Adelaide Hills,Adelaide East
+Woodside,SA,5244,Adelaide Hills,Adelaide East
+Yanchep,WA,6035,Wanneroo,Perth North
+Two Rocks,WA,6037,Wanneroo,Perth North
+Alkimos,WA,6038,Wanneroo,Perth North
+Eglinton,WA,6034,Wanneroo,Perth North
+Jindalee,WA,6036,Wanneroo,Perth North
+Clarkson,WA,6030,Wanneroo,Perth North
+Butler,WA,6036,Wanneroo,Perth North
+Ridgewood,WA,6030,Wanneroo,Perth North
+Merriwa,WA,6030,Wanneroo,Perth North
+Quinns Rocks,WA,6030,Wanneroo,Perth North
+Baldivis,WA,6171,Rockingham,Perth South
+Kwinana,WA,6167,Kwinana,Perth South
+Wellard,WA,6170,Kwinana,Perth South
+Leda,WA,6170,Kwinana,Perth South
+Harrisdale,WA,6112,Armadale,Perth South
+Piara Waters,WA,6112,Armadale,Perth South
+Treeby,WA,6164,Armadale,Perth South
+Mandogalup,WA,6167,Kwinana,Perth South
+Casuarina,WA,6167,Kwinana,Perth South
+Bertram,WA,6167,Kwinana,Perth South
+Ellenbrook,WA,6069,Swan,Perth East
+The Vines,WA,6069,Swan,Perth East
+Aveley,WA,6069,Swan,Perth East
+Brabham,WA,6055,Swan,Perth East
+Bullsbrook,WA,6084,Swan,Perth East
+Swan View,WA,6056,Swan,Perth East
+Middle Swan,WA,6056,Swan,Perth East
+Byford,WA,6122,Serpentine-Jarrahdale,Perth Southeast
+Mundijong,WA,6123,Serpentine-Jarrahdale,Perth Southeast
+Serpentine,WA,6125,Serpentine-Jarrahdale,Perth Southeast
+Cardup,WA,6122,Serpentine-Jarrahdale,Perth Southeast
+Ballarat,VIC,3350,Ballarat,Ballarat
+Lucas,VIC,3350,Ballarat,Ballarat
+Alfredton,VIC,3350,Ballarat,Ballarat
+Delacombe,VIC,3356,Ballarat,Ballarat
+Winter Valley,VIC,3358,Ballarat,Ballarat
+Bendigo,VIC,3550,Greater Bendigo,Bendigo
+Maiden Gully,VIC,3551,Greater Bendigo,Bendigo
+Shepparton,VIC,3630,Greater Shepparton,Shepparton
+Wodonga,VIC,3690,Wodonga,Wodonga
+Baranduda,VIC,3691,Wodonga,Wodonga
+Wangaratta,VIC,3677,Wangaratta,Wangaratta
+Traralgon,VIC,3844,Latrobe,Latrobe Valley
+Moe,VIC,3825,Latrobe,Latrobe Valley
+Warragul,VIC,3820,Baw Baw,West Gippsland
+Drouin,VIC,3818,Baw Baw,West Gippsland
+Longwarry,VIC,3816,Baw Baw,West Gippsland
+Horsham,VIC,3400,Horsham,Horsham
+Albury,NSW,2640,Albury,Albury
+Wagga Wagga,NSW,2650,Wagga Wagga,Wagga Wagga
+Orange,NSW,2800,Orange,Orange
+Bathurst,NSW,2795,Bathurst,Bathurst
+Dubbo,NSW,2830,Dubbo,Dubbo
+Tamworth,NSW,2340,Tamworth,Tamworth
+Armidale,NSW,2350,Armidale,Armidale
+Griffith,NSW,2680,Griffith,Griffith
+Nowra,NSW,2541,Shoalhaven,Shoalhaven
+Lismore,NSW,2480,Lismore,Lismore
+Coffs Harbour,NSW,2450,Coffs Harbour,Coffs Harbour
+Port Macquarie,NSW,2444,Port Macquarie-Hastings,Port Macquarie
+Thrumster,NSW,2444,Port Macquarie-Hastings,Port Macquarie
+Cameron Park,NSW,2285,Lake Macquarie,Newcastle Outer
+Fletcher,NSW,2287,Newcastle,Newcastle Outer
+Chisholm,NSW,2322,Maitland,Newcastle Outer
+Medowie,NSW,2318,Port Stephens,Newcastle Outer
+Gillieston Heights,NSW,2321,Maitland,Newcastle Outer
+Aberglasslyn,NSW,2320,Maitland,Newcastle Outer
+Raymond Terrace,NSW,2324,Port Stephens,Newcastle Outer
+Calderwood,NSW,2527,Shellharbour,Wollongong Outer
+Shell Cove,NSW,2529,Shellharbour,Wollongong Outer
+Albion Park,NSW,2527,Shellharbour,Wollongong Outer
+Tullimbar,NSW,2527,Shellharbour,Wollongong Outer
+Horsley,NSW,2530,Wollongong,Wollongong Outer
+Dapto,NSW,2530,Wollongong,Wollongong Outer
+Toowoomba,QLD,4350,Toowoomba,Toowoomba
+Highfields,QLD,4352,Toowoomba,Toowoomba
+Townsville,QLD,4810,Townsville,Townsville
+Burdell,QLD,4818,Townsville,Townsville
+Bohle Plains,QLD,4817,Townsville,Townsville
+Cairns,QLD,4870,Cairns,Cairns
+Smithfield,QLD,4878,Cairns,Cairns
+Edmonton,QLD,4869,Cairns,Cairns
+Gordonvale,QLD,4865,Cairns,Cairns
+Mount Peter,QLD,4869,Cairns,Cairns
+Rockhampton,QLD,4700,Rockhampton,Rockhampton
+Gracemere,QLD,4702,Rockhampton,Rockhampton
+Mackay,QLD,4740,Mackay,Mackay
+Bundaberg,QLD,4670,Bundaberg,Bundaberg
+Bargara,QLD,4670,Bundaberg,Bundaberg
+Hervey Bay,QLD,4655,Fraser Coast,Fraser Coast
+Gladstone,QLD,4680,Gladstone,Gladstone
+Emerald,QLD,4720,Central Highlands,Central Highlands
+Murray Bridge,SA,5253,Murray Bridge,Murray Bridge
+Victor Harbor,SA,5211,Victor Harbor,Victor Harbor
+Mount Gambier,SA,5290,Mount Gambier,Mount Gambier
+Port Augusta,SA,5700,Port Augusta,Port Augusta
+Whyalla,SA,5600,Whyalla,Whyalla
+Port Pirie,SA,5540,Port Pirie,Port Pirie
+Port Lincoln,SA,5606,Port Lincoln,Port Lincoln
+Bunbury,WA,6230,Bunbury,Bunbury
+Dalyellup,WA,6230,Capel,Bunbury
+Eaton,WA,6232,Dardanup,Bunbury
+Busselton,WA,6280,Busselton,Busselton
+Vasse,WA,6280,Busselton,Busselton
+Geraldton,WA,6530,Greater Geraldton,Geraldton
+Wandina,WA,6530,Greater Geraldton,Geraldton
+Kalgoorlie,WA,6430,Kalgoorlie-Boulder,Kalgoorlie
+Mandurah,WA,6210,Mandurah,Mandurah
+Lakelands,WA,6180,Mandurah,Mandurah
+Kyneton,VIC,3444,Macedon Ranges,Melbourne Peri-Urban
+Romsey,VIC,3434,Macedon Ranges,Melbourne Peri-Urban
+Lancefield,VIC,3435,Macedon Ranges,Melbourne Peri-Urban
+Broadford,VIC,3658,Mitchell,Melbourne Peri-Urban
+Seymour,VIC,3660,Mitchell,Melbourne Peri-Urban
+Kilmore,VIC,3764,Mitchell,Melbourne Peri-Urban
+Wallan,VIC,3756,Mitchell,Melbourne Peri-Urban
+Heathcote,VIC,3523,Greater Bendigo,Melbourne Peri-Urban
+Riddells Creek,VIC,3431,Macedon Ranges,Melbourne Peri-Urban
+Macedon,VIC,3440,Macedon Ranges,Melbourne Peri-Urban
+Gisborne,VIC,3437,Macedon Ranges,Melbourne Peri-Urban
+Woodend,VIC,3442,Macedon Ranges,Melbourne Peri-Urban
+Creswick,VIC,3363,Hepburn,Ballarat Peri-Urban
+Daylesford,VIC,3460,Hepburn,Ballarat Peri-Urban
+Clunes,VIC,3370,Hepburn,Ballarat Peri-Urban
+Smythesdale,VIC,3351,Golden Plains,Ballarat Peri-Urban
+Buninyong,VIC,3357,Ballarat,Ballarat Peri-Urban
+Miners Rest,VIC,3352,Ballarat,Ballarat Peri-Urban
+Sebastopol,VIC,3356,Ballarat,Ballarat Peri-Urban
+Winchelsea,VIC,3241,Surf Coast,Geelong Peri-Urban
+Inverleigh,VIC,3321,Golden Plains,Geelong Peri-Urban
+Bannockburn,VIC,3331,Golden Plains,Geelong Peri-Urban
+Lethbridge,VIC,3332,Golden Plains,Geelong Peri-Urban
+Teesdale,VIC,3328,Golden Plains,Geelong Peri-Urban
+Meredith,VIC,3333,Golden Plains,Geelong Peri-Urban
+Castlemaine,VIC,3450,Mount Alexander,Bendigo Peri-Urban
+Kangaroo Flat,VIC,3555,Greater Bendigo,Bendigo Peri-Urban
+Eaglehawk,VIC,3556,Greater Bendigo,Bendigo Peri-Urban
+Strathfieldsaye,VIC,3551,Greater Bendigo,Bendigo Peri-Urban
+Epsom,VIC,3551,Greater Bendigo,Bendigo Peri-Urban
+Huntly,VIC,3551,Greater Bendigo,Bendigo Peri-Urban
+Mooroopna,VIC,3629,Greater Shepparton,Shepparton Peri-Urban
+Kialla,VIC,3631,Greater Shepparton,Shepparton Peri-Urban
+Tatura,VIC,3616,Greater Shepparton,Shepparton Peri-Urban
+Kyabram,VIC,3620,Campaspe,Shepparton Peri-Urban
+Picton,NSW,2571,Wollondilly,Sydney Peri-Urban
+Thirlmere,NSW,2572,Wollondilly,Sydney Peri-Urban
+Tahmoor,NSW,2573,Wollondilly,Sydney Peri-Urban
+Mittagong,NSW,2575,Wingecarribee,Sydney Peri-Urban
+Bowral,NSW,2576,Wingecarribee,Sydney Peri-Urban
+Moss Vale,NSW,2577,Wingecarribee,Sydney Peri-Urban
+Goulburn,NSW,2580,Goulburn Mulwaree,Sydney Peri-Urban
+Camden,NSW,2570,Camden,Sydney Peri-Urban
+Menangle,NSW,2568,Wollondilly,Sydney Peri-Urban
+Cessnock,NSW,2325,Cessnock,Hunter
+Kurri Kurri,NSW,2327,Cessnock,Hunter
+Maitland,NSW,2320,Maitland,Hunter
+Thornton,NSW,2322,Maitland,Hunter
+Rutherford,NSW,2320,Maitland,Hunter
+Telarah,NSW,2320,Maitland,Hunter
+Lochinvar,NSW,2321,Maitland,Hunter
+Warnervale,NSW,2259,Central Coast,Central Coast
+Hamlyn Terrace,NSW,2259,Central Coast,Central Coast
+Kanwal,NSW,2259,Central Coast,Central Coast
+Gorokan,NSW,2263,Central Coast,Central Coast
+Wyong,NSW,2259,Central Coast,Central Coast
+Tuggerah,NSW,2259,Central Coast,Central Coast
+Beaudesert,QLD,4285,Scenic Rim,Brisbane Peri-Urban
+Boonah,QLD,4310,Scenic Rim,Brisbane Peri-Urban
+Laidley,QLD,4341,Lockyer Valley,Brisbane Peri-Urban
+Gatton,QLD,4343,Lockyer Valley,Brisbane Peri-Urban
+Plainland,QLD,4341,Lockyer Valley,Brisbane Peri-Urban
+Fernvale,QLD,4306,Somerset,Brisbane Peri-Urban
+Mildura,VIC,3500,Mildura,Mildura
+Merbein,VIC,3505,Mildura,Mildura
+Red Cliffs,VIC,3496,Mildura,Mildura
+Irymple,VIC,3498,Mildura,Mildura
+Mildura South,VIC,3501,Mildura,Mildura
+Swan Hill,VIC,3585,Swan Hill,Swan Hill
+Robinvale,VIC,3549,Swan Hill,Swan Hill
+Lavington,NSW,2641,Albury,Albury
+Thurgoona,NSW,2640,Albury,Albury
+Springdale Heights,NSW,2641,Albury,Albury
+Wirlinga,NSW,2640,Albury,Albury
+Echuca,VIC,3564,Campaspe,Echuca-Moama
+Moama,NSW,2731,Murray River,Echuca-Moama
+Numurkah,VIC,3636,Moira,Shepparton
+Cobram,VIC,3644,Moira,Shepparton
+Yarrawonga,VIC,3730,Moira,Shepparton
+Benalla,VIC,3672,Benalla,Wangaratta
+Myrtleford,VIC,3737,Alpine,Wangaratta
+Bright,VIC,3741,Alpine,Wangaratta
+Morwell,VIC,3840,Latrobe,Latrobe Valley
+Newborough,VIC,3825,Latrobe,Latrobe Valley
+Churchill,VIC,3842,Latrobe,Latrobe Valley
+Sale,VIC,3850,Wellington,Gippsland
+Bairnsdale,VIC,3875,East Gippsland,Gippsland
+Lakes Entrance,VIC,3909,East Gippsland,Gippsland
+Paynesville,VIC,3880,East Gippsland,Gippsland
+Leongatha,VIC,3953,South Gippsland,South Gippsland
+Korumburra,VIC,3950,South Gippsland,South Gippsland
+Wonthaggi,VIC,3995,Bass Coast,South Gippsland
+Inverloch,VIC,3996,Bass Coast,South Gippsland
+Cowes,VIC,3922,Bass Coast,South Gippsland
+Hastings,VIC,3915,Mornington Peninsula,Mornington Peninsula
+Somerville,VIC,3912,Mornington Peninsula,Mornington Peninsula
+Tyabb,VIC,3913,Mornington Peninsula,Mornington Peninsula
+Baxter,VIC,3911,Frankston,Mornington Peninsula
+Pearcedale,VIC,3912,Casey,Mornington Peninsula
+Lithgow,NSW,2790,Lithgow,Blue Mountains
+Katoomba,NSW,2780,Blue Mountains,Blue Mountains
+Springwood,NSW,2777,Blue Mountains,Blue Mountains
+Blaxland,NSW,2774,Blue Mountains,Blue Mountains
+Glenbrook,NSW,2773,Blue Mountains,Blue Mountains
+Lawson,NSW,2783,Blue Mountains,Blue Mountains
+Hazelbrook,NSW,2779,Blue Mountains,Blue Mountains
+Faulconbridge,NSW,2776,Blue Mountains,Blue Mountains
+Winmalee,NSW,2777,Blue Mountains,Blue Mountains
+Yellow Rock,NSW,2777,Blue Mountains,Blue Mountains
+Mount Victoria,NSW,2786,Blue Mountains,Blue Mountains
+Blackheath,NSW,2785,Blue Mountains,Blue Mountains
+Robertson,NSW,2577,Wingecarribee,Southern Highlands
+Bundanoon,NSW,2578,Wingecarribee,Southern Highlands
+Exeter,NSW,2579,Wingecarribee,Southern Highlands
+Burradoo,NSW,2576,Wingecarribee,Southern Highlands
+Yerrinbool,NSW,2575,Wingecarribee,Southern Highlands
+Balmoral,NSW,2571,Wollondilly,Southern Highlands
+Hill Top,NSW,2575,Wingecarribee,Southern Highlands
+Colo Vale,NSW,2575,Wingecarribee,Southern Highlands
+Welby,NSW,2575,Wingecarribee,Southern Highlands
+Shellharbour,NSW,2529,Shellharbour,Wollongong Outer
+Warilla,NSW,2528,Shellharbour,Wollongong Outer
+Barrack Heights,NSW,2528,Shellharbour,Wollongong Outer
+Lake Illawarra,NSW,2528,Shellharbour,Wollongong Outer
+Oak Flats,NSW,2529,Shellharbour,Wollongong Outer
+Dunmore,NSW,2529,Shellharbour,Wollongong Outer
+Flinders,NSW,2529,Shellharbour,Wollongong Outer
+Kanahooka,NSW,2530,Wollongong,Wollongong Outer
+Kembla Grange,NSW,2526,Wollongong,Wollongong Outer
+Unanderra,NSW,2526,Wollongong,Wollongong Outer
+Fairy Meadow,NSW,2519,Wollongong,Wollongong Outer
+Corrimal,NSW,2518,Wollongong,Wollongong Outer
+Towradgi,NSW,2518,Wollongong,Wollongong Outer
+Thirroul,NSW,2515,Wollongong,Wollongong Outer
+Bulli,NSW,2516,Wollongong,Wollongong Outer
+Helensburgh,NSW,2508,Wollongong,Wollongong Outer
+Port Kembla,NSW,2505,Wollongong,Wollongong Outer
+Berkeley,NSW,2506,Wollongong,Wollongong Outer
+Warrawong,NSW,2502,Wollongong,Wollongong Outer
+Gosford,NSW,2250,Central Coast,Central Coast
+East Gosford,NSW,2250,Central Coast,Central Coast
+West Gosford,NSW,2250,Central Coast,Central Coast
+Point Clare,NSW,2250,Central Coast,Central Coast
+Kariong,NSW,2250,Central Coast,Central Coast
+Somersby,NSW,2250,Central Coast,Central Coast
+Lisarow,NSW,2250,Central Coast,Central Coast
+Narara,NSW,2250,Central Coast,Central Coast
+Wyoming,NSW,2250,Central Coast,Central Coast
+Erina,NSW,2250,Central Coast,Central Coast
+Green Point,NSW,2251,Central Coast,Central Coast
+Terrigal,NSW,2260,Central Coast,Central Coast
+Wamberal,NSW,2260,Central Coast,Central Coast
+The Entrance,NSW,2261,Central Coast,Central Coast
+Long Jetty,NSW,2261,Central Coast,Central Coast
+Bateau Bay,NSW,2261,Central Coast,Central Coast
+Berkeley Vale,NSW,2261,Central Coast,Central Coast
+Tumbi Umbi,NSW,2261,Central Coast,Central Coast
+Blue Haven,NSW,2262,Central Coast,Central Coast
+San Remo,NSW,2262,Central Coast,Central Coast
+Toukley,NSW,2263,Central Coast,Central Coast
+Budgewoi,NSW,2262,Central Coast,Central Coast
+Lake Haven,NSW,2263,Central Coast,Central Coast
+Halekulani,NSW,2262,Central Coast,Central Coast
+Gwandalan,NSW,2259,Central Coast,Central Coast
+Mannering Park,NSW,2259,Central Coast,Central Coast
+Doyalson,NSW,2262,Central Coast,Central Coast
+Woongarrah,NSW,2259,Central Coast,Central Coast
+Wadalba,NSW,2259,Central Coast,Central Coast
+Mardi,NSW,2259,Central Coast,Central Coast
+Fountaindale,NSW,2258,Central Coast,Central Coast
+Niagara Park,NSW,2250,Central Coast,Central Coast
+Beresfield,NSW,2322,Newcastle,Newcastle Outer
+Tarro,NSW,2322,Newcastle,Newcastle Outer
+Sandgate,NSW,2304,Newcastle,Newcastle Outer
+Hexham,NSW,2322,Newcastle,Newcastle Outer
+Maryland,NSW,2287,Newcastle,Newcastle Outer
+Minmi,NSW,2287,Newcastle,Newcastle Outer
+Wallsend,NSW,2287,Newcastle,Newcastle Outer
+Edgeworth,NSW,2285,Lake Macquarie,Newcastle Outer
+Glendale,NSW,2285,Lake Macquarie,Newcastle Outer
+Cardiff,NSW,2285,Lake Macquarie,Newcastle Outer
+Boolaroo,NSW,2284,Lake Macquarie,Newcastle Outer
+Teralba,NSW,2284,Lake Macquarie,Newcastle Outer
+Booragul,NSW,2284,Lake Macquarie,Newcastle Outer
+Speers Point,NSW,2284,Lake Macquarie,Newcastle Outer
+Warners Bay,NSW,2282,Lake Macquarie,Newcastle Outer
+Charlestown,NSW,2290,Lake Macquarie,Newcastle Outer
+Gateshead,NSW,2290,Lake Macquarie,Newcastle Outer
+Morisset,NSW,2264,Lake Macquarie,Newcastle Outer
+Morisset Park,NSW,2264,Lake Macquarie,Newcastle Outer
+Cooranbong,NSW,2265,Lake Macquarie,Newcastle Outer
+Bonnells Bay,NSW,2264,Lake Macquarie,Newcastle Outer
+Silverwater,NSW,2264,Lake Macquarie,Newcastle Outer
+Wyee,NSW,2259,Lake Macquarie,Newcastle Outer
+Dora Creek,NSW,2264,Lake Macquarie,Newcastle Outer
+Singleton,NSW,2330,Singleton,Hunter
+Muswellbrook,NSW,2333,Muswellbrook,Hunter
+Scone,NSW,2337,Upper Hunter,Hunter
+Aberdeen,NSW,2336,Upper Hunter,Hunter
+Dungog,NSW,2420,Dungog,Hunter
+Branxton,NSW,2335,Cessnock,Hunter
+Greta,NSW,2334,Cessnock,Hunter
+Cliftleigh,NSW,2321,Maitland,Hunter
+Farley,NSW,2320,Maitland,Hunter
+Metford,NSW,2323,Maitland,Hunter
+Ashtonfield,NSW,2323,Maitland,Hunter
+East Maitland,NSW,2323,Maitland,Hunter
+Bolwarra,NSW,2320,Maitland,Hunter
+Lorn,NSW,2320,Maitland,Hunter
+Tenambit,NSW,2323,Maitland,Hunter
+Gunnedah,NSW,2380,Gunnedah,Northern NSW
+Narrabri,NSW,2390,Narrabri,Northern NSW
+Inverell,NSW,2360,Inverell,Northern NSW
+Glen Innes,NSW,2370,Glen Innes Severn,Northern NSW
+Moree,NSW,2400,Moree Plains,Northern NSW
+Ballina,NSW,2478,Ballina,Far North Coast
+Byron Bay,NSW,2481,Byron,Far North Coast
+Lennox Head,NSW,2478,Ballina,Far North Coast
+Alstonville,NSW,2477,Ballina,Far North Coast
+Wollongbar,NSW,2477,Ballina,Far North Coast
+Casino,NSW,2470,Richmond Valley,Far North Coast
+Grafton,NSW,2460,Clarence Valley,Far North Coast
+Maclean,NSW,2463,Clarence Valley,Far North Coast
+Moonee Beach,NSW,2450,Coffs Harbour,Mid North Coast
+Sapphire Beach,NSW,2450,Coffs Harbour,Mid North Coast
+Woolgoolga,NSW,2456,Coffs Harbour,Mid North Coast
+Corindi Beach,NSW,2456,Coffs Harbour,Mid North Coast
+Urunga,NSW,2455,Bellingen,Mid North Coast
+Wauchope,NSW,2446,Port Macquarie-Hastings,Mid North Coast
+Laurieton,NSW,2443,Port Macquarie-Hastings,Mid North Coast
+Lake Cathie,NSW,2445,Port Macquarie-Hastings,Mid North Coast
+Bonny Hills,NSW,2445,Port Macquarie-Hastings,Mid North Coast
+Telegraph Point,NSW,2441,Port Macquarie-Hastings,Mid North Coast
+Bomaderry,NSW,2541,Shoalhaven,South Coast NSW
+Worrigee,NSW,2540,Shoalhaven,South Coast NSW
+Cambewarra,NSW,2540,Shoalhaven,South Coast NSW
+Culburra Beach,NSW,2540,Shoalhaven,South Coast NSW
+Callala Beach,NSW,2540,Shoalhaven,South Coast NSW
+Vincentia,NSW,2540,Shoalhaven,South Coast NSW
+Huskisson,NSW,2540,Shoalhaven,South Coast NSW
+Berry,NSW,2535,Shoalhaven,South Coast NSW
+Kangaroo Valley,NSW,2577,Shoalhaven,South Coast NSW
+Batemans Bay,NSW,2536,Eurobodalla,South Coast NSW
+Moruya,NSW,2537,Eurobodalla,South Coast NSW
+Narooma,NSW,2546,Eurobodalla,South Coast NSW
+Merimbula,NSW,2548,Bega Valley,South Coast NSW
+Eden,NSW,2551,Bega Valley,South Coast NSW
+Pambula,NSW,2549,Bega Valley,South Coast NSW
+Tathra,NSW,2550,Bega Valley,South Coast NSW
+Forest Hill,NSW,2651,Wagga Wagga,Riverina
+Tatton,NSW,2650,Wagga Wagga,Riverina
+Estella,NSW,2650,Wagga Wagga,Riverina
+Lloyd,NSW,2650,Wagga Wagga,Riverina
+Springvale,NSW,2650,Wagga Wagga,Riverina
+Glenfield Park,NSW,2650,Wagga Wagga,Riverina
+Yenda,NSW,2681,Griffith,Riverina
+Leeton,NSW,2705,Leeton,Riverina
+Narrandera,NSW,2700,Narrandera,Riverina
+Queanbeyan,NSW,2620,Queanbeyan-Palerang,ACT Surrounds
+Jerrabomberra,NSW,2619,Queanbeyan-Palerang,ACT Surrounds
+Googong,NSW,2620,Queanbeyan-Palerang,ACT Surrounds
+Karabar,NSW,2620,Queanbeyan-Palerang,ACT Surrounds
+Bungendore,NSW,2621,Queanbeyan-Palerang,ACT Surrounds
+Murrumbateman,NSW,2582,Yass Valley,ACT Surrounds
+Yass,NSW,2582,Yass Valley,ACT Surrounds
+Nambour,QLD,4560,Sunshine Coast,Sunshine Coast Hinterland
+Yandina,QLD,4561,Sunshine Coast,Sunshine Coast Hinterland
+Eumundi,QLD,4562,Noosa,Sunshine Coast Hinterland
+Cooroy,QLD,4563,Noosa,Sunshine Coast Hinterland
+Pomona,QLD,4568,Noosa,Sunshine Coast Hinterland
+Mapleton,QLD,4560,Sunshine Coast,Sunshine Coast Hinterland
+Montville,QLD,4560,Sunshine Coast,Sunshine Coast Hinterland
+Maleny,QLD,4552,Sunshine Coast,Sunshine Coast Hinterland
+Mudgeeraba,QLD,4213,Gold Coast,Gold Coast Hinterland
+Worongary,QLD,4213,Gold Coast,Gold Coast Hinterland
+Tallai,QLD,4213,Gold Coast,Gold Coast Hinterland
+Bonogin,QLD,4213,Gold Coast,Gold Coast Hinterland
+Oxenford,QLD,4210,Gold Coast,Gold Coast Hinterland
+Pacific Pines,QLD,4211,Gold Coast,Gold Coast Hinterland
+Maudsland,QLD,4210,Gold Coast,Gold Coast Hinterland
+Kelso,QLD,4815,Townsville,Townsville
+Mount Louisa,QLD,4814,Townsville,Townsville
+Rasmussen,QLD,4815,Townsville,Townsville
+Condon,QLD,4815,Townsville,Townsville
+Cranbrook,QLD,4814,Townsville,Townsville
+Kirwan,QLD,4817,Townsville,Townsville
+Aitkenvale,QLD,4814,Townsville,Townsville
+Mundingburra,QLD,4812,Townsville,Townsville
+Jensen,QLD,4818,Townsville,Townsville
+Redlynch,QLD,4870,Cairns,Cairns
+Caravonica,QLD,4878,Cairns,Cairns
+Kamerunga,QLD,4870,Cairns,Cairns
+Freshwater,QLD,4870,Cairns,Cairns
+Bentley Park,QLD,4869,Cairns,Cairns
+White Rock,QLD,4868,Cairns,Cairns
+Woree,QLD,4868,Cairns,Cairns
+Bayview Heights,QLD,4868,Cairns,Cairns
+Kanimbla,QLD,4870,Cairns,Cairns
+Norman Gardens,QLD,4701,Rockhampton,Rockhampton
+Park Avenue,QLD,4701,Rockhampton,Rockhampton
+Berserker,QLD,4701,Rockhampton,Rockhampton
+Frenchville,QLD,4701,Rockhampton,Rockhampton
+Kawana,QLD,4701,Rockhampton,Rockhampton
+Wandal,QLD,4700,Rockhampton,Rockhampton
+The Range,QLD,4700,Rockhampton,Rockhampton
+Rural View,QLD,4740,Mackay,Mackay
+Eimeo,QLD,4740,Mackay,Mackay
+Blacks Beach,QLD,4740,Mackay,Mackay
+Bucasia,QLD,4750,Mackay,Mackay
+Beaconsfield,QLD,4740,Mackay,Mackay
+Andergrove,QLD,4740,Mackay,Mackay
+Sarina,QLD,4737,Mackay,Mackay
+Kepnock,QLD,4670,Bundaberg,Bundaberg
+Avoca,QLD,4670,Bundaberg,Bundaberg
+Kalkie,QLD,4670,Bundaberg,Bundaberg
+Avenell Heights,QLD,4670,Bundaberg,Bundaberg
+Millbank,QLD,4670,Bundaberg,Bundaberg
+Walkervale,QLD,4670,Bundaberg,Bundaberg
+Norville,QLD,4670,Bundaberg,Bundaberg
+Urangan,QLD,4655,Fraser Coast,Fraser Coast
+Scarness,QLD,4655,Fraser Coast,Fraser Coast
+Torquay,QLD,4655,Fraser Coast,Fraser Coast
+Pialba,QLD,4655,Fraser Coast,Fraser Coast
+Kawungan,QLD,4655,Fraser Coast,Fraser Coast
+Point Vernon,QLD,4655,Fraser Coast,Fraser Coast
+Craignish,QLD,4655,Fraser Coast,Fraser Coast
+Eli Waters,QLD,4655,Fraser Coast,Fraser Coast
+Harristown,QLD,4350,Toowoomba,Toowoomba
+Darling Heights,QLD,4350,Toowoomba,Toowoomba
+Wilsonton,QLD,4350,Toowoomba,Toowoomba
+Middle Ridge,QLD,4350,Toowoomba,Toowoomba
+Rangeville,QLD,4350,Toowoomba,Toowoomba
+Kearneys Spring,QLD,4350,Toowoomba,Toowoomba
+Westbrook,QLD,4350,Toowoomba,Toowoomba
+Cranley,QLD,4350,Toowoomba,Toowoomba
+Clinton,QLD,4680,Gladstone,Gladstone
+Kin Kora,QLD,4680,Gladstone,Gladstone
+New Auckland,QLD,4680,Gladstone,Gladstone
+Callemondah,QLD,4680,Gladstone,Gladstone
+Barney Point,QLD,4680,Gladstone,Gladstone
+Gympie,QLD,4570,Gympie,Gympie
+Maryborough,QLD,4650,Fraser Coast,Fraser Coast
+Kingaroy,QLD,4610,South Burnett,South Burnett
+Warwick,QLD,4370,Southern Downs,Southern Downs
+Stanthorpe,QLD,4380,Southern Downs,Southern Downs
+Roma,QLD,4455,Maranoa,Western QLD
+Longreach,QLD,4730,Longreach,Western QLD
+Nuriootpa,SA,5355,Barossa,Barossa
+Tanunda,SA,5352,Barossa,Barossa
+Angaston,SA,5353,Barossa,Barossa
+Kapunda,SA,5373,Light,Barossa
+Clare,SA,5453,Clare and Gilbert Valleys,Barossa
+Seppeltsfield,SA,5355,Barossa,Barossa
+Greenock,SA,5360,Barossa,Barossa
+Strathalbyn,SA,5255,Alexandrina,Fleurieu
+Goolwa,SA,5214,Alexandrina,Fleurieu
+Port Elliot,SA,5212,Alexandrina,Fleurieu
+Middleton,SA,5213,Alexandrina,Fleurieu
+Langhorne Creek,SA,5255,Alexandrina,Fleurieu
+Currency Creek,SA,5214,Alexandrina,Fleurieu
+Milang,SA,5256,Alexandrina,Fleurieu
+Renmark,SA,5341,Renmark Paringa,Riverland SA
+Berri,SA,5343,Berri Barmera,Riverland SA
+Loxton,SA,5333,Loxton Waikerie,Riverland SA
+Waikerie,SA,5330,Loxton Waikerie,Riverland SA
+Barmera,SA,5345,Berri Barmera,Riverland SA
+Mil Lel,SA,5291,Grant,Limestone Coast
+Penola,SA,5277,Wattle Range,Limestone Coast
+Naracoorte,SA,5271,Naracoorte Lucindale,Limestone Coast
+Keith,SA,5267,Tatiara,Limestone Coast
+Solomontown,SA,5540,Port Pirie,SA Mid North
+Crystal Brook,SA,5523,Port Pirie,SA Mid North
+Stirling North,SA,5710,Port Augusta,SA Mid North
+Whyalla Stuart,SA,5608,Whyalla,SA Mid North
+Kadina,SA,5554,Copper Coast,Copper Coast
+Wallaroo,SA,5556,Copper Coast,Copper Coast
+Moonta,SA,5558,Copper Coast,Copper Coast
+Kingscote,SA,5223,Kangaroo Island,Kangaroo Island
+Northam,WA,6401,Northam,Perth Peri-Urban
+York,WA,6302,York,Perth Peri-Urban
+Toodyay,WA,6566,Toodyay,Perth Peri-Urban
+Gidgegannup,WA,6083,Swan,Perth Peri-Urban
+Sawyers Valley,WA,6074,Mundaring,Perth Peri-Urban
+Chidlow,WA,6556,Mundaring,Perth Peri-Urban
+Wattle Grove,WA,6107,Kalamunda,Perth Peri-Urban
+Forrestfield,WA,6058,Kalamunda,Perth Peri-Urban
+Safety Bay,WA,6169,Rockingham,Perth South
+Waikiki,WA,6169,Rockingham,Perth South
+Shoalwater,WA,6169,Rockingham,Perth South
+Cooloongup,WA,6168,Rockingham,Perth South
+Hillman,WA,6168,Rockingham,Perth South
+Peron,WA,6168,Rockingham,Perth South
+Secret Harbour,WA,6173,Rockingham,Perth South
+Golden Bay,WA,6174,Rockingham,Perth South
+Singleton,WA,6175,Rockingham,Perth South
+Madora Bay,WA,6210,Mandurah,Mandurah
+Dawesville,WA,6211,Mandurah,Mandurah
+Joondalup,WA,6027,Joondalup,Perth North
+Kinross,WA,6028,Joondalup,Perth North
+Connolly,WA,6027,Joondalup,Perth North
+Ocean Reef,WA,6027,Joondalup,Perth North
+Iluka,WA,6028,Joondalup,Perth North
+Burns Beach,WA,6028,Joondalup,Perth North
+Australind,WA,6233,Harvey,Bunbury
+Usher,WA,6230,Bunbury,Bunbury
+Vittoria,WA,6230,Bunbury,Bunbury
+Glen Iris,WA,6230,Bunbury,Bunbury
+College Grove,WA,6230,Bunbury,Bunbury
+Carey Park,WA,6230,Bunbury,Bunbury
+Withers,WA,6230,Bunbury,Bunbury
+Dunsborough,WA,6281,Busselton,Busselton
+Eagle Bay,WA,6281,Busselton,Busselton
+Yallingup,WA,6282,Busselton,Busselton
+Quindalup,WA,6281,Busselton,Busselton
+Abbey,WA,6280,Busselton,Busselton
+Bovell,WA,6280,Busselton,Busselton
+Geographe,WA,6280,Busselton,Busselton
+Harvey,WA,6220,Harvey,South West WA
+Collie,WA,6225,Collie,South West WA
+Bridgetown,WA,6255,Bridgetown-Greenbushes,South West WA
+Manjimup,WA,6258,Manjimup,South West WA
+Margaret River,WA,6285,Augusta-Margaret River,South West WA
+Albany,WA,6330,Albany,Great Southern WA
+Mount Barker,WA,6324,Plantagenet,Great Southern WA
+Narrogin,WA,6312,Narrogin,Wheatbelt
+Merredin,WA,6415,Merredin,Wheatbelt
+Moora,WA,6510,Moora,Wheatbelt
+Spalding,WA,6530,Greater Geraldton,Geraldton
+Utakarra,WA,6530,Greater Geraldton,Geraldton
+Webberton,WA,6530,Greater Geraldton,Geraldton
+Rangeway,WA,6530,Greater Geraldton,Geraldton
+Mahomets Flats,WA,6530,Greater Geraldton,Geraldton
+Karratha,WA,6714,Karratha,Pilbara
+Port Hedland,WA,6721,Port Hedland,Pilbara
+Broome,WA,6725,Broome,Kimberley

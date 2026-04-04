@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grange Land Intelligence — Victoria Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "background": "#fcf9f1", "surface": "#fcf9f1",
+        "surface-container-low": "#f6f4eb", "surface-container": "#f0eee6",
+        "surface-container-high": "#eae8e0", "surface-container-highest": "#e4e2da",
+        "surface-container-lowest": "#ffffff", "surface-dim": "#dcdad2",
+        "on-surface": "#1b1c17", "on-surface-variant": "#4b444d",
+        "outline": "#7d747e", "outline-variant": "#cec3ce",
+        "primary": "#513561", "primary-container": "#6a4c7a",
+        "on-primary": "#ffffff", "on-primary-container": "#e6c1f7",
+        "secondary": "#486456", "secondary-container": "#caead8",
+        "tertiary": "#61323a", "tertiary-container": "#7c4951",
+        "error": "#ba1a1a", "error-container": "#ffdad6",
+      },
+      fontFamily: {
+        "serif": ["Playfair Display", "serif"],
+        "sans": ["Inter", "sans-serif"],
+      },
+    },
+  },
+}
+</script>
+<style>
+body { font-family: 'Inter', sans-serif; background-color: #fcf9f1; color: #1b1c17; }
+.archival-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03; pointer-events: none;
+}
+.scroll-fade::-webkit-scrollbar { width: 4px; }
+.scroll-fade::-webkit-scrollbar-track { background: transparent; }
+.scroll-fade::-webkit-scrollbar-thumb { background: #dcdad2; border-radius: 4px; }
+table th { cursor: pointer; user-select: none; }
+table th:hover { color: #1b1c17; }
+tr.data-row:hover td { background: #f6f4eb; }
+.pill-filter { transition: all 0.2s; }
+.pill-filter:hover { background: #eae8e0; color: #1b1c17; }
+.pill-filter.active { background: #6a4c7a; color: #fff; }
+.corridor-bar { transition: width 0.8s cubic-bezier(0.4,0,0.2,1); }
+</style>
+</head>
+<body class="h-screen overflow-hidden relative">
+<div class="absolute inset-0 archival-grain"></div>
+
+<!-- Sidebar -->
+<aside class="fixed left-0 top-0 h-full flex flex-col py-8 w-64 border-r border-[#dcdad2] bg-[#fcf9f1] z-20">
+  <div class="px-8 mb-12">
+    <div class="text-2xl tracking-[0.3em] font-light text-[#1b1c17] uppercase">Grange</div>
+    <div class="text-[9px] tracking-[0.2em] text-[#1b1c17]/40 uppercase mt-1">Land Intelligence</div>
+  </div>
+  <nav class="flex-1 space-y-1">
+    <a class="flex items-center text-[#6a4c7a] font-bold border-l-2 border-[#6a4c7a] pl-6 py-3 bg-[#f6f4eb]" href="#">
+      <span class="material-symbols-outlined mr-4" style="font-variation-settings:'FILL' 1;">dashboard</span>
+      <span class="text-xs uppercase tracking-[1.2px]">Overview</span>
+    </a>
+    <a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb]" href="#">
+      <span class="material-symbols-outlined mr-4">map</span>
+      <span class="text-xs uppercase tracking-[1.2px]">Geospatial</span>
+    </a>
+    <a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb]" href="#">
+      <span class="material-symbols-outlined mr-4">trending_up</span>
+      <span class="text-xs uppercase tracking-[1.2px]">Price Analysis</span>
+    </a>
+    <a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb]" href="#">
+      <span class="material-symbols-outlined mr-4">speed</span>
+      <span class="text-xs uppercase tracking-[1.2px]">Sales Velocity</span>
+    </a>
+    <a class="flex items-center text-[#1b1c17]/60 font-medium pl-6 py-3 hover:bg-[#f6f4eb]" href="#">
+      <span class="material-symbols-outlined mr-4">analytics</span>
+      <span class="text-xs uppercase tracking-[1.2px]">Benchmarks</span>
+    </a>
+  </nav>
+  <div class="px-6 pt-8 border-t border-[#dcdad2]">
+    <a class="flex items-center text-[#1b1c17]/60 font-medium py-2 hover:bg-[#f6f4eb]" href="#">
+      <span class="material-symbols-outlined mr-4 text-sm">settings</span>
+      <span class="text-[10px] uppercase tracking-[1.2px]">Settings</span>
+    </a>
+  </div>
+</aside>
+
+<!-- Main -->
+<main class="ml-64 h-screen overflow-y-auto scroll-fade bg-[#fcf9f1] flex flex-col items-center">
+  <!-- Top Bar -->
+  <header class="flex justify-between items-center w-full px-12 h-20 border-b border-[#dcdad2] bg-[#fcf9f1] sticky top-0 z-10">
+    <div class="flex items-center gap-8">
+      <nav class="flex gap-6">
+        <a class="text-[#1b1c17] uppercase tracking-[0.2em] text-[10px] font-semibold" href="#">Archive Explorer</a>
+        <a class="text-[#1b1c17]/40 uppercase tracking-[0.2em] text-[10px] font-semibold hover:text-[#486456]" href="#">Field Notes</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-8">
+      <!-- Sold Only Toggle -->
+      <div class="flex items-center gap-3 cursor-pointer" id="soldToggleWrap" onclick="toggleSold()">
+        <span class="text-[10px] uppercase tracking-[0.15em] font-semibold text-[#1b1c17]/50">Sold Only</span>
+        <div class="w-10 h-5 rounded-full bg-[#dcdad2] relative transition-colors" id="soldToggle">
+          <div class="w-4 h-4 rounded-full bg-white absolute top-0.5 left-0.5 transition-all shadow-sm" id="soldDot"></div>
+        </div>
+      </div>
+      <div class="relative">
+        <input class="bg-transparent border-b border-[#dcdad2] focus:border-[#6a4c7a] focus:ring-0 text-[10px] uppercase tracking-widest py-1 pr-8 w-48 placeholder:text-[#1b1c17]/30" placeholder="Search archive..." type="text"/>
+        <span class="material-symbols-outlined absolute right-0 top-1 text-sm text-[#1b1c17]/60">search</span>
+      </div>
+      <span class="material-symbols-outlined text-[#1b1c17]/60 cursor-pointer text-lg">notifications</span>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <div class="w-full max-w-[1400px] flex-1 px-12 py-12">
+    <!-- Hero -->
+    <div class="mb-12">
+      <p class="text-[10px] uppercase tracking-[0.4em] text-[#1b1c17]/40 font-bold mb-3">Victorian Land Market Registry</p>
+      <h1 class="font-serif text-4xl text-[#1b1c17] mb-2" id="heroTitle">Market Overview</h1>
+      <p class="text-[11px] text-[#1b1c17]/40 uppercase tracking-wider" id="heroSub"></p>
+    </div>
+
+    <!-- Metric Row -->
+    <div class="grid grid-cols-6 border-t border-b border-[#dcdad2] py-10 mb-12" id="metricsRow"></div>
+
+    <!-- Corridor Comparison -->
+    <div class="mb-12 p-12 bg-[#f6f4eb]">
+      <div class="flex justify-between items-start mb-10">
+        <div>
+          <h3 class="text-[11px] uppercase tracking-[0.4em] font-bold text-[#1b1c17] mb-2">Growth Corridor Index</h3>
+          <p class="text-[10px] uppercase tracking-[0.1em] text-[#1b1c17]/50 max-w-md leading-relaxed">Comparative analysis across major Victorian growth corridors.</p>
+        </div>
+        <div class="flex gap-6" id="corridorLegend"></div>
+      </div>
+      <div id="corridorBars" class="space-y-6"></div>
+    </div>
+
+    <!-- Two Column: LGA + Discovery -->
+    <div class="grid grid-cols-5 gap-12 mb-12">
+      <!-- LGA Table -->
+      <div class="col-span-3 border border-[#dcdad2] p-10 bg-[#fcf9f1]">
+        <div class="flex justify-between items-end mb-8">
+          <div>
+            <h4 class="text-[10px] uppercase tracking-[0.3em] text-[#1b1c17]/50 mb-2 font-bold">Municipal Registry</h4>
+            <span class="text-2xl font-serif text-[#1b1c17]">LGA Performance</span>
+          </div>
+        </div>
+        <div class="max-h-[400px] overflow-y-auto scroll-fade" id="lgaTableWrap"></div>
+      </div>
+
+      <!-- Discovery Panel -->
+      <div class="col-span-2 space-y-6">
+        <h4 class="text-[11px] uppercase tracking-[0.4em] text-[#1b1c17] font-bold border-b border-[#1b1c17] pb-3">Discovery Index</h4>
+        <div class="flex items-start gap-6 mb-4">
+          <span class="font-sans text-5xl font-medium tracking-tight text-[#1A1A1A]" id="discoveryCount"></span>
+          <div class="pt-2">
+            <p class="font-bold text-[11px] uppercase tracking-widest text-[#1b1c17] mb-1">Active Suburbs Discovered</p>
+            <p class="text-[11px] text-[#1b1c17]/60 leading-relaxed uppercase tracking-tight font-medium">Domain.com.au scan across all Victorian metro and regional postcodes.</p>
+          </div>
+        </div>
+        <div class="max-h-[320px] overflow-y-auto scroll-fade space-y-1" id="discoveryList"></div>
+      </div>
+    </div>
+
+    <!-- Suburb Table -->
+    <div class="mb-12">
+      <div class="flex justify-between items-end mb-6">
+        <div>
+          <h4 class="text-[10px] uppercase tracking-[0.3em] text-[#1b1c17]/50 mb-2 font-bold">Parcel Ledger</h4>
+          <span class="text-2xl font-serif text-[#1b1c17]">Suburb Detail Registry</span>
+        </div>
+        <div class="text-[10px] text-[#1b1c17]/40 uppercase tracking-wider" id="suburbCount"></div>
+      </div>
+      <div class="flex gap-2 mb-6 flex-wrap" id="corridorPills"></div>
+      <div class="border border-[#dcdad2] bg-[#fcf9f1] max-h-[600px] overflow-y-auto scroll-fade" id="suburbTableWrap"></div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="w-full max-w-[1400px] px-12 pb-12 flex justify-between items-center text-[9px] uppercase tracking-[0.4em] font-bold text-[#1b1c17]/30">
+    <div>© 2026 Grange Land Intelligence. All rights reserved.</div>
+    <div class="flex gap-10">
+      <span>Data sourced from Domain.com.au</span>
+      <span id="lastUpdated"></span>
+    </div>
+  </footer>
+</main>
+
+<script>
+const DATA = __DATA__;
+const ACTIVE = __ACTIVE__;
+let soldOnly = false;
+const COLORS = {Western:'#513561',Northern:'#486456','South Eastern':'#61323a','North East':'#7c4951',Ballarat:'#6a4c7a',Geelong:'#314c3f',Bendigo:'#583b68',Shepparton:'#486456','Latrobe Valley':'#61323a','Murray Bridge':'#7c4951'};
+
+function fmt(n){return n?'$'+Math.round(n).toLocaleString():'-'}
+function fmtK(n){if(!n)return'-';return n>=1000000?'$'+(n/1000000).toFixed(1)+'m':n>=1000?'$'+Math.round(n/1000)+'k':fmt(n)}
+function fmtN(n){return n?n.toLocaleString():'0'}
+
+function toggleSold(){
+  soldOnly=!soldOnly;
+  document.getElementById('soldToggle').style.background=soldOnly?'#6a4c7a':'#dcdad2';
+  document.getElementById('soldDot').style.left=soldOnly?'22px':'2px';
+  render();
+}
+
+function render(){
+  const t=DATA.totals;
+  document.getElementById('heroSub').textContent=`${fmtN(t.total)} lots tracked across ${DATA.lgas.length} LGAs · ${DATA.suburbs.length} suburbs in database · ${ACTIVE.length} suburbs discovered`;
+  document.getElementById('lastUpdated').textContent='Updated '+new Date().toLocaleDateString('en-AU',{day:'numeric',month:'short',year:'numeric'});
+
+  // Metrics
+  document.getElementById('metricsRow').innerHTML=[
+    ['Total Tracked',fmtN(t.total)],
+    ['Median Price',fmtK(t.avg_price)],
+    ['Price Per m²','$'+t.avg_rate],
+    ['Avg Lot Size',t.avg_size+'m²'],
+    ['Sold',fmtN(t.sold)],
+    ['Active Listings',fmtN(t.listings)],
+  ].map((m,i)=>`
+    <div class="px-6 ${i<5?'border-r border-[#dcdad2]':''}">
+      <span class="font-sans text-[11px] font-semibold tracking-widest uppercase text-[#888] mb-3 block">${m[0]}</span>
+      <span class="font-sans text-4xl font-medium tracking-tighter text-[#111] block">${m[1]}</span>
+    </div>
+  `).join('');
+
+  // Corridors
+  const maxLots=Math.max(...DATA.corridors.map(c=>c.total));
+  document.getElementById('corridorLegend').innerHTML=DATA.corridors.map(c=>`
+    <div class="flex items-center gap-2">
+      <span class="w-1.5 h-1.5" style="background:${COLORS[c.corridor]||'#513561'}"></span>
+      <span class="text-[9px] uppercase tracking-widest font-bold">${c.corridor}</span>
+    </div>
+  `).join('');
+  
+  document.getElementById('corridorBars').innerHTML=DATA.corridors.map(c=>`
+    <div class="flex items-center gap-6">
+      <div class="w-28 text-right">
+        <span class="text-[11px] font-semibold uppercase tracking-wider text-[#1b1c17]">${c.corridor}</span>
+      </div>
+      <div class="flex-1 h-8 bg-[#eae8e0] relative overflow-hidden">
+        <div class="corridor-bar h-full" style="width:${(c.total/maxLots*100)}%;background:${COLORS[c.corridor]||'#513561'};opacity:0.7"></div>
+        <div class="absolute right-3 top-1.5 text-[10px] font-semibold text-[#1b1c17]/70">${fmtN(c.total)} lots</div>
+      </div>
+      <div class="flex gap-6 min-w-[280px]">
+        <span class="text-[11px] text-[#1b1c17]/60">${fmt(c.avg_price)}</span>
+        <span class="text-[11px] text-[#1b1c17]/60">${c.avg_size}m²</span>
+        <span class="text-[11px] font-semibold text-[#513561]">$${c.avg_rate}/m²</span>
+      </div>
+    </div>
+  `).join('');
+
+  // LGA Table
+  document.getElementById('lgaTableWrap').innerHTML=`<table class="w-full">
+    <thead><tr>
+      <th class="text-left text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">LGA</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Lots</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Sold</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Avg Price</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">$/m²</th>
+    </tr></thead>
+    <tbody>${DATA.lgas.map(l=>`<tr class="data-row">
+      <td class="py-3 px-4 text-[12px] font-medium">${l.lga}<span class="text-[10px] text-[#1b1c17]/40 ml-2">${l.corridor||''}</span></td>
+      <td class="py-3 px-4 text-[12px] text-right">${fmtN(l.total)}</td>
+      <td class="py-3 px-4 text-[12px] text-right text-[#1b1c17]/60">${fmtN(l.sold)}</td>
+      <td class="py-3 px-4 text-[12px] text-right">${fmt(l.avg_price)}</td>
+      <td class="py-3 px-4 text-[12px] text-right font-semibold text-[#513561]">$${l.avg_rate}</td>
+    </tr>`).join('')}</tbody>
+  </table>`;
+
+  // Discovery
+  document.getElementById('discoveryCount').textContent=ACTIVE.length;
+  document.getElementById('discoveryList').innerHTML=ACTIVE.slice(0,80).map(a=>`
+    <div class="flex justify-between py-2 px-3 hover:bg-[#f6f4eb]">
+      <span class="text-[11px] font-medium">${a.suburb}</span>
+      <span class="text-[11px] font-semibold text-[#513561]">${a.listings}</span>
+    </div>
+  `).join('');
+
+  // Suburb pills
+  const corridors=[...new Set(DATA.suburbs.map(s=>s.corridor).filter(Boolean))];
+  document.getElementById('corridorPills').innerHTML=`
+    <button class="pill-filter active px-4 py-1.5 text-[10px] uppercase tracking-[0.15em] font-semibold rounded-full bg-[#6a4c7a] text-white" onclick="filterSubs(null,this)">All</button>
+    ${corridors.map(c=>`<button class="pill-filter px-4 py-1.5 text-[10px] uppercase tracking-[0.15em] font-semibold rounded-full bg-[#eae8e0] text-[#1b1c17]/60" onclick="filterSubs('${c}',this)">${c}</button>`).join('')}
+  `;
+  renderSubs(null);
+}
+
+function filterSubs(c,el){
+  document.querySelectorAll('.pill-filter').forEach(p=>{p.classList.remove('active');p.style.background='#eae8e0';p.style.color='rgba(27,28,23,0.6)';});
+  if(el){el.classList.add('active');el.style.background='#6a4c7a';el.style.color='#fff';}
+  renderSubs(c);
+}
+
+function renderSubs(corridor){
+  let subs=DATA.suburbs;
+  if(corridor)subs=subs.filter(s=>s.corridor===corridor);
+  document.getElementById('suburbCount').textContent=subs.length+' suburbs';
+  document.getElementById('suburbTableWrap').innerHTML=`<table class="w-full">
+    <thead class="sticky top-0 bg-[#fcf9f1]"><tr>
+      <th class="text-left text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Suburb</th>
+      <th class="text-left text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">LGA</th>
+      <th class="text-left text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Corridor</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Lots</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Sold</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Listed</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Avg Price</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">Avg Size</th>
+      <th class="text-right text-[10px] font-bold uppercase tracking-[0.15em] text-[#888] py-3 px-4">$/m²</th>
+    </tr></thead>
+    <tbody>${subs.map(s=>`<tr class="data-row">
+      <td class="py-3 px-4 text-[12px] font-medium">${s.suburb}</td>
+      <td class="py-3 px-4 text-[11px] text-[#1b1c17]/60">${s.lga}</td>
+      <td class="py-3 px-4 text-[11px] text-[#1b1c17]/60">${s.corridor||'-'}</td>
+      <td class="py-3 px-4 text-[12px] text-right font-medium">${fmtN(s.total)}</td>
+      <td class="py-3 px-4 text-[12px] text-right text-[#486456]">${fmtN(s.sold)}</td>
+      <td class="py-3 px-4 text-[12px] text-right text-[#61323a]">${fmtN(s.listings)}</td>
+      <td class="py-3 px-4 text-[12px] text-right">${fmt(s.avg_price)}</td>
+      <td class="py-3 px-4 text-[12px] text-right">${s.avg_size}m²</td>
+      <td class="py-3 px-4 text-[12px] text-right font-semibold text-[#513561]">$${s.avg_rate}</td>
+    </tr>`).join('')}</tbody>
+  </table>`;
+}
+
+render();
+</script>
+</body>
+</html>

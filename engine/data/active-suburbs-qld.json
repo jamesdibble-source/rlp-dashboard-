@@ -1,0 +1,6692 @@
+[
+  {
+    "suburb": "SOUTHSIDE",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 199
+  },
+  {
+    "suburb": "HERVEY BAY",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 194
+  },
+  {
+    "suburb": "MACLEAY ISLAND",
+    "postcode": "4184",
+    "state": "QLD",
+    "listings": 190
+  },
+  {
+    "suburb": "RUSSELL ISLAND",
+    "postcode": "4184",
+    "state": "QLD",
+    "listings": 190
+  },
+  {
+    "suburb": "MOUNT LOW",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 190
+  },
+  {
+    "suburb": "WOODGATE",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 189
+  },
+  {
+    "suburb": "NIKENBAH",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 184
+  },
+  {
+    "suburb": "SOUTH KOLAN",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 179
+  },
+  {
+    "suburb": "MORAYFIELD",
+    "postcode": "4506",
+    "state": "QLD",
+    "listings": 171
+  },
+  {
+    "suburb": "BOHLE PLAINS",
+    "postcode": "4817",
+    "state": "QLD",
+    "listings": 171
+  },
+  {
+    "suburb": "GLENWOOD",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 169
+  },
+  {
+    "suburb": "BANKSIA BEACH",
+    "postcode": "4507",
+    "state": "QLD",
+    "listings": 165
+  },
+  {
+    "suburb": "CABOOLTURE",
+    "postcode": "4510",
+    "state": "QLD",
+    "listings": 165
+  },
+  {
+    "suburb": "RASMUSSEN",
+    "postcode": "4815",
+    "state": "QLD",
+    "listings": 163
+  },
+  {
+    "suburb": "KARALEE",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 161
+  },
+  {
+    "suburb": "WONDUNNA",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 161
+  },
+  {
+    "suburb": "DUNDOWRAN BEACH",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 151
+  },
+  {
+    "suburb": "PARK RIDGE",
+    "postcode": "4125",
+    "state": "QLD",
+    "listings": 148
+  },
+  {
+    "suburb": "BOORAL",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 142
+  },
+  {
+    "suburb": "GYMPIE",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 141
+  },
+  {
+    "suburb": "PARADISE POINT",
+    "postcode": "4216",
+    "state": "QLD",
+    "listings": 136
+  },
+  {
+    "suburb": "BUNDABERG NORTH",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 135
+  },
+  {
+    "suburb": "MAREEBA",
+    "postcode": "4880",
+    "state": "QLD",
+    "listings": 134
+  },
+  {
+    "suburb": "BRANYAN",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 133
+  },
+  {
+    "suburb": "DRAYTON",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 127
+  },
+  {
+    "suburb": "PALM COVE",
+    "postcode": "4879",
+    "state": "QLD",
+    "listings": 120
+  },
+  {
+    "suburb": "BUSHLAND BEACH",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 116
+  },
+  {
+    "suburb": "VETERAN",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 114
+  },
+  {
+    "suburb": "CHATSWORTH",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 112
+  },
+  {
+    "suburb": "MOUNT PERRY",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 110
+  },
+  {
+    "suburb": "CRAIGNISH",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 109
+  },
+  {
+    "suburb": "REDLYNCH",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 108
+  },
+  {
+    "suburb": "HORSESHOE BAY",
+    "postcode": "4819",
+    "state": "QLD",
+    "listings": 107
+  },
+  {
+    "suburb": "EUMUNDI",
+    "postcode": "4562",
+    "state": "QLD",
+    "listings": 106
+  },
+  {
+    "suburb": "BRIDGEMAN DOWNS",
+    "postcode": "4035",
+    "state": "QLD",
+    "listings": 104
+  },
+  {
+    "suburb": "BEACONSFIELD",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 104
+  },
+  {
+    "suburb": "MACKAY",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 104
+  },
+  {
+    "suburb": "JACOBS WELL",
+    "postcode": "4208",
+    "state": "QLD",
+    "listings": 101
+  },
+  {
+    "suburb": "REDBANK PLAINS",
+    "postcode": "4301",
+    "state": "QLD",
+    "listings": 101
+  },
+  {
+    "suburb": "CASTLE HILL",
+    "postcode": "4810",
+    "state": "QLD",
+    "listings": 101
+  },
+  {
+    "suburb": "CABARLAH",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 100
+  },
+  {
+    "suburb": "KAIRABAH",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 98
+  },
+  {
+    "suburb": "YARRABILBA",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 98
+  },
+  {
+    "suburb": "GREENBANK",
+    "postcode": "4124",
+    "state": "QLD",
+    "listings": 97
+  },
+  {
+    "suburb": "CLEVELAND",
+    "postcode": "4163",
+    "state": "QLD",
+    "listings": 97
+  },
+  {
+    "suburb": "HOPE ISLAND",
+    "postcode": "4212",
+    "state": "QLD",
+    "listings": 96
+  },
+  {
+    "suburb": "DOOLANDELLA",
+    "postcode": "4077",
+    "state": "QLD",
+    "listings": 95
+  },
+  {
+    "suburb": "HIGHFIELDS",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 95
+  },
+  {
+    "suburb": "NELLY BAY",
+    "postcode": "4819",
+    "state": "QLD",
+    "listings": 95
+  },
+  {
+    "suburb": "BELLTHORPE",
+    "postcode": "4514",
+    "state": "QLD",
+    "listings": 94
+  },
+  {
+    "suburb": "SMITHFIELD",
+    "postcode": "4878",
+    "state": "QLD",
+    "listings": 89
+  },
+  {
+    "suburb": "COOPERS PLAINS",
+    "postcode": "4108",
+    "state": "QLD",
+    "listings": 88
+  },
+  {
+    "suburb": "TOOGOOM",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 88
+  },
+  {
+    "suburb": "MIARA",
+    "postcode": "4673",
+    "state": "QLD",
+    "listings": 88
+  },
+  {
+    "suburb": "SHOAL POINT",
+    "postcode": "4750",
+    "state": "QLD",
+    "listings": 88
+  },
+  {
+    "suburb": "WOODFORD",
+    "postcode": "4514",
+    "state": "QLD",
+    "listings": 87
+  },
+  {
+    "suburb": "SOVEREIGN ISLANDS",
+    "postcode": "4216",
+    "state": "QLD",
+    "listings": 86
+  },
+  {
+    "suburb": "LAMMERMOOR",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 86
+  },
+  {
+    "suburb": "SOUTHPORT",
+    "postcode": "4215",
+    "state": "QLD",
+    "listings": 85
+  },
+  {
+    "suburb": "BUDERIM",
+    "postcode": "4556",
+    "state": "QLD",
+    "listings": 83
+  },
+  {
+    "suburb": "ROCKYVIEW",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 83
+  },
+  {
+    "suburb": "KEWARRA BEACH",
+    "postcode": "4879",
+    "state": "QLD",
+    "listings": 83
+  },
+  {
+    "suburb": "NEWPORT",
+    "postcode": "4020",
+    "state": "QLD",
+    "listings": 82
+  },
+  {
+    "suburb": "FIG TREE POCKET",
+    "postcode": "4069",
+    "state": "QLD",
+    "listings": 80
+  },
+  {
+    "suburb": "REDLAND BAY",
+    "postcode": "4165",
+    "state": "QLD",
+    "listings": 80
+  },
+  {
+    "suburb": "COLLINGWOOD PARK",
+    "postcode": "4301",
+    "state": "QLD",
+    "listings": 80
+  },
+  {
+    "suburb": "MOUNT LOUISA",
+    "postcode": "4814",
+    "state": "QLD",
+    "listings": 80
+  },
+  {
+    "suburb": "RIVER HEADS",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 79
+  },
+  {
+    "suburb": "YEPPOON",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 78
+  },
+  {
+    "suburb": "BELLMERE",
+    "postcode": "4510",
+    "state": "QLD",
+    "listings": 77
+  },
+  {
+    "suburb": "URANGAN",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 77
+  },
+  {
+    "suburb": "MALENY",
+    "postcode": "4552",
+    "state": "QLD",
+    "listings": 76
+  },
+  {
+    "suburb": "IMBIL",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 76
+  },
+  {
+    "suburb": "ALLIGATOR CREEK",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 76
+  },
+  {
+    "suburb": "KANIMBLA",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 76
+  },
+  {
+    "suburb": "LAMB ISLAND",
+    "postcode": "4184",
+    "state": "QLD",
+    "listings": 75
+  },
+  {
+    "suburb": "SANCTUARY COVE",
+    "postcode": "4212",
+    "state": "QLD",
+    "listings": 74
+  },
+  {
+    "suburb": "DEEBING HEIGHTS",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 74
+  },
+  {
+    "suburb": "PACIFIC HAVEN",
+    "postcode": "4659",
+    "state": "QLD",
+    "listings": 74
+  },
+  {
+    "suburb": "BURNETT HEADS",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 74
+  },
+  {
+    "suburb": "BOYNE ISLAND",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 74
+  },
+  {
+    "suburb": "OXLEY",
+    "postcode": "4075",
+    "state": "QLD",
+    "listings": 73
+  },
+  {
+    "suburb": "GOOBURRUM",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 73
+  },
+  {
+    "suburb": "CARAVONICA",
+    "postcode": "4878",
+    "state": "QLD",
+    "listings": 73
+  },
+  {
+    "suburb": "APPLE TREE CREEK",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 71
+  },
+  {
+    "suburb": "BAHRS SCRUB",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 70
+  },
+  {
+    "suburb": "KURRIMINE BEACH",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 69
+  },
+  {
+    "suburb": "BIRKDALE",
+    "postcode": "4159",
+    "state": "QLD",
+    "listings": 66
+  },
+  {
+    "suburb": "MIDDLE RIDGE",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 66
+  },
+  {
+    "suburb": "RICHMOND",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 66
+  },
+  {
+    "suburb": "BURDELL",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 66
+  },
+  {
+    "suburb": "BROOKWATER",
+    "postcode": "4300",
+    "state": "QLD",
+    "listings": 65
+  },
+  {
+    "suburb": "TRINITY BEACH",
+    "postcode": "4879",
+    "state": "QLD",
+    "listings": 65
+  },
+  {
+    "suburb": "INDOOROOPILLY",
+    "postcode": "4068",
+    "state": "QLD",
+    "listings": 64
+  },
+  {
+    "suburb": "POINT LOOKOUT",
+    "postcode": "4183",
+    "state": "QLD",
+    "listings": 64
+  },
+  {
+    "suburb": "GOODNA",
+    "postcode": "4300",
+    "state": "QLD",
+    "listings": 64
+  },
+  {
+    "suburb": "CHILDERS",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 64
+  },
+  {
+    "suburb": "BARGARA",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 64
+  },
+  {
+    "suburb": "MOORE PARK BEACH",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 64
+  },
+  {
+    "suburb": "CROWS NEST",
+    "postcode": "4355",
+    "state": "QLD",
+    "listings": 63
+  },
+  {
+    "suburb": "TORQUAY",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 63
+  },
+  {
+    "suburb": "BLI BLI",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 62
+  },
+  {
+    "suburb": "TELINA",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 62
+  },
+  {
+    "suburb": "CALAMVALE",
+    "postcode": "4116",
+    "state": "QLD",
+    "listings": 61
+  },
+  {
+    "suburb": "HARRISVILLE",
+    "postcode": "4307",
+    "state": "QLD",
+    "listings": 61
+  },
+  {
+    "suburb": "NAMBOUR",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 61
+  },
+  {
+    "suburb": "DOONAN",
+    "postcode": "4562",
+    "state": "QLD",
+    "listings": 61
+  },
+  {
+    "suburb": "SPRINGBROOK",
+    "postcode": "4213",
+    "state": "QLD",
+    "listings": 60
+  },
+  {
+    "suburb": "MONKLAND",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 60
+  },
+  {
+    "suburb": "GIN GIN",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 60
+  },
+  {
+    "suburb": "MOOROOBOOL",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 60
+  },
+  {
+    "suburb": "DAINTREE",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 60
+  },
+  {
+    "suburb": "BURLEIGH HEADS",
+    "postcode": "4220",
+    "state": "QLD",
+    "listings": 59
+  },
+  {
+    "suburb": "WALLOON",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 59
+  },
+  {
+    "suburb": "KURWONGBAH",
+    "postcode": "4503",
+    "state": "QLD",
+    "listings": 59
+  },
+  {
+    "suburb": "RIPLEY",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 58
+  },
+  {
+    "suburb": "BEERWAH",
+    "postcode": "4519",
+    "state": "QLD",
+    "listings": 58
+  },
+  {
+    "suburb": "SOUTH GLADSTONE",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 58
+  },
+  {
+    "suburb": "CAMP HILL",
+    "postcode": "4152",
+    "state": "QLD",
+    "listings": 57
+  },
+  {
+    "suburb": "WELLINGTON POINT",
+    "postcode": "4160",
+    "state": "QLD",
+    "listings": 57
+  },
+  {
+    "suburb": "LABRADOR",
+    "postcode": "4215",
+    "state": "QLD",
+    "listings": 57
+  },
+  {
+    "suburb": "BUCCA",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 57
+  },
+  {
+    "suburb": "PALLARA",
+    "postcode": "4110",
+    "state": "QLD",
+    "listings": 56
+  },
+  {
+    "suburb": "KALKIE",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 56
+  },
+  {
+    "suburb": "TOWNSVILLE CITY",
+    "postcode": "4810",
+    "state": "QLD",
+    "listings": 56
+  },
+  {
+    "suburb": "SHAILER PARK",
+    "postcode": "4128",
+    "state": "QLD",
+    "listings": 55
+  },
+  {
+    "suburb": "BELLBIRD PARK",
+    "postcode": "4300",
+    "state": "QLD",
+    "listings": 55
+  },
+  {
+    "suburb": "BALGAL BEACH",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 55
+  },
+  {
+    "suburb": "HOLLAND PARK",
+    "postcode": "4121",
+    "state": "QLD",
+    "listings": 54
+  },
+  {
+    "suburb": "ROCHEDALE SOUTH",
+    "postcode": "4123",
+    "state": "QLD",
+    "listings": 54
+  },
+  {
+    "suburb": "BEACHMERE",
+    "postcode": "4510",
+    "state": "QLD",
+    "listings": 54
+  },
+  {
+    "suburb": "PIALBA",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 54
+  },
+  {
+    "suburb": "TANNUM SANDS",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 54
+  },
+  {
+    "suburb": "ROSSLYN",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 54
+  },
+  {
+    "suburb": "MOSSMAN",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 54
+  },
+  {
+    "suburb": "HAMILTON",
+    "postcode": "4007",
+    "state": "QLD",
+    "listings": 53
+  },
+  {
+    "suburb": "COOMERA",
+    "postcode": "4209",
+    "state": "QLD",
+    "listings": 53
+  },
+  {
+    "suburb": "D’AGUILAR",
+    "postcode": "4514",
+    "state": "QLD",
+    "listings": 53
+  },
+  {
+    "suburb": "D'AGUILAR",
+    "postcode": "4514",
+    "state": "QLD",
+    "listings": 53
+  },
+  {
+    "suburb": "MAROOCHYDORE",
+    "postcode": "4558",
+    "state": "QLD",
+    "listings": 53
+  },
+  {
+    "suburb": "VERRIERDALE",
+    "postcode": "4562",
+    "state": "QLD",
+    "listings": 53
+  },
+  {
+    "suburb": "NORTH ISIS",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 53
+  },
+  {
+    "suburb": "ELLIOTT HEADS",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 53
+  },
+  {
+    "suburb": "TRINITY PARK",
+    "postcode": "4879",
+    "state": "QLD",
+    "listings": 53
+  },
+  {
+    "suburb": "WAVELL HEIGHTS",
+    "postcode": "4012",
+    "state": "QLD",
+    "listings": 52
+  },
+  {
+    "suburb": "LOGAN RESERVE",
+    "postcode": "4133",
+    "state": "QLD",
+    "listings": 52
+  },
+  {
+    "suburb": "LOGAN VILLAGE",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 52
+  },
+  {
+    "suburb": "KENSINGTON",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 52
+  },
+  {
+    "suburb": "CALLIOPE",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 52
+  },
+  {
+    "suburb": "PACIFIC HEIGHTS",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 52
+  },
+  {
+    "suburb": "TANBY",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 52
+  },
+  {
+    "suburb": "ROCHEDALE",
+    "postcode": "4123",
+    "state": "QLD",
+    "listings": 51
+  },
+  {
+    "suburb": "CORNUBIA",
+    "postcode": "4130",
+    "state": "QLD",
+    "listings": 51
+  },
+  {
+    "suburb": "SOUTH RIPLEY",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 51
+  },
+  {
+    "suburb": "DEEPWATER",
+    "postcode": "4674",
+    "state": "QLD",
+    "listings": 51
+  },
+  {
+    "suburb": "BERSERKER",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 51
+  },
+  {
+    "suburb": "CLONTARF",
+    "postcode": "4019",
+    "state": "QLD",
+    "listings": 50
+  },
+  {
+    "suburb": "UNDERWOOD",
+    "postcode": "4119",
+    "state": "QLD",
+    "listings": 50
+  },
+  {
+    "suburb": "HELENSVALE",
+    "postcode": "4212",
+    "state": "QLD",
+    "listings": 50
+  },
+  {
+    "suburb": "WHITE ROCK",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 50
+  },
+  {
+    "suburb": "RAVENSBOURNE",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 50
+  },
+  {
+    "suburb": "NARANGBA",
+    "postcode": "4504",
+    "state": "QLD",
+    "listings": 50
+  },
+  {
+    "suburb": "YANDINA",
+    "postcode": "4561",
+    "state": "QLD",
+    "listings": 50
+  },
+  {
+    "suburb": "ASHFIELD",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 50
+  },
+  {
+    "suburb": "BARALABA",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 50
+  },
+  {
+    "suburb": "MOGGILL",
+    "postcode": "4070",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "EIGHT MILE PLAINS",
+    "postcode": "4113",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "UPPER MOUNT GRAVATT",
+    "postcode": "4122",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "GILSTON",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "MERMAID WATERS",
+    "postcode": "4218",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "REEDY CREEK",
+    "postcode": "4227",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "WITHCOTT",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "LAWNTON",
+    "postcode": "4501",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "BURPENGARY",
+    "postcode": "4505",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "SAMFORD VALLEY",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "THE RANGE",
+    "postcode": "4700",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "GRACEMERE",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "INVERNESS",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 49
+  },
+  {
+    "suburb": "TARRAGINDI",
+    "postcode": "4121",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "WELLERS HILL",
+    "postcode": "4121",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "MOUNT WARREN PARK",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "MAUDSLAND",
+    "postcode": "4210",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "ISLE OF CAPRI",
+    "postcode": "4217",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "CHURCHILL",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "MAPLETON",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "VALDORA",
+    "postcode": "4561",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "COOTHARABA",
+    "postcode": "4565",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "MOUNT ARCHER",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "BUNGUNDARRA",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "GREENVALE",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "COOYA BEACH",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "PORT DOUGLAS",
+    "postcode": "4877",
+    "state": "QLD",
+    "listings": 48
+  },
+  {
+    "suburb": "TOOWONG",
+    "postcode": "4066",
+    "state": "QLD",
+    "listings": 47
+  },
+  {
+    "suburb": "FORESTDALE",
+    "postcode": "4118",
+    "state": "QLD",
+    "listings": 47
+  },
+  {
+    "suburb": "LANDSBOROUGH",
+    "postcode": "4550",
+    "state": "QLD",
+    "listings": 47
+  },
+  {
+    "suburb": "WOOMBYE",
+    "postcode": "4559",
+    "state": "QLD",
+    "listings": 47
+  },
+  {
+    "suburb": "HORSE CAMP",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 47
+  },
+  {
+    "suburb": "GLEN EDEN",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 47
+  },
+  {
+    "suburb": "NORTH MACKAY",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 47
+  },
+  {
+    "suburb": "JULATTEN",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 47
+  },
+  {
+    "suburb": "WORONGARY",
+    "postcode": "4213",
+    "state": "QLD",
+    "listings": 46
+  },
+  {
+    "suburb": "BLACKBUTT NORTH",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 46
+  },
+  {
+    "suburb": "DARLING HEIGHTS",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 46
+  },
+  {
+    "suburb": "KALLANGUR",
+    "postcode": "4503",
+    "state": "QLD",
+    "listings": 46
+  },
+  {
+    "suburb": "SHARON",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 46
+  },
+  {
+    "suburb": "ROSEDALE",
+    "postcode": "4674",
+    "state": "QLD",
+    "listings": 46
+  },
+  {
+    "suburb": "JENSEN",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 46
+  },
+  {
+    "suburb": "WHITFIELD",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 46
+  },
+  {
+    "suburb": "COOROIBAH",
+    "postcode": "4565",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "COOLUM BEACH",
+    "postcode": "4573",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "INNES PARK",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "WELCOME CREEK",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "EULEILAH",
+    "postcode": "4674",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "RULES BEACH",
+    "postcode": "4674",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "HIDDEN VALLEY",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "TAROOMBALL",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "DOUGLAS",
+    "postcode": "4814",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "BIBOOHRA",
+    "postcode": "4880",
+    "state": "QLD",
+    "listings": 45
+  },
+  {
+    "suburb": "TARINGA",
+    "postcode": "4068",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "MARSDEN",
+    "postcode": "4132",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "NORMAN PARK",
+    "postcode": "4170",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "DAKABIN",
+    "postcode": "4503",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "NINGI",
+    "postcode": "4511",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "TRAVESTON",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "BURRUM HEADS",
+    "postcode": "4659",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "MOUNT MARIA",
+    "postcode": "4674",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "COOEE BAY",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "MORANBAH",
+    "postcode": "4744",
+    "state": "QLD",
+    "listings": 44
+  },
+  {
+    "suburb": "BOONAH",
+    "postcode": "4310",
+    "state": "QLD",
+    "listings": 43
+  },
+  {
+    "suburb": "MOUNT KYNOCH",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 43
+  },
+  {
+    "suburb": "SPRING HILL",
+    "postcode": "4000",
+    "state": "QLD",
+    "listings": 42
+  },
+  {
+    "suburb": "SALISBURY",
+    "postcode": "4107",
+    "state": "QLD",
+    "listings": 42
+  },
+  {
+    "suburb": "PALMWOODS",
+    "postcode": "4555",
+    "state": "QLD",
+    "listings": 42
+  },
+  {
+    "suburb": "PEREGIAN SPRINGS",
+    "postcode": "4573",
+    "state": "QLD",
+    "listings": 42
+  },
+  {
+    "suburb": "MOOLBOOLAMAN",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 42
+  },
+  {
+    "suburb": "REDCLIFFE",
+    "postcode": "4020",
+    "state": "QLD",
+    "listings": 41
+  },
+  {
+    "suburb": "ASPLEY",
+    "postcode": "4034",
+    "state": "QLD",
+    "listings": 41
+  },
+  {
+    "suburb": "RED HILL",
+    "postcode": "4059",
+    "state": "QLD",
+    "listings": 41
+  },
+  {
+    "suburb": "PADDINGTON",
+    "postcode": "4064",
+    "state": "QLD",
+    "listings": 41
+  },
+  {
+    "suburb": "ELLEN GROVE",
+    "postcode": "4078",
+    "state": "QLD",
+    "listings": 41
+  },
+  {
+    "suburb": "MOUNT GLORIOUS",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 41
+  },
+  {
+    "suburb": "BOYNE VALLEY",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 41
+  },
+  {
+    "suburb": "RURAL VIEW",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 41
+  },
+  {
+    "suburb": "ASCOT",
+    "postcode": "4007",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "MITCHELTON",
+    "postcode": "4053",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "BELLBOWRIE",
+    "postcode": "4070",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "SHERWOOD",
+    "postcode": "4075",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "SUNNYBANK HILLS",
+    "postcode": "4109",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "KURABY",
+    "postcode": "4112",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "WATERFORD WEST",
+    "postcode": "4133",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "CAPALABA",
+    "postcode": "4157",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "SEVEN HILLS",
+    "postcode": "4170",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "HIGHLAND PARK",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "BONOGIN",
+    "postcode": "4213",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "TALLEBUDGERA",
+    "postcode": "4228",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "BUNDAMBA",
+    "postcode": "4304",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "WESTBROOK",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "CABOOLTURE SOUTH",
+    "postcode": "4510",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "KILCOY",
+    "postcode": "4515",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "DULONG",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "NORTH ARM",
+    "postcode": "4561",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "EERWAH VALE",
+    "postcode": "4562",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "KYBONG",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "SCRUBBY CREEK",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "ANDERGROVE",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "GLENELLA",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "MACKAY HARBOUR",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "CLAIRVIEW",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "ROSENEATH",
+    "postcode": "4811",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "BRAMSTON BEACH",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 40
+  },
+  {
+    "suburb": "BARDON",
+    "postcode": "4065",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "HIGHGATE HILL",
+    "postcode": "4101",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "YERONGA",
+    "postcode": "4104",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "MOUNT GRAVATT EAST",
+    "postcode": "4122",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "NEW BEITH",
+    "postcode": "4124",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "LOGANHOLME",
+    "postcode": "4129",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "COORPAROO",
+    "postcode": "4151",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "THORNLANDS",
+    "postcode": "4164",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "BOOVAL",
+    "postcode": "4304",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "MOUNT LOFTY",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "PECHEY",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "DELANEYS CREEK",
+    "postcode": "4514",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "NOOSA HEADS",
+    "postcode": "4567",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "BUXTON",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "CORAL COVE",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "ARCADIA",
+    "postcode": "4819",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "EAST TRINITY",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 39
+  },
+  {
+    "suburb": "UPPER KEDRON",
+    "postcode": "4055",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "CHELMER",
+    "postcode": "4068",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "SUNNYBANK",
+    "postcode": "4109",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "WOODRIDGE",
+    "postcode": "4114",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "TANAH MERAH",
+    "postcode": "4128",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "BURBANK",
+    "postcode": "4156",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "BEENLEIGH",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "EAGLEBY",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "TALLAI",
+    "postcode": "4213",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "PARKWOOD",
+    "postcode": "4214",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "SOUTH STRADBROKE",
+    "postcode": "4216",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "BRASSALL",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "SADLIERS CROSSING",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "FLAXTON",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "PERWILLOWEN",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "MARCOOLA",
+    "postcode": "4564",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "POMONA",
+    "postcode": "4568",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "CURRA",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "TUCHEKOI",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "MOUNT COOLUM",
+    "postcode": "4573",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "TAKURA",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "URRAWEEN",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "BUNDABERG CENTRAL",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "COONARR",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "DELAN",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "WALLAVILLE",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "NORMAN GARDENS",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "MEIKLEVILLE HILL",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "DOLPHIN HEADS",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "EIMEO",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "SLADE POINT",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "HERMIT PARK",
+    "postcode": "4812",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "NOME",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "KAMERUNGA",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "FOREST CREEK",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "CLIFTON BEACH",
+    "postcode": "4879",
+    "state": "QLD",
+    "listings": 38
+  },
+  {
+    "suburb": "RANGEVILLE",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 37
+  },
+  {
+    "suburb": "BELLARA",
+    "postcode": "4507",
+    "state": "QLD",
+    "listings": 37
+  },
+  {
+    "suburb": "DEPOT HILL",
+    "postcode": "4700",
+    "state": "QLD",
+    "listings": 37
+  },
+  {
+    "suburb": "TARANGANBA",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 37
+  },
+  {
+    "suburb": "BLACKS BEACH",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 37
+  },
+  {
+    "suburb": "MACHANS BEACH",
+    "postcode": "4878",
+    "state": "QLD",
+    "listings": 37
+  },
+  {
+    "suburb": "FERNVALE",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 36
+  },
+  {
+    "suburb": "KULPI",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 36
+  },
+  {
+    "suburb": "BURUA",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 36
+  },
+  {
+    "suburb": "MOUNT GARNET",
+    "postcode": "4872",
+    "state": "QLD",
+    "listings": 34
+  },
+  {
+    "suburb": "BRACKEN RIDGE",
+    "postcode": "4017",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "GRACEVILLE",
+    "postcode": "4075",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "MERMAID BEACH",
+    "postcode": "4218",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "COALFALLS",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "WULKURAKA",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "CHUWAR",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "DUGANDAN",
+    "postcode": "4310",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "TOP CAMP",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "GLASS HOUSE MOUNTAINS",
+    "postcode": "4518",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "BANYA",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "PELICAN WATERS",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "HUNCHY",
+    "postcode": "4555",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "MONTVILLE",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "BOLLIER",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "KUTTABUL",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "MAJORS CREEK",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 33
+  },
+  {
+    "suburb": "PETRIE TERRACE",
+    "postcode": "4000",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "HENDRA",
+    "postcode": "4011",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ROTHWELL",
+    "postcode": "4022",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "TANGALOOMA",
+    "postcode": "4025",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "GORDON PARK",
+    "postcode": "4031",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BOONDALL",
+    "postcode": "4034",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CARSELDINE",
+    "postcode": "4034",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "GEEBUNG",
+    "postcode": "4034",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BALD HILLS",
+    "postcode": "4036",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ST LUCIA",
+    "postcode": "4067",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BROOKFIELD",
+    "postcode": "4069",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ROCKLEA",
+    "postcode": "4106",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "LOGANLEA",
+    "postcode": "4131",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "WATERFORD",
+    "postcode": "4133",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CARINA",
+    "postcode": "4152",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ALEXANDRA HILLS",
+    "postcode": "4161",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BETHANIA",
+    "postcode": "4205",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "HOLMVIEW",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "WOLFFDENE",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "PIMPAMA",
+    "postcode": "4209",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "UPPER COOMERA",
+    "postcode": "4209",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CARRARA",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "NERANG",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ASHMORE",
+    "postcode": "4214",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BIGGERA WATERS",
+    "postcode": "4216",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "RUNAWAY BAY",
+    "postcode": "4216",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "SORRENTO",
+    "postcode": "4217",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "PALM BEACH",
+    "postcode": "4221",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CURRUMBIN VALLEY",
+    "postcode": "4223",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CURRUMBIN WATERS",
+    "postcode": "4223",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "VARSITY LAKES",
+    "postcode": "4227",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "EAST IPSWICH",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "IPSWICH",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "HAIGSLEA",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "PEAK CROSSING",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "TAROMEO",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BLUE MOUNTAIN HEIGHTS",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "COTSWOLD HILLS",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "MOUNT RASCAL",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "NEWTOWN",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ROCKVILLE",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "GLENCOE",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "HAMPTON",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "PITTSWORTH",
+    "postcode": "4356",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CYPRESS GARDENS",
+    "postcode": "4357",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CLEAR MOUNTAIN",
+    "postcode": "4500",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "UPPER CABOOLTURE",
+    "postcode": "4510",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "VILLENEUVE",
+    "postcode": "4514",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "WINYA",
+    "postcode": "4515",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ELIMBAH",
+    "postcode": "4516",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "SAMFORD VILLAGE",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "SAMSONVALE",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CALOUNDRA",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "LITTLE MOUNTAIN",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CONONDALE",
+    "postcode": "4552",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "HARPER CREEK",
+    "postcode": "4552",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "GLENVIEW",
+    "postcode": "4553",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "MOOLOOLABA",
+    "postcode": "4557",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BELLI PARK",
+    "postcode": "4562",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "TEWANTIN",
+    "postcode": "4565",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "SUNRISE BEACH",
+    "postcode": "4567",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "FISHERMANS POCKET",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "GLASTONBURY",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "MOTHAR MOUNTAIN",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "NAHRUNDA",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "NEERDIE",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "NORTH DEEP CREEK",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "THE DAWN",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "KIN KIN",
+    "postcode": "4571",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ALEXANDRA HEADLAND",
+    "postcode": "4572",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ELI WATERS",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BURRUM RIVER",
+    "postcode": "4659",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "REDRIDGE",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "SOUTH ISIS",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BUNDABERG SOUTH",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BUNDABERG WEST",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BUNGADOO",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "GAETA",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "WONBAH",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "YANDARAN",
+    "postcode": "4673",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "GLADSTONE HARBOUR",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "KIRKWOOD",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "O'CONNELL",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "WEST GLADSTONE",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ALLENSTOWN",
+    "postcode": "4700",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "PORT CURTIS",
+    "postcode": "4700",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "IRONPOT",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "KOONGAL",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "NANKIN",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "HALIDAY BAY",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "HAY POINT",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ETON",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BUCASIA",
+    "postcode": "4750",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "BELGIAN GARDENS",
+    "postcode": "4810",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CAPE CLEVELAND",
+    "postcode": "4810",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "REID RIVER",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ALICE RIVER",
+    "postcode": "4817",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "KIRWAN",
+    "postcode": "4817",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CAIRNS NORTH",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "EARLVILLE",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "CHILLAGOE",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "ROCKY POINT",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "WHYANBEEL",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 32
+  },
+  {
+    "suburb": "NEW FARM",
+    "postcode": "4005",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "CLAYFIELD",
+    "postcode": "4011",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "WOOLOOWIN",
+    "postcode": "4030",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "KEDRON",
+    "postcode": "4031",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "GAYTHORNE",
+    "postcode": "4051",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "NEWMARKET",
+    "postcode": "4051",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "EVERTON PARK",
+    "postcode": "4053",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "KEPERRA",
+    "postcode": "4054",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BUNYA",
+    "postcode": "4055",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "THE GAP",
+    "postcode": "4061",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "KENMORE",
+    "postcode": "4069",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "MOUNT OMMANEY",
+    "postcode": "4074",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "DURACK",
+    "postcode": "4077",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "TENNYSON",
+    "postcode": "4105",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "ROBERTSON",
+    "postcode": "4109",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "GREENSLOPES",
+    "postcode": "4120",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "SLACKS CREEK",
+    "postcode": "4127",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "SPRINGWOOD",
+    "postcode": "4127",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "CHAMBERS FLAT",
+    "postcode": "4133",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "ORMISTON",
+    "postcode": "4160",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "VICTORIA POINT",
+    "postcode": "4165",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "EAST BRISBANE",
+    "postcode": "4169",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "MORNINGSIDE",
+    "postcode": "4170",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "GUANABA",
+    "postcode": "4210",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "WONGAWALLAN",
+    "postcode": "4210",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BEECHMONT",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "CLAGIRABA",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "MOLENDINAR",
+    "postcode": "4214",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "SURFERS PARADISE",
+    "postcode": "4217",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "TALLEBUDGERA VALLEY",
+    "postcode": "4228",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "REDBANK",
+    "postcode": "4301",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BLACKSTONE",
+    "postcode": "4304",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "EBBW VALE",
+    "postcode": "4304",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "YAMANTO",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BENARKIN",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "WIVENHOE POCKET",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "NOBBY",
+    "postcode": "4360",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "JOYNER",
+    "postcode": "4500",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "GRIFFIN",
+    "postcode": "4503",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BONGAREE",
+    "postcode": "4507",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "PEACHESTER",
+    "postcode": "4519",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "CEDAR CREEK",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "WITTA",
+    "postcode": "4552",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "FOREST GLEN",
+    "postcode": "4556",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "KULUIN",
+    "postcode": "4558",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "KUREELPA",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "ROSEMOUNT",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "MAROOCHY RIVER",
+    "postcode": "4561",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "LAKE MACDONALD",
+    "postcode": "4563",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "MUDJIMBA",
+    "postcode": "4564",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "JONES HILL",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "KANIGAN",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "LAGOON POCKET",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "PATERSON",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "TAMAREE",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "PEREGIAN BEACH",
+    "postcode": "4573",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "DUNDOWRAN",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "KAWUNGAN",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "SCARNESS",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "SUNSHINE ACRES",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "MILLBANK",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "O’CONNELL",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "ROCKHAMPTON CITY",
+    "postcode": "4700",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "KAWANA",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BONDOOLA",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "MOUNT PLEASANT",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BALL BAY",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "FARLEIGH",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "KINCHANT DAM",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "SEAFORTH",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "PALLARENDA",
+    "postcode": "4810",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "RAILWAY ESTATE",
+    "postcode": "4810",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "OAK VALLEY",
+    "postcode": "4811",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BLACK RIVER",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BLUEWATER",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "DEERAGUN",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "PICNIC BAY",
+    "postcode": "4819",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BRINSMEAD",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "FRESHWATER",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "STRATFORD",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "DIMBULAH",
+    "postcode": "4872",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "LOWER DAINTREE",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "WONGA BEACH",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "MOWBRAY",
+    "postcode": "4877",
+    "state": "QLD",
+    "listings": 31
+  },
+  {
+    "suburb": "BANYO",
+    "postcode": "4014",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "BRIGHTON",
+    "postcode": "4017",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "MCDOWALL",
+    "postcode": "4053",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "ARANA HILLS",
+    "postcode": "4054",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "ASHGROVE",
+    "postcode": "4060",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "DARRA",
+    "postcode": "4076",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "BROWNS PLAINS",
+    "postcode": "4118",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "HILLCREST",
+    "postcode": "4118",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "MACKENZIE",
+    "postcode": "4156",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "HEMMANT",
+    "postcode": "4174",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "WYNNUM",
+    "postcode": "4178",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "WYNNUM NORTH",
+    "postcode": "4178",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "WYNNUM PLAZA",
+    "postcode": "4178",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "WYNNUM WEST",
+    "postcode": "4178",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "COOCHIEMUDLO ISLAND",
+    "postcode": "4184",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "BUCCAN",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "SPRINGFIELD",
+    "postcode": "4300",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "BENARKIN NORTH",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "REDWOOD",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "TORRINGTON",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "MERINGANDAN",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "MERINGANDAN WEST",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "WARNER",
+    "postcode": "4500",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "PETRIE",
+    "postcode": "4502",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "MANGO HILL",
+    "postcode": "4509",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "WAMURAN",
+    "postcode": "4512",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "NOOSA NORTH SHORE",
+    "postcode": "4565",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "POINT VERNON",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "HOWARD",
+    "postcode": "4659",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "WINFIELD",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "CLINTON",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "NEW AUCKLAND",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "WURDONG HEIGHTS",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "KEPPEL SANDS",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "PARKHURST",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "HABANA",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "STUART",
+    "postcode": "4811",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "BLUEWATER PARK",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "QUEENTON",
+    "postcode": "4820",
+    "state": "QLD",
+    "listings": 30
+  },
+  {
+    "suburb": "ARCHERFIELD",
+    "postcode": "4108",
+    "state": "QLD",
+    "listings": 28
+  },
+  {
+    "suburb": "FORTITUDE VALLEY",
+    "postcode": "4006",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HERSTON",
+    "postcode": "4006",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ALBION",
+    "postcode": "4010",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NUNDAH",
+    "postcode": "4012",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTHGATE",
+    "postcode": "4013",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NUDGEE",
+    "postcode": "4014",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NUDGEE BEACH",
+    "postcode": "4014",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "VIRGINIA",
+    "postcode": "4014",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DEAGON",
+    "postcode": "4017",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SANDGATE",
+    "postcode": "4017",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SHORNCLIFFE",
+    "postcode": "4017",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TAIGUM",
+    "postcode": "4018",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MARGATE",
+    "postcode": "4019",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODY POINT",
+    "postcode": "4019",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SCARBOROUGH",
+    "postcode": "4020",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KIPPA-RING",
+    "postcode": "4021",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BULWER",
+    "postcode": "4025",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "LUTWYCHE",
+    "postcode": "4030",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WINDSOR",
+    "postcode": "4030",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CHERMSIDE",
+    "postcode": "4032",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CHERMSIDE WEST",
+    "postcode": "4032",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ZILLMERE",
+    "postcode": "4034",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ALBANY CREEK",
+    "postcode": "4035",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EATONS HILL",
+    "postcode": "4037",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ALDERLEY",
+    "postcode": "4051",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ENOGGERA",
+    "postcode": "4051",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GRANGE",
+    "postcode": "4051",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WILSTON",
+    "postcode": "4051",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EVERTON HILLS",
+    "postcode": "4053",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "STAFFORD",
+    "postcode": "4053",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "STAFFORD HEIGHTS",
+    "postcode": "4053",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "FERNY GROVE",
+    "postcode": "4055",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "FERNY HILLS",
+    "postcode": "4055",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KELVIN GROVE",
+    "postcode": "4059",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MILTON",
+    "postcode": "4064",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "AUCHENFLOWER",
+    "postcode": "4066",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CHAPEL HILL",
+    "postcode": "4069",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KENMORE HILLS",
+    "postcode": "4069",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PULLENVALE",
+    "postcode": "4069",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "UPPER BROOKFIELD",
+    "postcode": "4069",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ANSTEAD",
+    "postcode": "4070",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SEVENTEEN MILE ROCKS",
+    "postcode": "4073",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SINNAMON PARK",
+    "postcode": "4073",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "JINDALEE",
+    "postcode": "4074",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "RIVERHILLS",
+    "postcode": "4074",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WESTLAKE",
+    "postcode": "4074",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CORINDA",
+    "postcode": "4075",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "RICHLANDS",
+    "postcode": "4077",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "FOREST LAKE",
+    "postcode": "4078",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST END",
+    "postcode": "4101",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DUTTON PARK",
+    "postcode": "4102",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WOOLLOONGABBA",
+    "postcode": "4102",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ANNERLEY",
+    "postcode": "4103",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "FAIRFIELD",
+    "postcode": "4103",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOOROOKA",
+    "postcode": "4105",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "YEERONGPILLY",
+    "postcode": "4105",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MACGREGOR",
+    "postcode": "4109",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ACACIA RIDGE",
+    "postcode": "4110",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HEATHWOOD",
+    "postcode": "4110",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WILLAWONG",
+    "postcode": "4110",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "RUNCORN",
+    "postcode": "4113",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KINGSTON",
+    "postcode": "4114",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "LOGAN CENTRAL",
+    "postcode": "4114",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ALGESTER",
+    "postcode": "4115",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DREWVALE",
+    "postcode": "4116",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "STRETTON",
+    "postcode": "4116",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KARAWATHA",
+    "postcode": "4117",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HERITAGE PARK",
+    "postcode": "4118",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "REGENTS PARK",
+    "postcode": "4118",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HOLLAND PARK WEST",
+    "postcode": "4121",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MANSFIELD",
+    "postcode": "4122",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT GRAVATT",
+    "postcode": "4122",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WISHART",
+    "postcode": "4122",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BORONIA HEIGHTS",
+    "postcode": "4124",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MUNRUBEN",
+    "postcode": "4125",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DAISY HILL",
+    "postcode": "4127",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CARBROOK",
+    "postcode": "4130",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CARINA HEIGHTS",
+    "postcode": "4152",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CARINDALE",
+    "postcode": "4152",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BELMONT",
+    "postcode": "4153",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GUMDALE",
+    "postcode": "4154",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WAKERLEY",
+    "postcode": "4154",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CHANDLER",
+    "postcode": "4155",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CAPALABA WEST",
+    "postcode": "4157",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SHELDON",
+    "postcode": "4157",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "THORNESIDE",
+    "postcode": "4158",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT COTTON",
+    "postcode": "4165",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CANNON HILL",
+    "postcode": "4170",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BALMORAL",
+    "postcode": "4171",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BULIMBA",
+    "postcode": "4171",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HAWTHORNE",
+    "postcode": "4171",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MURARRIE",
+    "postcode": "4172",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TINGALPA",
+    "postcode": "4173",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "LOTA",
+    "postcode": "4179",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MANLY",
+    "postcode": "4179",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MANLY WEST",
+    "postcode": "4179",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KARRAGARRA ISLAND",
+    "postcode": "4184",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CEDAR CREEK",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EDENS LANDING",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "STEIGLITZ",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WINDAROO",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "YATALA",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KINGSHOLME",
+    "postcode": "4208",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ORMEAU",
+    "postcode": "4208",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ORMEAU HILLS",
+    "postcode": "4208",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WILLOW VALE",
+    "postcode": "4209",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "OXENFORD",
+    "postcode": "4210",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ADVANCETOWN",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GAVEN",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "LOWER BEECHMONT",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT NATHAN",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NUMINBAH VALLEY",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PACIFIC PINES",
+    "postcode": "4211",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MUDGEERABA",
+    "postcode": "4213",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COOMBABAH",
+    "postcode": "4216",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HOLLYWELL",
+    "postcode": "4216",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BENOWA",
+    "postcode": "4217",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BUNDALL",
+    "postcode": "4217",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CHEVRON ISLAND",
+    "postcode": "4217",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MAIN BEACH",
+    "postcode": "4217",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PARADISE WATERS",
+    "postcode": "4217",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BROADBEACH",
+    "postcode": "4218",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BROADBEACH WATERS",
+    "postcode": "4218",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PACIFIC FAIR",
+    "postcode": "4218",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BURLEIGH WATERS",
+    "postcode": "4220",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MIAMI",
+    "postcode": "4220",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ELANORA",
+    "postcode": "4221",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CURRUMBIN",
+    "postcode": "4223",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TUGUN",
+    "postcode": "4224",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BILINGA",
+    "postcode": "4225",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COOLANGATTA",
+    "postcode": "4225",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CLEAR ISLAND WATERS",
+    "postcode": "4226",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MERRIMAC",
+    "postcode": "4226",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ROBINA",
+    "postcode": "4226",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "AUGUSTINE HEIGHTS",
+    "postcode": "4300",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CAMIRA",
+    "postcode": "4300",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GAILES",
+    "postcode": "4300",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SPRING MOUNTAIN",
+    "postcode": "4300",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SPRINGFIELD LAKES",
+    "postcode": "4300",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DINMORE",
+    "postcode": "4303",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "RIVERVIEW",
+    "postcode": "4303",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH BOOVAL",
+    "postcode": "4304",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SILKSTONE",
+    "postcode": "4304",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EASTERN HEIGHTS",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "FLINDERS VIEW",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "LEICHHARDT",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NEWTOWN",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH IPSWICH",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH TIVOLI",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ONE MILE",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "RACEVIEW",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TIVOLI",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODEND",
+    "postcode": "4305",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BARELLAN POINT",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BLACKSOIL",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GLAMORGAN VALE",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KARANA DOWNS",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KARRABIN",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KHOLO",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "LINVILLE",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOORE",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT CROSBY",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PINE MOUNTAIN",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TEELAH",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "VERNOR",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COLEYVILLE",
+    "postcode": "4307",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MUTDAPILLY",
+    "postcode": "4307",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ARATULA",
+    "postcode": "4309",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KALBAR",
+    "postcode": "4309",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOOGERAH",
+    "postcode": "4309",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT ALFORD",
+    "postcode": "4310",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CENTENARY HEIGHTS",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CRANLEY",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EAST TOOWOOMBA",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GLENVALE",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GOWRIE MOUNTAIN",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HARLAXTON",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HARRISTOWN",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KEARNEYS SPRING",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH TOOWOOMBA",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PRINCE HENRY HEIGHTS",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH TOOWOOMBA",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TOOWOOMBA",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TOOWOOMBA CITY",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WILSONTON",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WILSONTON HEIGHTS",
+    "postcode": "4350",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BALLARD",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CAWDOR",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DERRYMORE",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GOWRIE JUNCTION",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HODGSON VALE",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KLEINTON",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MURPHYS CREEK",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PERANGA",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "POSTMANS RIDGE",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "POZIERES",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PRESTON",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SILVER RIDGE",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "UPPER LOCKYER",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "VALE VIEW",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WHITE MOUNTAIN",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WYREEMA",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HADEN",
+    "postcode": "4353",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GOOMBUNGEE",
+    "postcode": "4354",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MILLMERRAN DOWNS",
+    "postcode": "4357",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MILLMERRAN WOODS",
+    "postcode": "4357",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CAMBOOYA",
+    "postcode": "4358",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EAST GREENMOUNT",
+    "postcode": "4359",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GREENMOUNT",
+    "postcode": "4359",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BRAY PARK",
+    "postcode": "4500",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CASHMERE",
+    "postcode": "4500",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "STRATHPINE",
+    "postcode": "4500",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MURRUMBA DOWNS",
+    "postcode": "4503",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WHITESIDE",
+    "postcode": "4503",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BURPENGARY EAST",
+    "postcode": "4505",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WHITE PATCH",
+    "postcode": "4507",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WOORIM",
+    "postcode": "4507",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DECEPTION BAY",
+    "postcode": "4508",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH LAKES",
+    "postcode": "4509",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DONNYBROOK",
+    "postcode": "4510",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ROCKSBERG",
+    "postcode": "4510",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TOORBUL",
+    "postcode": "4510",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SANDSTONE POINT",
+    "postcode": "4511",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT DELANEY",
+    "postcode": "4514",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "STONY CREEK",
+    "postcode": "4514",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HAZELDEAN",
+    "postcode": "4515",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BEERBURRUM",
+    "postcode": "4517",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ARMSTRONG CREEK",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CAMP MOUNTAIN",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CLOSEBURN",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DRAPER",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HIGHVALE",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KOBBLE CREEK",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT NEBO",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT SAMSON",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WIGHTS MOUNTAIN",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "AROONA",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BARINGA",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CALOUNDRA WEST",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CURRIMUNDI",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DICKY BEACH",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GOLDEN BEACH",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KINGS BEACH",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MERIDAN PLAINS",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOFFAT BEACH",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NIRIMBA",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SHELLY BEACH",
+    "postcode": "4551",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BALD KNOB",
+    "postcode": "4552",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH MALENY",
+    "postcode": "4552",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "REESVILLE",
+    "postcode": "4552",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DIAMOND VALLEY",
+    "postcode": "4553",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOOLOOLAH VALLEY",
+    "postcode": "4553",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PALMVIEW",
+    "postcode": "4553",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EUDLO",
+    "postcode": "4554",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ILKLEY",
+    "postcode": "4554",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CHEVALLUM",
+    "postcode": "4555",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MONS",
+    "postcode": "4556",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TANAWHA",
+    "postcode": "4556",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNTAIN CREEK",
+    "postcode": "4557",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DIDDILLIBAH",
+    "postcode": "4559",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KIELS MOUNTAIN",
+    "postcode": "4559",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST WOOMBYE",
+    "postcode": "4559",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BURNSIDE",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COES CREEK",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "IMAGE FLAT",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TOWEN MOUNTAIN",
+    "postcode": "4560",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NINDERRY",
+    "postcode": "4561",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "YANDINA CREEK",
+    "postcode": "4561",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WEYBA DOWNS",
+    "postcode": "4562",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BLACK MOUNTAIN",
+    "postcode": "4563",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CARTERS RIDGE",
+    "postcode": "4563",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COOROY",
+    "postcode": "4563",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COOROY MOUNTAIN",
+    "postcode": "4563",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "RIDGEWOOD",
+    "postcode": "4563",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TINBEERWAH",
+    "postcode": "4563",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PACIFIC PARADISE",
+    "postcode": "4564",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TWIN WATERS",
+    "postcode": "4564",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BOREEN POINT",
+    "postcode": "4565",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "RINGTAIL CREEK",
+    "postcode": "4565",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NOOSAVILLE",
+    "postcode": "4566",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CASTAWAYS BEACH",
+    "postcode": "4567",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SUNSHINE BEACH",
+    "postcode": "4567",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "FEDERAL",
+    "postcode": "4568",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PINBARREN",
+    "postcode": "4568",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COORAN",
+    "postcode": "4569",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "AMAMOOR",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "AMAMOOR CREEK",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ARALUEN",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BANKS POCKET",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BROOLOO",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CEDAR POCKET",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COLES CREEK",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COONDOO",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EAST DEEP CREEK",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GOOMBOORIAN",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GREENS CREEK",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GUNALDA",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KANDANGA",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "LOWER WONGA",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MCINTOSH CREEK",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOOLOO",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PIE CREEK",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SEXTON",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TANDUR",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "THE PALMS",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "VICTORY HEIGHTS",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WALLU",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WIDGEE",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WILSONS POCKET",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WOLVI",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WOOLOOGA",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MARCUS BEACH",
+    "postcode": "4573",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "YAROOMBA",
+    "postcode": "4573",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KENILWORTH",
+    "postcode": "4574",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KIDAMAN CREEK",
+    "postcode": "4574",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "OBI OBI",
+    "postcode": "4574",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BIRTINYA",
+    "postcode": "4575",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BOKARINA",
+    "postcode": "4575",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BUDDINA",
+    "postcode": "4575",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MINYAMA",
+    "postcode": "4575",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WARANA",
+    "postcode": "4575",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WURTULLA",
+    "postcode": "4575",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WALLIGAN",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BEELBI CREEK",
+    "postcode": "4659",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BURRUM TOWN",
+    "postcode": "4659",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ABINGTON",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CORDALBA",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EUREKA",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "FARNSFIELD",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HORTON",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ISIS CENTRAL",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ISIS RIVER",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KULLOGUM",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "AVENELL HEIGHTS",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "AVOCA",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "AVONDALE",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BUNDABERG",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BUNDABERG EAST",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CALAVOS",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KEPNOCK",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KINKUNA",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NORVILLE",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "OAKWOOD",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PINE CREEK",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "QUNABA",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "RUBYANNA",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH BINGERA",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SVENSSON HEIGHTS",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "THABEBAN",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WALKERVALE",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WOONGARRA",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BOOLBOONDA",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BOOYAL",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BULLYARD",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DOUGHBOY",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GOOD NIGHT",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KOLONGA",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MAROONDAN",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MCILWRAITH",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BAFFLE CREEK",
+    "postcode": "4674",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BERAJONDO",
+    "postcode": "4674",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BEECHER",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BENARABY",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GLADSTONE",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KIN KORA",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TOOLOOA",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WANDAL",
+    "postcode": "4700",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "FRENCHVILLE",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "LAKES CREEK",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PARK AVENUE",
+    "postcode": "4701",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ALTON DOWNS",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BOULDERCOMBE",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CAWARRAL",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ETNA CREEK",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KABRA",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MARMOR",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT CHALMERS",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "STANAGE",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WESTWOOD",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ADELAIDE PARK",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BANGALEE",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BARLOWS HILL",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BARMARYEE",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BYFIELD",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COBRABALL",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "FARNBOROUGH",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KINKA BEACH",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "LAKE MARY",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MULAMBIN",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ALLIGATOR CREEK",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BAKERS CREEK",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BALBERRA",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EAST MACKAY",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ERAKALA",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GRASSTREE BEACH",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "OORALEA",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH MACKAY",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "THE LEAP",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST MACKAY",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GARGETT",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HAMPDEN",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT OSSA",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PLEYSTOWE",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NEBO",
+    "postcode": "4742",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH WARD",
+    "postcode": "4810",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH TOWNSVILLE",
+    "postcode": "4810",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST END",
+    "postcode": "4810",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "IDALIA",
+    "postcode": "4811",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "OONOONBA",
+    "postcode": "4811",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WULGURU",
+    "postcode": "4811",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CURRAJONG",
+    "postcode": "4812",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "HYDE PARK",
+    "postcode": "4812",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MUNDINGBURRA",
+    "postcode": "4812",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PIMLICO",
+    "postcode": "4812",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "AITKENVALE",
+    "postcode": "4814",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GARBUTT",
+    "postcode": "4814",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CONDON",
+    "postcode": "4815",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KELSO",
+    "postcode": "4815",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CUNGULLA",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MUTARNEE",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PALUMA",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ROLLINGSTONE",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TOOMULLA",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODSTOCK",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "RANGEWOOD",
+    "postcode": "4817",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SAUNDERS BEACH",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "YABULU",
+    "postcode": "4818",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MAGNETIC ISLAND",
+    "postcode": "4819",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BREDDAN",
+    "postcode": "4820",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CHARTERS TOWERS CITY",
+    "postcode": "4820",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "GRAND SECRET",
+    "postcode": "4820",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MILLCHESTER",
+    "postcode": "4820",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTHERN CROSS",
+    "postcode": "4820",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TOLL",
+    "postcode": "4820",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BUNGALOW",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "EDGE HILL",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MANOORA",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "PARRAMATTA PARK",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "ALOOMBA",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COWLEY BEACH",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "DEERAL",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MENA CREEK",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MIRRIWINNI",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT MOLLOY",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BARRINE",
+    "postcode": "4872",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "KAIRI",
+    "postcode": "4872",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MUTCHILBA",
+    "postcode": "4872",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "TINAROO",
+    "postcode": "4872",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "WALKAMIN",
+    "postcode": "4872",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "BONNIE DOON",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "COW BAY",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "MIALLO",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "SHANNONVALE",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "CRAIGLIE",
+    "postcode": "4877",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "OAK BEACH",
+    "postcode": "4877",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "YORKEYS KNOB",
+    "postcode": "4878",
+    "state": "QLD",
+    "listings": 24
+  },
+  {
+    "suburb": "INALA",
+    "postcode": "4077",
+    "state": "QLD",
+    "listings": 23
+  },
+  {
+    "suburb": "CRESTMEAD",
+    "postcode": "4132",
+    "state": "QLD",
+    "listings": 23
+  },
+  {
+    "suburb": "ARUNDEL",
+    "postcode": "4214",
+    "state": "QLD",
+    "listings": 23
+  },
+  {
+    "suburb": "ROSSLEA",
+    "postcode": "4812",
+    "state": "QLD",
+    "listings": 23
+  },
+  {
+    "suburb": "CRANBROOK",
+    "postcode": "4814",
+    "state": "QLD",
+    "listings": 23
+  },
+  {
+    "suburb": "GEORGETOWN",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 23
+  },
+  {
+    "suburb": "MUNNA CREEK",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 22
+  },
+  {
+    "suburb": "WOOLMAR",
+    "postcode": "4515",
+    "state": "QLD",
+    "listings": 21
+  },
+  {
+    "suburb": "LYONS",
+    "postcode": "4124",
+    "state": "QLD",
+    "listings": 18
+  },
+  {
+    "suburb": "STAPYLTON",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 16
+  },
+  {
+    "suburb": "UPPER GLASTONBURY",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 16
+  },
+  {
+    "suburb": "MONDURAN",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 16
+  },
+  {
+    "suburb": "NEARUM",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 16
+  },
+  {
+    "suburb": "CARRUCHAN",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 16
+  },
+  {
+    "suburb": "BAMBOO",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 16
+  },
+  {
+    "suburb": "PARKINSON",
+    "postcode": "4115",
+    "state": "QLD",
+    "listings": 15
+  },
+  {
+    "suburb": "CONDAMINE FARMS",
+    "postcode": "4357",
+    "state": "QLD",
+    "listings": 15
+  },
+  {
+    "suburb": "YUGAR",
+    "postcode": "4520",
+    "state": "QLD",
+    "listings": 14
+  },
+  {
+    "suburb": "FAIRY BOWER",
+    "postcode": "4700",
+    "state": "QLD",
+    "listings": 14
+  },
+  {
+    "suburb": "BERRINBA",
+    "postcode": "4117",
+    "state": "QLD",
+    "listings": 13
+  },
+  {
+    "suburb": "PARK RIDGE SOUTH",
+    "postcode": "4125",
+    "state": "QLD",
+    "listings": 13
+  },
+  {
+    "suburb": "AMITY",
+    "postcode": "4183",
+    "state": "QLD",
+    "listings": 13
+  },
+  {
+    "suburb": "CAIRNS CITY",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 13
+  },
+  {
+    "suburb": "WATERLOO",
+    "postcode": "4673",
+    "state": "QLD",
+    "listings": 12
+  },
+  {
+    "suburb": "MOODLU",
+    "postcode": "4510",
+    "state": "QLD",
+    "listings": 9
+  },
+  {
+    "suburb": "MORGANVILLE",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 9
+  },
+  {
+    "suburb": "CRIMEA",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 9
+  },
+  {
+    "suburb": "MINGELA",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 9
+  },
+  {
+    "suburb": "MANUNDA",
+    "postcode": "4870",
+    "state": "QLD",
+    "listings": 9
+  },
+  {
+    "suburb": "NEW MAPOON",
+    "postcode": "4876",
+    "state": "QLD",
+    "listings": 9
+  },
+  {
+    "suburb": "COULSON",
+    "postcode": "4310",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "ANDURAMBA",
+    "postcode": "4355",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "SPRINGSIDE",
+    "postcode": "4356",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "CANNING CREEK",
+    "postcode": "4357",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "LILYWOOD",
+    "postcode": "4513",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "SANDY CREEK",
+    "postcode": "4515",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "BOOROOBIN",
+    "postcode": "4552",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "LONG FLAT",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "COOLABINE",
+    "postcode": "4574",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "ALLOWAY",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "DUINGAL",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "WONBAH FOREST",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "CURTIS ISLAND",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "GOGANGO",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "THE CAVES",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "WOWAN",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "MOUNT JUKES",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "LONG ISLAND",
+    "postcode": "4741",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "DYSART",
+    "postcode": "4745",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "MIDDLEMOUNT",
+    "postcode": "4746",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "CAMP CREEK",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "CASSOWARY",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 8
+  },
+  {
+    "suburb": "ALBERTON",
+    "postcode": "4207",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "GEHAM",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "WOOLMER",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "MOUNT KILCOY",
+    "postcode": "4515",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "KUNDA PARK",
+    "postcode": "4556",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "BUNYA CREEK",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "GREAT SANDY STRAIT",
+    "postcode": "4655",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "GREGORY RIVER",
+    "postcode": "4660",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "FAIRYMEAD",
+    "postcode": "4670",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "NEW MOONTA",
+    "postcode": "4671",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "COOWONGA",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "WOODBURY",
+    "postcode": "4703",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "BELMUNDA",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "DUMBLETON",
+    "postcode": "4740",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "TORRENS CREEK",
+    "postcode": "4816",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "THURINGOWA CENTRAL",
+    "postcode": "4817",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "FINLAYVALE",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "NEWELL",
+    "postcode": "4873",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "PRINCE OF WALES",
+    "postcode": "4875",
+    "state": "QLD",
+    "listings": 7
+  },
+  {
+    "suburb": "MOUNT MARROW",
+    "postcode": "4306",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "MUNBILLA",
+    "postcode": "4309",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "OMAN AMA",
+    "postcode": "4352",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "MILLMERRAN",
+    "postcode": "4357",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "GODWIN BEACH",
+    "postcode": "4511",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "ANDERLEIGH",
+    "postcode": "4570",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "GLADSTONE CENTRAL",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "SUN VALLEY",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "TABLELANDS",
+    "postcode": "4680",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "DULULU",
+    "postcode": "4702",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "MORESBY",
+    "postcode": "4871",
+    "state": "QLD",
+    "listings": 6
+  },
+  {
+    "suburb": "HORN",
+    "postcode": "4875",
+    "state": "QLD",
+    "listings": 6
+  }
+]

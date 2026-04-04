@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-04T03:17:27.643Z",
+    "createdAt": "2026-04-04T03:16:07.227Z",
+    "mode": "test",
+    "states": [
+      "ACT"
+    ],
+    "sources": [
+      "domain",
+      "rea"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1,
+    "queueLimit": 1
+  },
+  "queue": [
+    {
+      "id": "ACT:DENMAN PROSPECT:2611",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "DENMAN PROSPECT",
+        "postcode": "2611",
+        "state": "ACT",
+        "listings": 96,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T03:16:07.228Z",
+      "sourceResults": {
+        "domain": {
+          "status": "ok",
+          "count": 26,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T03:17:27.628Z"
+        },
+        "rea": {
+          "status": "ok",
+          "count": 9,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T03:17:27.628Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 27,
+        "inserted": 27,
+        "updated": 0,
+        "finishedAt": "2026-04-04T03:17:27.643Z"
+      }
+    }
+  ]
+}

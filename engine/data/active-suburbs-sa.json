@@ -1,0 +1,2996 @@
+[
+  {
+    "suburb": "MANNUM",
+    "postcode": "5238",
+    "state": "SA",
+    "listings": 187
+  },
+  {
+    "suburb": "ANGLE VALE",
+    "postcode": "5117",
+    "state": "SA",
+    "listings": 186
+  },
+  {
+    "suburb": "COMPTON",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 186
+  },
+  {
+    "suburb": "NORTH HAVEN",
+    "postcode": "5018",
+    "state": "SA",
+    "listings": 163
+  },
+  {
+    "suburb": "NORMANVILLE",
+    "postcode": "5204",
+    "state": "SA",
+    "listings": 162
+  },
+  {
+    "suburb": "STRATHALBYN",
+    "postcode": "5255",
+    "state": "SA",
+    "listings": 153
+  },
+  {
+    "suburb": "MOUNT BARKER",
+    "postcode": "5251",
+    "state": "SA",
+    "listings": 148
+  },
+  {
+    "suburb": "KINGSCOTE",
+    "postcode": "5223",
+    "state": "SA",
+    "listings": 123
+  },
+  {
+    "suburb": "MUNNO PARA WEST",
+    "postcode": "5115",
+    "state": "SA",
+    "listings": 119
+  },
+  {
+    "suburb": "MURRAY BRIDGE",
+    "postcode": "5253",
+    "state": "SA",
+    "listings": 110
+  },
+  {
+    "suburb": "HINDMARSH ISLAND",
+    "postcode": "5214",
+    "state": "SA",
+    "listings": 109
+  },
+  {
+    "suburb": "TAILEM BEND",
+    "postcode": "5260",
+    "state": "SA",
+    "listings": 91
+  },
+  {
+    "suburb": "ELIZABETH PARK",
+    "postcode": "5113",
+    "state": "SA",
+    "listings": 90
+  },
+  {
+    "suburb": "NEW PORT",
+    "postcode": "5015",
+    "state": "SA",
+    "listings": 89
+  },
+  {
+    "suburb": "MUNNO PARA DOWNS",
+    "postcode": "5115",
+    "state": "SA",
+    "listings": 88
+  },
+  {
+    "suburb": "EMU BAY",
+    "postcode": "5223",
+    "state": "SA",
+    "listings": 84
+  },
+  {
+    "suburb": "SWANPORT",
+    "postcode": "5253",
+    "state": "SA",
+    "listings": 83
+  },
+  {
+    "suburb": "DAVOREN PARK",
+    "postcode": "5113",
+    "state": "SA",
+    "listings": 82
+  },
+  {
+    "suburb": "GLENBURNIE",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 76
+  },
+  {
+    "suburb": "VIRGINIA",
+    "postcode": "5120",
+    "state": "SA",
+    "listings": 75
+  },
+  {
+    "suburb": "CLAYTON BAY",
+    "postcode": "5256",
+    "state": "SA",
+    "listings": 74
+  },
+  {
+    "suburb": "ALDINGA BEACH",
+    "postcode": "5173",
+    "state": "SA",
+    "listings": 73
+  },
+  {
+    "suburb": "MOUNT GAMBIER",
+    "postcode": "5290",
+    "state": "SA",
+    "listings": 73
+  },
+  {
+    "suburb": "SUTTONTOWN",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 73
+  },
+  {
+    "suburb": "PARA HILLS",
+    "postcode": "5096",
+    "state": "SA",
+    "listings": 71
+  },
+  {
+    "suburb": "HAYBOROUGH",
+    "postcode": "5211",
+    "state": "SA",
+    "listings": 71
+  },
+  {
+    "suburb": "HOPE VALLEY",
+    "postcode": "5090",
+    "state": "SA",
+    "listings": 70
+  },
+  {
+    "suburb": "ELIZABETH NORTH",
+    "postcode": "5113",
+    "state": "SA",
+    "listings": 69
+  },
+  {
+    "suburb": "MODBURY NORTH",
+    "postcode": "5092",
+    "state": "SA",
+    "listings": 68
+  },
+  {
+    "suburb": "GAWLER SOUTH",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 66
+  },
+  {
+    "suburb": "BELAIR",
+    "postcode": "5052",
+    "state": "SA",
+    "listings": 65
+  },
+  {
+    "suburb": "CAPE JERVIS",
+    "postcode": "5204",
+    "state": "SA",
+    "listings": 64
+  },
+  {
+    "suburb": "BANKSIA PARK",
+    "postcode": "5091",
+    "state": "SA",
+    "listings": 62
+  },
+  {
+    "suburb": "WIRRINA COVE",
+    "postcode": "5204",
+    "state": "SA",
+    "listings": 62
+  },
+  {
+    "suburb": "PORT MACDONNELL",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 62
+  },
+  {
+    "suburb": "SELLICKS BEACH",
+    "postcode": "5174",
+    "state": "SA",
+    "listings": 61
+  },
+  {
+    "suburb": "AMERICAN RIVER",
+    "postcode": "5221",
+    "state": "SA",
+    "listings": 61
+  },
+  {
+    "suburb": "THOMPSON BEACH",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 61
+  },
+  {
+    "suburb": "HIGHBURY",
+    "postcode": "5089",
+    "state": "SA",
+    "listings": 60
+  },
+  {
+    "suburb": "ENCOUNTER BAY",
+    "postcode": "5211",
+    "state": "SA",
+    "listings": 59
+  },
+  {
+    "suburb": "PENNESHAW",
+    "postcode": "5222",
+    "state": "SA",
+    "listings": 59
+  },
+  {
+    "suburb": "PARAFIELD GARDENS",
+    "postcode": "5107",
+    "state": "SA",
+    "listings": 58
+  },
+  {
+    "suburb": "SALISBURY",
+    "postcode": "5108",
+    "state": "SA",
+    "listings": 58
+  },
+  {
+    "suburb": "ELIZABETH GROVE",
+    "postcode": "5112",
+    "state": "SA",
+    "listings": 58
+  },
+  {
+    "suburb": "WALKER FLAT",
+    "postcode": "5238",
+    "state": "SA",
+    "listings": 58
+  },
+  {
+    "suburb": "OB FLAT",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 58
+  },
+  {
+    "suburb": "DERNANCOURT",
+    "postcode": "5075",
+    "state": "SA",
+    "listings": 57
+  },
+  {
+    "suburb": "VALE PARK",
+    "postcode": "5081",
+    "state": "SA",
+    "listings": 57
+  },
+  {
+    "suburb": "SMITHFIELD",
+    "postcode": "5114",
+    "state": "SA",
+    "listings": 57
+  },
+  {
+    "suburb": "O’SULLIVAN BEACH",
+    "postcode": "5166",
+    "state": "SA",
+    "listings": 57
+  },
+  {
+    "suburb": "O'SULLIVAN BEACH",
+    "postcode": "5166",
+    "state": "SA",
+    "listings": 57
+  },
+  {
+    "suburb": "GOOLWA NORTH",
+    "postcode": "5214",
+    "state": "SA",
+    "listings": 57
+  },
+  {
+    "suburb": "PORT ELLIOT",
+    "postcode": "5212",
+    "state": "SA",
+    "listings": 56
+  },
+  {
+    "suburb": "ELIZABETH EAST",
+    "postcode": "5112",
+    "state": "SA",
+    "listings": 55
+  },
+  {
+    "suburb": "ANDREWS FARM",
+    "postcode": "5114",
+    "state": "SA",
+    "listings": 55
+  },
+  {
+    "suburb": "HALLETT COVE",
+    "postcode": "5158",
+    "state": "SA",
+    "listings": 55
+  },
+  {
+    "suburb": "WEST LAKES",
+    "postcode": "5021",
+    "state": "SA",
+    "listings": 54
+  },
+  {
+    "suburb": "EVANSTON",
+    "postcode": "5116",
+    "state": "SA",
+    "listings": 54
+  },
+  {
+    "suburb": "STIRLING",
+    "postcode": "5152",
+    "state": "SA",
+    "listings": 53
+  },
+  {
+    "suburb": "WYNN VALE",
+    "postcode": "5127",
+    "state": "SA",
+    "listings": 52
+  },
+  {
+    "suburb": "NORTHFIELD",
+    "postcode": "5085",
+    "state": "SA",
+    "listings": 51
+  },
+  {
+    "suburb": "LOWER LIGHT",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 51
+  },
+  {
+    "suburb": "FULHAM",
+    "postcode": "5024",
+    "state": "SA",
+    "listings": 50
+  },
+  {
+    "suburb": "ST AGNES",
+    "postcode": "5097",
+    "state": "SA",
+    "listings": 50
+  },
+  {
+    "suburb": "SALISBURY NORTH",
+    "postcode": "5108",
+    "state": "SA",
+    "listings": 50
+  },
+  {
+    "suburb": "ELIZABETH DOWNS",
+    "postcode": "5113",
+    "state": "SA",
+    "listings": 50
+  },
+  {
+    "suburb": "HUNTFIELD HEIGHTS",
+    "postcode": "5163",
+    "state": "SA",
+    "listings": 50
+  },
+  {
+    "suburb": "WINDSOR GARDENS",
+    "postcode": "5087",
+    "state": "SA",
+    "listings": 49
+  },
+  {
+    "suburb": "SECOND VALLEY",
+    "postcode": "5204",
+    "state": "SA",
+    "listings": 49
+  },
+  {
+    "suburb": "VICTOR HARBOR",
+    "postcode": "5211",
+    "state": "SA",
+    "listings": 49
+  },
+  {
+    "suburb": "MIDDLETON",
+    "postcode": "5213",
+    "state": "SA",
+    "listings": 49
+  },
+  {
+    "suburb": "LENSWOOD",
+    "postcode": "5240",
+    "state": "SA",
+    "listings": 49
+  },
+  {
+    "suburb": "KONGORONG",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 49
+  },
+  {
+    "suburb": "TENNYSON",
+    "postcode": "5022",
+    "state": "SA",
+    "listings": 48
+  },
+  {
+    "suburb": "GULFVIEW HEIGHTS",
+    "postcode": "5096",
+    "state": "SA",
+    "listings": 48
+  },
+  {
+    "suburb": "MORPHETT VALE",
+    "postcode": "5162",
+    "state": "SA",
+    "listings": 48
+  },
+  {
+    "suburb": "PORT WILLUNGA",
+    "postcode": "5173",
+    "state": "SA",
+    "listings": 48
+  },
+  {
+    "suburb": "SALISBURY EAST",
+    "postcode": "5109",
+    "state": "SA",
+    "listings": 47
+  },
+  {
+    "suburb": "GAWLER EAST",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 47
+  },
+  {
+    "suburb": "ONKAPARINGA HEIGHTS",
+    "postcode": "5163",
+    "state": "SA",
+    "listings": 47
+  },
+  {
+    "suburb": "CHRISTIES BEACH",
+    "postcode": "5165",
+    "state": "SA",
+    "listings": 47
+  },
+  {
+    "suburb": "FULHAM GARDENS",
+    "postcode": "5024",
+    "state": "SA",
+    "listings": 46
+  },
+  {
+    "suburb": "LOCKLEYS",
+    "postcode": "5032",
+    "state": "SA",
+    "listings": 46
+  },
+  {
+    "suburb": "INGLE FARM",
+    "postcode": "5098",
+    "state": "SA",
+    "listings": 46
+  },
+  {
+    "suburb": "BRIDGEWATER",
+    "postcode": "5155",
+    "state": "SA",
+    "listings": 46
+  },
+  {
+    "suburb": "MARINO",
+    "postcode": "5049",
+    "state": "SA",
+    "listings": 45
+  },
+  {
+    "suburb": "BEAUMONT",
+    "postcode": "5066",
+    "state": "SA",
+    "listings": 45
+  },
+  {
+    "suburb": "EIGHT MILE CREEK",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 45
+  },
+  {
+    "suburb": "LEWISTON",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 45
+  },
+  {
+    "suburb": "PARA HILLS WEST",
+    "postcode": "5096",
+    "state": "SA",
+    "listings": 44
+  },
+  {
+    "suburb": "SALISBURY DOWNS",
+    "postcode": "5108",
+    "state": "SA",
+    "listings": 44
+  },
+  {
+    "suburb": "SAPPHIRETOWN",
+    "postcode": "5222",
+    "state": "SA",
+    "listings": 44
+  },
+  {
+    "suburb": "NEPEAN BAY",
+    "postcode": "5223",
+    "state": "SA",
+    "listings": 44
+  },
+  {
+    "suburb": "GLANVILLE",
+    "postcode": "5015",
+    "state": "SA",
+    "listings": 42
+  },
+  {
+    "suburb": "STURT",
+    "postcode": "5047",
+    "state": "SA",
+    "listings": 41
+  },
+  {
+    "suburb": "BRIGHTON",
+    "postcode": "5048",
+    "state": "SA",
+    "listings": 41
+  },
+  {
+    "suburb": "WOODFORDE",
+    "postcode": "5072",
+    "state": "SA",
+    "listings": 41
+  },
+  {
+    "suburb": "HECTORVILLE",
+    "postcode": "5073",
+    "state": "SA",
+    "listings": 41
+  },
+  {
+    "suburb": "HILLCREST",
+    "postcode": "5086",
+    "state": "SA",
+    "listings": 41
+  },
+  {
+    "suburb": "HARROGATE",
+    "postcode": "5244",
+    "state": "SA",
+    "listings": 41
+  },
+  {
+    "suburb": "CAPE DOUGLAS",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 41
+  },
+  {
+    "suburb": "TWO WELLS",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 41
+  },
+  {
+    "suburb": "ATHELSTONE",
+    "postcode": "5076",
+    "state": "SA",
+    "listings": 40
+  },
+  {
+    "suburb": "SALISBURY HEIGHTS",
+    "postcode": "5109",
+    "state": "SA",
+    "listings": 40
+  },
+  {
+    "suburb": "ELIZABETH",
+    "postcode": "5112",
+    "state": "SA",
+    "listings": 40
+  },
+  {
+    "suburb": "SURREY DOWNS",
+    "postcode": "5126",
+    "state": "SA",
+    "listings": 40
+  },
+  {
+    "suburb": "CHRISTIE DOWNS",
+    "postcode": "5164",
+    "state": "SA",
+    "listings": 40
+  },
+  {
+    "suburb": "MASLIN BEACH",
+    "postcode": "5170",
+    "state": "SA",
+    "listings": 40
+  },
+  {
+    "suburb": "CHITON",
+    "postcode": "5211",
+    "state": "SA",
+    "listings": 40
+  },
+  {
+    "suburb": "ISLAND BEACH",
+    "postcode": "5222",
+    "state": "SA",
+    "listings": 40
+  },
+  {
+    "suburb": "HENLEY BEACH",
+    "postcode": "5022",
+    "state": "SA",
+    "listings": 39
+  },
+  {
+    "suburb": "FINDON",
+    "postcode": "5023",
+    "state": "SA",
+    "listings": 39
+  },
+  {
+    "suburb": "PLYMPTON",
+    "postcode": "5038",
+    "state": "SA",
+    "listings": 39
+  },
+  {
+    "suburb": "MODBURY HEIGHTS",
+    "postcode": "5092",
+    "state": "SA",
+    "listings": 39
+  },
+  {
+    "suburb": "VALLEY VIEW",
+    "postcode": "5093",
+    "state": "SA",
+    "listings": 39
+  },
+  {
+    "suburb": "HAPPY VALLEY",
+    "postcode": "5159",
+    "state": "SA",
+    "listings": 39
+  },
+  {
+    "suburb": "MEADOWS",
+    "postcode": "5201",
+    "state": "SA",
+    "listings": 39
+  },
+  {
+    "suburb": "ROYAL PARK",
+    "postcode": "5014",
+    "state": "SA",
+    "listings": 38
+  },
+  {
+    "suburb": "NETLEY",
+    "postcode": "5037",
+    "state": "SA",
+    "listings": 38
+  },
+  {
+    "suburb": "HAWTHORNDENE",
+    "postcode": "5051",
+    "state": "SA",
+    "listings": 38
+  },
+  {
+    "suburb": "TORRENS PARK",
+    "postcode": "5062",
+    "state": "SA",
+    "listings": 38
+  },
+  {
+    "suburb": "TEA TREE GULLY",
+    "postcode": "5091",
+    "state": "SA",
+    "listings": 38
+  },
+  {
+    "suburb": "MODBURY",
+    "postcode": "5092",
+    "state": "SA",
+    "listings": 38
+  },
+  {
+    "suburb": "KALBEEBA",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 38
+  },
+  {
+    "suburb": "PENFIELD",
+    "postcode": "5121",
+    "state": "SA",
+    "listings": 38
+  },
+  {
+    "suburb": "SHEIDOW PARK",
+    "postcode": "5158",
+    "state": "SA",
+    "listings": 38
+  },
+  {
+    "suburb": "SEACLIFF PARK",
+    "postcode": "5049",
+    "state": "SA",
+    "listings": 37
+  },
+  {
+    "suburb": "CARRICKALINGA",
+    "postcode": "5204",
+    "state": "SA",
+    "listings": 37
+  },
+  {
+    "suburb": "MURRAY BRIDGE EAST",
+    "postcode": "5253",
+    "state": "SA",
+    "listings": 37
+  },
+  {
+    "suburb": "BROWNLOW KI",
+    "postcode": "5223",
+    "state": "SA",
+    "listings": 36
+  },
+  {
+    "suburb": "CAMDEN PARK",
+    "postcode": "5038",
+    "state": "SA",
+    "listings": 34
+  },
+  {
+    "suburb": "DOVER GARDENS",
+    "postcode": "5048",
+    "state": "SA",
+    "listings": 34
+  },
+  {
+    "suburb": "WATTLE PARK",
+    "postcode": "5066",
+    "state": "SA",
+    "listings": 34
+  },
+  {
+    "suburb": "POORAKA",
+    "postcode": "5095",
+    "state": "SA",
+    "listings": 34
+  },
+  {
+    "suburb": "WILLUNGA SOUTH",
+    "postcode": "5172",
+    "state": "SA",
+    "listings": 34
+  },
+  {
+    "suburb": "ADELAIDE",
+    "postcode": "5000",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "DEVON PARK",
+    "postcode": "5008",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "WOODVILLE SOUTH",
+    "postcode": "5011",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "ETHELTON",
+    "postcode": "5015",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "SEATON",
+    "postcode": "5023",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "CRAIGBURN FARM",
+    "postcode": "5051",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "MARDEN",
+    "postcode": "5070",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "GILLES PLAINS",
+    "postcode": "5086",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "PARA VISTA",
+    "postcode": "5093",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "PARALOWIE",
+    "postcode": "5108",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "WATERLOO CORNER",
+    "postcode": "5110",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "BLAKEVIEW",
+    "postcode": "5114",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "HOUGHTON",
+    "postcode": "5131",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "ABERFOYLE PARK",
+    "postcode": "5159",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "OLD REYNELLA",
+    "postcode": "5161",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "BIRDWOOD",
+    "postcode": "5234",
+    "state": "SA",
+    "listings": 33
+  },
+  {
+    "suburb": "WOODVILLE WEST",
+    "postcode": "5011",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "ALBERT PARK",
+    "postcode": "5014",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "PLYMPTON PARK",
+    "postcode": "5038",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "MORPHETTVILLE",
+    "postcode": "5043",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "GLENELG NORTH",
+    "postcode": "5045",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "OAKLANDS PARK",
+    "postcode": "5046",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "WARRADALE",
+    "postcode": "5046",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "NETHERBY",
+    "postcode": "5062",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "PARKSIDE",
+    "postcode": "5063",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "GLEN OSMOND",
+    "postcode": "5064",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "GLENUNGA",
+    "postcode": "5064",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "ERINDALE",
+    "postcode": "5066",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "HAZELWOOD PARK",
+    "postcode": "5066",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "NORWOOD",
+    "postcode": "5067",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "FELIXSTOW",
+    "postcode": "5070",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "MAGILL",
+    "postcode": "5072",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "TRANMERE",
+    "postcode": "5073",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "NEWTON",
+    "postcode": "5074",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "BROADVIEW",
+    "postcode": "5083",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "SEFTON PARK",
+    "postcode": "5083",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "ENFIELD",
+    "postcode": "5085",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "MANNINGHAM",
+    "postcode": "5086",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "VISTA",
+    "postcode": "5091",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "ST KILDA",
+    "postcode": "5110",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "HILLBANK",
+    "postcode": "5112",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "MONTACUTE",
+    "postcode": "5134",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "WOODCROFT",
+    "postcode": "5162",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "MCLAREN VALE",
+    "postcode": "5171",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "ALDINGA",
+    "postcode": "5173",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "LOWER INMAN VALLEY",
+    "postcode": "5211",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "CURRENCY CREEK",
+    "postcode": "5214",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "MOUNT PLEASANT",
+    "postcode": "5235",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "TUNGKILLO",
+    "postcode": "5236",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "MOUNT TORRENS",
+    "postcode": "5244",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "LITTLEHAMPTON",
+    "postcode": "5250",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "NAIRNE",
+    "postcode": "5252",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "CALLINGTON",
+    "postcode": "5254",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "CALOOTE",
+    "postcode": "5254",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "BLACKFELLOWS CAVES",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "GLENCOE",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "DUBLIN",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "MALLALA",
+    "postcode": "5502",
+    "state": "SA",
+    "listings": 32
+  },
+  {
+    "suburb": "WINGFIELD",
+    "postcode": "5013",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "LARGS BAY",
+    "postcode": "5016",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "WEST LAKES SHORE",
+    "postcode": "5020",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "WEST BEACH",
+    "postcode": "5024",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "THEBARTON",
+    "postcode": "5031",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "KURRALTA PARK",
+    "postcode": "5037",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "PANORAMA",
+    "postcode": "5041",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "SOMERTON PARK",
+    "postcode": "5044",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "GLENELG",
+    "postcode": "5045",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "DARLINGTON",
+    "postcode": "5047",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "SEACLIFF",
+    "postcode": "5049",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "SEAVIEW DOWNS",
+    "postcode": "5049",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "ST GEORGES",
+    "postcode": "5064",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "PARADISE",
+    "postcode": "5075",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "BLAIR ATHOL",
+    "postcode": "5084",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "ELIZABETH SOUTH",
+    "postcode": "5112",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "GOLDEN GROVE",
+    "postcode": "5125",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "CRAFERS",
+    "postcode": "5152",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "ECHUNGA",
+    "postcode": "5153",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "UPPER STURT",
+    "postcode": "5156",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "YANKALILLA",
+    "postcode": "5203",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "GOOLWA",
+    "postcode": "5214",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "BAUDIN BEACH",
+    "postcode": "5222",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "YOUNGHUSBAND",
+    "postcode": "5238",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "ROCKLEIGH",
+    "postcode": "5254",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "WELLINGTON",
+    "postcode": "5259",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "WELLINGTON EAST",
+    "postcode": "5259",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "ALLENDALE EAST",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "NENE VALLEY",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "KORUNYE",
+    "postcode": "5502",
+    "state": "SA",
+    "listings": 31
+  },
+  {
+    "suburb": "SEMAPHORE",
+    "postcode": "5019",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "BLACKWOOD",
+    "postcode": "5051",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "COLLINSWOOD",
+    "postcode": "5081",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "DIREK",
+    "postcode": "5110",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "MACDONALD PARK",
+    "postcode": "5121",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "REYNELLA",
+    "postcode": "5161",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "PORT NOARLUNGA SOUTH",
+    "postcode": "5167",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "PELICAN LAGOON",
+    "postcode": "5222",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "FORRESTON",
+    "postcode": "5233",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "BOWHILL",
+    "postcode": "5238",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "WOODSIDE",
+    "postcode": "5244",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "LONG FLAT",
+    "postcode": "5253",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "SUNNYSIDE",
+    "postcode": "5253",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "WHITE SANDS",
+    "postcode": "5253",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "MILANG",
+    "postcode": "5256",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "MIL LEL",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "MIL-LEL",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "WORROLONG",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 30
+  },
+  {
+    "suburb": "NORTH ADELAIDE",
+    "postcode": "5006",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BOWDEN",
+    "postcode": "5007",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BROMPTON",
+    "postcode": "5007",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WELLAND",
+    "postcode": "5007",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CROYDON",
+    "postcode": "5008",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CROYDON PARK",
+    "postcode": "5008",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "RENOWN PARK",
+    "postcode": "5008",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "RIDLEYTON",
+    "postcode": "5008",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST CROYDON",
+    "postcode": "5008",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BEVERLEY",
+    "postcode": "5009",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KILKENNY",
+    "postcode": "5009",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ANGLE PARK",
+    "postcode": "5010",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "FERRYDEN PARK",
+    "postcode": "5010",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "REGENCY PARK",
+    "postcode": "5010",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ST CLAIR",
+    "postcode": "5011",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODVILLE",
+    "postcode": "5011",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODVILLE PARK",
+    "postcode": "5011",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ATHOL PARK",
+    "postcode": "5012",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MANSFIELD PARK",
+    "postcode": "5012",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODVILLE GARDENS",
+    "postcode": "5012",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODVILLE NORTH",
+    "postcode": "5012",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GILLMAN",
+    "postcode": "5013",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "OTTOWAY",
+    "postcode": "5013",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PENNINGTON",
+    "postcode": "5013",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ROSEWATER",
+    "postcode": "5013",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ALBERTON",
+    "postcode": "5014",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CHELTENHAM",
+    "postcode": "5014",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HENDON",
+    "postcode": "5014",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "QUEENSTOWN",
+    "postcode": "5014",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BIRKENHEAD",
+    "postcode": "5015",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PORT ADELAIDE",
+    "postcode": "5015",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "LARGS NORTH",
+    "postcode": "5016",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PETERHEAD",
+    "postcode": "5016",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "OSBORNE",
+    "postcode": "5017",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "TAPEROO",
+    "postcode": "5017",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "OUTER HARBOR",
+    "postcode": "5018",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SEMAPHORE PARK",
+    "postcode": "5019",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SEMAPHORE SOUTH",
+    "postcode": "5019",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GRANGE",
+    "postcode": "5022",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HENLEY BEACH SOUTH",
+    "postcode": "5022",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "FLINDERS PARK",
+    "postcode": "5025",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KIDMAN PARK",
+    "postcode": "5025",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MILE END",
+    "postcode": "5031",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "TORRENSVILLE",
+    "postcode": "5031",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BROOKLYN PARK",
+    "postcode": "5032",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "UNDERDALE",
+    "postcode": "5032",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "RICHMOND",
+    "postcode": "5033",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WEST RICHMOND",
+    "postcode": "5033",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CLARENCE PARK",
+    "postcode": "5034",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "FORESTVILLE",
+    "postcode": "5035",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GLANDORE",
+    "postcode": "5037",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH PLYMPTON",
+    "postcode": "5037",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH PLYMPTON",
+    "postcode": "5038",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "EDWARDSTOWN",
+    "postcode": "5039",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "NOVAR GARDENS",
+    "postcode": "5040",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "DAW PARK",
+    "postcode": "5041",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BEDFORD PARK",
+    "postcode": "5042",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CLOVELLY PARK",
+    "postcode": "5042",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PASADENA",
+    "postcode": "5042",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ST MARYS",
+    "postcode": "5042",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "TONSLEY",
+    "postcode": "5042",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ASCOT PARK",
+    "postcode": "5043",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MARION",
+    "postcode": "5043",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MITCHELL PARK",
+    "postcode": "5043",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PARK HOLME",
+    "postcode": "5043",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GLENGOWRIE",
+    "postcode": "5044",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GLENELG EAST",
+    "postcode": "5045",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SEACOMBE GARDENS",
+    "postcode": "5047",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HOVE",
+    "postcode": "5048",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTH BRIGHTON",
+    "postcode": "5048",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SOUTH BRIGHTON",
+    "postcode": "5048",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KINGSTON PARK",
+    "postcode": "5049",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BELLEVUE HEIGHTS",
+    "postcode": "5050",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "EDEN HILLS",
+    "postcode": "5050",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "COROMANDEL VALLEY",
+    "postcode": "5051",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HYDE PARK",
+    "postcode": "5061",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "UNLEY",
+    "postcode": "5061",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CLAPHAM",
+    "postcode": "5062",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KINGSWOOD",
+    "postcode": "5062",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "LOWER MITCHAM",
+    "postcode": "5062",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MITCHAM",
+    "postcode": "5062",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SPRINGFIELD",
+    "postcode": "5062",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "FULLARTON",
+    "postcode": "5063",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MYRTLE BANK",
+    "postcode": "5064",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "DULWICH",
+    "postcode": "5065",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GLENSIDE",
+    "postcode": "5065",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "LINDEN PARK",
+    "postcode": "5065",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "TUSMORE",
+    "postcode": "5065",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BURNSIDE",
+    "postcode": "5066",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "STONYFELL",
+    "postcode": "5066",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KENSINGTON GARDENS",
+    "postcode": "5068",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KENSINGTON PARK",
+    "postcode": "5068",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ST MORRIS",
+    "postcode": "5068",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "TRINITY GARDENS",
+    "postcode": "5068",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "EVANDALE",
+    "postcode": "5069",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MAYLANDS",
+    "postcode": "5069",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ST PETERS",
+    "postcode": "5069",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "STEPNEY",
+    "postcode": "5069",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "FIRLE",
+    "postcode": "5070",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GLYNDE",
+    "postcode": "5070",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "JOSLIN",
+    "postcode": "5070",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PAYNEHAM",
+    "postcode": "5070",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PAYNEHAM SOUTH",
+    "postcode": "5070",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ROYSTON PARK",
+    "postcode": "5070",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "AULDANA",
+    "postcode": "5072",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ROSSLYN PARK",
+    "postcode": "5072",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SKYE",
+    "postcode": "5072",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "TERINGIE",
+    "postcode": "5072",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ROSTREVOR",
+    "postcode": "5073",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CAMPBELLTOWN",
+    "postcode": "5074",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GILBERTON",
+    "postcode": "5081",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WALKERVILLE",
+    "postcode": "5081",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PROSPECT",
+    "postcode": "5082",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KILBURN",
+    "postcode": "5084",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CLEARVIEW",
+    "postcode": "5085",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "LIGHTSVIEW",
+    "postcode": "5085",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GREENACRES",
+    "postcode": "5086",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HAMPSTEAD GARDENS",
+    "postcode": "5086",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "OAKDEN",
+    "postcode": "5086",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KLEMZIG",
+    "postcode": "5087",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HOLDEN HILL",
+    "postcode": "5088",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MAWSON LAKES",
+    "postcode": "5095",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "REDWOOD PARK",
+    "postcode": "5097",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "RIDGEHAVEN",
+    "postcode": "5097",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WALKLEY HEIGHTS",
+    "postcode": "5098",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BRAHMA LODGE",
+    "postcode": "5109",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SALISBURY PARK",
+    "postcode": "5109",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SALISBURY PLAIN",
+    "postcode": "5109",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BURTON",
+    "postcode": "5110",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GLOBE DERBY PARK",
+    "postcode": "5110",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CRAIGMORE",
+    "postcode": "5114",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ONE TREE HILL",
+    "postcode": "5114",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SMITHFIELD PLAINS",
+    "postcode": "5114",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ULEYBURY",
+    "postcode": "5114",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KUDLA",
+    "postcode": "5115",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MUNNO PARA",
+    "postcode": "5115",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "EVANSTON GARDENS",
+    "postcode": "5116",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "EVANSTON PARK",
+    "postcode": "5116",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "EVANSTON SOUTH",
+    "postcode": "5116",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GAWLER",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GAWLER BELT",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GAWLER WEST",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HEWETT",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "REID",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WILLASTON",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BUCKLAND PARK",
+    "postcode": "5120",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "EYRE",
+    "postcode": "5121",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GREENWITH",
+    "postcode": "5125",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "FAIRVIEW PARK",
+    "postcode": "5126",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "UPPER HERMITAGE",
+    "postcode": "5131",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "NORTON SUMMIT",
+    "postcode": "5136",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GREENHILL",
+    "postcode": "5140",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SUMMERTOWN",
+    "postcode": "5141",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CAREY GULLY",
+    "postcode": "5144",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CRAFERS WEST",
+    "postcode": "5152",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BRADBURY",
+    "postcode": "5153",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HEATHFIELD",
+    "postcode": "5153",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "IRONBANK",
+    "postcode": "5153",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MACCLESFIELD",
+    "postcode": "5153",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MYLOR",
+    "postcode": "5153",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ALDGATE",
+    "postcode": "5154",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ASHBOURNE",
+    "postcode": "5157",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "COROMANDEL EAST",
+    "postcode": "5157",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "O’HALLORAN HILL",
+    "postcode": "5158",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "O'HALLORAN HILL",
+    "postcode": "5158",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "TROTT PARK",
+    "postcode": "5158",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CHANDLERS HILL",
+    "postcode": "5159",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "FLAGSTAFF HILL",
+    "postcode": "5159",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "REYNELLA EAST",
+    "postcode": "5161",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HACKHAM",
+    "postcode": "5163",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HACKHAM WEST",
+    "postcode": "5163",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "ONKAPARINGA HILLS",
+    "postcode": "5163",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PORT NOARLUNGA",
+    "postcode": "5167",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "NOARLUNGA DOWNS",
+    "postcode": "5168",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "OLD NOARLUNGA",
+    "postcode": "5168",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MOANA",
+    "postcode": "5169",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SEAFORD",
+    "postcode": "5169",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SEAFORD HEIGHTS",
+    "postcode": "5169",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SEAFORD MEADOWS",
+    "postcode": "5169",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SEAFORD RISE",
+    "postcode": "5169",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MCLAREN FLAT",
+    "postcode": "5171",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PAGES FLAT",
+    "postcode": "5172",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WILLUNGA",
+    "postcode": "5172",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MYPONGA",
+    "postcode": "5202",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MYPONGA BEACH",
+    "postcode": "5202",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "DELAMERE",
+    "postcode": "5204",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SILVERTON",
+    "postcode": "5204",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MOUNT COMPASS",
+    "postcode": "5210",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HINDMARSH VALLEY",
+    "postcode": "5211",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "INMAN VALLEY",
+    "postcode": "5211",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MCCRACKEN",
+    "postcode": "5211",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WAITPINGA",
+    "postcode": "5211",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GOOLWA BEACH",
+    "postcode": "5214",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GOOLWA SOUTH",
+    "postcode": "5214",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PARNDANA",
+    "postcode": "5220",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "VIVONNE BAY",
+    "postcode": "5223",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KERSBROOK",
+    "postcode": "5231",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CUDLEE CREEK",
+    "postcode": "5232",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "GUMERACHA",
+    "postcode": "5233",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "EDEN VALLEY",
+    "postcode": "5235",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "SPRINGTON",
+    "postcode": "5235",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PALMER",
+    "postcode": "5237",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODLANE",
+    "postcode": "5238",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "LOBETHAL",
+    "postcode": "5241",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BALHANNAH",
+    "postcode": "5242",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "OAKBANK",
+    "postcode": "5243",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "CHARLESTON",
+    "postcode": "5244",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "HAHNDORF",
+    "postcode": "5245",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "BRUKUNGA",
+    "postcode": "5252",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "KANMANTOO",
+    "postcode": "5252",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "MYPOLONGA",
+    "postcode": "5254",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODLANE",
+    "postcode": "5254",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "FINNISS",
+    "postcode": "5255",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WOODCHESTER",
+    "postcode": "5255",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "DONOVANS",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PELICAN POINT",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WANDILO",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "PARHAM",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "WINDSOR",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "REDBANKS",
+    "postcode": "5502",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "LOCHIEL",
+    "postcode": "5510",
+    "state": "SA",
+    "listings": 24
+  },
+  {
+    "suburb": "DUDLEY PARK",
+    "postcode": "5008",
+    "state": "SA",
+    "listings": 23
+  },
+  {
+    "suburb": "ELIZABETH VALE",
+    "postcode": "5112",
+    "state": "SA",
+    "listings": 23
+  },
+  {
+    "suburb": "BEULAH PARK",
+    "postcode": "5067",
+    "state": "SA",
+    "listings": 17
+  },
+  {
+    "suburb": "WONGULLA",
+    "postcode": "5238",
+    "state": "SA",
+    "listings": 15
+  },
+  {
+    "suburb": "HILLIER",
+    "postcode": "5116",
+    "state": "SA",
+    "listings": 14
+  },
+  {
+    "suburb": "NILDOTTIE",
+    "postcode": "5238",
+    "state": "SA",
+    "listings": 14
+  },
+  {
+    "suburb": "TOORA",
+    "postcode": "5253",
+    "state": "SA",
+    "listings": 12
+  },
+  {
+    "suburb": "KINGS PARK",
+    "postcode": "5034",
+    "state": "SA",
+    "listings": 9
+  },
+  {
+    "suburb": "ST IVES",
+    "postcode": "5252",
+    "state": "SA",
+    "listings": 9
+  },
+  {
+    "suburb": "AVON",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 9
+  },
+  {
+    "suburb": "PORT GAWLER",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 9
+  },
+  {
+    "suburb": "WAYVILLE",
+    "postcode": "5034",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "UNLEY PARK",
+    "postcode": "5061",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "EASTWOOD",
+    "postcode": "5063",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "HIGHGATE",
+    "postcode": "5063",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "MOUNT OSMOND",
+    "postcode": "5064",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "LEABROOK",
+    "postcode": "5068",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "KANGARILLA",
+    "postcode": "5157",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "HAY FLAT",
+    "postcode": "5204",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "KARATTA",
+    "postcode": "5223",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "SEDDON",
+    "postcode": "5223",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "CROMER",
+    "postcode": "5235",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "PONDE",
+    "postcode": "5238",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "MOORAK",
+    "postcode": "5291",
+    "state": "SA",
+    "listings": 8
+  },
+  {
+    "suburb": "DRY CREEK",
+    "postcode": "5094",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "YATALA VALE",
+    "postcode": "5126",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "BASKET RANGE",
+    "postcode": "5138",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "ANTECHAMBER BAY",
+    "postcode": "5222",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "PORKY FLAT",
+    "postcode": "5222",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "COWIRRA",
+    "postcode": "5238",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "GREENBANKS",
+    "postcode": "5253",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "ROCKY GULLY",
+    "postcode": "5253",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "ROCKY GULLY",
+    "postcode": "5254",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "MIDDLE BEACH",
+    "postcode": "5501",
+    "state": "SA",
+    "listings": 7
+  },
+  {
+    "suburb": "WARD BELT",
+    "postcode": "5118",
+    "state": "SA",
+    "listings": 6
+  },
+  {
+    "suburb": "AMERICAN BEACH",
+    "postcode": "5222",
+    "state": "SA",
+    "listings": 6
+  },
+  {
+    "suburb": "STOKES BAY",
+    "postcode": "5223",
+    "state": "SA",
+    "listings": 6
+  }
+]

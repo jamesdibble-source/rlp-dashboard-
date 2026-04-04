@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-04T01:54:46.060Z",
+    "createdAt": "2026-04-04T01:53:24.754Z",
+    "mode": "test",
+    "states": [
+      "VIC",
+      "NSW",
+      "QLD",
+      "WA",
+      "SA",
+      "TAS",
+      "NT",
+      "ACT"
+    ],
+    "sources": [
+      "domain",
+      "rea"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1,
+    "queueLimit": 1
+  },
+  "queue": [
+    {
+      "id": "WA:ABBEY:6280",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "ABBEY",
+        "postcode": "6280",
+        "state": "WA",
+        "listings": 48,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T01:53:24.754Z",
+      "sourceResults": {
+        "domain": {
+          "status": "ok",
+          "count": 35,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T01:54:46.055Z"
+        },
+        "rea": {
+          "status": "ok",
+          "count": 2,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T01:54:46.056Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 17,
+        "inserted": 0,
+        "updated": 17,
+        "finishedAt": "2026-04-04T01:54:46.060Z"
+      }
+    }
+  ]
+}

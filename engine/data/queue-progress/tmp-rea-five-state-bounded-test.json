@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-04T00:19:52.415Z",
+    "createdAt": "2026-04-04T00:18:10.910Z",
+    "mode": "test",
+    "states": [
+      "VIC",
+      "NSW",
+      "QLD",
+      "WA",
+      "SA"
+    ],
+    "sources": [
+      "rea"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1,
+    "queueLimit": 5
+  },
+  "queue": [
+    {
+      "id": "WA:ABBEY:6280",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "ABBEY",
+        "postcode": "6280",
+        "state": "WA",
+        "listings": 48,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T00:18:10.911Z",
+      "sourceResults": {
+        "rea": {
+          "status": "ok",
+          "count": 2,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T00:18:56.396Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 2,
+        "inserted": 0,
+        "updated": 2,
+        "finishedAt": "2026-04-04T00:18:56.398Z"
+      }
+    },
+    {
+      "id": "NSW:ABBOTSBURY:2176",
+      "priority": 2,
+      "mode": "test",
+      "target": {
+        "suburb": "ABBOTSBURY",
+        "postcode": "2176",
+        "state": "NSW",
+        "listings": 24,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T00:18:56.398Z",
+      "sourceResults": {
+        "rea": {
+          "status": "ok",
+          "count": 0,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T00:19:52.414Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 0,
+        "inserted": 0,
+        "updated": 0,
+        "finishedAt": "2026-04-04T00:19:52.415Z"
+      }
+    },
+    {
+      "id": "VIC:ABBOTSFORD:3067",
+      "priority": 3,
+      "mode": "test",
+      "target": {
+        "suburb": "ABBOTSFORD",
+        "postcode": "3067",
+        "state": "VIC",
+        "listings": 31,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "pending",
+      "attempts": 0,
+      "lastRunAt": null,
+      "sourceResults": {},
+      "reaMaxListings": null,
+      "reaDateRange": null
+    },
+    {
+      "id": "NSW:ABERCROMBIE:2795",
+      "priority": 4,
+      "mode": "test",
+      "target": {
+        "suburb": "ABERCROMBIE",
+        "postcode": "2795",
+        "state": "NSW",
+        "listings": 58,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "pending",
+      "attempts": 0,
+      "lastRunAt": null,
+      "sourceResults": {},
+      "reaMaxListings": null,
+      "reaDateRange": null
+    },
+    {
+      "id": "NSW:ABERCROMBIE RIVER:2795",
+      "priority": 5,
+      "mode": "test",
+      "target": {
+        "suburb": "ABERCROMBIE RIVER",
+        "postcode": "2795",
+        "state": "NSW",
+        "listings": 6,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "pending",
+      "attempts": 0,
+      "lastRunAt": null,
+      "sourceResults": {},
+      "reaMaxListings": null,
+      "reaDateRange": null
+    }
+  ]
+}

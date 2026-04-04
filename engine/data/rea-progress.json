@@ -1,0 +1,12 @@
+{
+  "startedAt": "2026-04-04T08:42:01.428Z",
+  "lastSuburb": "Rockbank",
+  "completedSuburbs": [
+    "Sunbury|VIC|3429",
+    "Diggers Rest|VIC|3427",
+    "Rockbank|VIC|3335"
+  ],
+  "failedSuburbs": [],
+  "totalSuburbs": 3,
+  "completedCount": 3
+}

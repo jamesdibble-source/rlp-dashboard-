@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-04T01:52:43.822Z",
+    "createdAt": "2026-04-04T01:50:33.939Z",
+    "mode": "test",
+    "states": [
+      "VIC",
+      "NSW",
+      "QLD",
+      "WA",
+      "SA",
+      "TAS",
+      "NT",
+      "ACT"
+    ],
+    "sources": [
+      "domain",
+      "rea"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1,
+    "queueLimit": 2
+  },
+  "queue": [
+    {
+      "id": "WA:ABBEY:6280",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "ABBEY",
+        "postcode": "6280",
+        "state": "WA",
+        "listings": 48,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T01:50:33.939Z",
+      "sourceResults": {
+        "domain": {
+          "status": "ok",
+          "count": 25,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T01:51:45.580Z"
+        },
+        "rea": {
+          "status": "ok",
+          "count": 2,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T01:51:45.580Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 17,
+        "inserted": 17,
+        "updated": 0,
+        "finishedAt": "2026-04-04T01:51:45.585Z"
+      }
+    },
+    {
+      "id": "NSW:ABBOTSBURY:2176",
+      "priority": 2,
+      "mode": "test",
+      "target": {
+        "suburb": "ABBOTSBURY",
+        "postcode": "2176",
+        "state": "NSW",
+        "listings": 24,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T01:51:45.586Z",
+      "sourceResults": {
+        "domain": {
+          "status": "ok",
+          "count": 13,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T01:52:43.818Z"
+        },
+        "rea": {
+          "status": "ok",
+          "count": 0,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T01:52:43.818Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 13,
+        "inserted": 13,
+        "updated": 0,
+        "finishedAt": "2026-04-04T01:52:43.822Z"
+      }
+    }
+  ]
+}

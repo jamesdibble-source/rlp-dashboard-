@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-03T03:51:27.881Z",
+    "createdAt": "2026-04-03T03:47:53.949Z",
+    "mode": "delta",
+    "states": [
+      "VIC"
+    ],
+    "sources": [
+      "domain",
+      "openlot",
+      "rea"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 3
+  },
+  "queue": [
+    {
+      "id": "VIC:WARRNAMBOOL:3280",
+      "priority": 1,
+      "mode": "delta",
+      "target": {
+        "suburb": "WARRNAMBOOL",
+        "postcode": "3280",
+        "state": "VIC",
+        "listings": 205,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-03T03:47:53.950Z",
+      "sourceResults": {
+        "domain": {
+          "status": "ok",
+          "count": 97,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-03T03:51:27.838Z"
+        },
+        "openlot": {
+          "status": "ok",
+          "count": 10,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-03T03:51:27.838Z"
+        },
+        "rea": {
+          "status": "ok",
+          "count": 62,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-03T03:51:27.838Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 138,
+        "inserted": 76,
+        "updated": 62,
+        "finishedAt": "2026-04-03T03:51:27.881Z"
+      }
+    }
+  ]
+}

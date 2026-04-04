@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-04T03:17:12.446Z",
+    "createdAt": "2026-04-04T03:17:06.448Z",
+    "mode": "test",
+    "states": [
+      "SA"
+    ],
+    "sources": [
+      "openlot"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1,
+    "queueLimit": 1
+  },
+  "queue": [
+    {
+      "id": "SA:ANGLE VALE:5117",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "ANGLE VALE",
+        "postcode": "5117",
+        "state": "SA",
+        "listings": 186,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "partial",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T03:17:06.449Z",
+      "sourceResults": {
+        "openlot": {
+          "status": "error",
+          "count": 0,
+          "inserted": 0,
+          "updated": 0,
+          "error": "Command failed: /usr/local/bin/node /Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-live-to-ingest.js --suburb ANGLE VALE --state SA --postcode 5117 --mode test --output /var/folders/wj/1q27r9490g54mnc7l9_hl8_c0000gn/T/openlot-live-summary-1775272626449-z3ci3nh6yc9.json --skipIngest\n/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:512\n      throw new Error(`openclaw ${args.join(' ')} failed: ${errorText || `exit ${result.status}`}`);\n      ^\n\nError: openclaw snapshot --format ai --target-id 2B62FCF96CF1E94F23C2C4CFB063C6D2 failed: Config warnings:\\n- plugins.entries.browser: plugin not found: browser (stale config entry ignored; remove it from plugins config)\nConfig was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\nConfig was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\nConfig was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\nConfig warnings:\\n- plugins.entries.browser: plugin not found: browser (stale config entry ignored; remove it from plugins config)\nConfig was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\nGatewayClientRequestError: tab not found\n    at runCli (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:512:13)\n    at takeSnapshot (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:538:21)\n    at Object.snapshot (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:653:21)\n    at executePlan (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:768:72)\n    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:823:19)\n    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:839:3)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n\nNode.js v22.16.0\nnode:child_process:921\n    throw err;\n    ^\n\nError: Command failed: /usr/local/bin/node engine/openlot-browser-a2ui-runner.js --input /Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/tmp/openlot-live-runs/sa-angle-vale-5117-2026-04-04T03-17-06-478Z/work/a2ui-plan.jsonl --adapter openclaw-cli-executor --snapshotFormat ai --snapshotOutDir /Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/tmp/openlot-live-runs/sa-angle-vale-5117-2026-04-04T03-17-06-478Z/snapshots --output /Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/tmp/openlot-live-runs/sa-angle-vale-5117-2026-04-04T03-17-06-478Z/work/cli-execution.json\n/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:512\n      throw new Error(`openclaw ${args.join(' ')} failed: ${errorText || `exit ${result.status}`}`);\n      ^\n\nError: openclaw snapshot --format ai --target-id 2B62FCF96CF1E94F23C2C4CFB063C6D2 failed: Config warnings:\\n- plugins.entries.browser: plugin not found: browser (stale config entry ignored; remove it from plugins config)\nConfig was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\nConfig was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\nConfig was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\nConfig warnings:\\n- plugins.entries.browser: plugin not found: browser (stale config entry ignored; remove it from plugins config)\nConfig was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\nGatewayClientRequestError: tab not found\n    at runCli (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:512:13)\n    at takeSnapshot (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:538:21)\n    at Object.snapshot (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:653:21)\n    at executePlan (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:768:72)\n    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:823:19)\n    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:839:3)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n\nNode.js v22.16.0\n\n    at genericNodeError (node:internal/errors:983:15)\n    at wrappedFn (node:internal/errors:537:14)\n    at checkExecSyncError (node:child_process:882:11)\n    at execFileSync (node:child_process:918:15)\n    at runNode (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-live-to-ingest.js:52:18)\n    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-live-to-ingest.js:121:24)\n    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-live-to-ingest.js:196:3)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32) {\n  status: 1,\n  signal: null,\n  output: [\n    null,\n    '',\n    '/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:512\\n' +\n      \"      throw new Error(`openclaw ${args.join(' ')} failed: ${errorText || `exit ${result.status}`}`);\\n\" +\n      '      ^\\n' +\n      '\\n' +\n      'Error: openclaw snapshot --format ai --target-id 2B62FCF96CF1E94F23C2C4CFB063C6D2 failed: Config warnings:\\\\n- plugins.entries.browser: plugin not found: browser (stale config entry ignored; remove it from plugins config)\\n' +\n      'Config was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\\n' +\n      'Config was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\\n' +\n      'Config was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\\n' +\n      'Config warnings:\\\\n- plugins.entries.browser: plugin not found: browser (stale config entry ignored; remove it from plugins config)\\n' +\n      'Config was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\\n' +\n      'GatewayClientRequestError: tab not found\\n' +\n      '    at runCli (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:512:13)\\n' +\n      '    at takeSnapshot (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:538:21)\\n' +\n      '    at Object.snapshot (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:653:21)\\n' +\n      '    at executePlan (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:768:72)\\n' +\n      '    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:823:19)\\n' +\n      '    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:839:3)\\n' +\n      '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\\n' +\n      '    at Object..js (node:internal/modules/cjs/loader:1895:10)\\n' +\n      '    at Module.load (node:internal/modules/cjs/loader:1465:32)\\n' +\n      '    at Function._load (node:internal/modules/cjs/loader:1282:12)\\n' +\n      '\\n' +\n      'Node.js v22.16.0\\n'\n  ],\n  pid: 10181,\n  stdout: '',\n  stderr: '/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:512\\n' +\n    \"      throw new Error(`openclaw ${args.join(' ')} failed: ${errorText || `exit ${result.status}`}`);\\n\" +\n    '      ^\\n' +\n    '\\n' +\n    'Error: openclaw snapshot --format ai --target-id 2B62FCF96CF1E94F23C2C4CFB063C6D2 failed: Config warnings:\\\\n- plugins.entries.browser: plugin not found: browser (stale config entry ignored; remove it from plugins config)\\n' +\n    'Config was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\\n' +\n    'Config was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\\n' +\n    'Config was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\\n' +\n    'Config warnings:\\\\n- plugins.entries.browser: plugin not found: browser (stale config entry ignored; remove it from plugins config)\\n' +\n    'Config was last written by a newer OpenClaw (2026.3.31); current version is 2026.3.11.\\n' +\n    'GatewayClientRequestError: tab not found\\n' +\n    '    at runCli (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:512:13)\\n' +\n    '    at takeSnapshot (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:538:21)\\n' +\n    '    at Object.snapshot (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:653:21)\\n' +\n    '    at executePlan (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:768:72)\\n' +\n    '    at main (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:823:19)\\n' +\n    '    at Object.<anonymous> (/Users/jamesdibble/.openclaw-scout/workspace/rlp-dashboard/engine/openlot-browser-a2ui-runner.js:839:3)\\n' +\n    '    at Module._compile (node:internal/modules/cjs/loader:1730:14)\\n' +\n    '    at Object..js (node:internal/modules/cjs/loader:1895:10)\\n' +\n    '    at Module.load (node:internal/modules/cjs/loader:1465:32)\\n' +\n    '    at Function._load (node:internal/modules/cjs/loader:1282:12)\\n' +\n    '\\n' +\n    'Node.js v22.16.0\\n'\n}\n\nNode.js v22.16.0\n",
+          "finishedAt": "2026-04-04T03:17:12.446Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 0,
+        "inserted": 0,
+        "updated": 0,
+        "finishedAt": "2026-04-04T03:17:12.446Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "VIC": {
+    "Western": ["Melton", "Wyndham", "Moorabool"],
+    "Northern": ["Hume", "Whittlesea", "Mitchell", "Sunbury"],
+    "South Eastern": ["Casey", "Cardinia"],
+    "Geelong": ["Greater Geelong", "Surf Coast", "Golden Plains"],
+    "Ballarat": ["Ballarat"],
+    "Bendigo": ["Greater Bendigo"],
+    "Shepparton": ["Greater Shepparton"],
+    "Wangaratta": ["Wangaratta", "Benalla"],
+    "Latrobe Valley": ["Latrobe", "Baw Baw"],
+    "Mildura": ["Mildura"],
+    "Warrnambool": ["Warrnambool", "Moyne"]
+  },
+  "NSW": {
+    "South West Sydney": ["Camden", "Campbelltown", "Liverpool", "Fairfield"],
+    "North West Sydney": ["The Hills", "Blacktown", "Penrith", "Hawkesbury"],
+    "Central Coast": ["Central Coast"],
+    "Hunter Valley": ["Cessnock", "Maitland", "Newcastle"],
+    "Illawarra": ["Wollongong", "Shellharbour", "Kiama"],
+    "South Coast": ["Shoalhaven", "Eurobodalla"]
+  },
+  "QLD": {
+    "SEQ North": ["Moreton Bay", "Somerset"],
+    "SEQ West": ["Ipswich", "Lockyer Valley", "Scenic Rim"],
+    "SEQ South": ["Logan", "Gold Coast"],
+    "Sunshine Coast": ["Sunshine Coast", "Noosa"],
+    "Toowoomba": ["Toowoomba"],
+    "Townsville": ["Townsville"],
+    "Cairns": ["Cairns"]
+  },
+  "SA": {
+    "Northern Adelaide": ["Playford", "Salisbury", "Gawler"],
+    "Southern Adelaide": ["Onkaparinga", "Mount Barker"],
+    "Barossa": ["Barossa", "Light"],
+    "Murray Bridge": ["Murray Bridge", "Rural City of Murray Bridge"],
+    "Mount Gambier": ["Grant", "Mount Gambier"]
+  },
+  "WA": {
+    "Northern Perth": ["Wanneroo", "Swan", "Mundijong"],
+    "Southern Perth": ["Rockingham", "Mandurah", "Serpentine-Jarrahdale"],
+    "Eastern Perth": ["Kalamunda", "Mundaring"],
+    "Bunbury": ["Bunbury", "Harvey", "Dardanup"],
+    "Busselton": ["Busselton"]
+  },
+  "TAS": {
+    "Hobart": ["Clarence", "Glenorchy", "Kingborough", "Brighton"],
+    "Launceston": ["Launceston", "West Tamar", "Meander Valley"]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "updatedAt": "2026-04-04T03:19:56.532Z",
+    "createdAt": "2026-04-04T03:19:37.198Z",
+    "mode": "test",
+    "states": [
+      "SA"
+    ],
+    "sources": [
+      "openlot"
+    ],
+    "filters": {
+      "propertyType": "land",
+      "minLandSize": 0,
+      "maxLandSize": 2000,
+      "minPrice": 20000,
+      "maxPrice": 5000000
+    },
+    "maxPages": 1,
+    "queueLimit": 1
+  },
+  "queue": [
+    {
+      "id": "SA:ANGLE VALE:5117",
+      "priority": 1,
+      "mode": "test",
+      "target": {
+        "suburb": "ANGLE VALE",
+        "postcode": "5117",
+        "state": "SA",
+        "listings": 186,
+        "lga": "",
+        "corridor": ""
+      },
+      "status": "done",
+      "attempts": 1,
+      "lastRunAt": "2026-04-04T03:19:37.199Z",
+      "sourceResults": {
+        "openlot": {
+          "status": "ok",
+          "count": 3,
+          "inserted": 0,
+          "updated": 0,
+          "error": null,
+          "finishedAt": "2026-04-04T03:19:56.532Z"
+        }
+      },
+      "reaMaxListings": null,
+      "reaDateRange": null,
+      "combinedResult": {
+        "count": 3,
+        "inserted": 3,
+        "updated": 0,
+        "finishedAt": "2026-04-04T03:19:56.532Z"
+      }
+    }
+  ]
+}
